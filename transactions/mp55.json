@@ -1,0 +1,140 @@
+{
+  "name" : "mp55",
+  "application" : "mp",
+  "description" : "MODIFICATIONS HISTORY FILE",
+  "inputRecordName" : "mprm550",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mprm550" : {
+      "name" : "mprm550",
+      "transactionName" : "mp55",
+      "description" : "FILTERING INFORMATION BY DATE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ldescr" : {
+          "name" : "ldescr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LDESCR",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nclave" : {
+          "name" : "nclave",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "ACCESS KEY",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "fechai" : {
+          "name" : "fechai",
+          "index" : 3,
+          "offset" : 62,
+          "literal" : "START DATE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "fechaf" : {
+          "name" : "fechaf",
+          "index" : 4,
+          "offset" : 71,
+          "literal" : "END DATE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mprm550",
+    "transactionName" : "mp55",
+    "description" : "FILTERING INFORMATION BY DATE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ldescr" : {
+        "name" : "ldescr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LDESCR",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "nclave" : {
+        "name" : "nclave",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "ACCESS KEY",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "fechai" : {
+        "name" : "fechai",
+        "index" : 3,
+        "offset" : 62,
+        "literal" : "START DATE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "fechaf" : {
+        "name" : "fechaf",
+        "index" : 4,
+        "offset" : 71,
+        "literal" : "END DATE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

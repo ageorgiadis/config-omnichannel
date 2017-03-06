@@ -1,0 +1,84 @@
+{
+  "name" : "md84",
+  "application" : "mc",
+  "description" : "CONSULTA INCIDENCIAS CECA",
+  "inputRecordName" : "mdrm840",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mdrm840" : {
+      "name" : "mdrm840",
+      "transactionName" : "md84",
+      "description" : "CONSULTA INCIDENCIES CECA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cnsesio" : {
+          "name" : "cnsesio",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MCNSESIO",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cttipin" : {
+          "name" : "cttipin",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "MCTTIPIN",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mdrm840",
+    "transactionName" : "md84",
+    "description" : "CONSULTA INCIDENCIES CECA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cnsesio" : {
+        "name" : "cnsesio",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MCNSESIO",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cttipin" : {
+        "name" : "cttipin",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "MCTTIPIN",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

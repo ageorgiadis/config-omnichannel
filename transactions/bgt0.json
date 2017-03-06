@@ -1,0 +1,135 @@
+{
+  "name" : "bgt0",
+  "application" : "bg",
+  "description" : "SEARCH DATA OF HOLDERS' TAX REPAYME",
+  "inputRecordName" : "bgmtax0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmtax0" : {
+      "name" : "bgmtax0",
+      "transactionName" : "bgt0",
+      "description" : "SEARCH & DISPLAY ID DATA",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "taxid" : {
+          "name" : "taxid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TAX ID",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmtax1" : {
+      "name" : "bgmtax1",
+      "transactionName" : "bgt0",
+      "description" : "OUTPUT FORMAT (OPTION '01')",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "taxid" : {
+          "name" : "taxid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TAX ID",
+          "type" : "Numeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "adt" : {
+          "name" : "adt",
+          "index" : 2,
+          "offset" : 28,
+          "literal" : "IDENTITY CARD",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lastnam" : {
+          "name" : "lastnam",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "LAST NAME",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "frstnam" : {
+          "name" : "frstnam",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "FIRST NAME",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fathnam" : {
+          "name" : "fathnam",
+          "index" : 5,
+          "offset" : 71,
+          "literal" : "FATHER NAME",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmtax0",
+    "transactionName" : "bgt0",
+    "description" : "SEARCH & DISPLAY ID DATA",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "taxid" : {
+        "name" : "taxid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TAX ID",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

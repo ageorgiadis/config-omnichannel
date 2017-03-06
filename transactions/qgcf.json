@@ -1,0 +1,56 @@
+{
+  "name" : "qgcf",
+  "application" : "qm",
+  "description" : "SESSION CHANGE (WITHOUT CONTROL-M)",
+  "inputRecordName" : "qgrmcsf",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmcsf" : {
+      "name" : "qgrmcsf",
+      "transactionName" : "qgcf",
+      "description" : "SESSION CHANGE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "entity" : {
+          "name" : "entity",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmcsf",
+    "transactionName" : "qgcf",
+    "description" : "SESSION CHANGE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "entity" : {
+        "name" : "entity",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTITY",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

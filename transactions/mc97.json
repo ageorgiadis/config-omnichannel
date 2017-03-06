@@ -1,0 +1,120 @@
+{
+  "name" : "mc97",
+  "application" : "mc",
+  "description" : "TODAY CONFIRMED ACCOUNTS",
+  "inputRecordName" : "mcrm971",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm971" : {
+      "name" : "mcrm971",
+      "transactionName" : "mc97",
+      "description" : "TODAY CONFIRMED ACCOUNTS(DET)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cardnum" : {
+          "name" : "cardnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "acntnum" : {
+          "name" : "acntnum",
+          "index" : 2,
+          "offset" : 38,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "credreq" : {
+          "name" : "credreq",
+          "index" : 3,
+          "offset" : 61,
+          "literal" : "CREDIT REQUEST",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    },
+    "mcrm970" : {
+      "name" : "mcrm970",
+      "transactionName" : "mc97",
+      "description" : "TODAY CONFIRMED ACCOUNTS(HEAD)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm971",
+    "transactionName" : "mc97",
+    "description" : "TODAY CONFIRMED ACCOUNTS(DET)",
+    "type" : "Output",
+    "source" : "FDF",
+    "fields" : {
+      "cardnum" : {
+        "name" : "cardnum",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "acntnum" : {
+        "name" : "acntnum",
+        "index" : 2,
+        "offset" : 38,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "credreq" : {
+        "name" : "credreq",
+        "index" : 3,
+        "offset" : 61,
+        "literal" : "CREDIT REQUEST",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

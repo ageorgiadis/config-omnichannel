@@ -1,0 +1,140 @@
+{
+  "name" : "mp01",
+  "application" : "mp",
+  "description" : "MANUAL RENEWAL",
+  "inputRecordName" : "mprm001",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mprm001" : {
+      "name" : "mprm001",
+      "transactionName" : "mp01",
+      "description" : "MANUAL RENEWAL",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ntarje" : {
+          "name" : "ntarje",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMERO TARGETA",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "name" : {
+          "name" : "name",
+          "index" : 2,
+          "offset" : 38,
+          "literal" : "CARDHOLDRE-S NAME",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "caduc" : {
+          "name" : "caduc",
+          "index" : 3,
+          "offset" : 71,
+          "literal" : "EXPIRING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cadun" : {
+          "name" : "cadun",
+          "index" : 4,
+          "offset" : 84,
+          "literal" : "NEW EXP. DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mprm001",
+    "transactionName" : "mp01",
+    "description" : "MANUAL RENEWAL",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ntarje" : {
+        "name" : "ntarje",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMERO TARGETA",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "name" : {
+        "name" : "name",
+        "index" : 2,
+        "offset" : 38,
+        "literal" : "CARDHOLDRE-S NAME",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "caduc" : {
+        "name" : "caduc",
+        "index" : 3,
+        "offset" : 71,
+        "literal" : "EXPIRING DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cadun" : {
+        "name" : "cadun",
+        "index" : 4,
+        "offset" : 84,
+        "literal" : "NEW EXP. DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

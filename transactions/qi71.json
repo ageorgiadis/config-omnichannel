@@ -1,0 +1,144 @@
+{
+  "name" : "qi71",
+  "application" : "qi",
+  "description" : "ΔΙΑΘΕΣΙΜΕΣ QI ΕΚΤΥΠΩΣΕΙΣ.",
+  "inputRecordName" : "qim710",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qinc710" : {
+      "name" : "qinc710",
+      "transactionName" : "qi71",
+      "description" : "INPUT FORMAT FOR QI71",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "clave" : {
+          "name" : "clave",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLAVEINF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qim7101" : {
+      "name" : "qim7101",
+      "transactionName" : "qi71",
+      "description" : "OUTPUT FORMAT FOR QI71",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "clave" : {
+          "name" : "clave",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLAVEINF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "titulo" : {
+          "name" : "titulo",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "inda" : {
+          "name" : "inda",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 4,
+          "offset" : 74,
+          "literal" : "OPERATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qim710" : {
+      "name" : "qim710",
+      "transactionName" : "qi71",
+      "description" : "INPUT FORMAT FOR QI71",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "clave" : {
+          "name" : "clave",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΚΩΔΙΚΟΣ ΛΙΣΤΑΣ",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qim710",
+    "transactionName" : "qi71",
+    "description" : "INPUT FORMAT FOR QI71",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "clave" : {
+        "name" : "clave",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ΚΩΔΙΚΟΣ ΛΙΣΤΑΣ",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "name" : "bgg2",
+  "application" : "bg",
+  "description" : "DATA OF GROUP ACCOUNTS",
+  "inputRecordName" : "bgmgo20",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgbgg22" : {
+      "name" : "bgbgg22",
+      "transactionName" : "bgg2",
+      "description" : "OUTPUT FORMAT FOR BGG2 (DTL)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "ACOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifname" : {
+          "name" : "cifname",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "CIF NAME",
+          "type" : "Alphanumeric",
+          "length" : 35,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 4,
+          "offset" : 88,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tmlcamp" : {
+          "name" : "tmlcamp",
+          "index" : 5,
+          "offset" : 98,
+          "literal" : "TMLCAMP",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 6,
+          "offset" : 110,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 7,
+          "offset" : 114,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmgo22" : {
+      "name" : "bgmgo22",
+      "transactionName" : "bgg2",
+      "description" : "OUTPUT FORMAT FOR BGG2 (DTL)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "ACOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifname" : {
+          "name" : "cifname",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "CIF NAME",
+          "type" : "Alphanumeric",
+          "length" : 35,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 4,
+          "offset" : 88,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tmlcamp" : {
+          "name" : "tmlcamp",
+          "index" : 5,
+          "offset" : 98,
+          "literal" : "TMLCAMP",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 6,
+          "offset" : 110,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 7,
+          "offset" : 114,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgbgg21" : {
+      "name" : "bgbgg21",
+      "transactionName" : "bgg2",
+      "description" : "OUTPUT FORMAT FOR BGG2 (HD)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "bgmgo20" : {
+      "name" : "bgmgo20",
+      "transactionName" : "bgg2",
+      "description" : "DATA GROUP ACCOUNTS (INP)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmgo21" : {
+      "name" : "bgmgo21",
+      "transactionName" : "bgg2",
+      "description" : "OUTPUT FORMAT FOR BGG2 (HD)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "bgmrgo2" : {
+      "name" : "bgmrgo2",
+      "transactionName" : "bgg2",
+      "description" : "DATA GROUP ACCOUNTS (INP)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmgo20",
+    "transactionName" : "bgg2",
+    "description" : "DATA GROUP ACCOUNTS (INP)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "group" : {
+        "name" : "group",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

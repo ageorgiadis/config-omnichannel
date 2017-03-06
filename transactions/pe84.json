@@ -1,0 +1,56 @@
+{
+  "name" : "pe84",
+  "application" : "pe",
+  "description" : "LIST FOR CLIENTS' RM1 AND RM2",
+  "inputRecordName" : "perm840",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "perm840" : {
+      "name" : "perm840",
+      "transactionName" : "pe84",
+      "description" : "LISTA FOR CLIENTS' RM1 AND RM2",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "perm840",
+    "transactionName" : "pe84",
+    "description" : "LISTA FOR CLIENTS' RM1 AND RM2",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

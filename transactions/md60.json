@@ -1,0 +1,112 @@
+{
+  "name" : "md60",
+  "application" : "mc",
+  "description" : "MENU DE MONITORIZACIONES",
+  "inputRecordName" : "mdrm600",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mdrm600" : {
+      "name" : "mdrm600",
+      "transactionName" : "md60",
+      "description" : "MENU MONITORIZACION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPCION",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dispo" : {
+          "name" : "dispo",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "DISPOSITIVO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "red" : {
+          "name" : "red",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "RED",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mdrm600",
+    "transactionName" : "md60",
+    "description" : "MENU MONITORIZACION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPCION",
+        "type" : "Numeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dispo" : {
+        "name" : "dispo",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "DISPOSITIVO",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "red" : {
+        "name" : "red",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "RED",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

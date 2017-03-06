@@ -1,0 +1,56 @@
+{
+  "name" : "rite",
+  "application" : "ri",
+  "description" : "TEST ONLINE ROUTINE FOR RI",
+  "inputRecordName" : "rirmtest",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "rirmtest" : {
+      "name" : "rirmtest",
+      "transactionName" : "rite",
+      "description" : "INPUT TEST FORMAT FOR RI",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "rirmtest",
+    "transactionName" : "rite",
+    "description" : "INPUT TEST FORMAT FOR RI",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "name" : "uvin",
+  "application" : "ug",
+  "description" : "INQUIRY OF LINK ACCOUNT",
+  "inputRecordName" : "ugrmgvin",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmgvin" : {
+      "name" : "ugrmgvin",
+      "transactionName" : "uvin",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cccaso" : {
+          "name" : "cccaso",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmvin1" : {
+      "name" : "ugrmvin1",
+      "transactionName" : "uvin",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACC. NUMB",
+          "type" : "Alphanumeric",
+          "length" : 24,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmvin4" : {
+      "name" : "ugrmvin4",
+      "transactionName" : "uvin",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINK ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmvin3" : {
+      "name" : "ugrmvin3",
+      "transactionName" : "uvin",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACC. NUMB",
+          "type" : "Alphanumeric",
+          "length" : 24,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmvin2" : {
+      "name" : "ugrmvin2",
+      "transactionName" : "uvin",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINK ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmgvin",
+    "transactionName" : "uvin",
+    "description" : "INQUIRY OF LINK ACCOUNT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cccaso" : {
+        "name" : "cccaso",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

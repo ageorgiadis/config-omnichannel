@@ -1,0 +1,140 @@
+{
+  "name" : "bmsd",
+  "application" : "bg",
+  "description" : "MIS CLIENT CATEGORY",
+  "inputRecordName" : "bgmmisd",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmmisd" : {
+      "name" : "bgmmisd",
+      "transactionName" : "bmsd",
+      "description" : "BG2CMISD INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "miscode" : {
+          "name" : "miscode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MIS CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifno" : {
+          "name" : "cifno",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "extdlis" : {
+          "name" : "extdlis",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "EXTEND LIST (Y/N)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "treview" : {
+          "name" : "treview",
+          "index" : 4,
+          "offset" : 36,
+          "literal" : "TREE VIEW LIST (Y/N)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmmisd",
+    "transactionName" : "bmsd",
+    "description" : "BG2CMISD INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "miscode" : {
+        "name" : "miscode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MIS CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cifno" : {
+        "name" : "cifno",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "extdlis" : {
+        "name" : "extdlis",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "EXTEND LIST (Y/N)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "treview" : {
+        "name" : "treview",
+        "index" : 4,
+        "offset" : 36,
+        "literal" : "TREE VIEW LIST (Y/N)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

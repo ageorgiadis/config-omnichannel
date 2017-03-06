@@ -1,0 +1,84 @@
+{
+  "name" : "peas",
+  "application" : "pe",
+  "description" : "ADD REMOVE ACCOUNT FOR ASSET.",
+  "inputRecordName" : "pem00as",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem00as" : {
+      "name" : "pem00as",
+      "transactionName" : "peas",
+      "description" : "INPUT FORMAT LISTING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FUNCTIONALITY OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "acctnum" : {
+          "name" : "acctnum",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ACCOUNT  NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem00as",
+    "transactionName" : "peas",
+    "description" : "INPUT FORMAT LISTING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FUNCTIONALITY OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "acctnum" : {
+        "name" : "acctnum",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ACCOUNT  NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

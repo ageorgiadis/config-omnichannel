@@ -1,0 +1,79 @@
+{
+  "name" : "pecp",
+  "application" : "pe",
+  "description" : "COUNT PARTICIPANTS",
+  "inputRecordName" : "pencpcp",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pencpcp" : {
+      "name" : "pencpcp",
+      "transactionName" : "pecp",
+      "description" : "INPUT FORMAT OF PECP",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pempcp1" : {
+      "name" : "pempcp1",
+      "transactionName" : "pecp",
+      "description" : "OUTPUT COPY OF PECP",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "count" : {
+          "name" : "count",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "COUNT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pencpcp",
+    "transactionName" : "pecp",
+    "description" : "INPUT FORMAT OF PECP",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

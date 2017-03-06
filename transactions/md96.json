@@ -1,0 +1,56 @@
+{
+  "name" : "md96",
+  "application" : "mc",
+  "description" : "CONSULTA PARAMETROS DIFERIDOS",
+  "inputRecordName" : "mdrm960",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mdrm960" : {
+      "name" : "mdrm960",
+      "transactionName" : "md96",
+      "description" : "CONSULTA PARAMETRES DIFERITS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ccopera" : {
+          "name" : "ccopera",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MCCOPERA",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mdrm960",
+    "transactionName" : "md96",
+    "description" : "CONSULTA PARAMETRES DIFERITS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ccopera" : {
+        "name" : "ccopera",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MCCOPERA",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

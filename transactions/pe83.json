@@ -1,0 +1,168 @@
+{
+  "name" : "pe83",
+  "application" : "pe",
+  "description" : "GG4 MAINTENANCE",
+  "inputRecordName" : "penc0830",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "penc0830" : {
+      "name" : "penc0830",
+      "transactionName" : "pe83",
+      "description" : "PENC0830",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "avoidco" : {
+          "name" : "avoidco",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "AVOID CONTACT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "wrongin" : {
+          "name" : "wrongin",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "WRONG INFORMATION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 4,
+          "offset" : 35,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "master" : {
+          "name" : "master",
+          "index" : 5,
+          "offset" : 39,
+          "literal" : "MASTER CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "penc0830",
+    "transactionName" : "pe83",
+    "description" : "PENC0830",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "avoidco" : {
+        "name" : "avoidco",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "AVOID CONTACT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "wrongin" : {
+        "name" : "wrongin",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "WRONG INFORMATION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 4,
+        "offset" : 35,
+        "literal" : "STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "master" : {
+        "name" : "master",
+        "index" : 5,
+        "offset" : 39,
+        "literal" : "MASTER CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

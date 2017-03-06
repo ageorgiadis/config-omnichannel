@@ -1,0 +1,168 @@
+{
+  "name" : "mcc8",
+  "application" : "mp",
+  "description" : "EMBOSSING OF DEBIT CARDS DUE TO EMV",
+  "inputRecordName" : "mcrmc800",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrmc800" : {
+      "name" : "mcrmc800",
+      "transactionName" : "mcc8",
+      "description" : "EMBOSSING OF DEBIT CARDS DUE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "mcnofic" : {
+          "name" : "mcnofic",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "mcttarj" : {
+          "name" : "mcttarj",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "mctipxi" : {
+          "name" : "mctipxi",
+          "index" : 4,
+          "offset" : 32,
+          "literal" : "WAREHOUSE CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "mccserv" : {
+          "name" : "mccserv",
+          "index" : 5,
+          "offset" : 37,
+          "literal" : "MAGNETIC / CHIP",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrmc800",
+    "transactionName" : "mcc8",
+    "description" : "EMBOSSING OF DEBIT CARDS DUE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "mcnofic" : {
+        "name" : "mcnofic",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "mcttarj" : {
+        "name" : "mcttarj",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "mctipxi" : {
+        "name" : "mctipxi",
+        "index" : 4,
+        "offset" : 32,
+        "literal" : "WAREHOUSE CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "mccserv" : {
+        "name" : "mccserv",
+        "index" : 5,
+        "offset" : 37,
+        "literal" : "MAGNETIC / CHIP",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

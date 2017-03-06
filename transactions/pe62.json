@@ -1,0 +1,56 @@
+{
+  "name" : "pe62",
+  "application" : "pe",
+  "description" : "SAME CIF GROUP MEMBER DIFF",
+  "inputRecordName" : "pem062",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem062" : {
+      "name" : "pem062",
+      "transactionName" : "pe62",
+      "description" : "SAME CIF GROUP DIFF (INP FMT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "grpcode" : {
+          "name" : "grpcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem062",
+    "transactionName" : "pe62",
+    "description" : "SAME CIF GROUP DIFF (INP FMT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "grpcode" : {
+        "name" : "grpcode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

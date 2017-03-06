@@ -1,0 +1,149 @@
+{
+  "name" : "b480",
+  "application" : "bg",
+  "description" : "BATCH REQUESTS",
+  "inputRecordName" : "bgm480",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm480a" : {
+      "name" : "bgm480a",
+      "transactionName" : "b480",
+      "description" : "CLOSE INSTR/NOSTRO ACCOUNTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prdescr" : {
+          "name" : "prdescr",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "PRODUCT DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "SUBPRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprde" : {
+          "name" : "subprde",
+          "index" : 4,
+          "offset" : 41,
+          "literal" : "SUBPRODUCT DESCRIPT",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm480" : {
+      "name" : "bgm480",
+      "transactionName" : "b480",
+      "description" : "BATCH REQUESTS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 11,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 12,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm480",
+    "transactionName" : "b480",
+    "description" : "BATCH REQUESTS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCT CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 11,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subprod" : {
+        "name" : "subprod",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRODUCT CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 12,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

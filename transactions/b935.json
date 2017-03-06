@@ -1,0 +1,117 @@
+{
+  "name" : "b935",
+  "application" : "bg",
+  "description" : "BOX CLIENT DATA",
+  "inputRecordName" : "bgm935",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm935" : {
+      "name" : "bgm935",
+      "transactionName" : "b935",
+      "description" : "BOX CLIENT DATA",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "contrac" : {
+          "name" : "contrac",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONTRACT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm935a" : {
+      "name" : "bgm935a",
+      "transactionName" : "b935",
+      "description" : "LIST BOX CLIENTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "bgm935b" : {
+      "name" : "bgm935b",
+      "transactionName" : "b935",
+      "description" : "LIST BOX CONTRACTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "aa" : {
+          "name" : "aa",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SERIAL NO",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifno" : {
+          "name" : "cifno",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "CIF NO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifname" : {
+          "name" : "cifname",
+          "index" : 3,
+          "offset" : 35,
+          "literal" : "CIF NAME",
+          "type" : "Alphanumeric",
+          "length" : 53,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm935",
+    "transactionName" : "b935",
+    "description" : "BOX CLIENT DATA",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "contrac" : {
+        "name" : "contrac",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CONTRACT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "name" : "s020",
+  "application" : "sp",
+  "description" : "MAINTENANCE OF PARAMETERS",
+  "inputRecordName" : "sprms020",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprms020" : {
+      "name" : "sprms020",
+      "transactionName" : "s020",
+      "description" : "INPUT FORMAT OF S020",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "code" : {
+          "name" : "code",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "categor" : {
+          "name" : "categor",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "paramet" : {
+          "name" : "paramet",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "PARAMETER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 4,
+          "offset" : 50,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 5,
+          "offset" : 54,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms020",
+    "transactionName" : "s020",
+    "description" : "INPUT FORMAT OF S020",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "code" : {
+        "name" : "code",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "categor" : {
+        "name" : "categor",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CATEGORY",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "paramet" : {
+        "name" : "paramet",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "PARAMETER",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 4,
+        "offset" : 50,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "descrip" : {
+        "name" : "descrip",
+        "index" : 5,
+        "offset" : 54,
+        "literal" : "DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name" : "ucin",
+  "application" : "uc",
+  "description" : "INSURANCE MENU",
+  "inputRecordName" : "ucrminc",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ucrminc" : {
+      "name" : "ucrminc",
+      "transactionName" : "ucin",
+      "description" : "INSURANCE  MENU",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "funcion" : {
+          "name" : "funcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FUNCTION",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CACN",
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ucrminc",
+    "transactionName" : "ucin",
+    "description" : "INSURANCE  MENU",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "funcion" : {
+        "name" : "funcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FUNCTION",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CACN",
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

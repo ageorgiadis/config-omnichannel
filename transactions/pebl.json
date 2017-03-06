@@ -1,0 +1,163 @@
+{
+  "name" : "pebl",
+  "application" : "pe",
+  "description" : "CIF BLOCKAGE MAINTENACE",
+  "inputRecordName" : "pemebl",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemebl" : {
+      "name" : "pemebl",
+      "transactionName" : "pebl",
+      "description" : "INPUT FORMAT OF PEBL",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemebl1" : {
+      "name" : "pemebl1",
+      "transactionName" : "pebl",
+      "description" : "OUTPUT FORMAT OF PEBL",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "status" : {
+          "name" : "status",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 2,
+          "offset" : 28,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "hora" : {
+          "name" : "hora",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "HORA",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centeri" : {
+          "name" : "centeri",
+          "index" : 4,
+          "offset" : 52,
+          "literal" : "CENTERID",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 5,
+          "offset" : 59,
+          "literal" : "USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemebl",
+    "transactionName" : "pebl",
+    "description" : "INPUT FORMAT OF PEBL",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

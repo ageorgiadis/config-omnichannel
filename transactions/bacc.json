@@ -1,0 +1,265 @@
+{
+  "name" : "bacc",
+  "application" : "bg",
+  "description" : "MAINTENANCE OF BGDTCCD",
+  "inputRecordName" : "bgmacc0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmacc0" : {
+      "name" : "bgmacc0",
+      "transactionName" : "bacc",
+      "description" : "INPUT FOR BG2CACC0",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "aplarea" : {
+          "name" : "aplarea",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "APPLICATION AREA",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subcat" : {
+          "name" : "subcat",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "SUBCATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "condcod" : {
+          "name" : "condcod",
+          "index" : 4,
+          "offset" : 35,
+          "literal" : "CONDITION CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgrmacc3" : {
+      "name" : "bgrmacc3",
+      "transactionName" : "bacc",
+      "description" : "OUTPUT FOR BG2CACC0",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "subcat" : {
+          "name" : "subcat",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SUBCATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cond" : {
+          "name" : "cond",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "CONDITION",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 64,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgrmacc2" : {
+      "name" : "bgrmacc2",
+      "transactionName" : "bacc",
+      "description" : "OUTPUT FOR BG2CACC0",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "subcat" : {
+          "name" : "subcat",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SUBCATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgrmacc1" : {
+      "name" : "bgrmacc1",
+      "transactionName" : "bacc",
+      "description" : "OUTPUT FOR BG2CACC0",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "catgory" : {
+          "name" : "catgory",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmacc0",
+    "transactionName" : "bacc",
+    "description" : "INPUT FOR BG2CACC0",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "aplarea" : {
+        "name" : "aplarea",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "APPLICATION AREA",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subcat" : {
+        "name" : "subcat",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "SUBCATEGORY",
+        "type" : "Alphanumeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "condcod" : {
+        "name" : "condcod",
+        "index" : 4,
+        "offset" : 35,
+        "literal" : "CONDITION CODE",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

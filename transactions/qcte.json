@@ -1,0 +1,112 @@
+{
+  "name" : "qcte",
+  "application" : "qg",
+  "description" : "TEST CPU PERFORMANCE VSAM VS DB2",
+  "inputRecordName" : "qcmtest",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qcmtest" : {
+      "name" : "qcmtest",
+      "transactionName" : "qcte",
+      "description" : "TEST CPU PERF VSAM VS DB2",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "logname" : {
+          "name" : "logname",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOG TO WRITE \"A\"/\"B\"",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "filetyp" : {
+          "name" : "filetyp",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "FILE TYPE \"D\"/\"V\"",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rowinse" : {
+          "name" : "rowinse",
+          "index" : 3,
+          "offset" : 24,
+          "literal" : "ROWS TO INSERT",
+          "type" : "Numeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qcmtest",
+    "transactionName" : "qcte",
+    "description" : "TEST CPU PERF VSAM VS DB2",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "logname" : {
+        "name" : "logname",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOG TO WRITE \"A\"/\"B\"",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "filetyp" : {
+        "name" : "filetyp",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "FILE TYPE \"D\"/\"V\"",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rowinse" : {
+        "name" : "rowinse",
+        "index" : 3,
+        "offset" : 24,
+        "literal" : "ROWS TO INSERT",
+        "type" : "Numeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

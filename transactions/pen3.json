@@ -1,0 +1,233 @@
+{
+  "name" : "pen3",
+  "application" : "pe",
+  "description" : "ΔΙΑΧΕΙΡΙΣΗ CIF ΣΤΟΝ Ν.3869",
+  "inputRecordName" : "pemn300",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemn301" : {
+      "name" : "pemn301",
+      "transactionName" : "pen3",
+      "description" : "DISPLAY STATUS N3869",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "status" : {
+          "name" : "status",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "STATUS N3869",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "statdes" : {
+          "name" : "statdes",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "STATUS N3869 DESCRIP",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 3,
+          "offset" : 54,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "stdate" : {
+          "name" : "stdate",
+          "index" : 4,
+          "offset" : 61,
+          "literal" : "STATUS DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 5,
+          "offset" : 74,
+          "literal" : "USER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "progr" : {
+          "name" : "progr",
+          "index" : 6,
+          "offset" : 85,
+          "literal" : "PROGRAM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "pemn300" : {
+      "name" : "pemn300",
+      "transactionName" : "pen3",
+      "description" : "ΔΙΑΧΕΙΡΙΣΗ CIF ΣΤΟΝ N3869",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "STATUS N3869",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "stdate" : {
+          "name" : "stdate",
+          "index" : 4,
+          "offset" : 37,
+          "literal" : "STATUS DATE N3869",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemn300",
+    "transactionName" : "pen3",
+    "description" : "ΔΙΑΧΕΙΡΙΣΗ CIF ΣΤΟΝ N3869",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cif" : {
+        "name" : "cif",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "STATUS N3869",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "stdate" : {
+        "name" : "stdate",
+        "index" : 4,
+        "offset" : 37,
+        "literal" : "STATUS DATE N3869",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

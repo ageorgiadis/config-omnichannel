@@ -1,0 +1,440 @@
+{
+  "name" : "s231",
+  "application" : "bg",
+  "description" : "REPRINTING OF FINALIZATION DOCS",
+  "inputRecordName" : "sprms231",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprmtrok" : {
+      "name" : "sprmtrok",
+      "transactionName" : "s231",
+      "description" : "TROK OF PRINTED DOCS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm231a" : {
+      "name" : "sprm231a",
+      "transactionName" : "s231",
+      "description" : "OUTPUT FORMAT FOR S231",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "stdate" : {
+          "name" : "stdate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "START DATA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm210a" : {
+      "name" : "sprm210a",
+      "transactionName" : "s231",
+      "description" : "TITLE OF PRINTED DOCS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "header2" : {
+          "name" : "header2",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "HEADER 2",
+          "type" : "Alphanumeric",
+          "length" : 36,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entidad" : {
+          "name" : "entidad",
+          "index" : 2,
+          "offset" : 55,
+          "literal" : "RA CONTRACT ENTIDAD",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 3,
+          "offset" : 62,
+          "literal" : "RA CONTRACT CENTRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digits" : {
+          "name" : "digits",
+          "index" : 4,
+          "offset" : 69,
+          "literal" : "RA CONTRACT CH. DIGS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 5,
+          "offset" : 74,
+          "literal" : "RA CONTRACT CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "header1" : {
+          "name" : "header1",
+          "index" : 6,
+          "offset" : 87,
+          "literal" : "HEADER 1",
+          "type" : "Alphanumeric",
+          "length" : 44,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprms231" : {
+      "name" : "sprms231",
+      "transactionName" : "s231",
+      "description" : "INPUT FORMAT FOR S231",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm230d" : {
+      "name" : "sprm230d",
+      "transactionName" : "s231",
+      "description" : "S230 DETAILS OF LINKED ACCOUNT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entidad" : {
+          "name" : "entidad",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINKED ACC. ENTIDAD",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "LINKED ACC. CENTRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digits" : {
+          "name" : "digits",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "LINKED ACC. CH. DIGS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 4,
+          "offset" : 35,
+          "literal" : "LINKED ACC. CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "details" : {
+          "name" : "details",
+          "index" : 5,
+          "offset" : 48,
+          "literal" : "LINKED ACC. DETAILS",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 6,
+          "offset" : 101,
+          "literal" : "START DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm230c" : {
+      "name" : "sprm230c",
+      "transactionName" : "s231",
+      "description" : "S230 HEADER IF LINKED ACCOUNTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cuavr1" : {
+          "name" : "cuavr1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUAVAR1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuavr2" : {
+          "name" : "cuavr2",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CUAVAR2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm230f" : {
+      "name" : "sprm230f",
+      "transactionName" : "s231",
+      "description" : "S230 HEADER OF FREE BEN. PROG.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cuavr1" : {
+          "name" : "cuavr1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUAVAR1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuavr2" : {
+          "name" : "cuavr2",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CUAVAR2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuavr3" : {
+          "name" : "cuavr3",
+          "index" : 3,
+          "offset" : 24,
+          "literal" : "CUAVAR3",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuavr4" : {
+          "name" : "cuavr4",
+          "index" : 4,
+          "offset" : 28,
+          "literal" : "CUAVAR4",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprmcsnm" : {
+      "name" : "sprmcsnm",
+      "transactionName" : "s231",
+      "description" : "CUSTOMER NAME OF PR. DOCS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cusname" : {
+          "name" : "cusname",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "title" : {
+          "name" : "title",
+          "index" : 2,
+          "offset" : 69,
+          "literal" : "CUSTOMER NAME TITLE",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms231",
+    "transactionName" : "s231",
+    "description" : "INPUT FORMAT FOR S231",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTIOFI",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

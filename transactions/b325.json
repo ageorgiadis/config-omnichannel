@@ -1,0 +1,221 @@
+{
+  "name" : "b325",
+  "application" : "bg",
+  "description" : "INQUIRY OF ACCOUNTS",
+  "inputRecordName" : "bgm325",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm325" : {
+      "name" : "bgm325",
+      "transactionName" : "b325",
+      "description" : "INPUT FORMAT FOR TRANS B325",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cid" : {
+          "name" : "cid",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "ACCOUNT TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm3251" : {
+      "name" : "bgm3251",
+      "transactionName" : "b325",
+      "description" : "OUTPUT FORMAT FOR TRANS B325",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prod" : {
+          "name" : "prod",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prodes" : {
+          "name" : "prodes",
+          "index" : 3,
+          "offset" : 48,
+          "literal" : "PRODUCT DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "amount" : {
+          "name" : "amount",
+          "index" : 4,
+          "offset" : 81,
+          "literal" : "ACCOUNT BALANCE",
+          "type" : "Alphanumeric",
+          "length" : 21,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "debitof" : {
+          "name" : "debitof",
+          "index" : 5,
+          "offset" : 105,
+          "literal" : "DEBIT OF",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "showtit" : {
+          "name" : "showtit",
+          "index" : 6,
+          "offset" : 125,
+          "literal" : "SHOW TITLES INDICATO",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "curency" : {
+          "name" : "curency",
+          "index" : 7,
+          "offset" : 129,
+          "literal" : "CURENCY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm325",
+    "transactionName" : "b325",
+    "description" : "INPUT FORMAT FOR TRANS B325",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cid" : {
+        "name" : "cid",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "type" : {
+        "name" : "type",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "ACCOUNT TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

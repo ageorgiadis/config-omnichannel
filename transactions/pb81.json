@@ -1,0 +1,84 @@
+{
+  "name" : "pb81",
+  "application" : "pb",
+  "description" : "ADMIN. USER DAILY LIMIT TABLE",
+  "inputRecordName" : "pbm081",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pbm081" : {
+      "name" : "pbm081",
+      "transactionName" : "pb81",
+      "description" : "CIF MERGE INQ",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mrmerg" : {
+          "name" : "mrmerg",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF MERGED",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "mrmast" : {
+          "name" : "mrmast",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CIF MASTER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pbm081",
+    "transactionName" : "pb81",
+    "description" : "CIF MERGE INQ",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "mrmerg" : {
+        "name" : "mrmerg",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF MERGED",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "mrmast" : {
+        "name" : "mrmast",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CIF MASTER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

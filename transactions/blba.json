@@ -1,0 +1,118 @@
+{
+  "name" : "blba",
+  "application" : "bg",
+  "description" : "LOAN INSTRUMENTAL MOVEMENTS",
+  "inputRecordName" : "bgmlba",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmlba" : {
+      "name" : "bgmlba",
+      "transactionName" : "blba",
+      "description" : "LAST ENTRIES INQUIRY",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "loan" : {
+          "name" : "loan",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOAN",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datefr" : {
+          "name" : "datefr",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmlba",
+    "transactionName" : "blba",
+    "description" : "LAST ENTRIES INQUIRY",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "loan" : {
+        "name" : "loan",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOAN",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "datefr" : {
+        "name" : "datefr",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

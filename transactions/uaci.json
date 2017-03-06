@@ -1,0 +1,434 @@
+{
+  "name" : "uaci",
+  "application" : "ua",
+  "description" : "LETT OF GUARNT RISK TYPE INQUIRY",
+  "inputRecordName" : "uarmg30",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uarmg307" : {
+      "name" : "uarmg307",
+      "transactionName" : "uaci",
+      "description" : "OUTP FRMT SUBHEAD-2 TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "uarmg30" : {
+      "name" : "uarmg30",
+      "transactionName" : "uaci",
+      "description" : "LET. OF GUAR PER RISK TYPE ENQ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "client" : {
+          "name" : "client",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "estadt3" : {
+          "name" : "estadt3",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "RISK TYPE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "group" : {
+          "name" : "group",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "GROUP",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg305" : {
+      "name" : "uarmg305",
+      "transactionName" : "uaci",
+      "description" : "OUTPT FRM TOTSUM LINE TR-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "totsum" : {
+          "name" : "totsum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TOTSUM CUST BALANCES",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg306" : {
+      "name" : "uarmg306",
+      "transactionName" : "uaci",
+      "description" : "OUT FRMT DETAIL-2 OF TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "moneda" : {
+          "name" : "moneda",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CURRENCY CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contrno" : {
+          "name" : "contrno",
+          "index" : 3,
+          "offset" : 46,
+          "literal" : "CONTRNO NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feforma" : {
+          "name" : "feforma",
+          "index" : 4,
+          "offset" : 59,
+          "literal" : "FEFORMA DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "saldo" : {
+          "name" : "saldo",
+          "index" : 5,
+          "offset" : 72,
+          "literal" : "BALANCE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lcybal" : {
+          "name" : "lcybal",
+          "index" : 6,
+          "offset" : 95,
+          "literal" : "LOCAL CURNCY BALANCE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg303" : {
+      "name" : "uarmg303",
+      "transactionName" : "uaci",
+      "description" : "OUTPT FRMT DETAIL OF TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "moneda" : {
+          "name" : "moneda",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CURRENCY CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "count" : {
+          "name" : "count",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "NUMBER OF ITEMS",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "saldo" : {
+          "name" : "saldo",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "BALANCE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lcybal" : {
+          "name" : "lcybal",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "LOCAL CURNCY BALANCE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg304" : {
+      "name" : "uarmg304",
+      "transactionName" : "uaci",
+      "description" : "OUTPT FRMT SUM LINE TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "sumamt" : {
+          "name" : "sumamt",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SUM OF BAL AMOUNTS",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg301" : {
+      "name" : "uarmg301",
+      "transactionName" : "uaci",
+      "description" : "OUTP FRMT SUBHEAD-1 TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "rcatdsc" : {
+          "name" : "rcatdsc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "RISK CATEGORY DESCRP",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rtypdsc" : {
+          "name" : "rtypdsc",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "RISK TYPE DESCRIPTIO",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg302" : {
+      "name" : "uarmg302",
+      "transactionName" : "uaci",
+      "description" : "OUT FRMT SUBHEAD-3 TRNS-UACI",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "uarmg300" : {
+      "name" : "uarmg300",
+      "transactionName" : "uaci",
+      "description" : "OUTP FORMAT HEADER TRANS(UACI)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "foper" : {
+          "name" : "foper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INQUIRY DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "hora" : {
+          "name" : "hora",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "INQUIRY TIME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cliente" : {
+          "name" : "cliente",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "CLIENT",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nombre" : {
+          "name" : "nombre",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uarmg30",
+    "transactionName" : "uaci",
+    "description" : "LET. OF GUAR PER RISK TYPE ENQ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "client" : {
+        "name" : "client",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "estadt3" : {
+        "name" : "estadt3",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "RISK TYPE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "group" : {
+        "name" : "group",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "GROUP",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

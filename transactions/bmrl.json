@@ -1,0 +1,140 @@
+{
+  "name" : "bmrl",
+  "application" : "bg",
+  "description" : "TEST TRANSACTION",
+  "inputRecordName" : "bgmmrl",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmmrl" : {
+      "name" : "bgmmrl",
+      "transactionName" : "bmrl",
+      "description" : "FORMAT FOR TEST TRANSACTION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "reprind" : {
+          "name" : "reprind",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "REPRINT INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "code" : {
+          "name" : "code",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "CLIENT CODE",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 2,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "codcen2" : {
+          "name" : "codcen2",
+          "index" : 4,
+          "offset" : 37,
+          "literal" : "CENTER CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmmrl",
+    "transactionName" : "bmrl",
+    "description" : "FORMAT FOR TEST TRANSACTION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "reprind" : {
+        "name" : "reprind",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "REPRINT INDICATOR",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "code" : {
+        "name" : "code",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "CLIENT CODE",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 2,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "codcen2" : {
+        "name" : "codcen2",
+        "index" : 4,
+        "offset" : 37,
+        "literal" : "CENTER CODE",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

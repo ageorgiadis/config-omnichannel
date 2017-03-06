@@ -1,0 +1,58 @@
+{
+  "name" : "qg35",
+  "application" : "qg",
+  "description" : "ALTA DE TERMINAL PARA TOTALES",
+  "inputRecordName" : "qgrmalt",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmalt" : {
+      "name" : "qgrmalt",
+      "transactionName" : "qg35",
+      "description" : "ALTA DE TOT. PARA UN TERMINAL",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "termin" : {
+          "name" : "termin",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : -62,
+          "usage" : "Optional",
+          "debug" : false,
+          "lit4700" : "010",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmalt",
+    "transactionName" : "qg35",
+    "description" : "ALTA DE TOT. PARA UN TERMINAL",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "termin" : {
+        "name" : "termin",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TERMINAL",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : -62,
+        "usage" : "Optional",
+        "debug" : false,
+        "lit4700" : "010",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

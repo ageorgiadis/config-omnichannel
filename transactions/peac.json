@@ -1,0 +1,112 @@
+{
+  "name" : "peac",
+  "application" : "pe",
+  "description" : "RETURN MAIL",
+  "inputRecordName" : "pencrmac",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pencrmac" : {
+      "name" : "pencrmac",
+      "transactionName" : "peac",
+      "description" : "RETURN MAIL",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "custcd" : {
+          "name" : "custcd",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "domic" : {
+          "name" : "domic",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "A/A MAIL ADDRESS",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pencrmac",
+    "transactionName" : "peac",
+    "description" : "RETURN MAIL",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "custcd" : {
+        "name" : "custcd",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "domic" : {
+        "name" : "domic",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "A/A MAIL ADDRESS",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "hs00",
+  "application" : "ha",
+  "description" : "Γ Ε Ν Ι Κ Η     Λ Ο Γ Ι Σ Τ Ι Κ Η",
+  "inputRecordName" : "harm001",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "harm001" : {
+      "name" : "harm001",
+      "transactionName" : "hs00",
+      "description" : "CONTABILIZACION Y ALTA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PLAZO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "harm001",
+    "transactionName" : "hs00",
+    "description" : "CONTABILIZACION Y ALTA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PLAZO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name" : "peuh",
+  "application" : "pe",
+  "description" : "CHECK UNIQUE HOLDER",
+  "inputRecordName" : "pemuh00",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemuh00" : {
+      "name" : "pemuh00",
+      "transactionName" : "peuh",
+      "description" : "SIGNATURE RECEIPT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "accfrom" : {
+          "name" : "accfrom",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FROM ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "accto" : {
+          "name" : "accto",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "TO ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 3,
+          "offset" : 62,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemuh00",
+    "transactionName" : "peuh",
+    "description" : "SIGNATURE RECEIPT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "accfrom" : {
+        "name" : "accfrom",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FROM ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "accto" : {
+        "name" : "accto",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "TO ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cif" : {
+        "name" : "cif",
+        "index" : 3,
+        "offset" : 62,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

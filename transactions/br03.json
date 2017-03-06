@@ -1,0 +1,121 @@
+{
+  "name" : "br03",
+  "application" : "bg",
+  "description" : "TRANSACTIONS FIELDS",
+  "inputRecordName" : "bgmr03",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmr03" : {
+      "name" : "bgmr03",
+      "transactionName" : "br03",
+      "description" : "TRANSACTIONS FIELDS (INP)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "transid" : {
+          "name" : "transid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TRANSACTION ID",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmr031" : {
+      "name" : "bgmr031",
+      "transactionName" : "br03",
+      "description" : "TRANSACTIONS FIELDS (OUT)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "showtit" : {
+          "name" : "showtit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SHOW TITLES",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "FIELD DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "offset" : {
+          "name" : "offset",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "FIELD OFFSET",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "length" : {
+          "name" : "length",
+          "index" : 4,
+          "offset" : 38,
+          "literal" : "FIELD SIZE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmr03",
+    "transactionName" : "br03",
+    "description" : "TRANSACTIONS FIELDS (INP)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "transid" : {
+        "name" : "transid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TRANSACTION ID",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name" : "b754",
+  "application" : "ba",
+  "description" : "INPUT CORRESP ACCOUNT",
+  "inputRecordName" : "barm754",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "barm754" : {
+      "name" : "barm754",
+      "transactionName" : "b754",
+      "description" : "FORMAT FOR CORRESP ACCOUNT",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "bcurren" : {
+          "name" : "bcurren",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CURRENCY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "btyperm" : {
+          "name" : "btyperm",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "TYPE OF REMITTANCE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "bcoracc" : {
+          "name" : "bcoracc",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "CORRESP. ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "barm754",
+    "transactionName" : "b754",
+    "description" : "FORMAT FOR CORRESP ACCOUNT",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "bcurren" : {
+        "name" : "bcurren",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CURRENCY",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "btyperm" : {
+        "name" : "btyperm",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "TYPE OF REMITTANCE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "bcoracc" : {
+        "name" : "bcoracc",
+        "index" : 3,
+        "offset" : 28,
+        "literal" : "CORRESP. ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

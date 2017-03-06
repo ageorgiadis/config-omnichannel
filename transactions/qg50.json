@@ -1,0 +1,56 @@
+{
+  "name" : "qg50",
+  "application" : "qg",
+  "description" : "LOGOFF OF SESSION OF TERMINAL",
+  "inputRecordName" : "qgrmend",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmend" : {
+      "name" : "qgrmend",
+      "transactionName" : "qg50",
+      "description" : "END TERMINAL SESSION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "termid" : {
+          "name" : "termid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TERMINAL ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmend",
+    "transactionName" : "qg50",
+    "description" : "END TERMINAL SESSION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "termid" : {
+        "name" : "termid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TERMINAL ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

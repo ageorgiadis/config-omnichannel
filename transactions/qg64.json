@@ -1,0 +1,194 @@
+{
+  "name" : "qg64",
+  "application" : "qg",
+  "description" : "CONSULTA DATOS ULTIMA OPERACION",
+  "inputRecordName" : "qgrmult",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmult1" : {
+      "name" : "qgrmult1",
+      "transactionName" : "qg64",
+      "description" : "CABECERA SALIDA ULT.OPERACION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "tranult" : {
+          "name" : "tranult",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TRANSACCION ULTIMA",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : -62,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmult" : {
+      "name" : "qgrmult",
+      "transactionName" : "qg64",
+      "description" : "DATOS DE ULTIMA OPERACION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "papel" : {
+          "name" : "papel",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PAPEL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR6CYES",
+          "lit4700" : "01F",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "termin" : {
+          "name" : "termin",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : -61,
+          "usage" : "Optional",
+          "debug" : false,
+          "lit4700" : "010",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmult2" : {
+      "name" : "qgrmult2",
+      "transactionName" : "qg64",
+      "description" : "LINEA DETALLE ULT.OPERACION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "campo" : {
+          "name" : "campo",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NOMBRE DE CAMPO",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : -62,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lit3270" : {
+          "name" : "lit3270",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "LITERAL DE CAMPO",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : -60,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contenc" : {
+          "name" : "contenc",
+          "index" : 3,
+          "offset" : 49,
+          "literal" : "CAMPO CORTO",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : -58,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contenl" : {
+          "name" : "contenl",
+          "index" : 4,
+          "offset" : 69,
+          "literal" : "CAMPO LONG. LARGA",
+          "type" : "Alphanumeric",
+          "length" : 51,
+          "scale" : 0,
+          "delimiter" : -61,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmult5" : {
+      "name" : "qgrmult5",
+      "transactionName" : "qg64",
+      "description" : "MENSAJE AVISO DE CONVIVENCIA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "qgrmult4" : {
+      "name" : "qgrmult4",
+      "transactionName" : "qg64",
+      "description" : "CABECERA SALIDA ULT.OPERACION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmult",
+    "transactionName" : "qg64",
+    "description" : "DATOS DE ULTIMA OPERACION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "papel" : {
+        "name" : "papel",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PAPEL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR6CYES",
+        "lit4700" : "01F",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "termin" : {
+        "name" : "termin",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "TERMINAL",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : -61,
+        "usage" : "Optional",
+        "debug" : false,
+        "lit4700" : "010",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "mc85",
+  "application" : "mc",
+  "description" : "INQUIRY FOR SUBBIN AND SYSTEM ALERT",
+  "inputRecordName" : "mcrm850",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm850" : {
+      "name" : "mcrm850",
+      "transactionName" : "mc85",
+      "description" : "SUBBIN SEARCH",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "bin" : {
+          "name" : "bin",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CARD BIN",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sum" : {
+          "name" : "sum",
+          "index" : 2,
+          "offset" : 25,
+          "literal" : "AVAILABLE CARDS",
+          "type" : "Numeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm850",
+    "transactionName" : "mc85",
+    "description" : "SUBBIN SEARCH",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "bin" : {
+        "name" : "bin",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CARD BIN",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "sum" : {
+        "name" : "sum",
+        "index" : 2,
+        "offset" : 25,
+        "literal" : "AVAILABLE CARDS",
+        "type" : "Numeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

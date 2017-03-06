@@ -1,0 +1,168 @@
+{
+  "name" : "ha1g",
+  "application" : "ha",
+  "description" : "MY TRANSACTION",
+  "inputRecordName" : "ham01g",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ham01g" : {
+      "name" : "ham01g",
+      "transactionName" : "ha1g",
+      "description" : "ACCOUNTING ENTRIES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "mydate" : {
+          "name" : "mydate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNTING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 24,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "els1" : {
+          "name" : "els1",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "1ST ELS  NUMBER",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -124,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "els2" : {
+          "name" : "els2",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "2ST ELS  NUMBER",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -125,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "els3" : {
+          "name" : "els3",
+          "index" : 4,
+          "offset" : 39,
+          "literal" : "3ST ELS  NUMBER",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -126,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "els4" : {
+          "name" : "els4",
+          "index" : 5,
+          "offset" : 44,
+          "literal" : "4ST ELS  NUMBER",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -127,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ham01g",
+    "transactionName" : "ha1g",
+    "description" : "ACCOUNTING ENTRIES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "mydate" : {
+        "name" : "mydate",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNTING DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 24,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "els1" : {
+        "name" : "els1",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "1ST ELS  NUMBER",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -124,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "els2" : {
+        "name" : "els2",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "2ST ELS  NUMBER",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -125,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "els3" : {
+        "name" : "els3",
+        "index" : 4,
+        "offset" : 39,
+        "literal" : "3ST ELS  NUMBER",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -126,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "els4" : {
+        "name" : "els4",
+        "index" : 5,
+        "offset" : 44,
+        "literal" : "4ST ELS  NUMBER",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -127,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

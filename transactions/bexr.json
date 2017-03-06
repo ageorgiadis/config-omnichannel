@@ -1,0 +1,112 @@
+{
+  "name" : "bexr",
+  "application" : "bg",
+  "description" : "ΑΝΑΚΤΗΣΗ ΔΕΔΟΜΕΝΩΝ ΔΑΝΕΙΟΥ",
+  "inputRecordName" : "bgrmexr0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgrmexr0" : {
+      "name" : "bgrmexr0",
+      "transactionName" : "bexr",
+      "description" : "ΑΝΑΚΤΗΣΗ ΔΕΔΟΜΕΝΩΝ ΔΑΝΕΙΟΥ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "exloan" : {
+          "name" : "exloan",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOAN NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "exeddie" : {
+          "name" : "exeddie",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "EDDIE KEY",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "extempe" : {
+          "name" : "extempe",
+          "index" : 3,
+          "offset" : 82,
+          "literal" : "KEY TEMPE",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgrmexr0",
+    "transactionName" : "bexr",
+    "description" : "ΑΝΑΚΤΗΣΗ ΔΕΔΟΜΕΝΩΝ ΔΑΝΕΙΟΥ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "exloan" : {
+        "name" : "exloan",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOAN NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "exeddie" : {
+        "name" : "exeddie",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "EDDIE KEY",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "extempe" : {
+        "name" : "extempe",
+        "index" : 3,
+        "offset" : 82,
+        "literal" : "KEY TEMPE",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "u860",
+  "application" : "ua",
+  "description" : "ΕΚΤ/ΣΗ ΜΕ ΜΕΤ/ΕΣ ΣΤ/ΩΝ Ε/Ε",
+  "inputRecordName" : "uamu860",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uamu860" : {
+      "name" : "uamu860",
+      "transactionName" : "u860",
+      "description" : "FORMAT OF U860 TRANS.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "feoper" : {
+          "name" : "feoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FEOPER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entiope" : {
+          "name" : "entiope",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "ENTIOPE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uamu860",
+    "transactionName" : "u860",
+    "description" : "FORMAT OF U860 TRANS.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "feoper" : {
+        "name" : "feoper",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FEOPER",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "entiope" : {
+        "name" : "entiope",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "ENTIOPE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "name" : "pebr",
+  "application" : "pe",
+  "description" : "LIVE BANKING",
+  "inputRecordName" : "pemibr",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemibr" : {
+      "name" : "pemibr",
+      "transactionName" : "pebr",
+      "description" : "INPUT FORMAT FOR LIVE BANKING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "pemibr0" : {
+      "name" : "pemibr0",
+      "transactionName" : "pebr",
+      "description" : "OUPUT FORMAT FOR PEBR",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "branch" : {
+          "name" : "branch",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemibr",
+    "transactionName" : "pebr",
+    "description" : "INPUT FORMAT FOR LIVE BANKING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "type" : {
+        "name" : "type",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

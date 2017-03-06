@@ -1,0 +1,339 @@
+{
+  "name" : "s172",
+  "application" : "sp",
+  "description" : "HISTORICAL LIST OF LINKED BRANCHES",
+  "inputRecordName" : "sprm172",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm172" : {
+      "name" : "sprm172",
+      "transactionName" : "s172",
+      "description" : "INPUT FOR SP2CS172",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUB PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm172d" : {
+      "name" : "sprm172d",
+      "transactionName" : "s172",
+      "description" : "LIST BRANCHES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "branch" : {
+          "name" : "branch",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "brnchde" : {
+          "name" : "brnchde",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "BRAND DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 3,
+          "offset" : 66,
+          "literal" : "START DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "enddt" : {
+          "name" : "enddt",
+          "index" : 4,
+          "offset" : 79,
+          "literal" : "END DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 5,
+          "offset" : 92,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "seqno" : {
+          "name" : "seqno",
+          "index" : 6,
+          "offset" : 104,
+          "literal" : "SEQUENCE NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm172e" : {
+      "name" : "sprm172e",
+      "transactionName" : "s172",
+      "description" : "LIST BRANCHES (INCLUDED)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm172a" : {
+      "name" : "sprm172a",
+      "transactionName" : "s172",
+      "description" : "OUTPUT COPY HEADER DATA1",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "time" : {
+          "name" : "time",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "TIME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm172b" : {
+      "name" : "sprm172b",
+      "transactionName" : "s172",
+      "description" : "LIST BRANCH DESCRIPTION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm172c" : {
+      "name" : "sprm172c",
+      "transactionName" : "s172",
+      "description" : "LIST BRANCHES (EXCLUDED)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprm172",
+    "transactionName" : "s172",
+    "description" : "INPUT FOR SP2CS172",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCTO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subpro" : {
+        "name" : "subpro",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUB PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

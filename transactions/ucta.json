@@ -1,0 +1,116 @@
+{
+  "name" : "ucta",
+  "application" : "uc",
+  "description" : "FINANCED REAL ESTATE",
+  "inputRecordName" : "ucrmtac",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ucrmtac" : {
+      "name" : "ucrmtac",
+      "transactionName" : "ucta",
+      "description" : "FINACED REAL ESTATE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOAN ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : -92,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "estcde" : {
+          "name" : "estcde",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "REAL ESTATE CODE",
+          "type" : "Numeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CACN",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "edaseq" : {
+          "name" : "edaseq",
+          "index" : 3,
+          "offset" : 48,
+          "literal" : "SQUENCE",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 18,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CACN",
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ucrmtac",
+    "transactionName" : "ucta",
+    "description" : "FINACED REAL ESTATE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOAN ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : -92,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "estcde" : {
+        "name" : "estcde",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "REAL ESTATE CODE",
+        "type" : "Numeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CACN",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "edaseq" : {
+        "name" : "edaseq",
+        "index" : 3,
+        "offset" : 48,
+        "literal" : "SQUENCE",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 18,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CACN",
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

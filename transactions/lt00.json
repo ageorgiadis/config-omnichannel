@@ -1,0 +1,163 @@
+{
+  "name" : "lt00",
+  "application" : "lt",
+  "description" : "OPERATION NUMBER ASSIGNMENT",
+  "inputRecordName" : "ltrm000",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ltrm000" : {
+      "name" : "ltrm000",
+      "transactionName" : "lt00",
+      "description" : "OPERATION NUMBER ASSIGNMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "tipoper" : {
+          "name" : "tipoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPERATION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entitat" : {
+          "name" : "entitat",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "ΤΡΑΠΕΖΑ",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ltrms00" : {
+      "name" : "ltrms00",
+      "transactionName" : "lt00",
+      "description" : "ΑΡΙΘΜΟΣ ΕΓΓΡΑΦΗΣ ΟΘΟΝΗΣ ΕΞΟΔΟΥ",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entitat" : {
+          "name" : "entitat",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΤΡΑΠΕΖΑ",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centre" : {
+          "name" : "centre",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ΚΕΝΤΡΟ ΕΓΓΡΑΦΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digit1" : {
+          "name" : "digit1",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "ΨΗΦΙΟ ΕΛΕΓΧΟΥ 1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digit2" : {
+          "name" : "digit2",
+          "index" : 4,
+          "offset" : 34,
+          "literal" : "ΨΗΦΙΟ ΕΛΕΓΧΟΥ 2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "compte" : {
+          "name" : "compte",
+          "index" : 5,
+          "offset" : 38,
+          "literal" : "ΑΡΙΘΜΟΣ ΛΟΓ/ΣΜΟΥ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ltrm000",
+    "transactionName" : "lt00",
+    "description" : "OPERATION NUMBER ASSIGNMENT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "tipoper" : {
+        "name" : "tipoper",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPERATION TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "entitat" : {
+        "name" : "entitat",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "ΤΡΑΠΕΖΑ",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

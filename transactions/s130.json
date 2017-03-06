@@ -1,0 +1,168 @@
+{
+  "name" : "s130",
+  "application" : "sp",
+  "description" : "MAINT/NCE OF LINKED SUBPRODS EXCEPT",
+  "inputRecordName" : "sprms130",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprms130" : {
+      "name" : "sprms130",
+      "transactionName" : "s130",
+      "description" : "INPUT FORMAT OF S130",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "applpro" : {
+          "name" : "applpro",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "APPL-PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "appsbpr" : {
+          "name" : "appsbpr",
+          "index" : 4,
+          "offset" : 33,
+          "literal" : "APPL-SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 5,
+          "offset" : 40,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms130",
+    "transactionName" : "s130",
+    "description" : "INPUT FORMAT OF S130",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCTO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "subpro" : {
+        "name" : "subpro",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRO",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "applpro" : {
+        "name" : "applpro",
+        "index" : 3,
+        "offset" : 28,
+        "literal" : "APPL-PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "appsbpr" : {
+        "name" : "appsbpr",
+        "index" : 4,
+        "offset" : 33,
+        "literal" : "APPL-SUBPRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 5,
+        "offset" : 40,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

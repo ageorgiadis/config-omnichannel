@@ -1,0 +1,168 @@
+{
+  "name" : "bsp0",
+  "application" : "bg",
+  "description" : "SPY LIST ACCORDING TO BRANCH OR CIF",
+  "inputRecordName" : "bgmspy0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmspy0" : {
+      "name" : "bgmspy0",
+      "transactionName" : "bsp0",
+      "description" : "BG2CSPY0 INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "appnum" : {
+          "name" : "appnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SEQUENCE NUM.",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "REG. BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lvlapp" : {
+          "name" : "lvlapp",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "LEVEL OF APPROVAL",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 4,
+          "offset" : 41,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "region" : {
+          "name" : "region",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "REGION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmspy0",
+    "transactionName" : "bsp0",
+    "description" : "BG2CSPY0 INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "appnum" : {
+        "name" : "appnum",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "SEQUENCE NUM.",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "REG. BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "lvlapp" : {
+        "name" : "lvlapp",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "LEVEL OF APPROVAL",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cif" : {
+        "name" : "cif",
+        "index" : 4,
+        "offset" : 41,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "region" : {
+        "name" : "region",
+        "index" : 5,
+        "offset" : 52,
+        "literal" : "REGION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

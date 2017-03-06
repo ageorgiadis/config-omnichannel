@@ -1,0 +1,84 @@
+{
+  "name" : "bcer",
+  "application" : "bg",
+  "description" : "WEB CERTIFICATES MAIN. REGISTRATION",
+  "inputRecordName" : "bgmcer",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmcer" : {
+      "name" : "bgmcer",
+      "transactionName" : "bcer",
+      "description" : "WEB CERTIFICATES MAINT.REGIS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "numcl" : {
+          "name" : "numcl",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "certif" : {
+          "name" : "certif",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CERTICATE TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmcer",
+    "transactionName" : "bcer",
+    "description" : "WEB CERTIFICATES MAINT.REGIS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "numcl" : {
+        "name" : "numcl",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "certif" : {
+        "name" : "certif",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CERTICATE TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

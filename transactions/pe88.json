@@ -1,0 +1,84 @@
+{
+  "name" : "pe88",
+  "application" : "pe",
+  "description" : "CHANGES IN PB CUST. AT CURRENT DATE",
+  "inputRecordName" : "pem088",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem088" : {
+      "name" : "pem088",
+      "transactionName" : "pe88",
+      "description" : "CHANGES IN PB CUSTOM. (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "moddate" : {
+          "name" : "moddate",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "INSMODDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem088",
+    "transactionName" : "pe88",
+    "description" : "CHANGES IN PB CUSTOM. (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "moddate" : {
+        "name" : "moddate",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "INSMODDATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

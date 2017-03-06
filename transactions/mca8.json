@@ -1,0 +1,168 @@
+{
+  "name" : "mca8",
+  "application" : "mc",
+  "description" : "LONG PERIOD PENDING INSTALLMENTS",
+  "inputRecordName" : "mcrma80",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrma80" : {
+      "name" : "mcrma80",
+      "transactionName" : "mca8",
+      "description" : "LONG PERIOD PENDING INST PRG",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ioption" : {
+          "name" : "ioption",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "insdate" : {
+          "name" : "insdate",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "INSDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cardnum" : {
+          "name" : "cardnum",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "CARDNO",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "inqtype" : {
+          "name" : "inqtype",
+          "index" : 4,
+          "offset" : 55,
+          "literal" : "INQUIRY TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nautor" : {
+          "name" : "nautor",
+          "index" : 5,
+          "offset" : 59,
+          "literal" : "AUTHORIZATION NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrma80",
+    "transactionName" : "mca8",
+    "description" : "LONG PERIOD PENDING INST PRG",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ioption" : {
+        "name" : "ioption",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "insdate" : {
+        "name" : "insdate",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "INSDATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cardnum" : {
+        "name" : "cardnum",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "CARDNO",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "inqtype" : {
+        "name" : "inqtype",
+        "index" : 4,
+        "offset" : 55,
+        "literal" : "INQUIRY TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "nautor" : {
+        "name" : "nautor",
+        "index" : 5,
+        "offset" : 59,
+        "literal" : "AUTHORIZATION NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

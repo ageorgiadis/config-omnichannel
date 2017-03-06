@@ -1,0 +1,84 @@
+{
+  "name" : "peep",
+  "application" : "pe",
+  "description" : "PRODS CONNECTED TO MOBMAIL",
+  "inputRecordName" : "pemep0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemep0" : {
+      "name" : "pemep0",
+      "transactionName" : "peep",
+      "description" : "INPUT FORMAT OF PEEP",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "mobmail" : {
+          "name" : "mobmail",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MOBMAIL DATA",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "service" : {
+          "name" : "service",
+          "index" : 2,
+          "offset" : 59,
+          "literal" : "SERVICE TYPE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemep0",
+    "transactionName" : "peep",
+    "description" : "INPUT FORMAT OF PEEP",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "mobmail" : {
+        "name" : "mobmail",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MOBMAIL DATA",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "service" : {
+        "name" : "service",
+        "index" : 2,
+        "offset" : 59,
+        "literal" : "SERVICE TYPE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

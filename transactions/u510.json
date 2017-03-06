@@ -1,0 +1,511 @@
+{
+  "name" : "u510",
+  "application" : "ug",
+  "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ ΔΑΝΕΙΟΥ",
+  "inputRecordName" : "ugrmg510",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmg517" : {
+      "name" : "ugrmg517",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (CLIENTE)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "custype" : {
+          "name" : "custype",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER TYPE",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cusname" : {
+          "name" : "cusname",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 70,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ind1" : {
+          "name" : "ind1",
+          "index" : 3,
+          "offset" : 107,
+          "literal" : "IND1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ind2" : {
+          "name" : "ind2",
+          "index" : 4,
+          "offset" : 111,
+          "literal" : "IND2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "liter1" : {
+          "name" : "liter1",
+          "index" : 5,
+          "offset" : 115,
+          "literal" : "LITER1",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg516" : {
+      "name" : "ugrmg516",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (CLB-DT)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "purdesc" : {
+          "name" : "purdesc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PURPOSE DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "applnum" : {
+          "name" : "applnum",
+          "index" : 2,
+          "offset" : 79,
+          "literal" : "APPL NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "liter1" : {
+          "name" : "liter1",
+          "index" : 3,
+          "offset" : 97,
+          "literal" : "LITERAL 1",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ektamnt" : {
+          "name" : "ektamnt",
+          "index" : 4,
+          "offset" : 116,
+          "literal" : "POSO EKTAMIEYSHS",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 5,
+          "offset" : 137,
+          "literal" : "CLOSING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "spvname" : {
+          "name" : "spvname",
+          "index" : 6,
+          "offset" : 150,
+          "literal" : "SPVNAME",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ind1" : {
+          "name" : "ind1",
+          "index" : 7,
+          "offset" : 183,
+          "literal" : "INDICATOR 1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ind2" : {
+          "name" : "ind2",
+          "index" : 8,
+          "offset" : 187,
+          "literal" : "INDICATOR 2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg511" : {
+      "name" : "ugrmg511",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (OUTPUT)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "feoper" : {
+          "name" : "feoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FEOPER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "entidad" : {
+          "name" : "entidad",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "ENTIDAD",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "CENTRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "purdesc" : {
+          "name" : "purdesc",
+          "index" : 5,
+          "offset" : 56,
+          "literal" : "PURPOSE DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg510" : {
+      "name" : "ugrmg510",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg515" : {
+      "name" : "ugrmg515",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (CLB-HD)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "feoper" : {
+          "name" : "feoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FEOPER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "liter1" : {
+          "name" : "liter1",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "LITER1",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "feforma" : {
+          "name" : "feforma",
+          "index" : 3,
+          "offset" : 46,
+          "literal" : "FEFORMA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg514" : {
+      "name" : "ugrmg514",
+      "transactionName" : "u510",
+      "description" : "UGDTGRP SECUENCIA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg513" : {
+      "name" : "ugrmg513",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (OUTPUT)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "applnum" : {
+          "name" : "applnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPL NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg512" : {
+      "name" : "ugrmg512",
+      "transactionName" : "u510",
+      "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (OUTPUT)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "custype" : {
+          "name" : "custype",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER TYPE",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cusname" : {
+          "name" : "cusname",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 70,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmg510",
+    "transactionName" : "u510",
+    "description" : "ΕΠΙΣΤΟΛΗ ΕΞΟΦΛΗΣΗΣ (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTIOFI",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

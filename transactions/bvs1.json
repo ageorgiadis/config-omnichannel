@@ -1,0 +1,56 @@
+{
+  "name" : "bvs1",
+  "application" : "bg",
+  "description" : "CREATE PA LIST FOR A CORP TABLE",
+  "inputRecordName" : "bgmbvs1",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmbvs1" : {
+      "name" : "bgmbvs1",
+      "transactionName" : "bvs1",
+      "description" : "INPUT FORMAT FOR BVS1",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "table" : {
+          "name" : "table",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CORPORATE TABLE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmbvs1",
+    "transactionName" : "bvs1",
+    "description" : "INPUT FORMAT FOR BVS1",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "table" : {
+        "name" : "table",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CORPORATE TABLE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

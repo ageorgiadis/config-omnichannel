@@ -1,0 +1,168 @@
+{
+  "name" : "tc24",
+  "application" : "tc",
+  "description" : "MANTENIMIENTO CALENDARIO LOCAL",
+  "inputRecordName" : "tcm024",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcm024" : {
+      "name" : "tcm024",
+      "transactionName" : "tc24",
+      "description" : "TCM024",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "fhfesti" : {
+          "name" : "fhfesti",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DAYOFFDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nbfhfes" : {
+          "name" : "nbfhfes",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DAYOFFDATENAM",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "stcdpin" : {
+          "name" : "stcdpin",
+          "index" : 3,
+          "offset" : 62,
+          "literal" : "STPINCD",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tccidlo" : {
+          "name" : "tccidlo",
+          "index" : 4,
+          "offset" : 71,
+          "literal" : "LOCITCT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "stnbpob" : {
+          "name" : "stnbpob",
+          "index" : 5,
+          "offset" : 75,
+          "literal" : "LOCNAMST",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcm024",
+    "transactionName" : "tc24",
+    "description" : "TCM024",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "fhfesti" : {
+        "name" : "fhfesti",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DAYOFFDATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "nbfhfes" : {
+        "name" : "nbfhfes",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "DAYOFFDATENAM",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "stcdpin" : {
+        "name" : "stcdpin",
+        "index" : 3,
+        "offset" : 62,
+        "literal" : "STPINCD",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "tccidlo" : {
+        "name" : "tccidlo",
+        "index" : 4,
+        "offset" : 71,
+        "literal" : "LOCITCT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "stnbpob" : {
+        "name" : "stnbpob",
+        "index" : 5,
+        "offset" : 75,
+        "literal" : "LOCNAMST",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 7,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

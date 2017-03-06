@@ -1,0 +1,144 @@
+{
+  "name" : "b910",
+  "application" : "bg",
+  "description" : "DEBIT PENDING COMMISSIONS FOR SDB",
+  "inputRecordName" : "bgm910",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm910" : {
+      "name" : "bgm910",
+      "transactionName" : "b910",
+      "description" : "DEBIT PENDING COMMISS.FOR SDB",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "accdate" : {
+          "name" : "accdate",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "OPERATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "seqnum" : {
+          "name" : "seqnum",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "SEQUENCE NUMBER",
+          "type" : "Numeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 15,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 4,
+          "offset" : 66,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm910",
+    "transactionName" : "b910",
+    "description" : "DEBIT PENDING COMMISS.FOR SDB",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "accdate" : {
+        "name" : "accdate",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "OPERATION DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 8,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "seqnum" : {
+        "name" : "seqnum",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "SEQUENCE NUMBER",
+        "type" : "Numeric",
+        "length" : 13,
+        "scale" : 0,
+        "delimiter" : 15,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 4,
+        "offset" : 66,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "name" : "pe57",
+  "application" : "pe",
+  "description" : "ΟΡΙΣΜΟΣ   GROUP ΟΜΟΙΩΝ ΠΕΛΑΤΩΝ",
+  "inputRecordName" : "penc0570",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "penc0570" : {
+      "name" : "penc0570",
+      "transactionName" : "pe57",
+      "description" : "PENC0570",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "groupcd" : {
+          "name" : "groupcd",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "groupds" : {
+          "name" : "groupds",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUP DESC",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 3,
+          "offset" : 80,
+          "literal" : "GROUP BRANCH (CATEG)",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "gstatus" : {
+          "name" : "gstatus",
+          "index" : 4,
+          "offset" : 87,
+          "literal" : "GROUP STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "penc0570",
+    "transactionName" : "pe57",
+    "description" : "PENC0570",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "groupcd" : {
+        "name" : "groupcd",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "groupds" : {
+        "name" : "groupds",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "GROUP DESC",
+        "type" : "Alphanumeric",
+        "length" : 50,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 3,
+        "offset" : 80,
+        "literal" : "GROUP BRANCH (CATEG)",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "gstatus" : {
+        "name" : "gstatus",
+        "index" : 4,
+        "offset" : 87,
+        "literal" : "GROUP STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

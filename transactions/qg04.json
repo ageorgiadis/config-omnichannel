@@ -1,0 +1,168 @@
+{
+  "name" : "qg04",
+  "application" : "qg",
+  "description" : "FIXING REQUESTS INQUIRY",
+  "inputRecordName" : "qgrm040",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrm040" : {
+      "name" : "qgrm040",
+      "transactionName" : "qg04",
+      "description" : "FIXING REQUEST INQUIRY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "branch" : {
+          "name" : "branch",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "termid" : {
+          "name" : "termid",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "TERMINAL CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "cur" : {
+          "name" : "cur",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "CURRENCY CODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "listing" : {
+          "name" : "listing",
+          "index" : 4,
+          "offset" : 36,
+          "literal" : "LISTING / TOTALS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "qday" : {
+          "name" : "qday",
+          "index" : 5,
+          "offset" : 40,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrm040",
+    "transactionName" : "qg04",
+    "description" : "FIXING REQUEST INQUIRY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "branch" : {
+        "name" : "branch",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BRANCH CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "termid" : {
+        "name" : "termid",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "TERMINAL CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "cur" : {
+        "name" : "cur",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "CURRENCY CODE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "listing" : {
+        "name" : "listing",
+        "index" : 4,
+        "offset" : 36,
+        "literal" : "LISTING / TOTALS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "qday" : {
+        "name" : "qday",
+        "index" : 5,
+        "offset" : 40,
+        "literal" : "DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

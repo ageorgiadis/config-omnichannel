@@ -1,0 +1,279 @@
+{
+  "name" : "me94",
+  "application" : "mc",
+  "description" : "PIN MAILER BRANCH CANCELATION",
+  "inputRecordName" : "merm940",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm372" : {
+      "name" : "merm372",
+      "transactionName" : "me94",
+      "description" : "DELIVERY CONFIRMATION FORM",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ntarje" : {
+          "name" : "ntarje",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMERO TARJETA",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "merm373" : {
+      "name" : "merm373",
+      "transactionName" : "me94",
+      "description" : "DELIVERY CONFIRMATION FORM",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "tjtotal" : {
+          "name" : "tjtotal",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TOTAL TARJETAS",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "merm941" : {
+      "name" : "merm941",
+      "transactionName" : "me94",
+      "description" : "PINMAILERS CANCELATION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "page" : {
+          "name" : "page",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PAGE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "termina" : {
+          "name" : "termina",
+          "index" : 4,
+          "offset" : 44,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nofico" : {
+          "name" : "nofico",
+          "index" : 5,
+          "offset" : 51,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "shipmen" : {
+          "name" : "shipmen",
+          "index" : 6,
+          "offset" : 58,
+          "literal" : "SHIPMENTE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "literal" : {
+          "name" : "literal",
+          "index" : 7,
+          "offset" : 69,
+          "literal" : "LITERAL",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "headert" : {
+          "name" : "headert",
+          "index" : 8,
+          "offset" : 97,
+          "literal" : "HEAD LITERAL",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "merm940" : {
+      "name" : "merm940",
+      "transactionName" : "me94",
+      "description" : "PIN MAILER BRANCH CANCELATION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cantyp" : {
+          "name" : "cantyp",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CANCELATION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nofico" : {
+          "name" : "nofico",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "BRANCH CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "sernum" : {
+          "name" : "sernum",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "SERIAL NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm940",
+    "transactionName" : "me94",
+    "description" : "PIN MAILER BRANCH CANCELATION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cantyp" : {
+        "name" : "cantyp",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CANCELATION TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "nofico" : {
+        "name" : "nofico",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "BRANCH CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "sernum" : {
+        "name" : "sernum",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "SERIAL NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

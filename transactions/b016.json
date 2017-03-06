@@ -1,0 +1,270 @@
+{
+  "name" : "b016",
+  "application" : "bg",
+  "description" : "ΔΙΑΧΕΙΡΙΣΗ ΣΥΜΒΑΣΕΩΝ ΜΙΣΘΟΔΟΣΙΑΣ",
+  "inputRecordName" : "bgm016",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm016" : {
+      "name" : "bgm016",
+      "transactionName" : "b016",
+      "description" : "ΔΙΑΧ/ΣΗ ΣΥΜΒΑΣΕΩΝ ΜΙΣΘΟΔΟΣΙΑΣ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "contrac" : {
+          "name" : "contrac",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONTRACT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cid" : {
+          "name" : "cid",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "center" : {
+          "name" : "center",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "CENTER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cat" : {
+          "name" : "cat",
+          "index" : 4,
+          "offset" : 57,
+          "literal" : "CATEGORY",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm0161" : {
+      "name" : "bgm0161",
+      "transactionName" : "b016",
+      "description" : "ΔΙΑΧ.ΣΥΜΒΑΣ.ΜΙΣΘ.HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entity" : {
+          "name" : "entity",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entper" : {
+          "name" : "entper",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ENTPER",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm0162" : {
+      "name" : "bgm0162",
+      "transactionName" : "b016",
+      "description" : "ΔΙΑΧ.ΣΥΜΒΑΣ.ΜΙΣΘΟΔΟΣΙΑΣ DETAIL",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cid" : {
+          "name" : "cid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "ΠΕΡΙΓΡΑΦΗ",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contr" : {
+          "name" : "contr",
+          "index" : 3,
+          "offset" : 55,
+          "literal" : "CONTR",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cat" : {
+          "name" : "cat",
+          "index" : 4,
+          "offset" : 81,
+          "literal" : "CAT",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "center" : {
+          "name" : "center",
+          "index" : 5,
+          "offset" : 88,
+          "literal" : "CENTER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 6,
+          "offset" : 95,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm016",
+    "transactionName" : "b016",
+    "description" : "ΔΙΑΧ/ΣΗ ΣΥΜΒΑΣΕΩΝ ΜΙΣΘΟΔΟΣΙΑΣ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "contrac" : {
+        "name" : "contrac",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CONTRACT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cid" : {
+        "name" : "cid",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "center" : {
+        "name" : "center",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "CENTER",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cat" : {
+        "name" : "cat",
+        "index" : 4,
+        "offset" : 57,
+        "literal" : "CATEGORY",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

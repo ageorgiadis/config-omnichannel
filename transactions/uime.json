@@ -1,0 +1,84 @@
+{
+  "name" : "uime",
+  "application" : "ui",
+  "description" : "CREATE REAL ESTATE PROPERTIES",
+  "inputRecordName" : "uirmmei",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uirmmei" : {
+      "name" : "uirmmei",
+      "transactionName" : "uime",
+      "description" : "ALICO INTERFACE PRENOTATED",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "busdesc" : {
+          "name" : "busdesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "BUSINESS UNIT DESCRI",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uirmmei",
+    "transactionName" : "uime",
+    "description" : "ALICO INTERFACE PRENOTATED",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "busunit" : {
+        "name" : "busunit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BUSINESS UNIT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 10,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "busdesc" : {
+        "name" : "busdesc",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "BUSINESS UNIT DESCRI",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

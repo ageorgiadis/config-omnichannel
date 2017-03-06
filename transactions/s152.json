@@ -1,0 +1,292 @@
+{
+  "name" : "s152",
+  "application" : "sp",
+  "description" : "HIST. OF PRODUCT SUBSCRIPTION DATA",
+  "inputRecordName" : "sprms152",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm152a" : {
+      "name" : "sprm152a",
+      "transactionName" : "s152",
+      "description" : "OUTPUT HEADER OF S152",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm152b" : {
+      "name" : "sprm152b",
+      "transactionName" : "s152",
+      "description" : "OUTPUT LINES OF S152",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "collseq" : {
+          "name" : "collseq",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "COLLECTION SEQUENCE",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "period" : {
+          "name" : "period",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "PERIODICITY",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dur" : {
+          "name" : "dur",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "DURATION",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "colltyp" : {
+          "name" : "colltyp",
+          "index" : 5,
+          "offset" : 68,
+          "literal" : "COLLECT.TYPE-DENDAYS",
+          "type" : "Alphanumeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cngdate" : {
+          "name" : "cngdate",
+          "index" : 6,
+          "offset" : 84,
+          "literal" : "CHANGE DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sequenc" : {
+          "name" : "sequenc",
+          "index" : 7,
+          "offset" : 97,
+          "literal" : "SEQUENCE",
+          "type" : "Numeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 8,
+          "offset" : 105,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprms152" : {
+      "name" : "sprms152",
+      "transactionName" : "s152",
+      "description" : "INPUT FORMAT OF S152",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm152c" : {
+      "name" : "sprm152c",
+      "transactionName" : "s152",
+      "description" : "OUTPUT HEADER OF S152",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "EXECUTION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "time" : {
+          "name" : "time",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "EXECUTION TIME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "SUBPRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms152",
+    "transactionName" : "s152",
+    "description" : "INPUT FORMAT OF S152",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCTO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "subpro" : {
+        "name" : "subpro",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRO",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

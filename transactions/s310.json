@@ -1,0 +1,93 @@
+{
+  "name" : "s310",
+  "application" : "sp",
+  "description" : "DISPLAY OF SP BILL GROUP INFO",
+  "inputRecordName" : "sprms310",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm310a" : {
+      "name" : "sprm310a",
+      "transactionName" : "s310",
+      "description" : "OUTPUT FOR S310",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "acccntr" : {
+          "name" : "acccntr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNTING CENTER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ragroup" : {
+          "name" : "ragroup",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "RA BILLING GROUP",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprms310" : {
+      "name" : "sprms310",
+      "transactionName" : "s310",
+      "description" : "INPUT FORMAT OF S310",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms310",
+    "transactionName" : "s310",
+    "description" : "INPUT FORMAT OF S310",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

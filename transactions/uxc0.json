@@ -1,0 +1,140 @@
+{
+  "name" : "uxc0",
+  "application" : "ug",
+  "description" : "MAINTENANCE OF UGDTCHR",
+  "inputRecordName" : "ugmxc0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugmxc0" : {
+      "name" : "ugmxc0",
+      "transactionName" : "uxc0",
+      "description" : "INPUT FORMAT OF UXC0",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ACCOUNT NO",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "exccode" : {
+          "name" : "exccode",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "EXCEPTION CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descode" : {
+          "name" : "descode",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "DESCRIPTION CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugmxc0",
+    "transactionName" : "uxc0",
+    "description" : "INPUT FORMAT OF UXC0",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ACCOUNT NO",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "exccode" : {
+        "name" : "exccode",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "EXCEPTION CODE",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "descode" : {
+        "name" : "descode",
+        "index" : 4,
+        "offset" : 49,
+        "literal" : "DESCRIPTION CODE",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

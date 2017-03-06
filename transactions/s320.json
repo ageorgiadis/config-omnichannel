@@ -1,0 +1,242 @@
+{
+  "name" : "s320",
+  "application" : "sp",
+  "description" : "CONTRACT FOR FREE TRANSACTIONS",
+  "inputRecordName" : "spms320",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm230g" : {
+      "name" : "sprm230g",
+      "transactionName" : "s320",
+      "description" : "FINAL BODY OF FREE RA CONTRACT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "branch" : {
+          "name" : "branch",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "braname" : {
+          "name" : "braname",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "BRANCH NAME",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 3,
+          "offset" : 56,
+          "literal" : "SYSTEM DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm230l" : {
+      "name" : "sprm230l",
+      "transactionName" : "s320",
+      "description" : "FINAL BODY OF FREE RA CONTRACT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "amount" : {
+          "name" : "amount",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "spms320" : {
+      "name" : "spms320",
+      "transactionName" : "s320",
+      "description" : "INPUT FORMAT OF S320",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "channel" : {
+          "name" : "channel",
+          "index" : 4,
+          "offset" : 51,
+          "literal" : "CHANNEL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 5,
+          "offset" : 55,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "spms320",
+    "transactionName" : "s320",
+    "description" : "INPUT FORMAT OF S320",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 3,
+        "offset" : 38,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "channel" : {
+        "name" : "channel",
+        "index" : 4,
+        "offset" : 51,
+        "literal" : "CHANNEL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 5,
+        "offset" : 55,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

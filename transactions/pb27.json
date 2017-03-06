@@ -1,0 +1,26 @@
+{
+  "name" : "pb27",
+  "application" : "pb",
+  "description" : "UPDATE STATUS ON PNM",
+  "inputRecordName" : "pbm027",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pbm027" : {
+      "name" : "pbm027",
+      "transactionName" : "pb27",
+      "description" : "XXXXXXXXXXXXXXXXXXXXX",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pbm027",
+    "transactionName" : "pb27",
+    "description" : "XXXXXXXXXXXXXXXXXXXXX",
+    "type" : "Output",
+    "source" : "FDF",
+    "fields" : { }
+  }
+}

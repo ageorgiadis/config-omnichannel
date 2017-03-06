@@ -1,0 +1,177 @@
+{
+  "name" : "lmi1",
+  "application" : "lm",
+  "description" : "ΕΜΦΑΝΙΣΗ ACCOUNT OFFICERS",
+  "inputRecordName" : "lmmi1i",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lmmi101" : {
+      "name" : "lmmi101",
+      "transactionName" : "lmi1",
+      "description" : "LMI1 TRANS OUTPUT FORMAT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cidcode" : {
+          "name" : "cidcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "cidname" : {
+          "name" : "cidname",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "bccode" : {
+          "name" : "bccode",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "BUSINESS CENTER CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "bcname" : {
+          "name" : "bcname",
+          "index" : 4,
+          "offset" : 77,
+          "literal" : "BUSINESS CENTER NAME",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "aocode" : {
+          "name" : "aocode",
+          "index" : 5,
+          "offset" : 100,
+          "literal" : "ACCOUNT OFFICER CODE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "aoname" : {
+          "name" : "aoname",
+          "index" : 6,
+          "offset" : 109,
+          "literal" : "ACCOUNT OFFICER NAME",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    },
+    "lmmi1i" : {
+      "name" : "lmmi1i",
+      "transactionName" : "lmi1",
+      "description" : "SHOW AO / BC INFORMATION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PROCESS OPTION",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "cid" : {
+          "name" : "cid",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lmmi1i",
+    "transactionName" : "lmi1",
+    "description" : "SHOW AO / BC INFORMATION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PROCESS OPTION",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "cid" : {
+        "name" : "cid",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

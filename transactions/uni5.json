@@ -1,0 +1,112 @@
+{
+  "name" : "uni5",
+  "application" : "ug",
+  "description" : "CARDS MAINTENANCE",
+  "inputRecordName" : "umrmun5",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "umrmun5" : {
+      "name" : "umrmun5",
+      "transactionName" : "uni5",
+      "description" : "CONSULT TABLE OF PARAMETER",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardno" : {
+          "name" : "cardno",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "umrmun5",
+    "transactionName" : "uni5",
+    "description" : "CONSULT TABLE OF PARAMETER",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardno" : {
+        "name" : "cardno",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

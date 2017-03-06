@@ -1,0 +1,26 @@
+{
+  "name" : "qg37",
+  "application" : "qg",
+  "description" : "CAMBIO DE SESION DE UN TERMINAL",
+  "inputRecordName" : "qcrmnul",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qcrmnul" : {
+      "name" : "qcrmnul",
+      "transactionName" : "qg37",
+      "description" : "COPY SIN CAMPOS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qcrmnul",
+    "transactionName" : "qg37",
+    "description" : "COPY SIN CAMPOS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : { }
+  }
+}

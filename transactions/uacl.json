@@ -1,0 +1,56 @@
+{
+  "name" : "uacl",
+  "application" : "ug",
+  "description" : "UPDATE OF THE LM APPLICATION AREA",
+  "inputRecordName" : "uagcl01",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uagcl01" : {
+      "name" : "uagcl01",
+      "transactionName" : "uacl",
+      "description" : "INPUT FOR UA2CGCL0",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNTING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uagcl01",
+    "transactionName" : "uacl",
+    "description" : "INPUT FOR UA2CGCL0",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "date" : {
+        "name" : "date",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNTING DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

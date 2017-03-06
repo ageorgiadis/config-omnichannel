@@ -1,0 +1,112 @@
+{
+  "name" : "b156",
+  "application" : "bg",
+  "description" : "HISTORIC DATA OF INTERST",
+  "inputRecordName" : "bgm156",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm156" : {
+      "name" : "bgm156",
+      "transactionName" : "b156",
+      "description" : "HISTORIC DATA OF INSTEREST",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dtfrom" : {
+          "name" : "dtfrom",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "DATE_FROM",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dtto" : {
+          "name" : "dtto",
+          "index" : 3,
+          "offset" : 52,
+          "literal" : "DATE_TO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm156",
+    "transactionName" : "b156",
+    "description" : "HISTORIC DATA OF INSTEREST",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dtfrom" : {
+        "name" : "dtfrom",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "DATE_FROM",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dtto" : {
+        "name" : "dtto",
+        "index" : 3,
+        "offset" : 52,
+        "literal" : "DATE_TO",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

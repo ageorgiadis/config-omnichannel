@@ -1,0 +1,140 @@
+{
+  "name" : "mk93",
+  "application" : "mc",
+  "description" : "COUNT OF CARDS - WITHHELD",
+  "inputRecordName" : "mkrm930",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mkrm930" : {
+      "name" : "mkrm930",
+      "transactionName" : "mk93",
+      "description" : "COUNT OF CARDS THT IS WITHHELD",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "usrsel" : {
+          "name" : "usrsel",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΕΠΙΛΟΓΗ ΧΡΗΣΤΗ",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "binta" : {
+          "name" : "binta",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "BIN NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "datefrm" : {
+          "name" : "datefrm",
+          "index" : 3,
+          "offset" : 29,
+          "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΑΠΟ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 4,
+          "offset" : 42,
+          "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΕΩΣ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mkrm930",
+    "transactionName" : "mk93",
+    "description" : "COUNT OF CARDS THT IS WITHHELD",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "usrsel" : {
+        "name" : "usrsel",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ΕΠΙΛΟΓΗ ΧΡΗΣΤΗ",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "binta" : {
+        "name" : "binta",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "BIN NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "datefrm" : {
+        "name" : "datefrm",
+        "index" : 3,
+        "offset" : 29,
+        "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΑΠΟ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 4,
+        "offset" : 42,
+        "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΕΩΣ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

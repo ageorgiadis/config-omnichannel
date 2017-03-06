@@ -1,0 +1,143 @@
+{
+  "name" : "s103",
+  "application" : "sp",
+  "description" : "SP SUBPRODUCTS DISPLAY",
+  "inputRecordName" : "sprms103",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm103a" : {
+      "name" : "sprm103a",
+      "transactionName" : "s103",
+      "description" : "OUTPUT LINES OF S103",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 3,
+          "offset" : 66,
+          "literal" : "START DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "enddt" : {
+          "name" : "enddt",
+          "index" : 4,
+          "offset" : 79,
+          "literal" : "END DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "commiss" : {
+          "name" : "commiss",
+          "index" : 5,
+          "offset" : 92,
+          "literal" : "PRODUCT COMMISSION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm103b" : {
+      "name" : "sprm103b",
+      "transactionName" : "s103",
+      "description" : "HEADER FOR PRODUCTS DISPLAY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprms103" : {
+      "name" : "sprms103",
+      "transactionName" : "s103",
+      "description" : "INPUT FORMAT OF S103",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms103",
+    "transactionName" : "s103",
+    "description" : "INPUT FORMAT OF S103",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCTO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

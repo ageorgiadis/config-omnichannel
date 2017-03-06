@@ -1,0 +1,112 @@
+{
+  "name" : "me33",
+  "application" : "me",
+  "description" : "CARDS STOCK MENU",
+  "inputRecordName" : "merm330",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm330" : {
+      "name" : "merm330",
+      "transactionName" : "me33",
+      "description" : "MENU PRINCIPAL",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPCION",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardtyp" : {
+          "name" : "cardtyp",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "CARDTYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm330",
+    "transactionName" : "me33",
+    "description" : "MENU PRINCIPAL",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPCION",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardtyp" : {
+        "name" : "cardtyp",
+        "index" : 3,
+        "offset" : 28,
+        "literal" : "CARDTYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

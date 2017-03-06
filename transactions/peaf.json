@@ -1,0 +1,168 @@
+{
+  "name" : "peaf",
+  "application" : "pe",
+  "description" : "ΔΙΑΧΕΙΡΙΣΗ RMS AFFLUENT ΠΕΛΑΤΩΝ",
+  "inputRecordName" : "pem0af",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem0af" : {
+      "name" : "pem0af",
+      "transactionName" : "peaf",
+      "description" : "CIP ADDITIONAL DATA (INP)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rm01" : {
+          "name" : "rm01",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "RELAT. MANAGER 01",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rm02" : {
+          "name" : "rm02",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "RELAT. MANAGER 02",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 5,
+          "offset" : 56,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 19,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem0af",
+    "transactionName" : "peaf",
+    "description" : "CIP ADDITIONAL DATA (INP)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rm01" : {
+        "name" : "rm01",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "RELAT. MANAGER 01",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rm02" : {
+        "name" : "rm02",
+        "index" : 4,
+        "offset" : 45,
+        "literal" : "RELAT. MANAGER 02",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 5,
+        "offset" : 56,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 19,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

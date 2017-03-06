@@ -1,0 +1,56 @@
+{
+  "name" : "t808",
+  "application" : "tc",
+  "description" : "MANAGEMENT ON LINE BLOTTER",
+  "inputRecordName" : "tcrm808",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcrm808" : {
+      "name" : "tcrm808",
+      "transactionName" : "t808",
+      "description" : "JOB SUBMIT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION CODE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcrm808",
+    "transactionName" : "t808",
+    "description" : "JOB SUBMIT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION CODE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

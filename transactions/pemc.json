@@ -1,0 +1,144 @@
+{
+  "name" : "pemc",
+  "application" : "pe",
+  "description" : "CHECK CIF MERGE",
+  "inputRecordName" : "pemmc00",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemmc02" : {
+      "name" : "pemmc02",
+      "transactionName" : "pemc",
+      "description" : "CIF MERGE CHECKS DETAIL",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "result" : {
+          "name" : "result",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "RESULT",
+          "type" : "Alphanumeric",
+          "length" : 35,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rescode" : {
+          "name" : "rescode",
+          "index" : 3,
+          "offset" : 65,
+          "literal" : "RESULT CODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemmc00" : {
+      "name" : "pemmc00",
+      "transactionName" : "pemc",
+      "description" : "CIF MERGE CHECKS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemmc01" : {
+      "name" : "pemmc01",
+      "transactionName" : "pemc",
+      "description" : "CIF MERGE CHECKS HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grdesc" : {
+          "name" : "grdesc",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUP DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemmc00",
+    "transactionName" : "pemc",
+    "description" : "CIF MERGE CHECKS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "group" : {
+        "name" : "group",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

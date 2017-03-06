@@ -1,0 +1,177 @@
+{
+  "name" : "mp43",
+  "application" : "mp",
+  "description" : "SELECCION TJ LISTA NEGRA",
+  "inputRecordName" : "mprm430",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mprm43d" : {
+      "name" : "mprm43d",
+      "transactionName" : "mp43",
+      "description" : "INFORMACION 6P09 PARA T.F.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "rafaga1" : {
+          "name" : "rafaga1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "RAFAGA1",
+          "type" : "Alphanumeric",
+          "length" : 62,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rafaga2" : {
+          "name" : "rafaga2",
+          "index" : 2,
+          "offset" : 81,
+          "literal" : "RAFAGA2",
+          "type" : "Alphanumeric",
+          "length" : 62,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "mprm430" : {
+      "name" : "mprm430",
+      "transactionName" : "mp43",
+      "description" : "SOL.LICITUD DUPLICAT PIN",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ntjpa2" : {
+          "name" : "ntjpa2",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMERO DE TARJETA",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "yregp1" : {
+          "name" : "yregp1",
+          "index" : 2,
+          "offset" : 35,
+          "literal" : "REGRAB PISTA 1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "yregp2" : {
+          "name" : "yregp2",
+          "index" : 3,
+          "offset" : 39,
+          "literal" : "REGRAB PISTA 2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "yregp3" : {
+          "name" : "yregp3",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "REGRAB PISTA 3",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mprm430",
+    "transactionName" : "mp43",
+    "description" : "SOL.LICITUD DUPLICAT PIN",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ntjpa2" : {
+        "name" : "ntjpa2",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMERO DE TARJETA",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "yregp1" : {
+        "name" : "yregp1",
+        "index" : 2,
+        "offset" : 35,
+        "literal" : "REGRAB PISTA 1",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "yregp2" : {
+        "name" : "yregp2",
+        "index" : 3,
+        "offset" : 39,
+        "literal" : "REGRAB PISTA 2",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "yregp3" : {
+        "name" : "yregp3",
+        "index" : 4,
+        "offset" : 43,
+        "literal" : "REGRAB PISTA 3",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

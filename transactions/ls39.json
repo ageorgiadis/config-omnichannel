@@ -1,0 +1,168 @@
+{
+  "name" : "ls39",
+  "application" : "ls",
+  "description" : "MANAGEMENT REMOTE PRINTINGS",
+  "inputRecordName" : "lsrm390",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lsrm390" : {
+      "name" : "lsrm390",
+      "transactionName" : "ls39",
+      "description" : "MANAGEMENT REMOTE PRINTINGS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "loption" : {
+          "name" : "loption",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPERATION OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lnumbdo" : {
+          "name" : "lnumbdo",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "C.I.D. NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lcsulim" : {
+          "name" : "lcsulim",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "SUB CODE LIMIT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lcccabo" : {
+          "name" : "lcccabo",
+          "index" : 4,
+          "offset" : 55,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lyorigi" : {
+          "name" : "lyorigi",
+          "index" : 5,
+          "offset" : 78,
+          "literal" : "TYPE CENTER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lsrm390",
+    "transactionName" : "ls39",
+    "description" : "MANAGEMENT REMOTE PRINTINGS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "loption" : {
+        "name" : "loption",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPERATION OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lnumbdo" : {
+        "name" : "lnumbdo",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "C.I.D. NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lcsulim" : {
+        "name" : "lcsulim",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "SUB CODE LIMIT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lcccabo" : {
+        "name" : "lcccabo",
+        "index" : 4,
+        "offset" : 55,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lyorigi" : {
+        "name" : "lyorigi",
+        "index" : 5,
+        "offset" : 78,
+        "literal" : "TYPE CENTER",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

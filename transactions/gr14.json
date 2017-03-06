@@ -1,0 +1,112 @@
+{
+  "name" : "gr14",
+  "application" : "gr",
+  "description" : "RELATIONSHIP OF MEMBER OF GROUP",
+  "inputRecordName" : "grm014",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "grm014" : {
+      "name" : "grm014",
+      "transactionName" : "gr14",
+      "description" : "INPUT COPY GR14",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "omilos" : {
+          "name" : "omilos",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CODE OF OMILOS",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "group" : {
+          "name" : "group",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "GROUP - MEMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "grm014",
+    "transactionName" : "gr14",
+    "description" : "INPUT COPY GR14",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION CUSTOMER",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "omilos" : {
+        "name" : "omilos",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CODE OF OMILOS",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "group" : {
+        "name" : "group",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "GROUP - MEMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

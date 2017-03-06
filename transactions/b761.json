@@ -1,0 +1,163 @@
+{
+  "name" : "b761",
+  "application" : "ba",
+  "description" : "VALIDATE REMITT AT BRANCH CLOSING",
+  "inputRecordName" : "bam7610",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "barm761" : {
+      "name" : "barm761",
+      "transactionName" : "b761",
+      "description" : "FORMAT TO VALIDATE REMITTANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT.DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "bam7610" : {
+      "name" : "bam7610",
+      "transactionName" : "b761",
+      "description" : "FORMAT TO VALIDATE REMITTANCE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT.DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bam7610",
+    "transactionName" : "b761",
+    "description" : "FORMAT TO VALIDATE REMITTANCE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "date" : {
+        "name" : "date",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT.DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

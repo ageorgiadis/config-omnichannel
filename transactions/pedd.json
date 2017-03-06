@@ -1,0 +1,79 @@
+{
+  "name" : "pedd",
+  "application" : "pe",
+  "description" : "DISPLAY DATA OF PEDTEDD",
+  "inputRecordName" : "pemedd0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemedd0" : {
+      "name" : "pemedd0",
+      "transactionName" : "pedd",
+      "description" : "DISPLAY DATA OF PEDTEDD",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemedd1" : {
+      "name" : "pemedd1",
+      "transactionName" : "pedd",
+      "description" : "PEDTEDD DETAIL LINES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 99,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemedd0",
+    "transactionName" : "pedd",
+    "description" : "DISPLAY DATA OF PEDTEDD",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

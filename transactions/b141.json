@@ -1,0 +1,270 @@
+{
+  "name" : "b141",
+  "application" : "bg",
+  "description" : "APPLICATION/CONTRACT DATA",
+  "inputRecordName" : "bgm141",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm1412" : {
+      "name" : "bgm1412",
+      "transactionName" : "b141",
+      "description" : "APPL & CONTRACT DATA (DETAIL)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applnbr" : {
+          "name" : "applnbr",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "APPLIC NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 4,
+          "offset" : 46,
+          "literal" : "CONTRACT STATUS",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dtstat" : {
+          "name" : "dtstat",
+          "index" : 5,
+          "offset" : 79,
+          "literal" : "CURR STATUS DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "limauth" : {
+          "name" : "limauth",
+          "index" : 6,
+          "offset" : 92,
+          "literal" : "AUTHORIZED LIMIT",
+          "type" : "Numeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm1411" : {
+      "name" : "bgm1411",
+      "transactionName" : "b141",
+      "description" : "APPL & CONTRACT DATA (HEADER)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "name" : {
+          "name" : "name",
+          "index" : 2,
+          "offset" : 28,
+          "literal" : "CLIENT FULL NAME",
+          "type" : "Alphanumeric",
+          "length" : 98,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "segape" : {
+          "name" : "segape",
+          "index" : 3,
+          "offset" : 129,
+          "literal" : "CLIENT FATHERNAME",
+          "type" : "Alphanumeric",
+          "length" : 39,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "entity" : {
+          "name" : "entity",
+          "index" : 4,
+          "offset" : 171,
+          "literal" : "ACCOUNT ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 5,
+          "offset" : 178,
+          "literal" : "ACCOUNT BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 6,
+          "offset" : 185,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm141" : {
+      "name" : "bgm141",
+      "transactionName" : "b141",
+      "description" : "APPLICATION & CONTRACT DATA",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DEPOSIT ACC NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CONTRACT STATUS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm141",
+    "transactionName" : "b141",
+    "description" : "APPLICATION & CONTRACT DATA",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DEPOSIT ACC NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CONTRACT STATUS",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

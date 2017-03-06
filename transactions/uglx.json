@@ -1,0 +1,144 @@
+{
+  "name" : "uglx",
+  "application" : "ug",
+  "description" : "EXPIRE RENEWALS",
+  "inputRecordName" : "ugrmlhx",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmlhx" : {
+      "name" : "ugrmlhx",
+      "transactionName" : "uglx",
+      "description" : "EXPIRE RENEWALS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "datefr" : {
+          "name" : "datefr",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "insurco" : {
+          "name" : "insurco",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "INSURANCE CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmlhx",
+    "transactionName" : "uglx",
+    "description" : "EXPIRE RENEWALS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "busunit" : {
+        "name" : "busunit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BUSINESS UNIT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 10,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "datefr" : {
+        "name" : "datefr",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 8,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "insurco" : {
+        "name" : "insurco",
+        "index" : 4,
+        "offset" : 43,
+        "literal" : "INSURANCE CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 7,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

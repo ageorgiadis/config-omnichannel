@@ -1,0 +1,58 @@
+{
+  "name" : "u519",
+  "application" : "ug",
+  "description" : "ANNULMENT OF WHOLESALE LOANS",
+  "inputRecordName" : "ugm519",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugm519" : {
+      "name" : "ugm519",
+      "transactionName" : "u519",
+      "description" : "UF2CG200 INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOAN ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugm519",
+    "transactionName" : "u519",
+    "description" : "UF2CG200 INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOAN ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

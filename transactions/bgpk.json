@@ -1,0 +1,142 @@
+{
+  "name" : "bgpk",
+  "application" : "bg",
+  "description" : "PACKAGE MODIFICATION INQUIRY",
+  "inputRecordName" : "bgmpac",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmpac" : {
+      "name" : "bgmpac",
+      "transactionName" : "bgpk",
+      "description" : "INQUIRY FOR PACKAGE MODIFIC",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "accno" : {
+          "name" : "accno",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifno" : {
+          "name" : "cifno",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CIF NO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "MOD DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 4,
+          "offset" : 63,
+          "literal" : "ΚΑΤ/ΜΑ ΔΙΑΧΕΙΡΙΣΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmpac",
+    "transactionName" : "bgpk",
+    "description" : "INQUIRY FOR PACKAGE MODIFIC",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "accno" : {
+        "name" : "accno",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cifno" : {
+        "name" : "cifno",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CIF NO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "date" : {
+        "name" : "date",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "MOD DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 4,
+        "offset" : 63,
+        "literal" : "ΚΑΤ/ΜΑ ΔΙΑΧΕΙΡΙΣΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

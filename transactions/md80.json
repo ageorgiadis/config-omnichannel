@@ -1,0 +1,56 @@
+{
+  "name" : "md80",
+  "application" : "mc",
+  "description" : "MENU CONSULTAS FICHEROS CECA",
+  "inputRecordName" : "mdrm800",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mdrm800" : {
+      "name" : "mdrm800",
+      "transactionName" : "md80",
+      "description" : "MENU CONSULTES FITXERS CECA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPCION",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mdrm800",
+    "transactionName" : "md80",
+    "description" : "MENU CONSULTES FITXERS CECA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPCION",
+        "type" : "Numeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

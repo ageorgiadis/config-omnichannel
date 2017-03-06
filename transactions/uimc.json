@@ -1,0 +1,144 @@
+{
+  "name" : "uimc",
+  "application" : "ui",
+  "description" : "CREATE MATURED AND EARLY CANC.LOANS",
+  "inputRecordName" : "uirmmci",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uirmmci" : {
+      "name" : "uirmmci",
+      "transactionName" : "uimc",
+      "description" : "ALICO INTERFACE MATURED EARLY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "busdesc" : {
+          "name" : "busdesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "BUSINESS UNIT DESCRI",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "datefr" : {
+          "name" : "datefr",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uirmmci",
+    "transactionName" : "uimc",
+    "description" : "ALICO INTERFACE MATURED EARLY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "busunit" : {
+        "name" : "busunit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BUSINESS UNIT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 10,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "busdesc" : {
+        "name" : "busdesc",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "BUSINESS UNIT DESCRI",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "datefr" : {
+        "name" : "datefr",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 8,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 4,
+        "offset" : 45,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

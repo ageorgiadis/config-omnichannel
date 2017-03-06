@@ -1,0 +1,88 @@
+{
+  "name" : "u652",
+  "application" : "ug",
+  "description" : "ANULACION DE COBRO DE UN RECIBO",
+  "inputRecordName" : "ugrmg20",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmg20" : {
+      "name" : "ugrmg20",
+      "transactionName" : "u652",
+      "description" : "BILL COLLECTION ANNULMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "C.A.C.",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "lit4700" : "003",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "vencto" : {
+          "name" : "vencto",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "MATURITY DATE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "lit4700" : "164",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmg20",
+    "transactionName" : "u652",
+    "description" : "BILL COLLECTION ANNULMENT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "C.A.C.",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "lit4700" : "003",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "vencto" : {
+        "name" : "vencto",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "MATURITY DATE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "lit4700" : "164",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

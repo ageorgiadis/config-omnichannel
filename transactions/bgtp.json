@@ -1,0 +1,84 @@
+{
+  "name" : "bgtp",
+  "application" : "bg",
+  "description" : "ΜΑΖΙΚΟ ΑΝΟΙΓΜΑ INSTRUMENTAL PA",
+  "inputRecordName" : "bgmgtp",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmgtp" : {
+      "name" : "bgmgtp",
+      "transactionName" : "bgtp",
+      "description" : "ΜΑΖΙΚΟ ΑΝΟΙΓΜΑ INSTRUMENTAL PA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmgtp",
+    "transactionName" : "bgtp",
+    "description" : "ΜΑΖΙΚΟ ΑΝΟΙΓΜΑ INSTRUMENTAL PA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subprod" : {
+        "name" : "subprod",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

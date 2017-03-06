@@ -1,0 +1,168 @@
+{
+  "name" : "b624",
+  "application" : "bg",
+  "description" : "MAINTENANCE OF EXPENSES/COMMISSION",
+  "inputRecordName" : "bgm624",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm624" : {
+      "name" : "bgm624",
+      "transactionName" : "b624",
+      "description" : "INPUT FORMAT FOR TRANS B624",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "checkno" : {
+          "name" : "checkno",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CHEQUE NUMBER",
+          "type" : "Numeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 2,
+          "offset" : 28,
+          "literal" : "CCC",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sustype" : {
+          "name" : "sustype",
+          "index" : 3,
+          "offset" : 51,
+          "literal" : "SUSPENSION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "pending" : {
+          "name" : "pending",
+          "index" : 4,
+          "offset" : 55,
+          "literal" : "PENDING STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "daysusp" : {
+          "name" : "daysusp",
+          "index" : 5,
+          "offset" : 59,
+          "literal" : "DAYS SUSPENDED",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm624",
+    "transactionName" : "b624",
+    "description" : "INPUT FORMAT FOR TRANS B624",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "checkno" : {
+        "name" : "checkno",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CHEQUE NUMBER",
+        "type" : "Numeric",
+        "length" : 9,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 2,
+        "offset" : 28,
+        "literal" : "CCC",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "sustype" : {
+        "name" : "sustype",
+        "index" : 3,
+        "offset" : 51,
+        "literal" : "SUSPENSION TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "pending" : {
+        "name" : "pending",
+        "index" : 4,
+        "offset" : 55,
+        "literal" : "PENDING STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "daysusp" : {
+        "name" : "daysusp",
+        "index" : 5,
+        "offset" : 59,
+        "literal" : "DAYS SUSPENDED",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "pe60",
+  "application" : "pe",
+  "description" : "SAME CUSTOMERS - STATUS MAINTENANCE",
+  "inputRecordName" : "penc6000",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "penc6000" : {
+      "name" : "penc6000",
+      "transactionName" : "pe60",
+      "description" : "PENC6000",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "groupco" : {
+          "name" : "groupco",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "STATUS -SAME CUSTOME",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "penc6000",
+    "transactionName" : "pe60",
+    "description" : "PENC6000",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "groupco" : {
+        "name" : "groupco",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "STATUS -SAME CUSTOME",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

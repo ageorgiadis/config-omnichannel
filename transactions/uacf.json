@@ -1,0 +1,112 @@
+{
+  "name" : "uacf",
+  "application" : "ug",
+  "description" : "LISTING HOLDER'S GUARANTEE LETTERS",
+  "inputRecordName" : "uarmacf",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uarmacf" : {
+      "name" : "uarmacf",
+      "transactionName" : "uacf",
+      "description" : "LISTING HOLDERS GUARANTEE LET.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "client" : {
+          "name" : "client",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "name" : {
+          "name" : "name",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CLIENT'S NAME",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uarmacf",
+    "transactionName" : "uacf",
+    "description" : "LISTING HOLDERS GUARANTEE LET.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "client" : {
+        "name" : "client",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "name" : {
+        "name" : "name",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CLIENT'S NAME",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 3,
+        "offset" : 70,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

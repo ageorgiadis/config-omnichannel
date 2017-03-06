@@ -1,0 +1,264 @@
+{
+  "name" : "s211",
+  "application" : "sp",
+  "description" : "LISTING OG LINKED ACCOUNTS",
+  "inputRecordName" : "sprms211",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm211a" : {
+      "name" : "sprm211a",
+      "transactionName" : "s211",
+      "description" : "HEADER FOR S211",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm211c" : {
+      "name" : "sprm211c",
+      "transactionName" : "s211",
+      "description" : "DISPLAY OTHER DATA FOR S211",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "name" : {
+          "name" : "name",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cliente" : {
+          "name" : "cliente",
+          "index" : 2,
+          "offset" : 69,
+          "literal" : "CUSTOMER NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprms211" : {
+      "name" : "sprms211",
+      "transactionName" : "s211",
+      "description" : "INPUT FRM FOR LISTING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm211b" : {
+      "name" : "sprm211b",
+      "transactionName" : "s211",
+      "description" : "LINKED ACCOUNTS LIST",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "applent" : {
+          "name" : "applent",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPL ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applcue" : {
+          "name" : "applcue",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "APPL CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applpro" : {
+          "name" : "applpro",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "APPL PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applsub" : {
+          "name" : "applsub",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "APPL SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "START DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "enddt" : {
+          "name" : "enddt",
+          "index" : 6,
+          "offset" : 65,
+          "literal" : "END DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "appldig" : {
+          "name" : "appldig",
+          "index" : 7,
+          "offset" : 78,
+          "literal" : "APPL CHECK DIGITS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms211",
+    "transactionName" : "s211",
+    "description" : "INPUT FRM FOR LISTING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTIOFI",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 40,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

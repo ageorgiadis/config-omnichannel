@@ -1,0 +1,140 @@
+{
+  "name" : "bt16",
+  "application" : "bg",
+  "description" : "CALL BG2CXXXX",
+  "inputRecordName" : "bgfor16",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgfor16" : {
+      "name" : "bgfor16",
+      "transactionName" : "bt16",
+      "description" : "BT16 - TEST",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION----",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc1" : {
+          "name" : "ccc1",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CONTRACT--",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sequen1" : {
+          "name" : "sequen1",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "SEQUENSE--",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "amnny1" : {
+          "name" : "amnny1",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "AMOUNT-FG1",
+          "type" : "Numeric",
+          "length" : 15,
+          "scale" : 2,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgfor16",
+    "transactionName" : "bt16",
+    "description" : "BT16 - TEST",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION----",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc1" : {
+        "name" : "ccc1",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CONTRACT--",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "sequen1" : {
+        "name" : "sequen1",
+        "index" : 3,
+        "offset" : 42,
+        "literal" : "SEQUENSE--",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "amnny1" : {
+        "name" : "amnny1",
+        "index" : 4,
+        "offset" : 49,
+        "literal" : "AMOUNT-FG1",
+        "type" : "Numeric",
+        "length" : 15,
+        "scale" : 2,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "ha01",
+  "application" : "ha",
+  "description" : "ΕΠΙΛΟΓΕΣ ΔΙΑΧ. ΓΕΝΙΚΗΣ ΛΟΓΙΣΤΙΚΗΣ",
+  "inputRecordName" : "harm011",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "harm011" : {
+      "name" : "harm011",
+      "transactionName" : "ha01",
+      "description" : "CONTABILIZACION Y ALTA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MENU OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "harm011",
+    "transactionName" : "ha01",
+    "description" : "CONTABILIZACION Y ALTA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MENU OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

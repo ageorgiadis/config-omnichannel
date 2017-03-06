@@ -1,0 +1,168 @@
+{
+  "name" : "tc01",
+  "application" : "tc",
+  "description" : "ΜΕΝΟΥ ΔΙΑΧΕΙΡΙΣΗΣ ΠΙΝΑΚΩΝ",
+  "inputRecordName" : "tcm001",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcm001" : {
+      "name" : "tcm001",
+      "transactionName" : "tc01",
+      "description" : "TCM001",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cdtabla" : {
+          "name" : "cdtabla",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TABLE CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "stbanco" : {
+          "name" : "stbanco",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ENTITY CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "clavtg" : {
+          "name" : "clavtg",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "TABLE KEY",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tccidio" : {
+          "name" : "tccidio",
+          "index" : 4,
+          "offset" : 52,
+          "literal" : "LANGUAGE CODE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "stfunc" : {
+          "name" : "stfunc",
+          "index" : 5,
+          "offset" : 56,
+          "literal" : "FUNCTION CODE",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcm001",
+    "transactionName" : "tc01",
+    "description" : "TCM001",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cdtabla" : {
+        "name" : "cdtabla",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TABLE CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "stbanco" : {
+        "name" : "stbanco",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "ENTITY CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "clavtg" : {
+        "name" : "clavtg",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "TABLE KEY",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "tccidio" : {
+        "name" : "tccidio",
+        "index" : 4,
+        "offset" : 52,
+        "literal" : "LANGUAGE CODE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "stfunc" : {
+        "name" : "stfunc",
+        "index" : 5,
+        "offset" : 56,
+        "literal" : "FUNCTION CODE",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 7,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

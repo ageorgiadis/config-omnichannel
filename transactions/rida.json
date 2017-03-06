@@ -1,0 +1,112 @@
+{
+  "name" : "rida",
+  "application" : "ri",
+  "description" : "SEARCH BY ACCOUNT DEONTOLOGY CASES",
+  "inputRecordName" : "rimd00a",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "rimd00a" : {
+      "name" : "rimd00a",
+      "transactionName" : "rida",
+      "description" : "INPUT FORMAT OF RIDA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "rcentid" : {
+          "name" : "rcentid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rccentr" : {
+          "name" : "rccentr",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "CENTER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rnumcue" : {
+          "name" : "rnumcue",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "CONTRACT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "rimd00a",
+    "transactionName" : "rida",
+    "description" : "INPUT FORMAT OF RIDA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "rcentid" : {
+        "name" : "rcentid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTITY",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rccentr" : {
+        "name" : "rccentr",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "CENTER",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rnumcue" : {
+        "name" : "rnumcue",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "CONTRACT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

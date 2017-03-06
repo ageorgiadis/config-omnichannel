@@ -1,0 +1,84 @@
+{
+  "name" : "mcd2",
+  "application" : "mp",
+  "description" : "LIST OF CARDS",
+  "inputRecordName" : "mcrmd200",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrmd200" : {
+      "name" : "mcrmd200",
+      "transactionName" : "mcd2",
+      "description" : "LIST OF CARDS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrmd200",
+    "transactionName" : "mcd2",
+    "description" : "LIST OF CARDS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

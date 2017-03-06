@@ -1,0 +1,140 @@
+{
+  "name" : "peth",
+  "application" : "pe",
+  "description" : "CIF ACCOUNT/CONTRACT",
+  "inputRecordName" : "pemthes",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemthes" : {
+      "name" : "pemthes",
+      "transactionName" : "peth",
+      "description" : "CIF ACCOUNT/CONTRACT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "flags" : {
+          "name" : "flags",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CONTRACT FLAGS",
+          "type" : "Alphanumeric",
+          "length" : 120,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "chkcard" : {
+          "name" : "chkcard",
+          "index" : 3,
+          "offset" : 150,
+          "literal" : "CHECK CARD INDIC.",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardacc" : {
+          "name" : "cardacc",
+          "index" : 4,
+          "offset" : 154,
+          "literal" : "ACCOUNT CON. TO CARD",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemthes",
+    "transactionName" : "peth",
+    "description" : "CIF ACCOUNT/CONTRACT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "flags" : {
+        "name" : "flags",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CONTRACT FLAGS",
+        "type" : "Alphanumeric",
+        "length" : 120,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "chkcard" : {
+        "name" : "chkcard",
+        "index" : 3,
+        "offset" : 150,
+        "literal" : "CHECK CARD INDIC.",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardacc" : {
+        "name" : "cardacc",
+        "index" : 4,
+        "offset" : 154,
+        "literal" : "ACCOUNT CON. TO CARD",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

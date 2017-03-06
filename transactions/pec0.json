@@ -1,0 +1,140 @@
+{
+  "name" : "pec0",
+  "application" : "pe",
+  "description" : "CIP MAIN MENU SCREEN",
+  "inputRecordName" : "pem0c0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem0c0" : {
+      "name" : "pem0c0",
+      "transactionName" : "pec0",
+      "description" : "CIP MAIN MENU SCREEN",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CIP TYPE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "doctype" : {
+          "name" : "doctype",
+          "index" : 4,
+          "offset" : 38,
+          "literal" : "DOCUMENT TYPE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem0c0",
+    "transactionName" : "pec0",
+    "description" : "CIP MAIN MENU SCREEN",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "type" : {
+        "name" : "type",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CIP TYPE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "doctype" : {
+        "name" : "doctype",
+        "index" : 4,
+        "offset" : 38,
+        "literal" : "DOCUMENT TYPE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

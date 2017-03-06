@@ -1,0 +1,140 @@
+{
+  "name" : "ib00",
+  "application" : "ib",
+  "description" : "CUSTOMER IDENTIFICATION",
+  "inputRecordName" : "ibm000",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ibm000" : {
+      "name" : "ibm000",
+      "transactionName" : "ib00",
+      "description" : "CUSTOMER IDENTIFICATION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cardno" : {
+          "name" : "cardno",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "numcli" : {
+          "name" : "numcli",
+          "index" : 2,
+          "offset" : 35,
+          "literal" : "CUSTOMER NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "miscod" : {
+          "name" : "miscod",
+          "index" : 3,
+          "offset" : 46,
+          "literal" : "MIS CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "estatus" : {
+          "name" : "estatus",
+          "index" : 4,
+          "offset" : 51,
+          "literal" : "E-BANKING STATUS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ibm000",
+    "transactionName" : "ib00",
+    "description" : "CUSTOMER IDENTIFICATION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cardno" : {
+        "name" : "cardno",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "numcli" : {
+        "name" : "numcli",
+        "index" : 2,
+        "offset" : 35,
+        "literal" : "CUSTOMER NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "miscod" : {
+        "name" : "miscod",
+        "index" : 3,
+        "offset" : 46,
+        "literal" : "MIS CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "estatus" : {
+        "name" : "estatus",
+        "index" : 4,
+        "offset" : 51,
+        "literal" : "E-BANKING STATUS",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

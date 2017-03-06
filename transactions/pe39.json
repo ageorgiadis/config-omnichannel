@@ -1,0 +1,56 @@
+{
+  "name" : "pe39",
+  "application" : "pe",
+  "description" : "ΠΗΓΗ ΠΡΟΕΛΕΥΣΗΣ ΜΕΤΑΒΟΛΗΣ",
+  "inputRecordName" : "pem390",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem390" : {
+      "name" : "pem390",
+      "transactionName" : "pe39",
+      "description" : "ΠΗΓΗ ΠΡΟΕΛΕΥΣΗΣ ΜΕΤΑΒΟΛΗΣ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "transid" : {
+          "name" : "transid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TRANSACTION ID",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem390",
+    "transactionName" : "pe39",
+    "description" : "ΠΗΓΗ ΠΡΟΕΛΕΥΣΗΣ ΜΕΤΑΒΟΛΗΣ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "transid" : {
+        "name" : "transid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TRANSACTION ID",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

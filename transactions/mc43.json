@@ -1,0 +1,168 @@
+{
+  "name" : "mc43",
+  "application" : "mc",
+  "description" : "STATEMENTS INFORMATION",
+  "inputRecordName" : "mcrm043",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm043" : {
+      "name" : "mcrm043",
+      "transactionName" : "mc43",
+      "description" : "STATEMENT INFORMATION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "totacc" : {
+          "name" : "totacc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TOTAL ACCOUNTS",
+          "type" : "Numeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "totstt" : {
+          "name" : "totstt",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "TOTAL STATEMENTS",
+          "type" : "Numeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "totbal" : {
+          "name" : "totbal",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "TOTAL BALANCES",
+          "type" : "NumericSigned",
+          "length" : 15,
+          "scale" : 2,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "totcrl" : {
+          "name" : "totcrl",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "TOTAL CREDIT LIMIT",
+          "type" : "NumericSigned",
+          "length" : 15,
+          "scale" : 2,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "totspl" : {
+          "name" : "totspl",
+          "index" : 5,
+          "offset" : 72,
+          "literal" : "TOTAL SPENDING LIMIT",
+          "type" : "NumericSigned",
+          "length" : 15,
+          "scale" : 2,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm043",
+    "transactionName" : "mc43",
+    "description" : "STATEMENT INFORMATION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "totacc" : {
+        "name" : "totacc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TOTAL ACCOUNTS",
+        "type" : "Numeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "totstt" : {
+        "name" : "totstt",
+        "index" : 2,
+        "offset" : 26,
+        "literal" : "TOTAL STATEMENTS",
+        "type" : "Numeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "totbal" : {
+        "name" : "totbal",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "TOTAL BALANCES",
+        "type" : "NumericSigned",
+        "length" : 15,
+        "scale" : 2,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "totcrl" : {
+        "name" : "totcrl",
+        "index" : 4,
+        "offset" : 54,
+        "literal" : "TOTAL CREDIT LIMIT",
+        "type" : "NumericSigned",
+        "length" : 15,
+        "scale" : 2,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "totspl" : {
+        "name" : "totspl",
+        "index" : 5,
+        "offset" : 72,
+        "literal" : "TOTAL SPENDING LIMIT",
+        "type" : "NumericSigned",
+        "length" : 15,
+        "scale" : 2,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

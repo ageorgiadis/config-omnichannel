@@ -1,0 +1,112 @@
+{
+  "name" : "basp",
+  "application" : "bg",
+  "description" : "CANCELLATION OF SPY OR SPY REQUEST",
+  "inputRecordName" : "bgmcasp",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmcasp" : {
+      "name" : "bgmcasp",
+      "transactionName" : "basp",
+      "description" : "BG2CCASP INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SPY OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applnum" : {
+          "name" : "applnum",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "APPLICATION NUMBER",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "CLIENT'S CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmcasp",
+    "transactionName" : "basp",
+    "description" : "BG2CCASP INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "SPY OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "applnum" : {
+        "name" : "applnum",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "APPLICATION NUMBER",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cif" : {
+        "name" : "cif",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "CLIENT'S CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "name" : "ha82",
+  "application" : "ha",
+  "description" : "ACCOUNTING ENTRIES",
+  "inputRecordName" : "ham082",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ham082" : {
+      "name" : "ham082",
+      "transactionName" : "ha82",
+      "description" : "ACCOUNTING ENTRIES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "empresa" : {
+          "name" : "empresa",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "COMPANY CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fecon" : {
+          "name" : "fecon",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ACCOUNTING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contrac" : {
+          "name" : "contrac",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "CONTRACT OF CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ceorige" : {
+          "name" : "ceorige",
+          "index" : 4,
+          "offset" : 57,
+          "literal" : "OPERATION CENTER",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ham082",
+    "transactionName" : "ha82",
+    "description" : "ACCOUNTING ENTRIES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "empresa" : {
+        "name" : "empresa",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "COMPANY CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "fecon" : {
+        "name" : "fecon",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "ACCOUNTING DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "contrac" : {
+        "name" : "contrac",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "CONTRACT OF CUSTOMER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ceorige" : {
+        "name" : "ceorige",
+        "index" : 4,
+        "offset" : 57,
+        "literal" : "OPERATION CENTER",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

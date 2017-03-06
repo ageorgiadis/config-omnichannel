@@ -1,0 +1,205 @@
+{
+  "name" : "b190",
+  "application" : "bg",
+  "description" : "REGISTER OD CONTRACT BLOCKAGE",
+  "inputRecordName" : "bgm190",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm190" : {
+      "name" : "bgm190",
+      "transactionName" : "b190",
+      "description" : "REGISTERING BLOCKAGE INPUT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cntract" : {
+          "name" : "cntract",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CONTRACT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "block" : {
+          "name" : "block",
+          "index" : 3,
+          "offset" : 56,
+          "literal" : "BLOCKAGE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "BLOCKAGE DESC",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgrm1900" : {
+      "name" : "bgrm1900",
+      "transactionName" : "b190",
+      "description" : "REGISTERING BLOCKAGE INPUT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cntract" : {
+          "name" : "cntract",
+          "index" : 2,
+          "offset" : 37,
+          "literal" : "CONTRACT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "block" : {
+          "name" : "block",
+          "index" : 3,
+          "offset" : 54,
+          "literal" : "BLOCKAGE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 4,
+          "offset" : 59,
+          "literal" : "BLOCKAGE DESC",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm190",
+    "transactionName" : "b190",
+    "description" : "REGISTERING BLOCKAGE INPUT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cntract" : {
+        "name" : "cntract",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CONTRACT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 14,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "block" : {
+        "name" : "block",
+        "index" : 3,
+        "offset" : 56,
+        "literal" : "BLOCKAGE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "desc" : {
+        "name" : "desc",
+        "index" : 4,
+        "offset" : 62,
+        "literal" : "BLOCKAGE DESC",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

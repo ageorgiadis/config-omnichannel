@@ -1,0 +1,135 @@
+{
+  "name" : "mf21",
+  "application" : "mf",
+  "description" : "CONSULTA DE UN MERCHANT POR NOMBRE",
+  "inputRecordName" : "mfrm210",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mfrm210" : {
+      "name" : "mfrm210",
+      "transactionName" : "mf21",
+      "description" : "CONSULTA DE UN MERCHANT",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mcmsubd" : {
+          "name" : "mcmsubd",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MERCHANT NAME",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "active" : {
+          "name" : "active",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "ACTIVE MERCHANTS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "inact" : {
+          "name" : "inact",
+          "index" : 3,
+          "offset" : 43,
+          "literal" : "INACTIVE MERCHANTS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "mfrm21l" : {
+      "name" : "mfrm21l",
+      "transactionName" : "mf21",
+      "description" : "CONSULTA DE UN MERCHANT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "linea" : {
+          "name" : "linea",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINEA",
+          "type" : "Alphanumeric",
+          "length" : 75,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mfrm210",
+    "transactionName" : "mf21",
+    "description" : "CONSULTA DE UN MERCHANT",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "mcmsubd" : {
+        "name" : "mcmsubd",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MERCHANT NAME",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "active" : {
+        "name" : "active",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "ACTIVE MERCHANTS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "inact" : {
+        "name" : "inact",
+        "index" : 3,
+        "offset" : 43,
+        "literal" : "INACTIVE MERCHANTS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

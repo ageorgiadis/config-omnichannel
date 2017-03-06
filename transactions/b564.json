@@ -1,0 +1,140 @@
+{
+  "name" : "b564",
+  "application" : "bg",
+  "description" : "ΛΙΣΤΕΣ ΠΑΓΙΩΝ ΕΝΤΟΛΩΝ",
+  "inputRecordName" : "bgm5640",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm5640" : {
+      "name" : "bgm5640",
+      "transactionName" : "b564",
+      "description" : "ΛΙΣΤΕΣ ΠΑΓΙΩΝ ΕΝΤΟΛΩΝ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "categso" : {
+          "name" : "categso",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ΚΑΤΗΓΟΡΙΑ ΠΑΓΙΑΣ",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "codeso" : {
+          "name" : "codeso",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "ΚΩΔΙΚΟΣ ΠΑΓΙΑΣ",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "chnlso" : {
+          "name" : "chnlso",
+          "index" : 4,
+          "offset" : 33,
+          "literal" : "ΚΑΝΑΛΙ",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm5640",
+    "transactionName" : "b564",
+    "description" : "ΛΙΣΤΕΣ ΠΑΓΙΩΝ ΕΝΤΟΛΩΝ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "categso" : {
+        "name" : "categso",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ΚΑΤΗΓΟΡΙΑ ΠΑΓΙΑΣ",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "codeso" : {
+        "name" : "codeso",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "ΚΩΔΙΚΟΣ ΠΑΓΙΑΣ",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "chnlso" : {
+        "name" : "chnlso",
+        "index" : 4,
+        "offset" : 33,
+        "literal" : "ΚΑΝΑΛΙ",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

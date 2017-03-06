@@ -1,0 +1,168 @@
+{
+  "name" : "me53",
+  "application" : "mc",
+  "description" : "MESSAGES NETWORKS",
+  "inputRecordName" : "merm530",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm530" : {
+      "name" : "merm530",
+      "transactionName" : "me53",
+      "description" : "MESSAGES NETWORKS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "newcopy" : {
+          "name" : "newcopy",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NEWCOPY",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "redemis" : {
+          "name" : "redemis",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "REDEMIS",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "literal" : {
+          "name" : "literal",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "LITERAL",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "desprin" : {
+          "name" : "desprin",
+          "index" : 4,
+          "offset" : 40,
+          "literal" : "DESPRIN",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "desalte" : {
+          "name" : "desalte",
+          "index" : 5,
+          "offset" : 47,
+          "literal" : "DESALTE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm530",
+    "transactionName" : "me53",
+    "description" : "MESSAGES NETWORKS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "newcopy" : {
+        "name" : "newcopy",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NEWCOPY",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "redemis" : {
+        "name" : "redemis",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "REDEMIS",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "literal" : {
+        "name" : "literal",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "LITERAL",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "desprin" : {
+        "name" : "desprin",
+        "index" : 4,
+        "offset" : 40,
+        "literal" : "DESPRIN",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "desalte" : {
+        "name" : "desalte",
+        "index" : 5,
+        "offset" : 47,
+        "literal" : "DESALTE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

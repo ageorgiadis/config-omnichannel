@@ -1,0 +1,321 @@
+{
+  "name" : "qgms",
+  "application" : "qg",
+  "description" : "ENVIO DE MENSAJES AL TERMINAL",
+  "inputRecordName" : "qgrmsen",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmsen" : {
+      "name" : "qgrmsen",
+      "transactionName" : "qgms",
+      "description" : "ENVIO DE MENSAJES DESDE TERM.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "format1" : {
+          "name" : "format1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FORMATO 1",
+          "type" : "Alphanumeric",
+          "length" : 120,
+          "scale" : 0,
+          "delimiter" : -27,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "format2" : {
+          "name" : "format2",
+          "index" : 2,
+          "offset" : 139,
+          "literal" : "FORMATO 2",
+          "type" : "Alphanumeric",
+          "length" : 120,
+          "scale" : 0,
+          "delimiter" : -21,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "format3" : {
+          "name" : "format3",
+          "index" : 3,
+          "offset" : 262,
+          "literal" : "FORMATO 3",
+          "type" : "Alphanumeric",
+          "length" : 120,
+          "scale" : 0,
+          "delimiter" : -15,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmms2" : {
+      "name" : "qgrmms2",
+      "transactionName" : "qgms",
+      "description" : "ENVIO DE MENSAJES-ENVIO A TERM",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "papel" : {
+          "name" : "papel",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PAPEL",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -62,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "texto" : {
+          "name" : "texto",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TEXTO DEL MENSAJE",
+          "type" : "Alphanumeric",
+          "length" : 120,
+          "scale" : 0,
+          "delimiter" : -43,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "notapan" : {
+          "name" : "notapan",
+          "index" : 3,
+          "offset" : 143,
+          "literal" : "NOTA DE PANTALLA",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -59,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tsorgen" : {
+          "name" : "tsorgen",
+          "index" : 4,
+          "offset" : 186,
+          "literal" : "TIMESTAMP ORIGEN",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : -60,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmg703" : {
+      "name" : "qgrmg703",
+      "transactionName" : "qgms",
+      "description" : "ENVIO DE MENSAJES DESDE TERM.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "texto1" : {
+          "name" : "texto1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TEXTO 1",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -38,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "texto2" : {
+          "name" : "texto2",
+          "index" : 2,
+          "offset" : 59,
+          "literal" : "TEXTO 2",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -37,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "texto3" : {
+          "name" : "texto3",
+          "index" : 3,
+          "offset" : 102,
+          "literal" : "TEXTO 3",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -39,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "texto4" : {
+          "name" : "texto4",
+          "index" : 4,
+          "offset" : 145,
+          "literal" : "TEXTO 4",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -40,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ind1" : {
+          "name" : "ind1",
+          "index" : 5,
+          "offset" : 188,
+          "literal" : "IND 1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -42,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ind2" : {
+          "name" : "ind2",
+          "index" : 6,
+          "offset" : 192,
+          "literal" : "IND 2",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -41,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ind3" : {
+          "name" : "ind3",
+          "index" : 7,
+          "offset" : 196,
+          "literal" : "IND 3",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -97,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ind4" : {
+          "name" : "ind4",
+          "index" : 8,
+          "offset" : 200,
+          "literal" : "IND 4",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -94,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmg702" : {
+      "name" : "qgrmg702",
+      "transactionName" : "qgms",
+      "description" : "ENVIO DE MENSAJES DESDE TERM.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "nota" : {
+          "name" : "nota",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NOTA PANTALLA",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : -38,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmsen",
+    "transactionName" : "qgms",
+    "description" : "ENVIO DE MENSAJES DESDE TERM.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "format1" : {
+        "name" : "format1",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FORMATO 1",
+        "type" : "Alphanumeric",
+        "length" : 120,
+        "scale" : 0,
+        "delimiter" : -27,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "format2" : {
+        "name" : "format2",
+        "index" : 2,
+        "offset" : 139,
+        "literal" : "FORMATO 2",
+        "type" : "Alphanumeric",
+        "length" : 120,
+        "scale" : 0,
+        "delimiter" : -21,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "format3" : {
+        "name" : "format3",
+        "index" : 3,
+        "offset" : 262,
+        "literal" : "FORMATO 3",
+        "type" : "Alphanumeric",
+        "length" : 120,
+        "scale" : 0,
+        "delimiter" : -15,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

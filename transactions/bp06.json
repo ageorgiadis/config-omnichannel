@@ -1,0 +1,84 @@
+{
+  "name" : "bp06",
+  "application" : "bg",
+  "description" : "LIST PAYROLL PAYMENT DATA",
+  "inputRecordName" : "bgmp06",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmp06" : {
+      "name" : "bgmp06",
+      "transactionName" : "bp06",
+      "description" : "INPUT - LIST PAYROLL PAYMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "serialn" : {
+          "name" : "serialn",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SERIAL NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "retcode" : {
+          "name" : "retcode",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "PAYROLL RETURN CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmp06",
+    "transactionName" : "bp06",
+    "description" : "INPUT - LIST PAYROLL PAYMENT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "serialn" : {
+        "name" : "serialn",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "SERIAL NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "retcode" : {
+        "name" : "retcode",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "PAYROLL RETURN CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

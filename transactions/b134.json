@@ -1,0 +1,228 @@
+{
+  "name" : "b134",
+  "application" : "bg",
+  "description" : "OVERDRAFT SIMULATION",
+  "inputRecordName" : "bgm134",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm134" : {
+      "name" : "bgm134",
+      "transactionName" : "b134",
+      "description" : "OVERDRAFT SIMULATION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm1342" : {
+      "name" : "bgm1342",
+      "transactionName" : "b134",
+      "description" : "OVERDRAFT SIMULATION OUTPUT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entity" : {
+          "name" : "entity",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datereg" : {
+          "name" : "datereg",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "DATEREG",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 5,
+          "offset" : 56,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 6,
+          "offset" : 61,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "camp" : {
+          "name" : "camp",
+          "index" : 7,
+          "offset" : 68,
+          "literal" : "CAMPAIGN",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tariff" : {
+          "name" : "tariff",
+          "index" : 8,
+          "offset" : 75,
+          "literal" : "TARIFF",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 9,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "brancho" : {
+          "name" : "brancho",
+          "index" : 9,
+          "offset" : 82,
+          "literal" : "BRANCHO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 10,
+          "offset" : 89,
+          "literal" : "USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 11,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm1341" : {
+      "name" : "bgm1341",
+      "transactionName" : "b134",
+      "description" : "OVERDRAFT SIMULATION HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm134",
+    "transactionName" : "b134",
+    "description" : "OVERDRAFT SIMULATION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

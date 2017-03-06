@@ -1,0 +1,56 @@
+{
+  "name" : "binh",
+  "application" : "bg",
+  "description" : "TEST TRASACTION",
+  "inputRecordName" : "bgminh",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgminh" : {
+      "name" : "bgminh",
+      "transactionName" : "binh",
+      "description" : "FORMAT FOR TEST TRANSACTION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "center" : {
+          "name" : "center",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CENTER US",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgminh",
+    "transactionName" : "binh",
+    "description" : "FORMAT FOR TEST TRANSACTION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "center" : {
+        "name" : "center",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CENTER US",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

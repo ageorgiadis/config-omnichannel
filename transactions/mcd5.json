@@ -1,0 +1,140 @@
+{
+  "name" : "mcd5",
+  "application" : "mp",
+  "description" : "LIGHT E-BANKING",
+  "inputRecordName" : "mcrmd500",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrmd500" : {
+      "name" : "mcrmd500",
+      "transactionName" : "mcd5",
+      "description" : "LIGHT E-BANKING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "card" : {
+          "name" : "card",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CARD",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "cvv" : {
+          "name" : "cvv",
+          "index" : 3,
+          "offset" : 39,
+          "literal" : "CVV",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "caduc" : {
+          "name" : "caduc",
+          "index" : 4,
+          "offset" : 44,
+          "literal" : "MCFCADUC",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrmd500",
+    "transactionName" : "mcd5",
+    "description" : "LIGHT E-BANKING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "card" : {
+        "name" : "card",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CARD",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "cvv" : {
+        "name" : "cvv",
+        "index" : 3,
+        "offset" : 39,
+        "literal" : "CVV",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "caduc" : {
+        "name" : "caduc",
+        "index" : 4,
+        "offset" : 44,
+        "literal" : "MCFCADUC",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

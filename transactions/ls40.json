@@ -1,0 +1,112 @@
+{
+  "name" : "ls40",
+  "application" : "ls",
+  "description" : "MANAGEMENT OCR(A)",
+  "inputRecordName" : "lsrm400",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lsrm400" : {
+      "name" : "lsrm400",
+      "transactionName" : "ls40",
+      "description" : "MANAGEMENT OCR(A)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "loption" : {
+          "name" : "loption",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION CODE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lcofcor" : {
+          "name" : "lcofcor",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CENTRAL UNIT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lnumkey" : {
+          "name" : "lnumkey",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "SEQ NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lsrm400",
+    "transactionName" : "ls40",
+    "description" : "MANAGEMENT OCR(A)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "loption" : {
+        "name" : "loption",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION CODE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "lcofcor" : {
+        "name" : "lcofcor",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CENTRAL UNIT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "lnumkey" : {
+        "name" : "lnumkey",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "SEQ NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

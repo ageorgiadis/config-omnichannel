@@ -1,0 +1,248 @@
+{
+  "name" : "b301",
+  "application" : "bg",
+  "description" : "ACCOUNT BRANCHES LISTING",
+  "inputRecordName" : "bgm301",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm301" : {
+      "name" : "bgm301",
+      "transactionName" : "b301",
+      "description" : "ACCOUNT BRANCHES LISTING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cta" : {
+          "name" : "cta",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "lit4700" : "002",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "papel" : {
+          "name" : "papel",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "PAPER ?",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -81,
+          "usage" : "Optional",
+          "debug" : false,
+          "lit4700" : "01F",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "libre" : {
+          "name" : "libre",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "FREE FIELD",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "lit4700" : "008",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm3014" : {
+      "name" : "bgm3014",
+      "transactionName" : "b301",
+      "description" : "PRIN.OUTP. DETAIL ACC. BRANCH",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entidad" : {
+          "name" : "entidad",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT ENTITY",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ACCOUNT CENTER",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "estado" : {
+          "name" : "estado",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "ACCOUNT STATUS",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "codiden" : {
+          "name" : "codiden",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "DOCUMENT CODE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "codclie" : {
+          "name" : "codclie",
+          "index" : 5,
+          "offset" : 49,
+          "literal" : "CLIENT CODE",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "titular" : {
+          "name" : "titular",
+          "index" : 6,
+          "offset" : 61,
+          "literal" : "RELATED CLIENT",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm3013" : {
+      "name" : "bgm3013",
+      "transactionName" : "b301",
+      "description" : "HEADER PRIN.OUTP. ACC. BRANCH",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "numctan" : {
+          "name" : "numctan",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NEW ACCOUNT",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digcta" : {
+          "name" : "digcta",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "ACCOUNT DIGIT",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm301",
+    "transactionName" : "b301",
+    "description" : "ACCOUNT BRANCHES LISTING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cta" : {
+        "name" : "cta",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "lit4700" : "002",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "papel" : {
+        "name" : "papel",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "PAPER ?",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : -81,
+        "usage" : "Optional",
+        "debug" : false,
+        "lit4700" : "01F",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "libre" : {
+        "name" : "libre",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "FREE FIELD",
+        "type" : "Alphanumeric",
+        "length" : 12,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "lit4700" : "008",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

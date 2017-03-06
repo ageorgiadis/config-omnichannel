@@ -1,0 +1,168 @@
+{
+  "name" : "mc40",
+  "application" : "mc",
+  "description" : "INFORMATION",
+  "inputRecordName" : "mprm040",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mprm040" : {
+      "name" : "mprm040",
+      "transactionName" : "mc40",
+      "description" : "INFORMATION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fecini" : {
+          "name" : "fecini",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "FECHA INICIO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fecfin" : {
+          "name" : "fecfin",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "FECHA FINAL",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "produc" : {
+          "name" : "produc",
+          "index" : 4,
+          "offset" : 42,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "diali" : {
+          "name" : "diali",
+          "index" : 5,
+          "offset" : 47,
+          "literal" : "DIALI",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mprm040",
+    "transactionName" : "mc40",
+    "description" : "INFORMATION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "fecini" : {
+        "name" : "fecini",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "FECHA INICIO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "fecfin" : {
+        "name" : "fecfin",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "FECHA FINAL",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "produc" : {
+        "name" : "produc",
+        "index" : 4,
+        "offset" : 42,
+        "literal" : "PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "diali" : {
+        "name" : "diali",
+        "index" : 5,
+        "offset" : 47,
+        "literal" : "DIALI",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

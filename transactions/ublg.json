@@ -1,0 +1,329 @@
+{
+  "name" : "ublg",
+  "application" : "ug",
+  "description" : "DATABASE MODIFICATIONS LIST",
+  "inputRecordName" : "ugrmblg1",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmblg2" : {
+      "name" : "ugrmblg2",
+      "transactionName" : "ublg",
+      "description" : "OUTPUT (UBLG) HEADERS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "ugrmblg3" : {
+      "name" : "ugrmblg3",
+      "transactionName" : "ublg",
+      "description" : "OUTPUT (UBLG) LIST",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "table" : {
+          "name" : "table",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TABLE",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "timestp" : {
+          "name" : "timestp",
+          "index" : 2,
+          "offset" : 45,
+          "literal" : "TIMESTAMP",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "modtype" : {
+          "name" : "modtype",
+          "index" : 3,
+          "offset" : 67,
+          "literal" : "MODIFICATION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 4,
+          "offset" : 81,
+          "literal" : "USER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "termid" : {
+          "name" : "termid",
+          "index" : 5,
+          "offset" : 92,
+          "literal" : "TERMINAL ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "details" : {
+          "name" : "details",
+          "index" : 6,
+          "offset" : 103,
+          "literal" : "DETAILS",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmblg1" : {
+      "name" : "ugrmblg1",
+      "transactionName" : "ublg",
+      "description" : "INPUT VALUES FOR UBLG",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "moddate" : {
+          "name" : "moddate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MODIFICATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "modtabl" : {
+          "name" : "modtabl",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "MODIFICATION OF TABL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmgbl2" : {
+      "name" : "ugrmgbl2",
+      "transactionName" : "ublg",
+      "description" : "PENDING INVOICES OF MERCHANTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmgbl3" : {
+      "name" : "ugrmgbl3",
+      "transactionName" : "ublg",
+      "description" : "PENDING INVOICES OF MERCHANTS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "contrct" : {
+          "name" : "contrct",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "bonusdt" : {
+          "name" : "bonusdt",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "BONUS DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "invnum" : {
+          "name" : "invnum",
+          "index" : 4,
+          "offset" : 53,
+          "literal" : "INVOICE NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "bonus" : {
+          "name" : "bonus",
+          "index" : 5,
+          "offset" : 62,
+          "literal" : "BONUS AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "commnts" : {
+          "name" : "commnts",
+          "index" : 6,
+          "offset" : 85,
+          "literal" : "COMMENTS",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmblg1",
+    "transactionName" : "ublg",
+    "description" : "INPUT VALUES FOR UBLG",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "moddate" : {
+        "name" : "moddate",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MODIFICATION DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "modtabl" : {
+        "name" : "modtabl",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "MODIFICATION OF TABL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

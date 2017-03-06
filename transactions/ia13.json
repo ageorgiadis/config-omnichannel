@@ -1,0 +1,140 @@
+{
+  "name" : "ia13",
+  "application" : "ia",
+  "description" : "LEAFLETS MANTEINANCE",
+  "inputRecordName" : "iam130",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "iam130" : {
+      "name" : "iam130",
+      "transactionName" : "ia13",
+      "description" : "MTNT. FULLETS PUBLICITARIS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cfopub" : {
+          "name" : "cfopub",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODI DE FORMULARI",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mfopub" : {
+          "name" : "mfopub",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "DESC FOLLETO",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "qrstck" : {
+          "name" : "qrstck",
+          "index" : 3,
+          "offset" : 69,
+          "literal" : "NIVEL ROT. STOCK",
+          "type" : "Edit2",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "qexfop" : {
+          "name" : "qexfop",
+          "index" : 4,
+          "offset" : 83,
+          "literal" : "EXISTENCIAS",
+          "type" : "Edit2",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "iam130",
+    "transactionName" : "ia13",
+    "description" : "MTNT. FULLETS PUBLICITARIS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cfopub" : {
+        "name" : "cfopub",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODI DE FORMULARI",
+        "type" : "Alphanumeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "mfopub" : {
+        "name" : "mfopub",
+        "index" : 2,
+        "offset" : 26,
+        "literal" : "DESC FOLLETO",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "qrstck" : {
+        "name" : "qrstck",
+        "index" : 3,
+        "offset" : 69,
+        "literal" : "NIVEL ROT. STOCK",
+        "type" : "Edit2",
+        "length" : 11,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "qexfop" : {
+        "name" : "qexfop",
+        "index" : 4,
+        "offset" : 83,
+        "literal" : "EXISTENCIAS",
+        "type" : "Edit2",
+        "length" : 11,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "b809",
+  "application" : "bg",
+  "description" : "SUBMISSION FOR PRINT OF CHECKBOOKS",
+  "inputRecordName" : "bgm809",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm809" : {
+      "name" : "bgm809",
+      "transactionName" : "b809",
+      "description" : "OVERDRAFT LIMIT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "submit" : {
+          "name" : "submit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONFIRM SUBMIT (S/N)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm809",
+    "transactionName" : "b809",
+    "description" : "OVERDRAFT LIMIT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "submit" : {
+        "name" : "submit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CONFIRM SUBMIT (S/N)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

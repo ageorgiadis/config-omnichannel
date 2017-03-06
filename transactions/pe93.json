@@ -1,0 +1,101 @@
+{
+  "name" : "pe93",
+  "application" : "pe",
+  "description" : "MIS CODES LIST FOR FLAGGING",
+  "inputRecordName" : "pem093",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem093" : {
+      "name" : "pem093",
+      "transactionName" : "pe93",
+      "description" : "CHANNEL TO FLAG (INP FMT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "uoption" : {
+          "name" : "uoption",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "USER OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pem0931" : {
+      "name" : "pem0931",
+      "transactionName" : "pe93",
+      "description" : "DISPLAY MIS CODES WITH FLAGS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "miscode" : {
+          "name" : "miscode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MIS CODES",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "misdesc" : {
+          "name" : "misdesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "MIS DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pem0932" : {
+      "name" : "pem0932",
+      "transactionName" : "pe93",
+      "description" : "DISPLAY MIS CODES WITH FLAGS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem093",
+    "transactionName" : "pe93",
+    "description" : "CHANNEL TO FLAG (INP FMT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "uoption" : {
+        "name" : "uoption",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "USER OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

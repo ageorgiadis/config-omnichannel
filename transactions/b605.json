@@ -1,0 +1,302 @@
+{
+  "name" : "b605",
+  "application" : "bg",
+  "description" : "DISPLAY OF PRICING PACKETS",
+  "inputRecordName" : "bgm6050",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm6052" : {
+      "name" : "bgm6052",
+      "transactionName" : "b605",
+      "description" : "PRICING PACKET CONDITIONS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "condid" : {
+          "name" : "condid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONDITION CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "conddes" : {
+          "name" : "conddes",
+          "index" : 2,
+          "offset" : 24,
+          "literal" : "CONDITION DESCRIPT",
+          "type" : "Alphanumeric",
+          "length" : 57,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 3,
+          "offset" : 84,
+          "literal" : "ACTIVATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm6051" : {
+      "name" : "bgm6051",
+      "transactionName" : "b605",
+      "description" : "AVAILABLE PRICING PACKETS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "pckgcod" : {
+          "name" : "pckgcod",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRICING PACKET CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "pckgdes" : {
+          "name" : "pckgdes",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "PRICING PACKET DESC",
+          "type" : "Alphanumeric",
+          "length" : 32,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "avail" : {
+          "name" : "avail",
+          "index" : 3,
+          "offset" : 56,
+          "literal" : "PACKET AVAILABILITY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "page" : {
+          "name" : "page",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "PAGE NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm6050" : {
+      "name" : "bgm6050",
+      "transactionName" : "b605",
+      "description" : "INPUT FORMAT FOR B605",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "pckgcod" : {
+          "name" : "pckgcod",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRICING PACKET CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm6054" : {
+      "name" : "bgm6054",
+      "transactionName" : "b605",
+      "description" : "PRICING PACKET CONDITIONS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "free" : {
+          "name" : "free",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FREE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm6053" : {
+      "name" : "bgm6053",
+      "transactionName" : "b605",
+      "description" : "PRICING PACKET DETAILS1",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "scale" : {
+          "name" : "scale",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRICING SCALE",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "percamt" : {
+          "name" : "percamt",
+          "index" : 2,
+          "offset" : 36,
+          "literal" : "PERCENTAGE / AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "min" : {
+          "name" : "min",
+          "index" : 3,
+          "offset" : 49,
+          "literal" : "MINIMUM AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "max" : {
+          "name" : "max",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "MAXIMUM AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "flat" : {
+          "name" : "flat",
+          "index" : 5,
+          "offset" : 82,
+          "literal" : "FLAT AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "valdt" : {
+          "name" : "valdt",
+          "index" : 6,
+          "offset" : 102,
+          "literal" : "VALUE DATE PACKET",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "diathva" : {
+          "name" : "diathva",
+          "index" : 7,
+          "offset" : 115,
+          "literal" : "DATE PACKET AVAILABL",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm6050",
+    "transactionName" : "b605",
+    "description" : "INPUT FORMAT FOR B605",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "pckgcod" : {
+        "name" : "pckgcod",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRICING PACKET CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

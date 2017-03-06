@@ -1,0 +1,112 @@
+{
+  "name" : "bp99",
+  "application" : "bg",
+  "description" : "ΑΠΟΡΡΙΨΗ ΑΡΧΕΙΟΥ ΠΛΗΡΩΜΩΝ Π.Ε.",
+  "inputRecordName" : "bgmp99",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmp99" : {
+      "name" : "bgmp99",
+      "transactionName" : "bp99",
+      "description" : "ΑΠΟΡΡΙΨΗ ΑΡΧΕΙΟΥ ΠΛΗΡΩΜΩΝ Π.Ε.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "serial" : {
+          "name" : "serial",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FILE SERIAL",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "oldstat" : {
+          "name" : "oldstat",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "OLD STATUS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "newstat" : {
+          "name" : "newstat",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "NEW STATUS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmp99",
+    "transactionName" : "bp99",
+    "description" : "ΑΠΟΡΡΙΨΗ ΑΡΧΕΙΟΥ ΠΛΗΡΩΜΩΝ Π.Ε.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "serial" : {
+        "name" : "serial",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FILE SERIAL",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "oldstat" : {
+        "name" : "oldstat",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "OLD STATUS",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "newstat" : {
+        "name" : "newstat",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "NEW STATUS",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "mcdb",
+  "application" : "mc",
+  "description" : "VALIDATION CARD OTHER BANK",
+  "inputRecordName" : "mcrmdb0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrmdb0" : {
+      "name" : "mcrmdb0",
+      "transactionName" : "mcdb",
+      "description" : "VALIDATION CARD OTHER BANK",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "numeta" : {
+          "name" : "numeta",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrmdb0",
+    "transactionName" : "mcdb",
+    "description" : "VALIDATION CARD OTHER BANK",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "numeta" : {
+        "name" : "numeta",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

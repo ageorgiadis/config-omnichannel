@@ -1,0 +1,140 @@
+{
+  "name" : "b445",
+  "application" : "bg",
+  "description" : "BUSINESS ACCOUNT HISTORY",
+  "inputRecordName" : "bgm445",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm445" : {
+      "name" : "bgm445",
+      "transactionName" : "b445",
+      "description" : "OVERDRAFT LIMIT HISTORY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "datefr" : {
+          "name" : "datefr",
+          "index" : 3,
+          "offset" : 43,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm445",
+    "transactionName" : "b445",
+    "description" : "OVERDRAFT LIMIT HISTORY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "datefr" : {
+        "name" : "datefr",
+        "index" : 3,
+        "offset" : 43,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 4,
+        "offset" : 54,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

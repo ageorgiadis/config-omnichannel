@@ -1,0 +1,129 @@
+{
+  "name" : "s021",
+  "application" : "sp",
+  "description" : "SELECT IN SPDTPAR",
+  "inputRecordName" : "sprms021",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprms021" : {
+      "name" : "sprms021",
+      "transactionName" : "s021",
+      "description" : "INPUT FORMAT OF S021",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "code" : {
+          "name" : "code",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm021a" : {
+      "name" : "sprm021a",
+      "transactionName" : "s021",
+      "description" : "OUTPUT HEADER OF S021",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm021b" : {
+      "name" : "sprm021b",
+      "transactionName" : "s021",
+      "description" : "OUTPUT LINES OF S021",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "code" : {
+          "name" : "code",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "categor" : {
+          "name" : "categor",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "paramet" : {
+          "name" : "paramet",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "PARAMETER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 4,
+          "offset" : 50,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms021",
+    "transactionName" : "s021",
+    "description" : "INPUT FORMAT OF S021",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "code" : {
+        "name" : "code",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

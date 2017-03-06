@@ -1,0 +1,149 @@
+{
+  "name" : "b611",
+  "application" : "bg",
+  "description" : "ΠΟΛΛΑΠΛΕΣ ΚΑΤΑΘΕΣΕΙΣ ΜΕΤΡΗΤΩΝ (VAL)",
+  "inputRecordName" : "bgm611",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm611" : {
+      "name" : "bgm611",
+      "transactionName" : "b611",
+      "description" : "INPUT - MAINTENANCE & LIST",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm6111" : {
+      "name" : "bgm6111",
+      "transactionName" : "b611",
+      "description" : "OUTPUT-MAINTENANCE & LIST",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "seqno" : {
+          "name" : "seqno",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SEQNO",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cif" : {
+          "name" : "cif",
+          "index" : 2,
+          "offset" : 24,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "deposit" : {
+          "name" : "deposit",
+          "index" : 3,
+          "offset" : 35,
+          "literal" : "DEPOSIT",
+          "type" : "Numeric",
+          "length" : 18,
+          "scale" : 2,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "comsion" : {
+          "name" : "comsion",
+          "index" : 4,
+          "offset" : 56,
+          "literal" : "COMMISSION",
+          "type" : "Numeric",
+          "length" : 18,
+          "scale" : 2,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "chrtype" : {
+          "name" : "chrtype",
+          "index" : 5,
+          "offset" : 77,
+          "literal" : "CHARGE TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cash" : {
+          "name" : "cash",
+          "index" : 6,
+          "offset" : 81,
+          "literal" : "TOTAL CASH AMOUNT",
+          "type" : "Numeric",
+          "length" : 18,
+          "scale" : 2,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm611",
+    "transactionName" : "b611",
+    "description" : "INPUT - MAINTENANCE & LIST",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

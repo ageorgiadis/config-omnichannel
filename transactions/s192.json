@@ -1,0 +1,339 @@
+{
+  "name" : "s192",
+  "application" : "sp",
+  "description" : "HISTORICAL LIST OF GROUP CODES",
+  "inputRecordName" : "sprm192",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm192b" : {
+      "name" : "sprm192b",
+      "transactionName" : "s192",
+      "description" : "HEADER HISTORICAL GROUP CODE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm192c" : {
+      "name" : "sprm192c",
+      "transactionName" : "s192",
+      "description" : "HISTORICAL LISTING GROUP CODE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm192d" : {
+      "name" : "sprm192d",
+      "transactionName" : "s192",
+      "description" : "HISTORICAL LISTING GROUP CODE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "code" : {
+          "name" : "code",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "start" : {
+          "name" : "start",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "START",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "end" : {
+          "name" : "end",
+          "index" : 4,
+          "offset" : 83,
+          "literal" : "END",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 5,
+          "offset" : 96,
+          "literal" : "STATUS",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "aa" : {
+          "name" : "aa",
+          "index" : 6,
+          "offset" : 109,
+          "literal" : "AA",
+          "type" : "Numeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm192e" : {
+      "name" : "sprm192e",
+      "transactionName" : "s192",
+      "description" : "HISTORICAL LISTING GROUP CODE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm192" : {
+      "name" : "sprm192",
+      "transactionName" : "s192",
+      "description" : "HISTORICAL LISTING GROUP CODE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPROD",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm192a" : {
+      "name" : "sprm192a",
+      "transactionName" : "s192",
+      "description" : "HEADER HISTORICAL GROUP CODE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "time" : {
+          "name" : "time",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TIME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "SUBPROD",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprm192",
+    "transactionName" : "s192",
+    "description" : "HISTORICAL LISTING GROUP CODE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subprod" : {
+        "name" : "subprod",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPROD",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

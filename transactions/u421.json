@@ -1,0 +1,193 @@
+{
+  "name" : "u421",
+  "application" : "ua",
+  "description" : "INQUIRY CONTRACT NO<->ACCOUNT NO",
+  "inputRecordName" : "uarmg14",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "uarmg031" : {
+      "name" : "uarmg031",
+      "transactionName" : "u421",
+      "description" : "COMPTES NOVES, ANTIGUES. EXIDA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cccenti" : {
+          "name" : "cccenti",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NEW ALTAMIRA ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 22,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cccofic" : {
+          "name" : "cccofic",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "NEW ALTAMIRA BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cccdigi" : {
+          "name" : "cccdigi",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "NEW ALTAM DIGITS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cccclau" : {
+          "name" : "cccclau",
+          "index" : 4,
+          "offset" : 35,
+          "literal" : "NEW ALTAM ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "oldcont" : {
+          "name" : "oldcont",
+          "index" : 5,
+          "offset" : 48,
+          "literal" : "OLD CONTRACT",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "hora" : {
+          "name" : "hora",
+          "index" : 6,
+          "offset" : 65,
+          "literal" : "INQUIRY TIME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 25,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "fecop" : {
+          "name" : "fecop",
+          "index" : 7,
+          "offset" : 76,
+          "literal" : "INQUIRY DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : -120,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "uarmg14" : {
+      "name" : "uarmg14",
+      "transactionName" : "u421",
+      "description" : "ACCOUTN NO <-> CONTRACT NO",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cccnuev" : {
+          "name" : "cccnuev",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cccviej" : {
+          "name" : "cccviej",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CONTRACT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "uarmg14",
+    "transactionName" : "u421",
+    "description" : "ACCOUTN NO <-> CONTRACT NO",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cccnuev" : {
+        "name" : "cccnuev",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cccviej" : {
+        "name" : "cccviej",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CONTRACT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

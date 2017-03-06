@@ -1,0 +1,233 @@
+{
+  "name" : "b854",
+  "application" : "ba",
+  "description" : "CURR-INS.ACC. FOR INCOMING F.C.",
+  "inputRecordName" : "bam8540",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bam8540" : {
+      "name" : "bam8540",
+      "transactionName" : "b854",
+      "description" : "INPUT FOR INSTR.ACC. INC.COLL.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "baoptio" : {
+          "name" : "baoptio",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "baswitc" : {
+          "name" : "baswitc",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "SWITCH OF TABLES",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "baeidos" : {
+          "name" : "baeidos",
+          "index" : 3,
+          "offset" : 24,
+          "literal" : "EIDOS EPITAGHS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "bacurre" : {
+          "name" : "bacurre",
+          "index" : 4,
+          "offset" : 29,
+          "literal" : "CURRENCY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "bacinac" : {
+          "name" : "bacinac",
+          "index" : 5,
+          "offset" : 35,
+          "literal" : "INSTRUM.  ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "baswift" : {
+          "name" : "baswift",
+          "index" : 6,
+          "offset" : 58,
+          "literal" : "SWIFT ADDRESS",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bam8541" : {
+      "name" : "bam8541",
+      "transactionName" : "b854",
+      "description" : "INSTRUMENTAL ACC. & SWIFT ADD.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "bacinac" : {
+          "name" : "bacinac",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CORRESP. INSTR. ACC.",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "baswift" : {
+          "name" : "baswift",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "SWIFT ADDRESS",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bam8540",
+    "transactionName" : "b854",
+    "description" : "INPUT FOR INSTR.ACC. INC.COLL.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "baoptio" : {
+        "name" : "baoptio",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "baswitc" : {
+        "name" : "baswitc",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "SWITCH OF TABLES",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "baeidos" : {
+        "name" : "baeidos",
+        "index" : 3,
+        "offset" : 24,
+        "literal" : "EIDOS EPITAGHS",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "bacurre" : {
+        "name" : "bacurre",
+        "index" : 4,
+        "offset" : 29,
+        "literal" : "CURRENCY",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "bacinac" : {
+        "name" : "bacinac",
+        "index" : 5,
+        "offset" : 35,
+        "literal" : "INSTRUM.  ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "baswift" : {
+        "name" : "baswift",
+        "index" : 6,
+        "offset" : 58,
+        "literal" : "SWIFT ADDRESS",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 7,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

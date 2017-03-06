@@ -1,0 +1,56 @@
+{
+  "name" : "lmes",
+  "application" : "lm",
+  "description" : "TEST TRANSACTION",
+  "inputRecordName" : "lmmelst",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lmmelst" : {
+      "name" : "lmmelst",
+      "transactionName" : "lmes",
+      "description" : "TEST FORMAT FOR LMES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INPUT OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lmmelst",
+    "transactionName" : "lmes",
+    "description" : "TEST FORMAT FOR LMES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "INPUT OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

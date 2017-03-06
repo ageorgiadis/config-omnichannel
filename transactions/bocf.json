@@ -1,0 +1,56 @@
+{
+  "name" : "bocf",
+  "application" : "ba",
+  "description" : "CURENCY / CORRESP. LISTS FOR OCR FC",
+  "inputRecordName" : "bamocf0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bamocf0" : {
+      "name" : "bamocf0",
+      "transactionName" : "bocf",
+      "description" : "INQ. OF CURR./CORRESP FC",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "baoptio" : {
+          "name" : "baoptio",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUR OR COR CHOICE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bamocf0",
+    "transactionName" : "bocf",
+    "description" : "INQ. OF CURR./CORRESP FC",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "baoptio" : {
+        "name" : "baoptio",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUR OR COR CHOICE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

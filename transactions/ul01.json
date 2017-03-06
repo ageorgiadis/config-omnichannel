@@ -1,0 +1,146 @@
+{
+  "name" : "ul01",
+  "application" : "ul",
+  "description" : "WEIGHTED AVERAGE RATE REPORT",
+  "inputRecordName" : "ulrm001",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ulrm001" : {
+      "name" : "ulrm001",
+      "transactionName" : "ul01",
+      "description" : "WEIGHTED AVERAGE RATE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DESTINATION USER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dateop" : {
+          "name" : "dateop",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "REPORT PERIOD FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dateex" : {
+          "name" : "dateex",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "REPORT PERIOD TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feejec" : {
+          "name" : "feejec",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "EXECUTION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ulrm001",
+    "transactionName" : "ul01",
+    "description" : "WEIGHTED AVERAGE RATE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DESTINATION USER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dateop" : {
+        "name" : "dateop",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "REPORT PERIOD FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dateex" : {
+        "name" : "dateex",
+        "index" : 3,
+        "offset" : 38,
+        "literal" : "REPORT PERIOD TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "feejec" : {
+        "name" : "feejec",
+        "index" : 4,
+        "offset" : 49,
+        "literal" : "EXECUTION DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

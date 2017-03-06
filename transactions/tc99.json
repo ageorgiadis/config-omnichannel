@@ -1,0 +1,140 @@
+{
+  "name" : "tc99",
+  "application" : "tc",
+  "description" : "ENTITY AND BRANCH DATA INQUIRY",
+  "inputRecordName" : "tcm099",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcm099" : {
+      "name" : "tcm099",
+      "transactionName" : "tc99",
+      "description" : "TCM099",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "stbanco" : {
+          "name" : "stbanco",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "stofici" : {
+          "name" : "stofici",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "BRANCH CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nbban" : {
+          "name" : "nbban",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "ENTITY NAME",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nbofi" : {
+          "name" : "nbofi",
+          "index" : 4,
+          "offset" : 73,
+          "literal" : "BRANCH NAME",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcm099",
+    "transactionName" : "tc99",
+    "description" : "TCM099",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "stbanco" : {
+        "name" : "stbanco",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTITY CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "stofici" : {
+        "name" : "stofici",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "BRANCH CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "nbban" : {
+        "name" : "nbban",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "ENTITY NAME",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "nbofi" : {
+        "name" : "nbofi",
+        "index" : 4,
+        "offset" : 73,
+        "literal" : "BRANCH NAME",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "name" : "me97",
+  "application" : "me",
+  "description" : "ADD/MODIFY MGM GROUP MEMBER",
+  "inputRecordName" : "merm097",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm097" : {
+      "name" : "merm097",
+      "transactionName" : "me97",
+      "description" : "MGM GROUP",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ctgroup" : {
+          "name" : "ctgroup",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP  CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cttarje" : {
+          "name" : "cttarje",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ccrdesc" : {
+          "name" : "ccrdesc",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ccasnor" : {
+          "name" : "ccasnor",
+          "index" : 4,
+          "offset" : 51,
+          "literal" : "NOMINATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ccasnee" : {
+          "name" : "ccasnee",
+          "index" : 5,
+          "offset" : 55,
+          "literal" : "NOMINEE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm097",
+    "transactionName" : "me97",
+    "description" : "MGM GROUP",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ctgroup" : {
+        "name" : "ctgroup",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP  CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cttarje" : {
+        "name" : "cttarje",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ccrdesc" : {
+        "name" : "ccrdesc",
+        "index" : 3,
+        "offset" : 28,
+        "literal" : "DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ccasnor" : {
+        "name" : "ccasnor",
+        "index" : 4,
+        "offset" : 51,
+        "literal" : "NOMINATOR",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ccasnee" : {
+        "name" : "ccasnee",
+        "index" : 5,
+        "offset" : 55,
+        "literal" : "NOMINEE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "name" : "s191",
+  "application" : "sp",
+  "description" : "CONNECTED GROUP CODES LISTING",
+  "inputRecordName" : "sprm191",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm191a" : {
+      "name" : "sprm191a",
+      "transactionName" : "s191",
+      "description" : "HEADER CONNECTED GROUP CODES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm191b" : {
+      "name" : "sprm191b",
+      "transactionName" : "s191",
+      "description" : "OUTPUT CONNECTED GROUP CODES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "grpcode" : {
+          "name" : "grpcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grpdesc" : {
+          "name" : "grpdesc",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUP DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 3,
+          "offset" : 60,
+          "literal" : "TYPE",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm191" : {
+      "name" : "sprm191",
+      "transactionName" : "s191",
+      "description" : "CONNECTED GROUP CODES LISTING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprm191",
+    "transactionName" : "s191",
+    "description" : "CONNECTED GROUP CODES LISTING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subprod" : {
+        "name" : "subprod",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "pe68",
+  "application" : "pe",
+  "description" : "CIF MERGE LIST OF SAME CUSTOMES",
+  "inputRecordName" : "perm680",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "perm680" : {
+      "name" : "perm680",
+      "transactionName" : "pe68",
+      "description" : "CIF MERGE LIST OF CUSTOMER",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "perm680",
+    "transactionName" : "pe68",
+    "description" : "CIF MERGE LIST OF CUSTOMER",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "name" : "pest",
+  "application" : "pe",
+  "description" : "STMT REGISTRATION DATE QUERY",
+  "inputRecordName" : "pemrmst",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemrmst" : {
+      "name" : "pemrmst",
+      "transactionName" : "pest",
+      "description" : "STMT REGISTRATION DATE (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "seqnum" : {
+          "name" : "seqnum",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "SEQ NUM OF ADDRESS",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemmst1" : {
+      "name" : "pemmst1",
+      "transactionName" : "pest",
+      "description" : "ADD HOLD TO ACC FROM EXPRESS-1",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "seqnum" : {
+          "name" : "seqnum",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "SEQ NUM OF ADDRESS",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "rmlflag" : {
+          "name" : "rmlflag",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "HOLDMAIL STATUS",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "stmdate" : {
+          "name" : "stmdate",
+          "index" : 4,
+          "offset" : 46,
+          "literal" : "STATEMENT DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemrmst",
+    "transactionName" : "pest",
+    "description" : "STMT REGISTRATION DATE (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "seqnum" : {
+        "name" : "seqnum",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "SEQ NUM OF ADDRESS",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

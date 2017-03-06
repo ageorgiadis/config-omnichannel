@@ -1,0 +1,168 @@
+{
+  "name" : "me26",
+  "application" : "mc",
+  "description" : "CUSTOMER COMMISSION MAINTENANCE",
+  "inputRecordName" : "merm260",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm260" : {
+      "name" : "merm260",
+      "transactionName" : "me26",
+      "description" : "CUSTOMER COMMISSION MAINTENANC",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mctoper" : {
+          "name" : "mctoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPERATION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mctcuen" : {
+          "name" : "mctcuen",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ACCOUNT TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mcacsub" : {
+          "name" : "mcacsub",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mcgroup" : {
+          "name" : "mcgroup",
+          "index" : 4,
+          "offset" : 32,
+          "literal" : "CUSTOMER GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mcicomi" : {
+          "name" : "mcicomi",
+          "index" : 5,
+          "offset" : 43,
+          "literal" : "COMMISSION AMOUNT",
+          "type" : "Edit2",
+          "length" : 6,
+          "scale" : 2,
+          "delimiter" : 6,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm260",
+    "transactionName" : "me26",
+    "description" : "CUSTOMER COMMISSION MAINTENANC",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "mctoper" : {
+        "name" : "mctoper",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPERATION TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mctcuen" : {
+        "name" : "mctcuen",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ACCOUNT TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mcacsub" : {
+        "name" : "mcacsub",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "SUBPRODUCT",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mcgroup" : {
+        "name" : "mcgroup",
+        "index" : 4,
+        "offset" : 32,
+        "literal" : "CUSTOMER GROUP",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mcicomi" : {
+        "name" : "mcicomi",
+        "index" : 5,
+        "offset" : 43,
+        "literal" : "COMMISSION AMOUNT",
+        "type" : "Edit2",
+        "length" : 6,
+        "scale" : 2,
+        "delimiter" : 6,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

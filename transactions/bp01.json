@@ -1,0 +1,107 @@
+{
+  "name" : "bp01",
+  "application" : "bg",
+  "description" : "ΕΜΦΑΝΙΣΗ ΑΡΧΕΙΩΝ ΠΡΟΣ ΠΑΡΑΛΑΒΗ",
+  "inputRecordName" : "bgmp01",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmp01" : {
+      "name" : "bgmp01",
+      "transactionName" : "bp01",
+      "description" : "FILES TO BE RECEIVED",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "appcode" : {
+          "name" : "appcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPLICATION CODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmp01o" : {
+      "name" : "bgmp01o",
+      "transactionName" : "bp01",
+      "description" : "FILES TO BE RECEIVED",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "orgcode" : {
+          "name" : "orgcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ORGANISATION CODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prodcod" : {
+          "name" : "prodcod",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descfil" : {
+          "name" : "descfil",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "FILE DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmp01",
+    "transactionName" : "bp01",
+    "description" : "FILES TO BE RECEIVED",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "appcode" : {
+        "name" : "appcode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "APPLICATION CODE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

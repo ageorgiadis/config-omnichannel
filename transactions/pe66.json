@@ -1,0 +1,56 @@
+{
+  "name" : "pe66",
+  "application" : "pe",
+  "description" : "CUSTOMER Y/N LIST FOR CIF MERGE",
+  "inputRecordName" : "perm660",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "perm660" : {
+      "name" : "perm660",
+      "transactionName" : "pe66",
+      "description" : "ADDRESS LISTING FOR CIF MERGE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cdgroup" : {
+          "name" : "cdgroup",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "perm660",
+    "transactionName" : "pe66",
+    "description" : "ADDRESS LISTING FOR CIF MERGE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cdgroup" : {
+        "name" : "cdgroup",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

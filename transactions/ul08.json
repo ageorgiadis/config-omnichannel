@@ -1,0 +1,88 @@
+{
+  "name" : "ul08",
+  "application" : "ul",
+  "description" : "LOANS INT. RATE ADJUSMENT",
+  "inputRecordName" : "ulrm008",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ulrm008" : {
+      "name" : "ulrm008",
+      "transactionName" : "ul08",
+      "description" : "LOANS INT. RATE ADJUSMENT",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "redate" : {
+          "name" : "redate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "REPRICING DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feejec" : {
+          "name" : "feejec",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "EXECUTION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ulrm008",
+    "transactionName" : "ul08",
+    "description" : "LOANS INT. RATE ADJUSMENT",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "redate" : {
+        "name" : "redate",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "REPRICING DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "feejec" : {
+        "name" : "feejec",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "EXECUTION DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

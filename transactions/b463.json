@@ -1,0 +1,56 @@
+{
+  "name" : "b463",
+  "application" : "ba",
+  "description" : "CREATION OF FILE FOR GS BOG",
+  "inputRecordName" : "bam4630",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bam4630" : {
+      "name" : "bam4630",
+      "transactionName" : "b463",
+      "description" : "FILE FOR GS BOG",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "bacurr" : {
+          "name" : "bacurr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CURRENCY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bam4630",
+    "transactionName" : "b463",
+    "description" : "FILE FOR GS BOG",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "bacurr" : {
+        "name" : "bacurr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CURRENCY",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

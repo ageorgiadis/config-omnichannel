@@ -1,0 +1,107 @@
+{
+  "name" : "lm42",
+  "application" : "lm",
+  "description" : "NEW CUSTOMER POSITION",
+  "inputRecordName" : "lmm042i",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lmm042i" : {
+      "name" : "lmm042i",
+      "transactionName" : "lm42",
+      "description" : "INPUT FORMAT CUSTOMER POSITION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "recode" : {
+          "name" : "recode",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ΚΩΔΙΚΟΣ ΑΠΑΙΤΗΣΗΣ",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    },
+    "lmnc0420" : {
+      "name" : "lmnc0420",
+      "transactionName" : "lm42",
+      "description" : "NEW CUSTOMER POSITION",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "reccode" : {
+          "name" : "reccode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE AITHMATOS",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lmm042i",
+    "transactionName" : "lm42",
+    "description" : "INPUT FORMAT CUSTOMER POSITION",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Numeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "recode" : {
+        "name" : "recode",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ΚΩΔΙΚΟΣ ΑΠΑΙΤΗΣΗΣ",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

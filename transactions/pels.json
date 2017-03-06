@@ -1,0 +1,140 @@
+{
+  "name" : "pels",
+  "application" : "pe",
+  "description" : "PAYMENT RECALL TRANSACTION",
+  "inputRecordName" : "pemlist",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemlist" : {
+      "name" : "pemlist",
+      "transactionName" : "pels",
+      "description" : "INPUT COPY FOR PELS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INPUT OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "INPUT BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "profess" : {
+          "name" : "profess",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "INPUT PROFESSION",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "segment" : {
+          "name" : "segment",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "INPUT SEGMENT",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemlist",
+    "transactionName" : "pels",
+    "description" : "INPUT COPY FOR PELS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "INPUT OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "branch" : {
+        "name" : "branch",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "INPUT BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "profess" : {
+        "name" : "profess",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "INPUT PROFESSION",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "segment" : {
+        "name" : "segment",
+        "index" : 4,
+        "offset" : 45,
+        "literal" : "INPUT SEGMENT",
+        "type" : "Alphanumeric",
+        "length" : 23,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

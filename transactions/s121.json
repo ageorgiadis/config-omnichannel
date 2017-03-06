@@ -1,0 +1,185 @@
+{
+  "name" : "s121",
+  "application" : "sp",
+  "description" : "INQUIRY OF SUBPRODUCTS",
+  "inputRecordName" : "sprms121",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprm121a" : {
+      "name" : "sprm121a",
+      "transactionName" : "s121",
+      "description" : "HEADER FOR SUBPRO INQUIRY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm121b" : {
+      "name" : "sprm121b",
+      "transactionName" : "s121",
+      "description" : "LISTING OF SUBPRO INQUIRY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT AND SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cngdate" : {
+          "name" : "cngdate",
+          "index" : 3,
+          "offset" : 59,
+          "literal" : "CHANGE DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mxnosub" : {
+          "name" : "mxnosub",
+          "index" : 4,
+          "offset" : 72,
+          "literal" : "MAX NO OF SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "addon" : {
+          "name" : "addon",
+          "index" : 5,
+          "offset" : 77,
+          "literal" : "INDICATION ADD ON",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "usage" : {
+          "name" : "usage",
+          "index" : 6,
+          "offset" : 83,
+          "literal" : "CARD USAGE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "sprms121" : {
+      "name" : "sprms121",
+      "transactionName" : "s121",
+      "description" : "INPUT FRM FOR SUBPRO INQUIRY",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCT TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "PRODUCT SUBTYPE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms121",
+    "transactionName" : "s121",
+    "description" : "INPUT FRM FOR SUBPRO INQUIRY",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCT TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "subpro" : {
+        "name" : "subpro",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "PRODUCT SUBTYPE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

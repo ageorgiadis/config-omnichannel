@@ -1,0 +1,135 @@
+{
+  "name" : "peng",
+  "application" : "pe",
+  "description" : "DEMO TRANSACTION FOR TESTING",
+  "inputRecordName" : "pemeng",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemeng" : {
+      "name" : "pemeng",
+      "transactionName" : "peng",
+      "description" : "TESTING FORMAT FOR DEMO",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "code" : {
+          "name" : "code",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemeng1" : {
+      "name" : "pemeng1",
+      "transactionName" : "peng",
+      "description" : "OUTPUT FORMAT FOR PENG TRANS.",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "categ" : {
+          "name" : "categ",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subcat" : {
+          "name" : "subcat",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "SUB CATEGORY",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "code" : {
+          "name" : "code",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cdprod" : {
+          "name" : "cdprod",
+          "index" : 4,
+          "offset" : 30,
+          "literal" : "CODE PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dscrpro" : {
+          "name" : "dscrpro",
+          "index" : 5,
+          "offset" : 37,
+          "literal" : "DESCRIPTION PROD",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemeng",
+    "transactionName" : "peng",
+    "description" : "TESTING FORMAT FOR DEMO",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "code" : {
+        "name" : "code",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "name" : "utir",
+  "application" : "ug",
+  "description" : "LISTING OF TEIRESIAS DATA",
+  "inputRecordName" : "ugrmgtir",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmgtir" : {
+      "name" : "ugrmgtir",
+      "transactionName" : "utir",
+      "description" : "INQUIRY OF LINK ACCOUNT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cccaso" : {
+          "name" : "cccaso",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmtir3" : {
+      "name" : "ugrmtir3",
+      "transactionName" : "utir",
+      "description" : "HEADER OF TEIRESIAS LISTING",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACC. NUMB",
+          "type" : "Alphanumeric",
+          "length" : 24,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmtir4" : {
+      "name" : "ugrmtir4",
+      "transactionName" : "utir",
+      "description" : "TEIRESIAS DETAIL",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE MODIFY",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "inddata" : {
+          "name" : "inddata",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "FLAG OF TIRESIAS",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "CENTRO UMO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 4,
+          "offset" : 47,
+          "literal" : "USERID UMO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "time" : {
+          "name" : "time",
+          "index" : 5,
+          "offset" : 58,
+          "literal" : "TIME MODIF",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmgtir",
+    "transactionName" : "utir",
+    "description" : "INQUIRY OF LINK ACCOUNT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cccaso" : {
+        "name" : "cccaso",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "name" : "s113",
+  "application" : "sp",
+  "description" : "LINKED PRODUCTS DISPLAY",
+  "inputRecordName" : "sprms113",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprms113" : {
+      "name" : "sprms113",
+      "transactionName" : "s113",
+      "description" : "INPUT FORMAT OF S113",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "product" : {
+          "name" : "product",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRODUCTO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm113a" : {
+      "name" : "sprm113a",
+      "transactionName" : "s113",
+      "description" : "OUTPUT HEADER OF S113",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
+    "sprm113b" : {
+      "name" : "sprm113b",
+      "transactionName" : "s113",
+      "description" : "OUTPUT LINES OF S113",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "applpro" : {
+          "name" : "applpro",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPL-PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms113",
+    "transactionName" : "s113",
+    "description" : "INPUT FORMAT OF S113",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "product" : {
+        "name" : "product",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PRODUCTO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "subpro" : {
+        "name" : "subpro",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "SUBPRO",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

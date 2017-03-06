@@ -1,0 +1,168 @@
+{
+  "name" : "ha1k",
+  "application" : "ha",
+  "description" : "ACCOUNTING ENTRIES",
+  "inputRecordName" : "ham01k",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ham01k" : {
+      "name" : "ham01k",
+      "transactionName" : "ha1k",
+      "description" : "ACCOUNTING ENTRIES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "idatelo" : {
+          "name" : "idatelo",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNTING DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "alog" : {
+          "name" : "alog",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "AA LOG NUMB",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 23,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "blog" : {
+          "name" : "blog",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "BB LOG NUMB",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 127,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "clog" : {
+          "name" : "clog",
+          "index" : 4,
+          "offset" : 39,
+          "literal" : "CC LOG NUMB",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -126,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dlog" : {
+          "name" : "dlog",
+          "index" : 5,
+          "offset" : 44,
+          "literal" : "DD LOG NUMB",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -123,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ham01k",
+    "transactionName" : "ha1k",
+    "description" : "ACCOUNTING ENTRIES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "idatelo" : {
+        "name" : "idatelo",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNTING DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "alog" : {
+        "name" : "alog",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "AA LOG NUMB",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 23,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "blog" : {
+        "name" : "blog",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "BB LOG NUMB",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 127,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "clog" : {
+        "name" : "clog",
+        "index" : 4,
+        "offset" : 39,
+        "literal" : "CC LOG NUMB",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -126,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dlog" : {
+        "name" : "dlog",
+        "index" : 5,
+        "offset" : 44,
+        "literal" : "DD LOG NUMB",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -123,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "name" : "bcr1",
+  "application" : "bc",
+  "description" : "PRICING COMMISSIONS",
+  "inputRecordName" : "bcmbcr1",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bcmbcr1" : {
+      "name" : "bcmbcr1",
+      "transactionName" : "bcr1",
+      "description" : "INPUT FORMAT FOR BCR1",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INPUT OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "level" : {
+          "name" : "level",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "LEVEL/PACKAGE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "DATE DDMMYYYY",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cond" : {
+          "name" : "cond",
+          "index" : 4,
+          "offset" : 36,
+          "literal" : "CONDITION",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bcmbcr1",
+    "transactionName" : "bcr1",
+    "description" : "INPUT FORMAT FOR BCR1",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "INPUT OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "level" : {
+        "name" : "level",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "LEVEL/PACKAGE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "date" : {
+        "name" : "date",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "DATE DDMMYYYY",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cond" : {
+        "name" : "cond",
+        "index" : 4,
+        "offset" : 36,
+        "literal" : "CONDITION",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

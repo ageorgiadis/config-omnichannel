@@ -1,0 +1,233 @@
+{
+  "name" : "bsa1",
+  "application" : "bg",
+  "description" : "ΔΙΑΧΕΙΡΙΣΗ ΜΗΝ. ΚΑΤΑΒΟΛ. ΑΠΟΤΑΜΙΕΥΩ",
+  "inputRecordName" : "bgmsa1",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmsa1" : {
+      "name" : "bgmsa1",
+      "transactionName" : "bsa1",
+      "description" : "INPUT FORMAT FOR TRANS BSA1",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "amount" : {
+          "name" : "amount",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "INPUT AMOUNT",
+          "type" : "Numeric",
+          "length" : 15,
+          "scale" : 2,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmsa01" : {
+      "name" : "bgmsa01",
+      "transactionName" : "bsa1",
+      "description" : "ΜΕΤΑΒ.ΜΗΝ.ΚΑΤΑΒ.ΛΟΓ.ΑΠΟΤΑΜΙΕΥΩ",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "center" : {
+          "name" : "center",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΚΑΤΑΣΤΗΜΑ",
+          "type" : "Alphanumeric",
+          "length" : 35,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "accdate" : {
+          "name" : "accdate",
+          "index" : 2,
+          "offset" : 54,
+          "literal" : "ΗΜΕΡΟΜΗΝΙΑ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "telnumb" : {
+          "name" : "telnumb",
+          "index" : 3,
+          "offset" : 67,
+          "literal" : "ΤΗΛΕΦΩΝΟ",
+          "type" : "Alphanumeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 4,
+          "offset" : 83,
+          "literal" : "ΛΟΓ/ΣΜΟΣ ΠΕΛΑΤΗ",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "pelname" : {
+          "name" : "pelname",
+          "index" : 5,
+          "offset" : 109,
+          "literal" : "ΕΠΩΝΥΜΙΑ ΠΕΛΑΤΗ",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "prvposo" : {
+          "name" : "prvposo",
+          "index" : 6,
+          "offset" : 172,
+          "literal" : "ΠΡΟΗΓ.ΜΗΝ.ΚΑΤΑΒΟΛΗ",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "newposo" : {
+          "name" : "newposo",
+          "index" : 7,
+          "offset" : 195,
+          "literal" : "ΝΕΑ ΜΗΝΙΑΙΑ ΚΑΤΑΒΟΛΗ",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "apodate" : {
+          "name" : "apodate",
+          "index" : 8,
+          "offset" : 218,
+          "literal" : "ΗΜ/ΝΙΑ ΙΣΧΥΟΣ ΜΕΤΑΒ.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmsa1",
+    "transactionName" : "bsa1",
+    "description" : "INPUT FORMAT FOR TRANS BSA1",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "amount" : {
+        "name" : "amount",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "INPUT AMOUNT",
+        "type" : "Numeric",
+        "length" : 15,
+        "scale" : 2,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

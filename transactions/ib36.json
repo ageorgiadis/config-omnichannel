@@ -1,0 +1,56 @@
+{
+  "name" : "ib36",
+  "application" : "pe",
+  "description" : "CUSTOMER DATA FOR IB SYMBASH",
+  "inputRecordName" : "ibm0360",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ibm0360" : {
+      "name" : "ibm0360",
+      "transactionName" : "ib36",
+      "description" : "CUSTOMER DATA FOR IB SYMBASH",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ibm0360",
+    "transactionName" : "ib36",
+    "description" : "CUSTOMER DATA FOR IB SYMBASH",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

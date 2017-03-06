@@ -1,0 +1,56 @@
+{
+  "name" : "ib34",
+  "application" : "ib",
+  "description" : "EBANKING STATUS LIST",
+  "inputRecordName" : "ibm0340",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ibm0340" : {
+      "name" : "ibm0340",
+      "transactionName" : "ib34",
+      "description" : "EBANKING STATUS LISTING",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "statdt" : {
+          "name" : "statdt",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "STATUS DATE DDMMYYYY",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ibm0340",
+    "transactionName" : "ib34",
+    "description" : "EBANKING STATUS LISTING",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "statdt" : {
+        "name" : "statdt",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "STATUS DATE DDMMYYYY",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

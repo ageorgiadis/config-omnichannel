@@ -1,0 +1,168 @@
+{
+  "name" : "mb09",
+  "application" : "mb",
+  "description" : "VARIABLE INFO MAINTENANCE",
+  "inputRecordName" : "mbrm900",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mbrm900" : {
+      "name" : "mbrm900",
+      "transactionName" : "mb09",
+      "description" : "VARIABLE INFO MAINTENANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "refnum" : {
+          "name" : "refnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "REFERENCE NUM",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cardtyp" : {
+          "name" : "cardtyp",
+          "index" : 2,
+          "offset" : 38,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "infotyp" : {
+          "name" : "infotyp",
+          "index" : 3,
+          "offset" : 43,
+          "literal" : "INFO TYPE",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "infodes" : {
+          "name" : "infodes",
+          "index" : 4,
+          "offset" : 61,
+          "literal" : "INFO DESC",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "infoval" : {
+          "name" : "infoval",
+          "index" : 5,
+          "offset" : 114,
+          "literal" : "INFOVALUE",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mbrm900",
+    "transactionName" : "mb09",
+    "description" : "VARIABLE INFO MAINTENANCE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "refnum" : {
+        "name" : "refnum",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "REFERENCE NUM",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cardtyp" : {
+        "name" : "cardtyp",
+        "index" : 2,
+        "offset" : 38,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "infotyp" : {
+        "name" : "infotyp",
+        "index" : 3,
+        "offset" : 43,
+        "literal" : "INFO TYPE",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "infodes" : {
+        "name" : "infodes",
+        "index" : 4,
+        "offset" : 61,
+        "literal" : "INFO DESC",
+        "type" : "Alphanumeric",
+        "length" : 50,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "infoval" : {
+        "name" : "infoval",
+        "index" : 5,
+        "offset" : 114,
+        "literal" : "INFOVALUE",
+        "type" : "Alphanumeric",
+        "length" : 60,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

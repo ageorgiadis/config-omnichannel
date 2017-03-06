@@ -1,0 +1,168 @@
+{
+  "name" : "blpa",
+  "application" : "bg",
+  "description" : "LIST OF ALL PAYMENTS",
+  "inputRecordName" : "bgmblpa",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmblpa" : {
+      "name" : "bgmblpa",
+      "transactionName" : "blpa",
+      "description" : "LIST OF ALL PAYMENTS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "orgcode" : {
+          "name" : "orgcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ORGANISATION CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "regnum" : {
+          "name" : "regnum",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "REGISTRATION NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "PAYMENT STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datefrm" : {
+          "name" : "datefrm",
+          "index" : 4,
+          "offset" : 40,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 5,
+          "offset" : 53,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmblpa",
+    "transactionName" : "blpa",
+    "description" : "LIST OF ALL PAYMENTS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "orgcode" : {
+        "name" : "orgcode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ORGANISATION CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "regnum" : {
+        "name" : "regnum",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "REGISTRATION NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "status" : {
+        "name" : "status",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "PAYMENT STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "datefrm" : {
+        "name" : "datefrm",
+        "index" : 4,
+        "offset" : 40,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 5,
+        "offset" : 53,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

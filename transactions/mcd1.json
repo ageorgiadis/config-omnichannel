@@ -1,0 +1,168 @@
+{
+  "name" : "mcd1",
+  "application" : "mc",
+  "description" : "ΕΜΦΑΝΙΣΗ ΔΙΑΜΟΡΦΩΣΗΣ C.A. ΟΡΙΟΥ",
+  "inputRecordName" : "mcmd100",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcmd100" : {
+      "name" : "mcmd100",
+      "transactionName" : "mcd1",
+      "description" : "INPUT FORMAT FOR MCD1",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ttarje" : {
+          "name" : "ttarje",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CARD TYPE ΠΡΟΙΟΝΤΟΣ",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "strinsd" : {
+          "name" : "strinsd",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "ΗΜΕΡ.ΕΝΑΡΞΗΣ ΚΑΤ/ΣΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "endinsd" : {
+          "name" : "endinsd",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "ΗΜΕΡ.ΛΗΞΗΣ ΚΑΤΑΧ/ΣΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "strupdd" : {
+          "name" : "strupdd",
+          "index" : 4,
+          "offset" : 47,
+          "literal" : "ΗΜΕΡ.ΕΝΑΡΞΗΣ ΕΝΗΜΕΡ.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "endupdd" : {
+          "name" : "endupdd",
+          "index" : 5,
+          "offset" : 60,
+          "literal" : "ΗΜΕΡ.ΛΗΞΗΣ ΕΝΗΜΕΡ.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcmd100",
+    "transactionName" : "mcd1",
+    "description" : "INPUT FORMAT FOR MCD1",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ttarje" : {
+        "name" : "ttarje",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CARD TYPE ΠΡΟΙΟΝΤΟΣ",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "strinsd" : {
+        "name" : "strinsd",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "ΗΜΕΡ.ΕΝΑΡΞΗΣ ΚΑΤ/ΣΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "endinsd" : {
+        "name" : "endinsd",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "ΗΜΕΡ.ΛΗΞΗΣ ΚΑΤΑΧ/ΣΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "strupdd" : {
+        "name" : "strupdd",
+        "index" : 4,
+        "offset" : 47,
+        "literal" : "ΗΜΕΡ.ΕΝΑΡΞΗΣ ΕΝΗΜΕΡ.",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "endupdd" : {
+        "name" : "endupdd",
+        "index" : 5,
+        "offset" : 60,
+        "literal" : "ΗΜΕΡ.ΛΗΞΗΣ ΕΝΗΜΕΡ.",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

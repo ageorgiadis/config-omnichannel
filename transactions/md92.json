@@ -1,0 +1,112 @@
+{
+  "name" : "md92",
+  "application" : "mc",
+  "description" : "CONSULTA SALIDAS A IMPRESORA",
+  "inputRecordName" : "mdrm920",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mdrm920" : {
+      "name" : "mdrm920",
+      "transactionName" : "md92",
+      "description" : "CONSULTA SORTIDES A IMPRESORES",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cnsesio" : {
+          "name" : "cnsesio",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MCNSESIO",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "chopera" : {
+          "name" : "chopera",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "MCHOPERA",
+          "type" : "Numeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccorech" : {
+          "name" : "ccorech",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "MCCORECH",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mdrm920",
+    "transactionName" : "md92",
+    "description" : "CONSULTA SORTIDES A IMPRESORES",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cnsesio" : {
+        "name" : "cnsesio",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MCNSESIO",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "chopera" : {
+        "name" : "chopera",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "MCHOPERA",
+        "type" : "Numeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccorech" : {
+        "name" : "ccorech",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "MCCORECH",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

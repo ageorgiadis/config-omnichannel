@@ -1,0 +1,56 @@
+{
+  "name" : "b442",
+  "application" : "bg",
+  "description" : "ΑΙΤΗΣΕΙΣ ΣΠΥ ΓΙΑ ΕΛΕΓΧΟ ΤΕΙΡΕΣΙΑ",
+  "inputRecordName" : "bgm442",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm442" : {
+      "name" : "bgm442",
+      "transactionName" : "b442",
+      "description" : "INQUIRY ΤΕΙΡΕΣΙΑ ΓΙΑ ΣΠΥ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "timest" : {
+          "name" : "timest",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TIMESTAMP",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm442",
+    "transactionName" : "b442",
+    "description" : "INQUIRY ΤΕΙΡΕΣΙΑ ΓΙΑ ΣΠΥ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "timest" : {
+        "name" : "timest",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TIMESTAMP",
+        "type" : "Alphanumeric",
+        "length" : 26,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

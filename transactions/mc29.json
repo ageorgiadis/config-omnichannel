@@ -1,0 +1,270 @@
+{
+  "name" : "mc29",
+  "application" : "mp",
+  "description" : "MANAGE REJECTION CODES",
+  "inputRecordName" : "mcrm2900",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm2900" : {
+      "name" : "mcrm2900",
+      "transactionName" : "mc29",
+      "description" : "INPUT MANAGE REJECTION CODES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejcode" : {
+          "name" : "rejcode",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "REJECTED CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejdesc" : {
+          "name" : "rejdesc",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "REJECTED DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejstat" : {
+          "name" : "rejstat",
+          "index" : 4,
+          "offset" : 68,
+          "literal" : "REJECT CODE STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    },
+    "mcm290a" : {
+      "name" : "mcm290a",
+      "transactionName" : "mc29",
+      "description" : "HEADER MANAGE REJECTION CODES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    },
+    "mcm290b" : {
+      "name" : "mcm290b",
+      "transactionName" : "mc29",
+      "description" : "DETAIL MANAGE REJECTION CODES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "rejcode" : {
+          "name" : "rejcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "REJECTION CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejdesc" : {
+          "name" : "rejdesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "REJECTION DESC",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejflag" : {
+          "name" : "rejflag",
+          "index" : 3,
+          "offset" : 64,
+          "literal" : "REJ ACT FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejact" : {
+          "name" : "rejact",
+          "index" : 4,
+          "offset" : 68,
+          "literal" : "REJ DATE ACT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejdeac" : {
+          "name" : "rejdeac",
+          "index" : 5,
+          "offset" : 81,
+          "literal" : "REJ DATE DEACT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejuid" : {
+          "name" : "rejuid",
+          "index" : 6,
+          "offset" : 94,
+          "literal" : "REJ USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "rejdate" : {
+          "name" : "rejdate",
+          "index" : 7,
+          "offset" : 105,
+          "literal" : "REJ DATE/TIME",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm2900",
+    "transactionName" : "mc29",
+    "description" : "INPUT MANAGE REJECTION CODES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "rejcode" : {
+        "name" : "rejcode",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "REJECTED CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "rejdesc" : {
+        "name" : "rejdesc",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "REJECTED DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "rejstat" : {
+        "name" : "rejstat",
+        "index" : 4,
+        "offset" : 68,
+        "literal" : "REJECT CODE STATUS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

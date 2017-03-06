@@ -1,0 +1,191 @@
+{
+  "name" : "b418",
+  "application" : "bg",
+  "description" : "FISCAL INFORMATION AT CIF LEVEL",
+  "inputRecordName" : "bgm4180",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm418o" : {
+      "name" : "bgm418o",
+      "transactionName" : "b418",
+      "description" : "FISCAL INFORMATION CIF LEVEL",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entity" : {
+          "name" : "entity",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "center" : {
+          "name" : "center",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "CENTER CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "partype" : {
+          "name" : "partype",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "PARTICIPANT TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "parseq" : {
+          "name" : "parseq",
+          "index" : 5,
+          "offset" : 47,
+          "literal" : "PARTICIPANT SEQUENCE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 6,
+          "offset" : 52,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 7,
+          "offset" : 57,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm4180" : {
+      "name" : "bgm4180",
+      "transactionName" : "b418",
+      "description" : "FISCAL INFORMATION CIF LEVEL",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "year" : {
+          "name" : "year",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "YEAR TO BE INQUIRED",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm4180",
+    "transactionName" : "b418",
+    "description" : "FISCAL INFORMATION CIF LEVEL",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "year" : {
+        "name" : "year",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "YEAR TO BE INQUIRED",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

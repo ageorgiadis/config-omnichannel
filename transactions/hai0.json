@@ -1,0 +1,79 @@
+{
+  "name" : "hai0",
+  "application" : "ha",
+  "description" : "ΓΕΝΙΚΗ ΛΟΓΙΣΤΙΚΗ  -  ΤΕΛΟΣ ΕΤΟΥΣ",
+  "inputRecordName" : "harmii0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "harm0i0" : {
+      "name" : "harm0i0",
+      "transactionName" : "hai0",
+      "description" : "CONTABILIZACION Y ALTA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PLAZO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    },
+    "harmii0" : {
+      "name" : "harmii0",
+      "transactionName" : "hai0",
+      "description" : "XONTABILIZACION Y ALTA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PLAZO",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "harmii0",
+    "transactionName" : "hai0",
+    "description" : "XONTABILIZACION Y ALTA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "PLAZO",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name" : "bga1",
+  "application" : "bg",
+  "description" : "ΔΙΑΧΕΙΡΙΣΗ ΛΟΓΑΡΙΑΣΜΩΝ ΧΡΕΩΣΗΣ ΠΡΟΜ",
+  "inputRecordName" : "bgmga10",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmga10" : {
+      "name" : "bgmga10",
+      "transactionName" : "bga1",
+      "description" : "INPUT FORMAT FOR BGA1",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION ΣΥΝΑΛΛΑΓΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "saccid" : {
+          "name" : "saccid",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sacacct" : {
+          "name" : "sacacct",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "CUSTOMER ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmga10",
+    "transactionName" : "bga1",
+    "description" : "INPUT FORMAT FOR BGA1",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION ΣΥΝΑΛΛΑΓΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "saccid" : {
+        "name" : "saccid",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "sacacct" : {
+        "name" : "sacacct",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "CUSTOMER ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

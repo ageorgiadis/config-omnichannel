@@ -1,0 +1,140 @@
+{
+  "name" : "pe5m",
+  "application" : "pe",
+  "description" : "MENU FOR CREDIT RATE",
+  "inputRecordName" : "penmenu",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "penmenu" : {
+      "name" : "penmenu",
+      "transactionName" : "pe5m",
+      "description" : "CREDIT RATES MAINTENANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "cifnum" : {
+          "name" : "cifnum",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CIF NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "dateini" : {
+          "name" : "dateini",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "INITIAL PERIOD DAY",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "dateend" : {
+          "name" : "dateend",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "END PERIOD DAY",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "penmenu",
+    "transactionName" : "pe5m",
+    "description" : "CREDIT RATES MAINTENANCE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "cifnum" : {
+        "name" : "cifnum",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CIF NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "dateini" : {
+        "name" : "dateini",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "INITIAL PERIOD DAY",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "dateend" : {
+        "name" : "dateend",
+        "index" : 4,
+        "offset" : 43,
+        "literal" : "END PERIOD DAY",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "pb51",
+  "application" : "pb",
+  "description" : "CROSS SELLING",
+  "inputRecordName" : "pbm051",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pbm051" : {
+      "name" : "pbm051",
+      "transactionName" : "pb51",
+      "description" : "CROSS SELLING",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "numcli" : {
+          "name" : "numcli",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER ID.",
+          "type" : "Numeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pbm051",
+    "transactionName" : "pb51",
+    "description" : "CROSS SELLING",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "numcli" : {
+        "name" : "numcli",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER ID.",
+        "type" : "Numeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

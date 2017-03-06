@@ -1,0 +1,172 @@
+{
+  "name" : "gr30",
+  "application" : "gr",
+  "description" : "LIST OF ACCOUNT TRANSITION",
+  "inputRecordName" : "grm030",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "grm030" : {
+      "name" : "grm030",
+      "transactionName" : "gr30",
+      "description" : "GRM030",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cid" : {
+          "name" : "cid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CID OF CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cdgrupo" : {
+          "name" : "cdgrupo",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CODE OF GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "grrm30b" : {
+      "name" : "grrm30b",
+      "transactionName" : "gr30",
+      "description" : "OUTPUT FORMAT FOR GR30 (DTL)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT OF CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "grrm30a" : {
+      "name" : "grrm30a",
+      "transactionName" : "gr30",
+      "description" : "OUTPUT FORMAT FOR GR30 (HD)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cid" : {
+          "name" : "cid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CID OF CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cidname" : {
+          "name" : "cidname",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "NAME OF CUSTOMER",
+          "type" : "Alphanumeric",
+          "length" : 80,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cdgrupo" : {
+          "name" : "cdgrupo",
+          "index" : 3,
+          "offset" : 110,
+          "literal" : "GROUP CODE OF CUST",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dsgrupo" : {
+          "name" : "dsgrupo",
+          "index" : 4,
+          "offset" : 121,
+          "literal" : "GROUP DESCR OF CUST",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "grm030",
+    "transactionName" : "gr30",
+    "description" : "GRM030",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cid" : {
+        "name" : "cid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CID OF CUSTOMER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cdgrupo" : {
+        "name" : "cdgrupo",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CODE OF GROUP",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

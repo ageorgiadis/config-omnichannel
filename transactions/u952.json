@@ -1,0 +1,228 @@
+{
+  "name" : "u952",
+  "application" : "ug",
+  "description" : "LIST VALID ACCOUNTS LINKED",
+  "inputRecordName" : "ugrmg952",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugm952a" : {
+      "name" : "ugm952a",
+      "transactionName" : "u952",
+      "description" : "OUTPUT HEADER UG2CG952",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugm952b" : {
+      "name" : "ugm952b",
+      "transactionName" : "u952",
+      "description" : "OUTPUT FORMAT UG2CG952",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "acctno" : {
+          "name" : "acctno",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCTNO",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "curr" : {
+          "name" : "curr",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CURR",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "suffix" : {
+          "name" : "suffix",
+          "index" : 3,
+          "offset" : 46,
+          "literal" : "SUFFIX",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 4,
+          "offset" : 53,
+          "literal" : "DESC",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "accntyp" : {
+          "name" : "accntyp",
+          "index" : 5,
+          "offset" : 71,
+          "literal" : "ACCNTYP",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "bentype" : {
+          "name" : "bentype",
+          "index" : 6,
+          "offset" : 84,
+          "literal" : "BENEFICIARY TYPE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "benseq" : {
+          "name" : "benseq",
+          "index" : 7,
+          "offset" : 97,
+          "literal" : "BENSEQ",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "accstst" : {
+          "name" : "accstst",
+          "index" : 8,
+          "offset" : 102,
+          "literal" : "ACCOUNT STATUS",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmg952" : {
+      "name" : "ugrmg952",
+      "transactionName" : "u952",
+      "description" : "INPUT COPY UG2CG952",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cid" : {
+          "name" : "cid",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CUST IDENTIFIER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmg952",
+    "transactionName" : "u952",
+    "description" : "INPUT COPY UG2CG952",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "busunit" : {
+        "name" : "busunit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BUSINESS UNIT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cid" : {
+        "name" : "cid",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CUST IDENTIFIER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

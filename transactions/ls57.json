@@ -1,0 +1,330 @@
+{
+  "name" : "ls57",
+  "application" : "ls",
+  "description" : "LIST EXPENSES DUE XCEEDED DEVIATION",
+  "inputRecordName" : "lsm5700",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lsrm5704" : {
+      "name" : "lsrm5704",
+      "transactionName" : "ls57",
+      "description" : "INCOME FROM AUTHORIZATION",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "lsbrnum" : {
+          "name" : "lsbrnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LSBRNUM",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lsdatfr" : {
+          "name" : "lsdatfr",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "LSDATFR",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lsdatto" : {
+          "name" : "lsdatto",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "LSDATTO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "lsrm5701" : {
+      "name" : "lsrm5701",
+      "transactionName" : "ls57",
+      "description" : "LIST HEADER DATA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "lsrm5702" : {
+      "name" : "lsrm5702",
+      "transactionName" : "ls57",
+      "description" : "LIST DETAIL DATA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "lsdate" : {
+          "name" : "lsdate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LSDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lremes" : {
+          "name" : "lremes",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "LSNREMES",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lsnum" : {
+          "name" : "lsnum",
+          "index" : 3,
+          "offset" : 44,
+          "literal" : "LSNUMCLI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lscusno" : {
+          "name" : "lscusno",
+          "index" : 4,
+          "offset" : 55,
+          "literal" : "LSCUSNUM",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lsamt" : {
+          "name" : "lsamt",
+          "index" : 5,
+          "offset" : 88,
+          "literal" : "LSAMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "lscom" : {
+          "name" : "lscom",
+          "index" : 6,
+          "offset" : 111,
+          "literal" : "LSCOMMIS",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "lsrm5703" : {
+      "name" : "lsrm5703",
+      "transactionName" : "ls57",
+      "description" : "HEADER DATA2",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "lsm5700" : {
+      "name" : "lsm5700",
+      "transactionName" : "ls57",
+      "description" : "INPUT FOR LS2C5700",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "lsdatfr" : {
+          "name" : "lsdatfr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lsdatto" : {
+          "name" : "lsdatto",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DATETO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "lsbrnum" : {
+          "name" : "lsbrnum",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "BRANCH CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "loption" : {
+          "name" : "loption",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lsm5700",
+    "transactionName" : "ls57",
+    "description" : "INPUT FOR LS2C5700",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "lsdatfr" : {
+        "name" : "lsdatfr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lsdatto" : {
+        "name" : "lsdatto",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "DATETO",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "lsbrnum" : {
+        "name" : "lsbrnum",
+        "index" : 3,
+        "offset" : 42,
+        "literal" : "BRANCH CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "loption" : {
+        "name" : "loption",
+        "index" : 4,
+        "offset" : 49,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

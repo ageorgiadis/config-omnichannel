@@ -1,0 +1,135 @@
+{
+  "name" : "peea",
+  "application" : "pe",
+  "description" : "EXCEPTION AUTO.LIMIT INCREASMENT",
+  "inputRecordName" : "pemeea0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemeea0" : {
+      "name" : "pemeea0",
+      "transactionName" : "peea",
+      "description" : "EXCEPTION AUTO.LIMIT INCREAS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "index" : {
+          "name" : "index",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "EXCEPTION FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemeea2" : {
+      "name" : "pemeea2",
+      "transactionName" : "peea",
+      "description" : "EXCEPTION AUTO.LIMIT INCREAS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "custcd" : {
+          "name" : "custcd",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemeea0",
+    "transactionName" : "peea",
+    "description" : "EXCEPTION AUTO.LIMIT INCREAS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "index" : {
+        "name" : "index",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "EXCEPTION FLAG",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

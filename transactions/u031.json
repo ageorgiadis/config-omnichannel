@@ -1,0 +1,139 @@
+{
+  "name" : "u031",
+  "application" : "ug",
+  "description" : "CREDIT SCORING",
+  "inputRecordName" : "ugrm520",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrm521" : {
+      "name" : "ugrm521",
+      "transactionName" : "u031",
+      "description" : "CREDIT SCORING OUTPUT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "titular" : {
+          "name" : "titular",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER NAME",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 2,
+          "offset" : 69,
+          "literal" : "SUBPRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "crdscor" : {
+          "name" : "crdscor",
+          "index" : 3,
+          "offset" : 76,
+          "literal" : "CREDIT SCORE",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrm520" : {
+      "name" : "ugrm520",
+      "transactionName" : "u031",
+      "description" : "CREDIT SCORING",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "C.A.C.",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CUSTOMER CODE",
+          "type" : "Numeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "QR8CACN",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrm520",
+    "transactionName" : "u031",
+    "description" : "CREDIT SCORING",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "C.A.C.",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "CUSTOMER CODE",
+        "type" : "Numeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "QR8CACN",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

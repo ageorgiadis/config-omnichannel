@@ -1,0 +1,163 @@
+{
+  "name" : "s300",
+  "application" : "sp",
+  "description" : "DISPLAY OF LOAN EXPENSES BNF",
+  "inputRecordName" : "sprms300",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "sprms300" : {
+      "name" : "sprms300",
+      "transactionName" : "s300",
+      "description" : "INPUT FORMAT OF S300",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "sprm300a" : {
+      "name" : "sprm300a",
+      "transactionName" : "s300",
+      "description" : "OUTPUT FOR LOAN EXPENSES BNF",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "digits" : {
+          "name" : "digits",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "CHECK DIGITS",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "startdt" : {
+          "name" : "startdt",
+          "index" : 5,
+          "offset" : 52,
+          "literal" : "FORMALIZATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "enddt" : {
+          "name" : "enddt",
+          "index" : 6,
+          "offset" : 65,
+          "literal" : "END DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "numofpr" : {
+          "name" : "numofpr",
+          "index" : 7,
+          "offset" : 78,
+          "literal" : "REMAIN. NUM OF PREST",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "sprms300",
+    "transactionName" : "s300",
+    "description" : "INPUT FORMAT OF S300",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

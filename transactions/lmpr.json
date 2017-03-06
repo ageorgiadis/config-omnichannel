@@ -1,0 +1,112 @@
+{
+  "name" : "lmpr",
+  "application" : "lm",
+  "description" : "ALTAMIRA PRODUCTS REGISTRATION",
+  "inputRecordName" : "lmmprm0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "lmmprm0" : {
+      "name" : "lmmprm0",
+      "transactionName" : "lmpr",
+      "description" : "ALTAMIRA PRODUCTS REGISTRATION",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prcode" : {
+          "name" : "prcode",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "pososto" : {
+          "name" : "pososto",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "EXCESS PERCENT",
+          "type" : "Numeric",
+          "length" : 5,
+          "scale" : 2,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "lmmprm0",
+    "transactionName" : "lmpr",
+    "description" : "ALTAMIRA PRODUCTS REGISTRATION",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "prcode" : {
+        "name" : "prcode",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "PRODUCT CODE",
+        "type" : "Alphanumeric",
+        "length" : 17,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "pososto" : {
+        "name" : "pososto",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "EXCESS PERCENT",
+        "type" : "Numeric",
+        "length" : 5,
+        "scale" : 2,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

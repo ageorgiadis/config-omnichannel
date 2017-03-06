@@ -1,0 +1,84 @@
+{
+  "name" : "qg40",
+  "application" : "qg",
+  "description" : "DEFINE NEW FT USER",
+  "inputRecordName" : "qgrmg40",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmg40" : {
+      "name" : "qgrmg40",
+      "transactionName" : "qg40",
+      "description" : "DEFINE NEW FT USERS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "usuario" : {
+          "name" : "usuario",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "USER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grusuar" : {
+          "name" : "grusuar",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "USER GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmg40",
+    "transactionName" : "qg40",
+    "description" : "DEFINE NEW FT USERS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "usuario" : {
+        "name" : "usuario",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "USER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "grusuar" : {
+        "name" : "grusuar",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "USER GROUP",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

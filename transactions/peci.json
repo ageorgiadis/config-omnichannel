@@ -1,0 +1,112 @@
+{
+  "name" : "peci",
+  "application" : "pe",
+  "description" : "DATE FROM PEDTCSI",
+  "inputRecordName" : "permcsi",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "permcsi" : {
+      "name" : "permcsi",
+      "transactionName" : "peci",
+      "description" : "DATA OF PEDTCSI",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "custid" : {
+          "name" : "custid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER ID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "typomsg" : {
+          "name" : "typomsg",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "TYPE OF MESSAGE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "srccid" : {
+          "name" : "srccid",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "SOURCE CID",
+          "type" : "Alphanumeric",
+          "length" : 80,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "permcsi",
+    "transactionName" : "peci",
+    "description" : "DATA OF PEDTCSI",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "custid" : {
+        "name" : "custid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER ID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "typomsg" : {
+        "name" : "typomsg",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "TYPE OF MESSAGE",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "srccid" : {
+        "name" : "srccid",
+        "index" : 3,
+        "offset" : 33,
+        "literal" : "SOURCE CID",
+        "type" : "Alphanumeric",
+        "length" : 80,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

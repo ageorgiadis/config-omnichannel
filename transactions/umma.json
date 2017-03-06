@@ -1,0 +1,112 @@
+{
+  "name" : "umma",
+  "application" : "um",
+  "description" : "MANTENIMIENTO CODIGOS DOCUMENTOS",
+  "inputRecordName" : "umrmmam",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "umrmmam" : {
+      "name" : "umrmmam",
+      "transactionName" : "umma",
+      "description" : "MANT. CODIGOS DOCUMENTOS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "coddocu" : {
+          "name" : "coddocu",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODIGO DE DOCUMENTO",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "textola" : {
+          "name" : "textola",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "TEXTO LARGO",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "textore" : {
+          "name" : "textore",
+          "index" : 3,
+          "offset" : 75,
+          "literal" : "TEXTO REDUCIDO",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "umrmmam",
+    "transactionName" : "umma",
+    "description" : "MANT. CODIGOS DOCUMENTOS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "coddocu" : {
+        "name" : "coddocu",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODIGO DE DOCUMENTO",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "textola" : {
+        "name" : "textola",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "TEXTO LARGO",
+        "type" : "Alphanumeric",
+        "length" : 50,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "textore" : {
+        "name" : "textore",
+        "index" : 3,
+        "offset" : 75,
+        "literal" : "TEXTO REDUCIDO",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

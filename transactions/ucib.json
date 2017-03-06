@@ -1,0 +1,142 @@
+{
+  "name" : "ucib",
+  "application" : "uc",
+  "description" : "PROGRAMS PER INSURANCE COMPANY",
+  "inputRecordName" : "ucrmibc",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ucrmibc" : {
+      "name" : "ucrmibc",
+      "transactionName" : "ucib",
+      "description" : "PROGRAMS PER INSURANCE COMPANY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cliente" : {
+          "name" : "cliente",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUSTOMER ID",
+          "type" : "Numeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "BR6CNEW1",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "titular" : {
+          "name" : "titular",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUSTOMER ID NAME",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "eappaa" : {
+          "name" : "eappaa",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "INSURANCE CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "eappde" : {
+          "name" : "eappde",
+          "index" : 4,
+          "offset" : 75,
+          "literal" : "INS. CODE DESCRIPTIO",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ucrmibc",
+    "transactionName" : "ucib",
+    "description" : "PROGRAMS PER INSURANCE COMPANY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cliente" : {
+        "name" : "cliente",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUSTOMER ID",
+        "type" : "Numeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 10,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "BR6CNEW1",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "titular" : {
+        "name" : "titular",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "CUSTOMER ID NAME",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 8,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "eappaa" : {
+        "name" : "eappaa",
+        "index" : 3,
+        "offset" : 70,
+        "literal" : "INSURANCE CODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "eappde" : {
+        "name" : "eappde",
+        "index" : 4,
+        "offset" : 75,
+        "literal" : "INS. CODE DESCRIPTIO",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 7,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

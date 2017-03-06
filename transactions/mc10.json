@@ -1,0 +1,140 @@
+{
+  "name" : "mc10",
+  "application" : "mc",
+  "description" : "MENU DE TARJETAS Y CONTRATOS",
+  "inputRecordName" : "mcrm100",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm100" : {
+      "name" : "mcrm100",
+      "transactionName" : "mc10",
+      "description" : "MENU DE TARJETES",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPCION",
+          "type" : "Numeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tarjeta" : {
+          "name" : "tarjeta",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TARJETA",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contrat" : {
+          "name" : "contrat",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "CONTRAT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 4,
+          "offset" : 65,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm100",
+    "transactionName" : "mc10",
+    "description" : "MENU DE TARJETES",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPCION",
+        "type" : "Numeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "tarjeta" : {
+        "name" : "tarjeta",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "TARJETA",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "contrat" : {
+        "name" : "contrat",
+        "index" : 3,
+        "offset" : 42,
+        "literal" : "CONTRAT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 4,
+        "offset" : 65,
+        "literal" : "CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "pe86",
+  "application" : "pe",
+  "description" : "PBR CUSTOMERS WITHOUT PB UNIT",
+  "inputRecordName" : "pem086",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pem086" : {
+      "name" : "pem086",
+      "transactionName" : "pe86",
+      "description" : "PBR CUSTOMERS PBUNIT (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "inpdate" : {
+          "name" : "inpdate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΗΜ/ΝΙΑ ΚΑΤΑΧΩΡΗΣΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pem086",
+    "transactionName" : "pe86",
+    "description" : "PBR CUSTOMERS PBUNIT (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "inpdate" : {
+        "name" : "inpdate",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ΗΜ/ΝΙΑ ΚΑΤΑΧΩΡΗΣΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

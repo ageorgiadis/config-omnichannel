@@ -1,0 +1,232 @@
+{
+  "name" : "bgg3",
+  "application" : "bg",
+  "description" : "GROUP EXCEPTION MANAGEMENT",
+  "inputRecordName" : "bgmgo30",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgbgg31" : {
+      "name" : "bgbgg31",
+      "transactionName" : "bgg3",
+      "description" : "GROUP EXCEPTION HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "filler" : {
+          "name" : "filler",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FILLER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmgo31" : {
+      "name" : "bgmgo31",
+      "transactionName" : "bgg3",
+      "description" : "GROUP EXCEPTION HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "filler" : {
+          "name" : "filler",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FILLER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmgo32" : {
+      "name" : "bgmgo32",
+      "transactionName" : "bgg3",
+      "description" : "GROUP EXCEPTION OUTPUT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "grpcode" : {
+          "name" : "grpcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grpdscr" : {
+          "name" : "grpdscr",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUP DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 3,
+          "offset" : 80,
+          "literal" : "REGISTER DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "user" : {
+          "name" : "user",
+          "index" : 4,
+          "offset" : 93,
+          "literal" : "USER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmrgo3" : {
+      "name" : "bgmrgo3",
+      "transactionName" : "bgg3",
+      "description" : "GROUP EXCEPTION MANAGEMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION CHARACTER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "group" : {
+          "name" : "group",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmgo30" : {
+      "name" : "bgmgo30",
+      "transactionName" : "bgg3",
+      "description" : "GROUP EXCEPTION MANAGEMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION CHARACTER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "group" : {
+          "name" : "group",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmgo30",
+    "transactionName" : "bgg3",
+    "description" : "GROUP EXCEPTION MANAGEMENT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION CHARACTER",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "group" : {
+        "name" : "group",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

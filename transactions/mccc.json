@@ -1,0 +1,140 @@
+{
+  "name" : "mccc",
+  "application" : "mc",
+  "description" : "ΧΑΡΑΚΤ.ΚΑΡΤΑΣ CONT/LESS-STICKER",
+  "inputRecordName" : "mcmcc00",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcmcc00" : {
+      "name" : "mcmcc00",
+      "transactionName" : "mccc",
+      "description" : "INPUT FORMAT FOR MCCC",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TRANSACTION OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardnum" : {
+          "name" : "cardnum",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "typcard" : {
+          "name" : "typcard",
+          "index" : 3,
+          "offset" : 39,
+          "literal" : "CONTACTLESS/STICKER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mctarje" : {
+          "name" : "mctarje",
+          "index" : 4,
+          "offset" : 43,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcmcc00",
+    "transactionName" : "mccc",
+    "description" : "INPUT FORMAT FOR MCCC",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TRANSACTION OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardnum" : {
+        "name" : "cardnum",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "typcard" : {
+        "name" : "typcard",
+        "index" : 3,
+        "offset" : 39,
+        "literal" : "CONTACTLESS/STICKER",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "mctarje" : {
+        "name" : "mctarje",
+        "index" : 4,
+        "offset" : 43,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

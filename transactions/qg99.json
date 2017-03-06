@@ -1,0 +1,26 @@
+{
+  "name" : "qg99",
+  "application" : "qg",
+  "description" : "REANUDAR CONVERSACION",
+  "inputRecordName" : "qcrmnul",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qcrmnul" : {
+      "name" : "qcrmnul",
+      "transactionName" : "qg99",
+      "description" : "COPY SIN CAMPOS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qcrmnul",
+    "transactionName" : "qg99",
+    "description" : "COPY SIN CAMPOS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : { }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "bpcl",
+  "application" : "bg",
+  "description" : "ACCOUNTS RETURN TO SYSTEM",
+  "inputRecordName" : "bgmpcl",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmpcl" : {
+      "name" : "bgmpcl",
+      "transactionName" : "bpcl",
+      "description" : "ACCOUNTS RETURN TO SYSTEM",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ID NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prodopt" : {
+          "name" : "prodopt",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "PRODUCT TYPE OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmpcl",
+    "transactionName" : "bpcl",
+    "description" : "ACCOUNTS RETURN TO SYSTEM",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ID NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "prodopt" : {
+        "name" : "prodopt",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "PRODUCT TYPE OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

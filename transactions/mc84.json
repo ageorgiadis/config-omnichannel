@@ -1,0 +1,84 @@
+{
+  "name" : "mc84",
+  "application" : "mc",
+  "description" : "CARDS INQUIRY BY BIL/DIR.DEBIT DATE",
+  "inputRecordName" : "mcrm840",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm840" : {
+      "name" : "mcrm840",
+      "transactionName" : "mc84",
+      "description" : "BILLING/DIRECT DEBIT SEARCH",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "choice" : {
+          "name" : "choice",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BILLING/DIRECT DEBIT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "day" : {
+          "name" : "day",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ΗΜEPA",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm840",
+    "transactionName" : "mc84",
+    "description" : "BILLING/DIRECT DEBIT SEARCH",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "choice" : {
+        "name" : "choice",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BILLING/DIRECT DEBIT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "day" : {
+        "name" : "day",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ΗΜEPA",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

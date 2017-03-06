@@ -1,0 +1,26 @@
+{
+  "name" : "mp81",
+  "application" : "mc",
+  "description" : "MENU CONSULTA OPERACIONES CENTRO AU",
+  "inputRecordName" : "mprm810",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mprm810" : {
+      "name" : "mprm810",
+      "transactionName" : "mp81",
+      "description" : "MENU CONSULTA D'OPERACIONS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mprm810",
+    "transactionName" : "mp81",
+    "description" : "MENU CONSULTA D'OPERACIONS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : { }
+  }
+}

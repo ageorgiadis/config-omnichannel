@@ -1,0 +1,84 @@
+{
+  "name" : "mb51",
+  "application" : "mb",
+  "description" : "SOURE CODE - LEVEL 1",
+  "inputRecordName" : "mbrm510",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mbrm510" : {
+      "name" : "mbrm510",
+      "transactionName" : "mb51",
+      "description" : "SOURCE CODE LEVEL 1",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mcnlvl1" : {
+          "name" : "mcnlvl1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LEVEL 1",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "mccdesc" : {
+          "name" : "mccdesc",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mbrm510",
+    "transactionName" : "mb51",
+    "description" : "SOURCE CODE LEVEL 1",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "mcnlvl1" : {
+        "name" : "mcnlvl1",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LEVEL 1",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "mccdesc" : {
+        "name" : "mccdesc",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name" : "pb32",
+  "application" : "pb",
+  "description" : "VOUCHERS MAINTENANCE",
+  "inputRecordName" : "pbm032",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pbm032" : {
+      "name" : "pbm032",
+      "transactionName" : "pb32",
+      "description" : "VOUCHERS MAINTENANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "vvalue" : {
+          "name" : "vvalue",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "VOUCHER VALUE",
+          "type" : "Numeric",
+          "length" : 5,
+          "scale" : 2,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "currenc" : {
+          "name" : "currenc",
+          "index" : 2,
+          "offset" : 24,
+          "literal" : "CURRENCY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "valarm" : {
+          "name" : "valarm",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "VOUCHER ALARM",
+          "type" : "Numeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pbm032",
+    "transactionName" : "pb32",
+    "description" : "VOUCHERS MAINTENANCE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "vvalue" : {
+        "name" : "vvalue",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "VOUCHER VALUE",
+        "type" : "Numeric",
+        "length" : 5,
+        "scale" : 2,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "currenc" : {
+        "name" : "currenc",
+        "index" : 2,
+        "offset" : 24,
+        "literal" : "CURRENCY",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "valarm" : {
+        "name" : "valarm",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "VOUCHER ALARM",
+        "type" : "Numeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

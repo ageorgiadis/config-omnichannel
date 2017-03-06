@@ -1,0 +1,107 @@
+{
+  "name" : "pewr",
+  "application" : "pe",
+  "description" : "TEST FOR WARNING",
+  "inputRecordName" : "pemwrni",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemwrni" : {
+      "name" : "pemwrni",
+      "transactionName" : "pewr",
+      "description" : "TRANSACTION FOR TEST WARNIN",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "contrac" : {
+          "name" : "contrac",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONTRACT",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "cifcode" : {
+          "name" : "cifcode",
+          "index" : 2,
+          "offset" : 37,
+          "literal" : "CIF CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    },
+    "pem810i" : {
+      "name" : "pem810i",
+      "transactionName" : "pewr",
+      "description" : "LINE WARNINGS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "avisos" : {
+          "name" : "avisos",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "COMENTARI",
+          "type" : "Alphanumeric",
+          "length" : 74,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemwrni",
+    "transactionName" : "pewr",
+    "description" : "TRANSACTION FOR TEST WARNIN",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "contrac" : {
+        "name" : "contrac",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CONTRACT",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "cifcode" : {
+        "name" : "cifcode",
+        "index" : 2,
+        "offset" : 37,
+        "literal" : "CIF CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

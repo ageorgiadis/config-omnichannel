@@ -1,0 +1,168 @@
+{
+  "name" : "ha52",
+  "application" : "ha",
+  "description" : "PRINT ACCOUNT",
+  "inputRecordName" : "ham052",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ham052" : {
+      "name" : "ham052",
+      "transactionName" : "ha52",
+      "description" : "PRINT ACCOUNT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "empresa" : {
+          "name" : "empresa",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "COMPANY CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nucta" : {
+          "name" : "nucta",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "print" : {
+          "name" : "print",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "PRINT FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "codusu" : {
+          "name" : "codusu",
+          "index" : 4,
+          "offset" : 45,
+          "literal" : "USER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "timest" : {
+          "name" : "timest",
+          "index" : 5,
+          "offset" : 56,
+          "literal" : "TIMESTAMP",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ham052",
+    "transactionName" : "ha52",
+    "description" : "PRINT ACCOUNT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "empresa" : {
+        "name" : "empresa",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "COMPANY CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "nucta" : {
+        "name" : "nucta",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "print" : {
+        "name" : "print",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "PRINT FLAG",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "codusu" : {
+        "name" : "codusu",
+        "index" : 4,
+        "offset" : 45,
+        "literal" : "USER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "timest" : {
+        "name" : "timest",
+        "index" : 5,
+        "offset" : 56,
+        "literal" : "TIMESTAMP",
+        "type" : "Alphanumeric",
+        "length" : 26,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

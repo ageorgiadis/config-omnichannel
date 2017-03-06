@@ -1,0 +1,56 @@
+{
+  "name" : "btst",
+  "application" : "bg",
+  "description" : "TEST",
+  "inputRecordName" : "bgmtst",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmtst" : {
+      "name" : "bgmtst",
+      "transactionName" : "btst",
+      "description" : "BTST INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "input" : {
+          "name" : "input",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GENERIC INPUT",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmtst",
+    "transactionName" : "btst",
+    "description" : "BTST INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "input" : {
+        "name" : "input",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GENERIC INPUT",
+        "type" : "Alphanumeric",
+        "length" : 40,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "tc20",
+  "application" : "tc",
+  "description" : "ΜΕΝΟΥ ΔΙΑΧΕΙΡΙΣΗΣ ΑΡΓΙΩΝ",
+  "inputRecordName" : "tcm020",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcm020" : {
+      "name" : "tcm020",
+      "transactionName" : "tc20",
+      "description" : "TCM020",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "stfunc" : {
+          "name" : "stfunc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODI FUNCI‘",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcm020",
+    "transactionName" : "tc20",
+    "description" : "TCM020",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "stfunc" : {
+        "name" : "stfunc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODI FUNCI‘",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

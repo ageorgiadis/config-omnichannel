@@ -1,0 +1,56 @@
+{
+  "name" : "bdeq",
+  "application" : "bg",
+  "description" : ": DELETE TS-QUEUES",
+  "inputRecordName" : "bgmdeq",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmdeq" : {
+      "name" : "bgmdeq",
+      "transactionName" : "bdeq",
+      "description" : "DELETE CORP TABLE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "corpnme" : {
+          "name" : "corpnme",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CORPORATE TABLE NAME",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmdeq",
+    "transactionName" : "bdeq",
+    "description" : "DELETE CORP TABLE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "corpnme" : {
+        "name" : "corpnme",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CORPORATE TABLE NAME",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "mf99",
+  "application" : "mf",
+  "description" : "CIERRE/IMPRESION CONTRACTO ESTABLEC",
+  "inputRecordName" : "mfrm990",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mfrm990" : {
+      "name" : "mfrm990",
+      "transactionName" : "mf99",
+      "description" : "TANCAMENT/IMPRESSIO CONTRACTE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ncoest" : {
+          "name" : "ncoest",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUM. CONT. ESTAB.",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ncomer" : {
+          "name" : "ncomer",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "NUM. ESTAB.",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mfrm990",
+    "transactionName" : "mf99",
+    "description" : "TANCAMENT/IMPRESSIO CONTRACTE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ncoest" : {
+        "name" : "ncoest",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUM. CONT. ESTAB.",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ncomer" : {
+        "name" : "ncomer",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "NUM. ESTAB.",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

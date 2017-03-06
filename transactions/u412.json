@@ -1,0 +1,144 @@
+{
+  "name" : "u412",
+  "application" : "ug",
+  "description" : "INQUIRY OF F/X PENDING INSTALLMENTS",
+  "inputRecordName" : "ugm570",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugm57a" : {
+      "name" : "ugm57a",
+      "transactionName" : "u412",
+      "description" : "HEADER F/X PENDING INSTALLMENT",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugm57b" : {
+      "name" : "ugm57b",
+      "transactionName" : "u412",
+      "description" : "INQUIRY F/X PENDING INSTALLMEN",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cid" : {
+          "name" : "cid",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "CID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "name" : {
+          "name" : "name",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "NAME",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cpind" : {
+          "name" : "cpind",
+          "index" : 4,
+          "offset" : 103,
+          "literal" : "CP INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugm570" : {
+      "name" : "ugm570",
+      "transactionName" : "u412",
+      "description" : "INQUIRY F/X PENDING INSTALLMEN",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "busunit" : {
+          "name" : "busunit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugm570",
+    "transactionName" : "u412",
+    "description" : "INQUIRY F/X PENDING INSTALLMEN",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "busunit" : {
+        "name" : "busunit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BUSINESS UNIT",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

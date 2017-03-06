@@ -1,0 +1,79 @@
+{
+  "name" : "bkar",
+  "application" : "ba",
+  "description" : "ΕΥΡΕΣΗ ΛΟΓΑΡΙΑΣΜΟΥ ΛΕΙΤΟΥΡΓΙΑΣ ΚΑΤ.",
+  "inputRecordName" : "bamkar0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bamkar0" : {
+      "name" : "bamkar0",
+      "transactionName" : "bkar",
+      "description" : "INPUT FORMAT FOR BKAR",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "branch" : {
+          "name" : "branch",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bamkar1" : {
+      "name" : "bamkar1",
+      "transactionName" : "bkar",
+      "description" : "OUTPUT FORMAT FOR BKAR",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bamkar0",
+    "transactionName" : "bkar",
+    "description" : "INPUT FORMAT FOR BKAR",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "branch" : {
+        "name" : "branch",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BRANCH",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

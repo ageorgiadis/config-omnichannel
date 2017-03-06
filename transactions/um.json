@@ -1,0 +1,58 @@
+{
+  "name" : "um",
+  "application" : "um",
+  "description" : "MENU GENERAL DE PRESTAMOS Y AVALES",
+  "inputRecordName" : "umrmmnu",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "umrmmnu" : {
+      "name" : "umrmmnu",
+      "transactionName" : "um",
+      "description" : "MENU GRAL PRESTAMOS Y AVALES",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "funcion" : {
+          "name" : "funcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FUNCION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : -44,
+          "usage" : "Optional",
+          "debug" : true,
+          "debugger" : "QR8CACN",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "umrmmnu",
+    "transactionName" : "um",
+    "description" : "MENU GRAL PRESTAMOS Y AVALES",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "funcion" : {
+        "name" : "funcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FUNCION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : -44,
+        "usage" : "Optional",
+        "debug" : true,
+        "debugger" : "QR8CACN",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

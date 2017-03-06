@@ -1,0 +1,114 @@
+{
+  "name" : "b716",
+  "application" : "bg",
+  "description" : "PASSBOOK MODIFICATIONS LOG",
+  "inputRecordName" : "bgm716",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm716" : {
+      "name" : "bgm716",
+      "transactionName" : "b716",
+      "description" : "PASSBOOK MODIFICATIONS LOG",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "datef" : {
+          "name" : "datef",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dateu" : {
+          "name" : "dateu",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "DATE UPTO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm716",
+    "transactionName" : "b716",
+    "description" : "PASSBOOK MODIFICATIONS LOG",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "datef" : {
+        "name" : "datef",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dateu" : {
+        "name" : "dateu",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "DATE UPTO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

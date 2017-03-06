@@ -1,0 +1,140 @@
+{
+  "name" : "tc50",
+  "application" : "tc",
+  "description" : "ΜΕΝΟΥ ΔΙΑΧΕΙΡΙΣΗΣ ΚΕΝΤΡΩΝ (CENTERS)",
+  "inputRecordName" : "tcrm050",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcrm050" : {
+      "name" : "tcrm050",
+      "transactionName" : "tc50",
+      "description" : "MENU DE CENTRES",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "centit" : {
+          "name" : "centit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITYCODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cofici" : {
+          "name" : "cofici",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "CENTER/BRANCH",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cagrup" : {
+          "name" : "cagrup",
+          "index" : 3,
+          "offset" : 30,
+          "literal" : "GROUPCODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "stfunc" : {
+          "name" : "stfunc",
+          "index" : 4,
+          "offset" : 35,
+          "literal" : "SELECCION",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcrm050",
+    "transactionName" : "tc50",
+    "description" : "MENU DE CENTRES",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "centit" : {
+        "name" : "centit",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ENTITYCODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cofici" : {
+        "name" : "cofici",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "CENTER/BRANCH",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cagrup" : {
+        "name" : "cagrup",
+        "index" : 3,
+        "offset" : 30,
+        "literal" : "GROUPCODE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "stfunc" : {
+        "name" : "stfunc",
+        "index" : 4,
+        "offset" : 35,
+        "literal" : "SELECCION",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

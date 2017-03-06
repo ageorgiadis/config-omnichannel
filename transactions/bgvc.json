@@ -1,0 +1,186 @@
+{
+  "name" : "bgvc",
+  "application" : "bg",
+  "description" : "DISPLAY STOCK CATEGORIES/CHECK",
+  "inputRecordName" : "bgmvltc",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmvltc" : {
+      "name" : "bgmvltc",
+      "transactionName" : "bgvc",
+      "description" : "DISP STOCK CATEGORY/CHECK",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SEARCH DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmvlc2" : {
+      "name" : "bgmvlc2",
+      "transactionName" : "bgvc",
+      "description" : "DISP STOCK CATEGORY/CHECK 2",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "lindesc" : {
+          "name" : "lindesc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINE DESCR",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "statcom" : {
+          "name" : "statcom",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "STATUS COMPLETED",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgmvlc1" : {
+      "name" : "bgmvlc1",
+      "transactionName" : "bgvc",
+      "description" : "DISP STOCK CATEGORY/CHECK",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "showtit" : {
+          "name" : "showtit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SHOW TITLES IND",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "recseq" : {
+          "name" : "recseq",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "RECORD SEQUENCE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "catdesc" : {
+          "name" : "catdesc",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "CATEGORY DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "chkmand" : {
+          "name" : "chkmand",
+          "index" : 4,
+          "offset" : 78,
+          "literal" : "CHECK MANDATORY",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "chkstat" : {
+          "name" : "chkstat",
+          "index" : 5,
+          "offset" : 82,
+          "literal" : "CHECK STATUS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "catcode" : {
+          "name" : "catcode",
+          "index" : 6,
+          "offset" : 86,
+          "literal" : "CATEGORY CODE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmvltc",
+    "transactionName" : "bgvc",
+    "description" : "DISP STOCK CATEGORY/CHECK",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "date" : {
+        "name" : "date",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "SEARCH DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

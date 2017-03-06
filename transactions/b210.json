@@ -1,0 +1,142 @@
+{
+  "name" : "b210",
+  "application" : "bg",
+  "description" : "ATTESTERS INQUIRY",
+  "inputRecordName" : "bgm210",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm210" : {
+      "name" : "bgm210",
+      "transactionName" : "b210",
+      "description" : "ATTESTERS INQUIRY",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "clainte" : {
+          "name" : "clainte",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "ATTESTATION CLASS",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "secinte" : {
+          "name" : "secinte",
+          "index" : 3,
+          "offset" : 43,
+          "literal" : "ATTESTATION SEQUENCE",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "papel" : {
+          "name" : "papel",
+          "index" : 4,
+          "offset" : 48,
+          "literal" : "PAPER",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -81,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm210",
+    "transactionName" : "b210",
+    "description" : "ATTESTERS INQUIRY",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "clainte" : {
+        "name" : "clainte",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "ATTESTATION CLASS",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "secinte" : {
+        "name" : "secinte",
+        "index" : 3,
+        "offset" : 43,
+        "literal" : "ATTESTATION SEQUENCE",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "papel" : {
+        "name" : "papel",
+        "index" : 4,
+        "offset" : 48,
+        "literal" : "PAPER",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : -81,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

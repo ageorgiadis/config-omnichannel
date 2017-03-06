@@ -1,0 +1,112 @@
+{
+  "name" : "mc45",
+  "application" : "mc",
+  "description" : "CARD INQUIRY BY CIF/ACCOUNT",
+  "inputRecordName" : "mcrm450",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm450" : {
+      "name" : "mcrm450",
+      "transactionName" : "mc45",
+      "description" : "CARDS LIST INQUIRY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "PERSONAL ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardtyp" : {
+          "name" : "cardtyp",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm450",
+    "transactionName" : "mc45",
+    "description" : "CARDS LIST INQUIRY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "account" : {
+        "name" : "account",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "PERSONAL ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardtyp" : {
+        "name" : "cardtyp",
+        "index" : 3,
+        "offset" : 50,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

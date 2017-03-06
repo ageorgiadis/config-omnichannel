@@ -1,0 +1,177 @@
+{
+  "name" : "perd",
+  "application" : "pe",
+  "description" : "PAYROLL ACCOUNT VIEWER",
+  "inputRecordName" : "pencprd",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pencprd" : {
+      "name" : "pencprd",
+      "transactionName" : "perd",
+      "description" : "INPUT FORMAT OF PERD",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemprd1" : {
+      "name" : "pemprd1",
+      "transactionName" : "perd",
+      "description" : "OUTPUT COPY OF PERD",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "cif" : {
+          "name" : "cif",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIF",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifname" : {
+          "name" : "cifname",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CIF NAME",
+          "type" : "Alphanumeric",
+          "length" : 82,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 3,
+          "offset" : 112,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "insdate" : {
+          "name" : "insdate",
+          "index" : 4,
+          "offset" : 135,
+          "literal" : "CIF-INSDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "moddate" : {
+          "name" : "moddate",
+          "index" : 5,
+          "offset" : 148,
+          "literal" : "ACC-MODDATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "group" : {
+          "name" : "group",
+          "index" : 6,
+          "offset" : 161,
+          "literal" : "GROUP",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desc" : {
+          "name" : "desc",
+          "index" : 7,
+          "offset" : 172,
+          "literal" : "GROUP-DESC",
+          "type" : "Alphanumeric",
+          "length" : 60,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "overdrf" : {
+          "name" : "overdrf",
+          "index" : 8,
+          "offset" : 235,
+          "literal" : "OVERDRAFT",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pencprd",
+    "transactionName" : "perd",
+    "description" : "INPUT FORMAT OF PERD",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cif" : {
+        "name" : "cif",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIF",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

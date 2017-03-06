@@ -1,0 +1,146 @@
+{
+  "name" : "u409",
+  "application" : "ug",
+  "description" : "INQUIRY OF FUTURE PAYMENTS",
+  "inputRecordName" : "ugrm409i",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrm409l" : {
+      "name" : "ugrm409l",
+      "transactionName" : "u409",
+      "description" : "HEADER FUTURE PAYMENTS INQUIRY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "feoper" : {
+          "name" : "feoper",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PREPAYMENT OPER.DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feliq" : {
+          "name" : "feliq",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "PREPAYMNT SETTL DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "npvamnt" : {
+          "name" : "npvamnt",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "NPV OF INSTALLMENT",
+          "type" : "Alphanumeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "insamnt" : {
+          "name" : "insamnt",
+          "index" : 4,
+          "offset" : 58,
+          "literal" : "ORIGINAL INST AMOUNT",
+          "type" : "Alphanumeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrm409h" : {
+      "name" : "ugrm409h",
+      "transactionName" : "u409",
+      "description" : "HEADER FUTURE PAYMENTS INQUIRY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "basrate" : {
+          "name" : "basrate",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BASE RATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrm409i" : {
+      "name" : "ugrm409i",
+      "transactionName" : "u409",
+      "description" : "INQUIRY FUTURE PAYMENTS INPUT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LOAN ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : true,
+          "debugger" : "UR7CAUM0",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrm409i",
+    "transactionName" : "u409",
+    "description" : "INQUIRY FUTURE PAYMENTS INPUT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LOAN ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : true,
+        "debugger" : "UR7CAUM0",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

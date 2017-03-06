@@ -1,0 +1,56 @@
+{
+  "name" : "tc70",
+  "application" : "tc",
+  "description" : "ΜΕΝΟΥ ΑΡΙΘΜΗΣΗΣ ΣΥΜΒΟΛΑΙΩΝ",
+  "inputRecordName" : "tcm070",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "tcm070" : {
+      "name" : "tcm070",
+      "transactionName" : "tc70",
+      "description" : "TCM070",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "stfunc" : {
+          "name" : "stfunc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "STFUNC",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "tcm070",
+    "transactionName" : "tc70",
+    "description" : "TCM070",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "stfunc" : {
+        "name" : "stfunc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "STFUNC",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name" : "ib14",
+  "application" : "ib",
+  "description" : "MOBILE PHONES MAINTENANCE",
+  "inputRecordName" : "ibm140",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ibm140" : {
+      "name" : "ibm140",
+      "transactionName" : "ib14",
+      "description" : "MOBILE PHONES MAINTENANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mobpho" : {
+          "name" : "mobpho",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MOBILE PHONE",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ibm140",
+    "transactionName" : "ib14",
+    "description" : "MOBILE PHONES MAINTENANCE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "mobpho" : {
+        "name" : "mobpho",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "MOBILE PHONE",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "numclie" : {
+        "name" : "numclie",
+        "index" : 2,
+        "offset" : 34,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

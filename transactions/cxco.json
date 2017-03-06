@@ -1,0 +1,233 @@
+{
+  "name" : "cxco",
+  "application" : "cx",
+  "description" : "MANAGEMENT OF CXDTCOD TABLE",
+  "inputRecordName" : "cxcod00",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "cxcod01" : {
+      "name" : "cxcod01",
+      "transactionName" : "cxco",
+      "description" : "CXCO OUTPUT",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "mappl" : {
+          "name" : "mappl",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPLICATION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mfldesc" : {
+          "name" : "mfldesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "FIELD DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "altvalu" : {
+          "name" : "altvalu",
+          "index" : 3,
+          "offset" : 54,
+          "literal" : "ALTAMIRA VALUE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "asvalue" : {
+          "name" : "asvalue",
+          "index" : 4,
+          "offset" : 67,
+          "literal" : "AS400 VALUE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "cxcod00" : {
+      "name" : "cxcod00",
+      "transactionName" : "cxco",
+      "description" : "CXDTCOD MANAGEMENT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "mappl" : {
+          "name" : "mappl",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPLICATION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mfldesc" : {
+          "name" : "mfldesc",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "FIELD DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "altvalu" : {
+          "name" : "altvalu",
+          "index" : 3,
+          "offset" : 54,
+          "literal" : "ALTAMIRA VALUE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "asvalue" : {
+          "name" : "asvalue",
+          "index" : 4,
+          "offset" : 67,
+          "literal" : "AS400 VALUE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 5,
+          "offset" : 80,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "cxcod00",
+    "transactionName" : "cxco",
+    "description" : "CXDTCOD MANAGEMENT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "mappl" : {
+        "name" : "mappl",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "APPLICATION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "mfldesc" : {
+        "name" : "mfldesc",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "FIELD DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "altvalu" : {
+        "name" : "altvalu",
+        "index" : 3,
+        "offset" : 54,
+        "literal" : "ALTAMIRA VALUE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "asvalue" : {
+        "name" : "asvalue",
+        "index" : 4,
+        "offset" : 67,
+        "literal" : "AS400 VALUE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 5,
+        "offset" : 80,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

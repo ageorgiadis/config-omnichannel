@@ -1,0 +1,256 @@
+{
+  "name" : "b131",
+  "application" : "bg",
+  "description" : "ACC/S AVAILABLE FOR O/RAFT FACILITY",
+  "inputRecordName" : "bgm131",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm1311" : {
+      "name" : "bgm1311",
+      "transactionName" : "b131",
+      "description" : "CONT/S AVAIL. FOR O/D FACILITY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm1312" : {
+      "name" : "bgm1312",
+      "transactionName" : "b131",
+      "description" : "CONT/S AVAIL. FOR O/D FACILITY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CCC",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "product" : {
+          "name" : "product",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "PRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subprod" : {
+          "name" : "subprod",
+          "index" : 3,
+          "offset" : 44,
+          "literal" : "SUBPRODUCT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "overdr" : {
+          "name" : "overdr",
+          "index" : 4,
+          "offset" : 51,
+          "literal" : "OVERDRAFT FACILITY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "refince" : {
+          "name" : "refince",
+          "index" : 5,
+          "offset" : 57,
+          "literal" : "REFINANCE INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "frozen" : {
+          "name" : "frozen",
+          "index" : 6,
+          "offset" : 63,
+          "literal" : "FROZEN INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "holmail" : {
+          "name" : "holmail",
+          "index" : 7,
+          "offset" : 69,
+          "literal" : "HOLD MAIL FACILITY",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "reqovr" : {
+          "name" : "reqovr",
+          "index" : 8,
+          "offset" : 75,
+          "literal" : "REQ-OVR",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "reqcen" : {
+          "name" : "reqcen",
+          "index" : 9,
+          "offset" : 86,
+          "literal" : "REQ CENTER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 9,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "requser" : {
+          "name" : "requser",
+          "index" : 10,
+          "offset" : 93,
+          "literal" : "REQ USER",
+          "type" : "Alphanumeric",
+          "length" : 17,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm131" : {
+      "name" : "bgm131",
+      "transactionName" : "b131",
+      "description" : "CONT/S AVAIL. FOR O/D FACILITY",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "cifcode" : {
+          "name" : "cifcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CIFCODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm131",
+    "transactionName" : "b131",
+    "description" : "CONT/S AVAIL. FOR O/D FACILITY",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "cifcode" : {
+        "name" : "cifcode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CIFCODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

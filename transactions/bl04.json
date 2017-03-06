@@ -1,0 +1,146 @@
+{
+  "name" : "bl04",
+  "application" : "bg",
+  "description" : "PAYMENTS OF LOANS",
+  "inputRecordName" : "blrm004",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "blrm004" : {
+      "name" : "blrm004",
+      "transactionName" : "bl04",
+      "description" : "PAYMENTS OF LOANS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "datefr" : {
+          "name" : "datefr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "dateto" : {
+          "name" : "dateto",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "TYPE OF PAYMENT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feejec" : {
+          "name" : "feejec",
+          "index" : 4,
+          "offset" : 42,
+          "literal" : "EXECUTION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "blrm004",
+    "transactionName" : "bl04",
+    "description" : "PAYMENTS OF LOANS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "datefr" : {
+        "name" : "datefr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "dateto" : {
+        "name" : "dateto",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "type" : {
+        "name" : "type",
+        "index" : 3,
+        "offset" : 38,
+        "literal" : "TYPE OF PAYMENT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "feejec" : {
+        "name" : "feejec",
+        "index" : 4,
+        "offset" : 42,
+        "literal" : "EXECUTION DATE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

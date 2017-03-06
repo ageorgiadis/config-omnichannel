@@ -1,0 +1,168 @@
+{
+  "name" : "b859",
+  "application" : "ba",
+  "description" : "MAINTAIN SWIFT MESSAGES",
+  "inputRecordName" : "bam8590",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bam8590" : {
+      "name" : "bam8590",
+      "transactionName" : "b859",
+      "description" : "MAINTAIN SWITCH MESSAGES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "baoptio" : {
+          "name" : "baoptio",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "baeidos" : {
+          "name" : "baeidos",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TYPE OF CHEQUE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "barefen" : {
+          "name" : "barefen",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "REFERENCE NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "bastatu" : {
+          "name" : "bastatu",
+          "index" : 4,
+          "offset" : 39,
+          "literal" : "STATUS OF RECORD",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "bansqic" : {
+          "name" : "bansqic",
+          "index" : 5,
+          "offset" : 43,
+          "literal" : "ORDER NUMBER",
+          "type" : "Numeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bam8590",
+    "transactionName" : "b859",
+    "description" : "MAINTAIN SWITCH MESSAGES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "baoptio" : {
+        "name" : "baoptio",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "baeidos" : {
+        "name" : "baeidos",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "TYPE OF CHEQUE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "barefen" : {
+        "name" : "barefen",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "REFERENCE NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 11,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "bastatu" : {
+        "name" : "bastatu",
+        "index" : 4,
+        "offset" : 39,
+        "literal" : "STATUS OF RECORD",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "bansqic" : {
+        "name" : "bansqic",
+        "index" : 5,
+        "offset" : 43,
+        "literal" : "ORDER NUMBER",
+        "type" : "Numeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 6,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name" : "mc93",
+  "application" : "mc",
+  "description" : "WAREHOUSE CARD LIST",
+  "inputRecordName" : "mcrm930",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm930" : {
+      "name" : "mcrm930",
+      "transactionName" : "mc93",
+      "description" : "LISTING OF CARDS",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cardtyp" : {
+          "name" : "cardtyp",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "brnchcd" : {
+          "name" : "brnchcd",
+          "index" : 3,
+          "offset" : 25,
+          "literal" : "BRANCH CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm930",
+    "transactionName" : "mc93",
+    "description" : "LISTING OF CARDS",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cardtyp" : {
+        "name" : "cardtyp",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "brnchcd" : {
+        "name" : "brnchcd",
+        "index" : 3,
+        "offset" : 25,
+        "literal" : "BRANCH CODE",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

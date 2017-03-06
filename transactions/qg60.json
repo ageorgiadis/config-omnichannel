@@ -1,0 +1,176 @@
+{
+  "name" : "qg60",
+  "application" : "qg",
+  "description" : "CONSULTA DE CODIGOS DE ERROR/AVISO",
+  "inputRecordName" : "qgrmfer",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmg602" : {
+      "name" : "qgrmg602",
+      "transactionName" : "qg60",
+      "description" : "CONS. ERRORES POR CLAVE 2",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "coderr" : {
+          "name" : "coderr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODIGO DE ERROR",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "mensaj" : {
+          "name" : "mensaj",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "MENSAJE",
+          "type" : "Alphanumeric",
+          "length" : 71,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmfer" : {
+      "name" : "qgrmfer",
+      "transactionName" : "qg60",
+      "description" : "CONSULTA DE CODIGOS DE ERROR",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "coderr" : {
+          "name" : "coderr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODIGO DE ERROR",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : -62,
+          "usage" : "Required",
+          "debug" : false,
+          "lit4700" : "139",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "coderde" : {
+          "name" : "coderde",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "COD. DE ERROR DESDE",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : -61,
+          "usage" : "Optional",
+          "debug" : false,
+          "lit4700" : "076",
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrmg601" : {
+      "name" : "qgrmg601",
+      "transactionName" : "qg60",
+      "description" : "CONS. ERRORES POR CLAVE 1",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "termin" : {
+          "name" : "termin",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "coderr" : {
+          "name" : "coderr",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "CODIGO DE ERROR",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fecha" : {
+          "name" : "fecha",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "FECHA CONTABLE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmfer",
+    "transactionName" : "qg60",
+    "description" : "CONSULTA DE CODIGOS DE ERROR",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "coderr" : {
+        "name" : "coderr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODIGO DE ERROR",
+        "type" : "Alphanumeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : -62,
+        "usage" : "Required",
+        "debug" : false,
+        "lit4700" : "139",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "coderde" : {
+        "name" : "coderde",
+        "index" : 2,
+        "offset" : 26,
+        "literal" : "COD. DE ERROR DESDE",
+        "type" : "Alphanumeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : -61,
+        "usage" : "Optional",
+        "debug" : false,
+        "lit4700" : "076",
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

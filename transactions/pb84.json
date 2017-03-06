@@ -1,0 +1,112 @@
+{
+  "name" : "pb84",
+  "application" : "pb",
+  "description" : "ADMIN. USER DAILY LIMIT TABLE",
+  "inputRecordName" : "pbm084",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pbm084" : {
+      "name" : "pbm084",
+      "transactionName" : "pb84",
+      "description" : "ADMIN. USER DAILY LIMIT TABLE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "userid" : {
+          "name" : "userid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "comment" : {
+          "name" : "comment",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "COMMENTS",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 60,
+          "literal" : "OPTION FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pbm084",
+    "transactionName" : "pb84",
+    "description" : "ADMIN. USER DAILY LIMIT TABLE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "userid" : {
+        "name" : "userid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "USERID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "comment" : {
+        "name" : "comment",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "COMMENTS",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 60,
+        "literal" : "OPTION FLAG",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

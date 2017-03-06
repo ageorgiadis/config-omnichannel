@@ -1,0 +1,84 @@
+{
+  "name" : "qmvm",
+  "application" : "qm",
+  "description" : "MANTTO. DE SUPERVISORES",
+  "inputRecordName" : "qmrmmsu",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qmrmmsu" : {
+      "name" : "qmrmmsu",
+      "transactionName" : "qmvm",
+      "description" : "MANTTO. DE TABLA DE SEGURIDAD",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "userid" : {
+          "name" : "userid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "USUARIO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nivel" : {
+          "name" : "nivel",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "NIVEL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qmrmmsu",
+    "transactionName" : "qmvm",
+    "description" : "MANTTO. DE TABLA DE SEGURIDAD",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "userid" : {
+        "name" : "userid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "USUARIO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "nivel" : {
+        "name" : "nivel",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "NIVEL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

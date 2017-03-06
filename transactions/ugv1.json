@@ -1,0 +1,112 @@
+{
+  "name" : "ugv1",
+  "application" : "ug",
+  "description" : "ON LINE VASILIS TESTAKI",
+  "inputRecordName" : "ugtstv1",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugtstv1" : {
+      "name" : "ugtstv1",
+      "transactionName" : "ugv1",
+      "description" : "TEST ONLINE (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "tstenti" : {
+          "name" : "tstenti",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TEST ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "tescnt" : {
+          "name" : "tescnt",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "TEST CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "OPTION(1/2/3)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugtstv1",
+    "transactionName" : "ugv1",
+    "description" : "TEST ONLINE (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "tstenti" : {
+        "name" : "tstenti",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TEST ENTIOFI",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "tescnt" : {
+        "name" : "tescnt",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "TEST CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 40,
+        "literal" : "OPTION(1/2/3)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

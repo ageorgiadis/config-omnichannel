@@ -1,0 +1,114 @@
+{
+  "name" : "b803",
+  "application" : "bg",
+  "description" : "LINE OF CREDIT LIMIT CHANGE",
+  "inputRecordName" : "bgm803",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm803" : {
+      "name" : "bgm803",
+      "transactionName" : "b803",
+      "description" : "LINE OF CREDIT LIMIT CHANGE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CLIENT ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "debugger" : "BR6CNEW0",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "limitnu" : {
+          "name" : "limitnu",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "NEW LIMIT",
+          "type" : "Edit",
+          "length" : 14,
+          "scale" : 2,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "liquidc" : {
+          "name" : "liquidc",
+          "index" : 3,
+          "offset" : 56,
+          "literal" : "ACCOUNT SETTLEMENT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm803",
+    "transactionName" : "b803",
+    "description" : "LINE OF CREDIT LIMIT CHANGE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CLIENT ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "debugger" : "BR6CNEW0",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "limitnu" : {
+        "name" : "limitnu",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "NEW LIMIT",
+        "type" : "Edit",
+        "length" : 14,
+        "scale" : 2,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "liquidc" : {
+        "name" : "liquidc",
+        "index" : 3,
+        "offset" : 56,
+        "literal" : "ACCOUNT SETTLEMENT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

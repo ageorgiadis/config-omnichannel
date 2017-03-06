@@ -1,0 +1,84 @@
+{
+  "name" : "me75",
+  "application" : "mc",
+  "description" : "CARDS SHIPMENT MAINTENANCE",
+  "inputRecordName" : "merm750",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "merm750" : {
+      "name" : "merm750",
+      "transactionName" : "me75",
+      "description" : "CARDS SHIPMENT MAINTENANCE",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "numeta" : {
+          "name" : "numeta",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "yfree2" : {
+          "name" : "yfree2",
+          "index" : 2,
+          "offset" : 35,
+          "literal" : "MARCA",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "merm750",
+    "transactionName" : "me75",
+    "description" : "CARDS SHIPMENT MAINTENANCE",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "numeta" : {
+        "name" : "numeta",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "yfree2" : {
+        "name" : "yfree2",
+        "index" : 2,
+        "offset" : 35,
+        "literal" : "MARCA",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

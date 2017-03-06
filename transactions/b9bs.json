@@ -1,0 +1,56 @@
+{
+  "name" : "b9bs",
+  "application" : "bg",
+  "description" : "LEASING OF SAFE-DEPOSIT BOX STEP2",
+  "inputRecordName" : "bgmbxs",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmbxs" : {
+      "name" : "bgmbxs",
+      "transactionName" : "b9bs",
+      "description" : "ADDITIONAL SAFE-DEPOSIT,CONTRA",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "contsd" : {
+          "name" : "contsd",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CONTRACT OF SAFE-DEP",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmbxs",
+    "transactionName" : "b9bs",
+    "description" : "ADDITIONAL SAFE-DEPOSIT,CONTRA",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "contsd" : {
+        "name" : "contsd",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CONTRACT OF SAFE-DEP",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

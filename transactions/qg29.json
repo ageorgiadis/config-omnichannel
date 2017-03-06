@@ -1,0 +1,140 @@
+{
+  "name" : "qg29",
+  "application" : "qg",
+  "description" : "SECURITY CHECK (E-BANKING)",
+  "inputRecordName" : "qgrmineb",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmineb" : {
+      "name" : "qgrmineb",
+      "transactionName" : "qg29",
+      "description" : "SECURITY CHECK (E-BANKING)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "usuario" : {
+          "name" : "usuario",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "USER NAME",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "passwor" : {
+          "name" : "passwor",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "PASSWORD",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : -75,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "newpass" : {
+          "name" : "newpass",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "NEWPASS",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : -74,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "rsource" : {
+          "name" : "rsource",
+          "index" : 4,
+          "offset" : 49,
+          "literal" : "RESOURCE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmineb",
+    "transactionName" : "qg29",
+    "description" : "SECURITY CHECK (E-BANKING)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "usuario" : {
+        "name" : "usuario",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "USER NAME",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "passwor" : {
+        "name" : "passwor",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "PASSWORD",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : -75,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "newpass" : {
+        "name" : "newpass",
+        "index" : 3,
+        "offset" : 38,
+        "literal" : "NEWPASS",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : -74,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "rsource" : {
+        "name" : "rsource",
+        "index" : 4,
+        "offset" : 49,
+        "literal" : "RESOURCE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

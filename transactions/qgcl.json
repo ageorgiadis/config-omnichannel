@@ -1,0 +1,149 @@
+{
+  "name" : "qgcl",
+  "application" : "qg",
+  "description" : "BRANCH ACTIVE-CLOSED LIST",
+  "inputRecordName" : "qgmcls",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgmcls" : {
+      "name" : "qgmcls",
+      "transactionName" : "qgcl",
+      "description" : "ACTIVE-CLOSED BRANCH INPUT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "status" : {
+          "name" : "status",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BRANCH STATUS (O-CL)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "qgmcls1" : {
+      "name" : "qgmcls1",
+      "transactionName" : "qgcl",
+      "description" : "OPEN-CLOSE BRANCHES LIST",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "fechaop" : {
+          "name" : "fechaop",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPERATION DATE",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cond1" : {
+          "name" : "cond1",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "CONTITION PRINT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 3,
+          "offset" : 33,
+          "literal" : "BRANCH CODE",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "brdesc" : {
+          "name" : "brdesc",
+          "index" : 4,
+          "offset" : 40,
+          "literal" : "BRANCH DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "status" : {
+          "name" : "status",
+          "index" : 5,
+          "offset" : 83,
+          "literal" : "BRANCH STATUS",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cntterm" : {
+          "name" : "cntterm",
+          "index" : 6,
+          "offset" : 106,
+          "literal" : "COUNT OPEN TERMS",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgmcls",
+    "transactionName" : "qgcl",
+    "description" : "ACTIVE-CLOSED BRANCH INPUT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "status" : {
+        "name" : "status",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BRANCH STATUS (O-CL)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

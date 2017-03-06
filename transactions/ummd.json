@@ -1,0 +1,140 @@
+{
+  "name" : "ummd",
+  "application" : "um",
+  "description" : "MANTENIMIENTO TABLA CONCEPTOS LIQUI",
+  "inputRecordName" : "umrmmdm",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "umrmmdm" : {
+      "name" : "umrmmdm",
+      "transactionName" : "ummd",
+      "description" : "MANT. CONCEPTOS DE LIQUIDAC.",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "codconl" : {
+          "name" : "codconl",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CODIGO CONCEPTO LIQ.",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "textola" : {
+          "name" : "textola",
+          "index" : 2,
+          "offset" : 22,
+          "literal" : "TEXTO LARGO",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "textore" : {
+          "name" : "textore",
+          "index" : 3,
+          "offset" : 75,
+          "literal" : "DESCRIPCION REDUCIDA",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tipocpt" : {
+          "name" : "tipocpt",
+          "index" : 4,
+          "offset" : 93,
+          "literal" : "TIPO CONCEPTO LIQUI.",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "umrmmdm",
+    "transactionName" : "ummd",
+    "description" : "MANT. CONCEPTOS DE LIQUIDAC.",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "codconl" : {
+        "name" : "codconl",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CODIGO CONCEPTO LIQ.",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "textola" : {
+        "name" : "textola",
+        "index" : 2,
+        "offset" : 22,
+        "literal" : "TEXTO LARGO",
+        "type" : "Alphanumeric",
+        "length" : 50,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "textore" : {
+        "name" : "textore",
+        "index" : 3,
+        "offset" : 75,
+        "literal" : "DESCRIPCION REDUCIDA",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "tipocpt" : {
+        "name" : "tipocpt",
+        "index" : 4,
+        "offset" : 93,
+        "literal" : "TIPO CONCEPTO LIQUI.",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

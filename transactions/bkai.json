@@ -1,0 +1,84 @@
+{
+  "name" : "bkai",
+  "application" : "bg",
+  "description" : "ΚΑΤΑΣΧΕΤΗΡΙΩΝ REPORTING ON DEMAND",
+  "inputRecordName" : "bgrmkai",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgrmkai" : {
+      "name" : "bgrmkai",
+      "transactionName" : "bkai",
+      "description" : "BKAI - INPUT SCREEN",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ktsxdaf" : {
+          "name" : "ktsxdaf",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ΗΜ/ΝΙΑ ΕΠΙΔΟΣΗΣ ΑΠΟ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ktsxdat" : {
+          "name" : "ktsxdat",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "ΗΜ/ΝΙΑ ΕΠΙΔΟΣΗΣ ΕΩΣ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgrmkai",
+    "transactionName" : "bkai",
+    "description" : "BKAI - INPUT SCREEN",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ktsxdaf" : {
+        "name" : "ktsxdaf",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ΗΜ/ΝΙΑ ΕΠΙΔΟΣΗΣ ΑΠΟ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ktsxdat" : {
+        "name" : "ktsxdat",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "ΗΜ/ΝΙΑ ΕΠΙΔΟΣΗΣ ΕΩΣ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

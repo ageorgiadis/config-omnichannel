@@ -1,0 +1,112 @@
+{
+  "name" : "mc67",
+  "application" : "mc",
+  "description" : "STATEMENT GROUPING MOD.",
+  "inputRecordName" : "mcrm670",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm670" : {
+      "name" : "mcrm670",
+      "transactionName" : "mc67",
+      "description" : "STATEMENT GROUPING MOD.",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "grpname" : {
+          "name" : "grpname",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP NAME",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cardtyp" : {
+          "name" : "cardtyp",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "CARD TYPE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "carddes" : {
+          "name" : "carddes",
+          "index" : 3,
+          "offset" : 26,
+          "literal" : "CARD DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm670",
+    "transactionName" : "mc67",
+    "description" : "STATEMENT GROUPING MOD.",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "grpname" : {
+        "name" : "grpname",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP NAME",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cardtyp" : {
+        "name" : "cardtyp",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "CARD TYPE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "carddes" : {
+        "name" : "carddes",
+        "index" : 3,
+        "offset" : 26,
+        "literal" : "CARD DESCRIPTION",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

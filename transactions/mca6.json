@@ -1,0 +1,140 @@
+{
+  "name" : "mca6",
+  "application" : "mc",
+  "description" : "REPLACING C1 TO BD CARD TYPE",
+  "inputRecordName" : "mcrma60",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrma60" : {
+      "name" : "mcrma60",
+      "transactionName" : "mca6",
+      "description" : "INCR /DEC OF PERSONIFICTN",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "oldcrdn" : {
+          "name" : "oldcrdn",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "OLD CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "newcntr" : {
+          "name" : "newcntr",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "NEW CONTRACT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "newcrdn" : {
+          "name" : "newcrdn",
+          "index" : 4,
+          "offset" : 63,
+          "literal" : "NEW CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrma60",
+    "transactionName" : "mca6",
+    "description" : "INCR /DEC OF PERSONIFICTN",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "oldcrdn" : {
+        "name" : "oldcrdn",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "OLD CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "newcntr" : {
+        "name" : "newcntr",
+        "index" : 3,
+        "offset" : 42,
+        "literal" : "NEW CONTRACT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "newcrdn" : {
+        "name" : "newcrdn",
+        "index" : 4,
+        "offset" : 63,
+        "literal" : "NEW CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 19,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

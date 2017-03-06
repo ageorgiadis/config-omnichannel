@@ -1,0 +1,84 @@
+{
+  "name" : "ugse",
+  "application" : "ug",
+  "description" : "TEST TRA STELLA",
+  "inputRecordName" : "ugmstel",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugmstel" : {
+      "name" : "ugmstel",
+      "transactionName" : "ugse",
+      "description" : "TEST FORMAT FOR LMSE",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INPUT ENTIOFI",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "INPUT CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugmstel",
+    "transactionName" : "ugse",
+    "description" : "TEST FORMAT FOR LMSE",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "entiofi" : {
+        "name" : "entiofi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "INPUT ENTIOFI",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "cuenta" : {
+        "name" : "cuenta",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "INPUT CUENTA",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "name" : "u221",
+  "application" : "ug",
+  "description" : "INQUIRY OLD-NEW ACCOUNT",
+  "inputRecordName" : "ugrmgo3",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmgo31" : {
+      "name" : "ugrmgo31",
+      "transactionName" : "u221",
+      "description" : "COMPTES NOVES,ANTIGUES.EIXIDA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NEW ALTAMIRA ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 22,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmgo3" : {
+      "name" : "ugrmgo3",
+      "transactionName" : "u221",
+      "description" : "NEW AND OLD ACCOUNT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CUENTA NUEVA",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmgo3",
+    "transactionName" : "u221",
+    "description" : "NEW AND OLD ACCOUNT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CUENTA NUEVA",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

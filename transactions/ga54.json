@@ -1,0 +1,168 @@
+{
+  "name" : "ga54",
+  "application" : "ga",
+  "description" : "ΣΤΑΤΙΣΤΙΚΑ ΧΡΗΜΑΤΙΚΟΥ ΚΑΤΑΣΤΗΜΑΤΩΝ",
+  "inputRecordName" : "gam540",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "gam540" : {
+      "name" : "gam540",
+      "transactionName" : "ga54",
+      "description" : "ΣΤΑΤΙΣΤΙΚΑ ΧΡΗΜΑΤΙΚΟΥ ΚΑΤ/ΤΩΝ",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "center" : {
+          "name" : "center",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ΚΩΔ.ΚΑΤΑΣΤΗΜΑΤΟΣ",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "apodate" : {
+          "name" : "apodate",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "ΑΠΟ ΗΜΕΡΟΜΗΝΙΑ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "evsdate" : {
+          "name" : "evsdate",
+          "index" : 4,
+          "offset" : 40,
+          "literal" : "ΕΩΣ ΗΜΕΡΟΜΗΝΙΑ",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "type" : {
+          "name" : "type",
+          "index" : 5,
+          "offset" : 53,
+          "literal" : "X=ΥΠΕΡΒΑΣΕΙΣ,A=ALL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "gam540",
+    "transactionName" : "ga54",
+    "description" : "ΣΤΑΤΙΣΤΙΚΑ ΧΡΗΜΑΤΙΚΟΥ ΚΑΤ/ΤΩΝ",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "center" : {
+        "name" : "center",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ΚΩΔ.ΚΑΤΑΣΤΗΜΑΤΟΣ",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "apodate" : {
+        "name" : "apodate",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "ΑΠΟ ΗΜΕΡΟΜΗΝΙΑ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "evsdate" : {
+        "name" : "evsdate",
+        "index" : 4,
+        "offset" : 40,
+        "literal" : "ΕΩΣ ΗΜΕΡΟΜΗΝΙΑ",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "type" : {
+        "name" : "type",
+        "index" : 5,
+        "offset" : 53,
+        "literal" : "X=ΥΠΕΡΒΑΣΕΙΣ,A=ALL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

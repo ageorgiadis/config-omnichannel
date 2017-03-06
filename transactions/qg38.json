@@ -1,0 +1,84 @@
+{
+  "name" : "qg38",
+  "application" : "qg",
+  "description" : "CAMBIO IDIOMA DEL TERMINAL",
+  "inputRecordName" : "qgrmg38",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmg38" : {
+      "name" : "qgrmg38",
+      "transactionName" : "qg38",
+      "description" : "CAMBIO IDIOMA DEL TERMINAL",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "idioma" : {
+          "name" : "idioma",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "IDIOMA",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "termina" : {
+          "name" : "termina",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmg38",
+    "transactionName" : "qg38",
+    "description" : "CAMBIO IDIOMA DEL TERMINAL",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "idioma" : {
+        "name" : "idioma",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "IDIOMA",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "termina" : {
+        "name" : "termina",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "TERMINAL",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

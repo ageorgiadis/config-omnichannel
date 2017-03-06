@@ -1,0 +1,140 @@
+{
+  "name" : "bisg",
+  "application" : "bg",
+  "description" : "PAYROLL FILE AUTH. REQ",
+  "inputRecordName" : "bgmisg",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmisg" : {
+      "name" : "bgmisg",
+      "transactionName" : "bisg",
+      "description" : "PAYMENT OF SERVICES",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "serial" : {
+          "name" : "serial",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "AUTHORIZATION NO",
+          "type" : "Numeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "centro" : {
+          "name" : "centro",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "CENTRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userid" : {
+          "name" : "userid",
+          "index" : 3,
+          "offset" : 36,
+          "literal" : "USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cifno" : {
+          "name" : "cifno",
+          "index" : 4,
+          "offset" : 47,
+          "literal" : "CIF NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmisg",
+    "transactionName" : "bisg",
+    "description" : "PAYMENT OF SERVICES",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "serial" : {
+        "name" : "serial",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "AUTHORIZATION NO",
+        "type" : "Numeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "centro" : {
+        "name" : "centro",
+        "index" : 2,
+        "offset" : 29,
+        "literal" : "CENTRO",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "userid" : {
+        "name" : "userid",
+        "index" : 3,
+        "offset" : 36,
+        "literal" : "USERID",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "cifno" : {
+        "name" : "cifno",
+        "index" : 4,
+        "offset" : 47,
+        "literal" : "CIF NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

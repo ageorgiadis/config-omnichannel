@@ -1,0 +1,56 @@
+{
+  "name" : "bgan",
+  "application" : "bg",
+  "description" : "MANTTO NUMERACION PRODUCTO (NEWPRO)",
+  "inputRecordName" : "bgmanp",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmanp" : {
+      "name" : "bgmanp",
+      "transactionName" : "bgan",
+      "description" : "PROD. NUMBERING MAINTEN.(NEWP)",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "nivel" : {
+          "name" : "nivel",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LEVEL",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmanp",
+    "transactionName" : "bgan",
+    "description" : "PROD. NUMBERING MAINTEN.(NEWP)",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "nivel" : {
+        "name" : "nivel",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "LEVEL",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

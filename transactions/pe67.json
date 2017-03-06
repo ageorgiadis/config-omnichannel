@@ -1,0 +1,84 @@
+{
+  "name" : "pe67",
+  "application" : "pe",
+  "description" : "SAME CUSTOMERS - LOCK MODE MAINTENA",
+  "inputRecordName" : "penc6700",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "penc6700" : {
+      "name" : "penc6700",
+      "transactionName" : "pe67",
+      "description" : "XENC6700",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "groupco" : {
+          "name" : "groupco",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "lockmod" : {
+          "name" : "lockmod",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "LOCKMODE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "penc6700",
+    "transactionName" : "pe67",
+    "description" : "XENC6700",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "groupco" : {
+        "name" : "groupco",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "lockmod" : {
+        "name" : "lockmod",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "LOCKMODE",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

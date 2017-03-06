@@ -1,0 +1,297 @@
+{
+  "name" : "u001",
+  "application" : "ug",
+  "description" : "STATISTICS LOANS",
+  "inputRecordName" : "ugrmg001",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmg001" : {
+      "name" : "ugrmg001",
+      "transactionName" : "u001",
+      "description" : "στατιστικα εκταμιευσεων",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "datef" : {
+          "name" : "datef",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datet" : {
+          "name" : "datet",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 21,
+          "usage" : "Required",
+          "debug" : false,
+          "debugger" : "QR8CFHA",
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 38,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 22,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmdip4" : {
+      "name" : "ugrmdip4",
+      "transactionName" : "u001",
+      "description" : "DIP DETAILS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTIDA",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cuenta" : {
+          "name" : "cuenta",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "CUENTA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "sitpres" : {
+          "name" : "sitpres",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "SITPRES",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "subpro" : {
+          "name" : "subpro",
+          "index" : 4,
+          "offset" : 44,
+          "literal" : "SUBPRO",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "appl" : {
+          "name" : "appl",
+          "index" : 5,
+          "offset" : 51,
+          "literal" : "APPL",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 6,
+          "offset" : 69,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "flags" : {
+          "name" : "flags",
+          "index" : 7,
+          "offset" : 82,
+          "literal" : "FLAG",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmdip5" : {
+      "name" : "ugrmdip5",
+      "transactionName" : "u001",
+      "description" : "HEADER OF ESTATE DIP",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "datet" : {
+          "name" : "datet",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE TO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datef" : {
+          "name" : "datef",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DATE FROM",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmdip3" : {
+      "name" : "ugrmdip3",
+      "transactionName" : "u001",
+      "description" : "HEADER OF MIS DIP",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "datet" : {
+          "name" : "datet",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datef" : {
+          "name" : "datef",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmg001",
+    "transactionName" : "u001",
+    "description" : "στατιστικα εκταμιευσεων",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "datef" : {
+        "name" : "datef",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "DATE FROM",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "datet" : {
+        "name" : "datet",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "DATE TO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 21,
+        "usage" : "Required",
+        "debug" : false,
+        "debugger" : "QR8CFHA",
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 38,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 22,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

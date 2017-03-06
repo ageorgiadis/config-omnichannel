@@ -1,0 +1,135 @@
+{
+  "name" : "bcgr",
+  "application" : "bc",
+  "description" : "GROUP SALES WITH SPY",
+  "inputRecordName" : "bcmgri",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bcmgri" : {
+      "name" : "bcmgri",
+      "transactionName" : "bcgr",
+      "description" : "GROUP SALES WITH SPY (INPUT)",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "nmclien" : {
+          "name" : "nmclien",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grpcode" : {
+          "name" : "grpcode",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUPCODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bcmgro" : {
+      "name" : "bcmgro",
+      "transactionName" : "bcgr",
+      "description" : "GROUP SALES WITH SPY (OUTPUT)",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "spyflg" : {
+          "name" : "spyflg",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "SPY FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "payflg" : {
+          "name" : "payflg",
+          "index" : 3,
+          "offset" : 43,
+          "literal" : "PAY FLAG",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bcmgri",
+    "transactionName" : "bcgr",
+    "description" : "GROUP SALES WITH SPY (INPUT)",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "nmclien" : {
+        "name" : "nmclien",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMCLIEN",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "grpcode" : {
+        "name" : "grpcode",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "GROUPCODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

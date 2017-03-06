@@ -1,0 +1,227 @@
+{
+  "name" : "qg09",
+  "application" : "qg",
+  "description" : "PENDING MESSAGES SINCE TIMESTAMP",
+  "inputRecordName" : "qgrm090",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgm0901" : {
+      "name" : "qgm0901",
+      "transactionName" : "qg09",
+      "description" : "MESSAGES BETWEEN USERS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "timesta" : {
+          "name" : "timesta",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TIMESTAMP",
+          "type" : "Alphanumeric",
+          "length" : 21,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "orentit" : {
+          "name" : "orentit",
+          "index" : 2,
+          "offset" : 40,
+          "literal" : "ORIGINAL ENTITY",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "orcente" : {
+          "name" : "orcente",
+          "index" : 3,
+          "offset" : 47,
+          "literal" : "ORIGINAL CENTER",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ortermi" : {
+          "name" : "ortermi",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "ORIGINAL TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "oriuser" : {
+          "name" : "oriuser",
+          "index" : 5,
+          "offset" : 61,
+          "literal" : "ORIGINAL USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "typdest" : {
+          "name" : "typdest",
+          "index" : 6,
+          "offset" : 72,
+          "literal" : "DESTINATION TYPE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "destino" : {
+          "name" : "destino",
+          "index" : 7,
+          "offset" : 76,
+          "literal" : "DESTINATION",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "text001" : {
+          "name" : "text001",
+          "index" : 8,
+          "offset" : 89,
+          "literal" : "TEXT 1",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "text002" : {
+          "name" : "text002",
+          "index" : 9,
+          "offset" : 132,
+          "literal" : "TEXT 2",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 9,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "text003" : {
+          "name" : "text003",
+          "index" : 10,
+          "offset" : 175,
+          "literal" : "TEXT 3",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 16,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "taruser" : {
+          "name" : "taruser",
+          "index" : 11,
+          "offset" : 218,
+          "literal" : "TARGET USERID",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 17,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "qgrm090" : {
+      "name" : "qgrm090",
+      "transactionName" : "qg09",
+      "description" : "JOURNAL ENTRIES LISTING",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "tmstamp" : {
+          "name" : "tmstamp",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TIMESTAMP FROM",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    },
+    "qgm0902" : {
+      "name" : "qgm0902",
+      "transactionName" : "qg09",
+      "description" : "HEADER OF MESSAGES",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrm090",
+    "transactionName" : "qg09",
+    "description" : "JOURNAL ENTRIES LISTING",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "tmstamp" : {
+        "name" : "tmstamp",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TIMESTAMP FROM",
+        "type" : "Alphanumeric",
+        "length" : 26,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      }
+    }
+  }
+}

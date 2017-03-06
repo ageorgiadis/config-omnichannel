@@ -1,0 +1,168 @@
+{
+  "name" : "mc13",
+  "application" : "mc",
+  "description" : "MANTENIMIENTO LIMITES DEL CONTRATO",
+  "inputRecordName" : "mcrm130",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm130" : {
+      "name" : "mcrm130",
+      "transactionName" : "mc13",
+      "description" : "MANT. LIMITE CONTRATO",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cncotar" : {
+          "name" : "cncotar",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMERO CONTRATO",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cilmcre" : {
+          "name" : "cilmcre",
+          "index" : 2,
+          "offset" : 39,
+          "literal" : "LIMITE CREDITO",
+          "type" : "Numeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ccmotit" : {
+          "name" : "ccmotit",
+          "index" : 3,
+          "offset" : 51,
+          "literal" : "TIPO MONEDA",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "ccbonif" : {
+          "name" : "ccbonif",
+          "index" : 4,
+          "offset" : 57,
+          "literal" : "TIPO BONIFICACION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mclite3" : {
+          "name" : "mclite3",
+          "index" : 5,
+          "offset" : 62,
+          "literal" : "LITERAL BONIFICACION",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm130",
+    "transactionName" : "mc13",
+    "description" : "MANT. LIMITE CONTRATO",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cncotar" : {
+        "name" : "cncotar",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUMERO CONTRATO",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cilmcre" : {
+        "name" : "cilmcre",
+        "index" : 2,
+        "offset" : 39,
+        "literal" : "LIMITE CREDITO",
+        "type" : "Numeric",
+        "length" : 9,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ccmotit" : {
+        "name" : "ccmotit",
+        "index" : 3,
+        "offset" : 51,
+        "literal" : "TIPO MONEDA",
+        "type" : "Alphanumeric",
+        "length" : 3,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "ccbonif" : {
+        "name" : "ccbonif",
+        "index" : 4,
+        "offset" : 57,
+        "literal" : "TIPO BONIFICACION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mclite3" : {
+        "name" : "mclite3",
+        "index" : 5,
+        "offset" : 62,
+        "literal" : "LITERAL BONIFICACION",
+        "type" : "Alphanumeric",
+        "length" : 30,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Output",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "name" : "b343",
+  "application" : "bg",
+  "description" : "ACCOUNT STATUS HISTORICAL DATA",
+  "inputRecordName" : "bgm3430",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm3431" : {
+      "name" : "bgm3431",
+      "transactionName" : "b343",
+      "description" : "ACCOUNT STATUS HISTORICAL DATA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "seqnum" : {
+          "name" : "seqnum",
+          "index" : 2,
+          "offset" : 42,
+          "literal" : "SEQUENCE NUMBER",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descrip" : {
+          "name" : "descrip",
+          "index" : 3,
+          "offset" : 49,
+          "literal" : "ACC.CHANGE DESCRIPT.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "REGISTRATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "branch" : {
+          "name" : "branch",
+          "index" : 5,
+          "offset" : 75,
+          "literal" : "REGISTRATION BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "user" : {
+          "name" : "user",
+          "index" : 6,
+          "offset" : 82,
+          "literal" : "REGISTRATION USER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "shtitle" : {
+          "name" : "shtitle",
+          "index" : 7,
+          "offset" : 93,
+          "literal" : "SHOWTITLE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "hour" : {
+          "name" : "hour",
+          "index" : 8,
+          "offset" : 97,
+          "literal" : "REGISTRATION HOUR",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm3430" : {
+      "name" : "bgm3430",
+      "transactionName" : "b343",
+      "description" : "ACCOUNT STATUS HISTORICAL DATA",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "account" : {
+          "name" : "account",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT CODE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm3430",
+    "transactionName" : "b343",
+    "description" : "ACCOUNT STATUS HISTORICAL DATA",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "account" : {
+        "name" : "account",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ACCOUNT CODE",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

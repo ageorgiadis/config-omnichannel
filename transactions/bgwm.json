@@ -1,0 +1,168 @@
+{
+  "name" : "bgwm",
+  "application" : "bg",
+  "description" : "ΔΙΟΡΘΩΣΕΙΣ ΕΓΓΡΑΦΩΝ WEALTH",
+  "inputRecordName" : "bgmwm0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgmwm0" : {
+      "name" : "bgmwm0",
+      "transactionName" : "bgwm",
+      "description" : "ΔΙΟΡΘΩΣΗ ΕΓΓΡΑΦΩΝ WEALTH",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION ΣΥΝΑΛΛΑΓΗΣ",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΣΥΝΑΛΛΑΓ.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "account" : {
+          "name" : "account",
+          "index" : 3,
+          "offset" : 34,
+          "literal" : "ΑΡ. ΛΟΓΑΡΙΑΣΜΟΥ",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tranid" : {
+          "name" : "tranid",
+          "index" : 4,
+          "offset" : 55,
+          "literal" : "ΚΩΔΙΚΟΣ ΚΙΝΗΣΗΣ",
+          "type" : "Numeric",
+          "length" : 13,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "eggrkey" : {
+          "name" : "eggrkey",
+          "index" : 5,
+          "offset" : 71,
+          "literal" : "ΚΛΕΙΔΙ ΓΙΑ CORP 609",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgmwm0",
+    "transactionName" : "bgwm",
+    "description" : "ΔΙΟΡΘΩΣΗ ΕΓΓΡΑΦΩΝ WEALTH",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION ΣΥΝΑΛΛΑΓΗΣ",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "date" : {
+        "name" : "date",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "ΗΜΕΡΟΜΗΝΙΑ ΣΥΝΑΛΛΑΓ.",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "account" : {
+        "name" : "account",
+        "index" : 3,
+        "offset" : 34,
+        "literal" : "ΑΡ. ΛΟΓΑΡΙΑΣΜΟΥ",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "tranid" : {
+        "name" : "tranid",
+        "index" : 4,
+        "offset" : 55,
+        "literal" : "ΚΩΔΙΚΟΣ ΚΙΝΗΣΗΣ",
+        "type" : "Numeric",
+        "length" : 13,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "eggrkey" : {
+        "name" : "eggrkey",
+        "index" : 5,
+        "offset" : 71,
+        "literal" : "ΚΛΕΙΔΙ ΓΙΑ CORP 609",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

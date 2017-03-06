@@ -1,0 +1,121 @@
+{
+  "name" : "upar",
+  "application" : "ug",
+  "description" : "SELECT IN UGDTPAR",
+  "inputRecordName" : "ugrmpar",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ugrmpar" : {
+      "name" : "ugrmpar",
+      "transactionName" : "upar",
+      "description" : "SELECT IN UGDTPAR",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "key1" : {
+          "name" : "key1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "KEY2",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "key2" : {
+          "name" : "key2",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "KEY2",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "ugrmpar0" : {
+      "name" : "ugrmpar0",
+      "transactionName" : "upar",
+      "description" : "SELECT IN UGDTPAR - P/A",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "dkey" : {
+          "name" : "dkey",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DKEY",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "DESCR",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugrmpar",
+    "transactionName" : "upar",
+    "description" : "SELECT IN UGDTPAR",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "key1" : {
+        "name" : "key1",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "KEY2",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "key2" : {
+        "name" : "key2",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "KEY2",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

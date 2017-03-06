@@ -1,0 +1,168 @@
+{
+  "name" : "hag1",
+  "application" : "ha",
+  "description" : "TEST11111111111",
+  "inputRecordName" : "hamga70",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "hamga70" : {
+      "name" : "hamga70",
+      "transactionName" : "hag1",
+      "description" : "HA2CGA70 INPUT FORMAT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "bcode" : {
+          "name" : "bcode",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BANK CODE",
+          "type" : "Numeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "accnt" : {
+          "name" : "accnt",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grcode" : {
+          "name" : "grcode",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "CURRENT GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "srccode" : {
+          "name" : "srccode",
+          "index" : 4,
+          "offset" : 50,
+          "literal" : "SOURCE GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 5,
+          "offset" : 59,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "hamga70",
+    "transactionName" : "hag1",
+    "description" : "HA2CGA70 INPUT FORMAT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "bcode" : {
+        "name" : "bcode",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "BANK CODE",
+        "type" : "Numeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "accnt" : {
+        "name" : "accnt",
+        "index" : 2,
+        "offset" : 23,
+        "literal" : "ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 15,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "grcode" : {
+        "name" : "grcode",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "CURRENT GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "srccode" : {
+        "name" : "srccode",
+        "index" : 4,
+        "offset" : 50,
+        "literal" : "SOURCE GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 5,
+        "offset" : 59,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

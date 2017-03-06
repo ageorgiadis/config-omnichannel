@@ -1,0 +1,56 @@
+{
+  "name" : "mc47",
+  "application" : "mc",
+  "description" : "TEFFIN CARD INQUIRY",
+  "inputRecordName" : "mcrm470",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mcrm470" : {
+      "name" : "mcrm470",
+      "transactionName" : "mc47",
+      "description" : "CARDS LIST INQUIRY",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "cardnum" : {
+          "name" : "cardnum",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "CARD NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 16,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mcrm470",
+    "transactionName" : "mc47",
+    "description" : "CARDS LIST INQUIRY",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "cardnum" : {
+        "name" : "cardnum",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "CARD NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 16,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

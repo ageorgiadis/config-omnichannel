@@ -1,0 +1,344 @@
+{
+  "name" : "u780",
+  "application" : "ua",
+  "description" : "MAINTENANCE CONN ACCOUNTS",
+  "inputRecordName" : "ugmu780",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ua78052" : {
+      "name" : "ua78052",
+      "transactionName" : "u780",
+      "description" : "OUTPUT PREFORMAT FOR U780",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ua78053" : {
+      "name" : "ua78053",
+      "transactionName" : "u780",
+      "description" : "OUTPUT PREFORMAT FOR U780",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "footer" : {
+          "name" : "footer",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FOOTER",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ua7806" : {
+      "name" : "ua7806",
+      "transactionName" : "u780",
+      "description" : "PREFORMAT FOR U708",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "contrno" : {
+          "name" : "contrno",
+          "index" : 2,
+          "offset" : 42,
+          "literal" : "CONTRNO",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nmclien" : {
+          "name" : "nmclien",
+          "index" : 3,
+          "offset" : 55,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr" : {
+          "name" : "descr",
+          "index" : 4,
+          "offset" : 66,
+          "literal" : "DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "collind" : {
+          "name" : "collind",
+          "index" : 5,
+          "offset" : 119,
+          "literal" : "COLLDIN DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cindprv" : {
+          "name" : "cindprv",
+          "index" : 6,
+          "offset" : 134,
+          "literal" : "COLLDIN DESCR PREV",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ugmu780" : {
+      "name" : "ugmu780",
+      "transactionName" : "u780",
+      "description" : "INPUT FORMAT FOR U780",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "ACCOUNT NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "conccc" : {
+          "name" : "conccc",
+          "index" : 3,
+          "offset" : 41,
+          "literal" : "CONNECTED ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 18,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "collind" : {
+          "name" : "collind",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "COM. COLL. IND.",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "orderno" : {
+          "name" : "orderno",
+          "index" : 5,
+          "offset" : 66,
+          "literal" : "CONN. ACCT A/A",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ua78051" : {
+      "name" : "ua78051",
+      "transactionName" : "u780",
+      "description" : "OUTPUT PREFORMAT FOR U780",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "date" : {
+          "name" : "date",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 2,
+          "offset" : 29,
+          "literal" : "ACCOUNT",
+          "type" : "Alphanumeric",
+          "length" : 23,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ugmu780",
+    "transactionName" : "u780",
+    "description" : "INPUT FORMAT FOR U780",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "ACCOUNT NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "conccc" : {
+        "name" : "conccc",
+        "index" : 3,
+        "offset" : 41,
+        "literal" : "CONNECTED ACCOUNT",
+        "type" : "Alphanumeric",
+        "length" : 18,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "collind" : {
+        "name" : "collind",
+        "index" : 4,
+        "offset" : 62,
+        "literal" : "COM. COLL. IND.",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "orderno" : {
+        "name" : "orderno",
+        "index" : 5,
+        "offset" : 66,
+        "literal" : "CONN. ACCT A/A",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

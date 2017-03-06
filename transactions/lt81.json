@@ -1,0 +1,214 @@
+{
+  "name" : "lt81",
+  "application" : "lt",
+  "description" : "BATCH REQUESTS INQUIRY",
+  "inputRecordName" : "ltrm081",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ltrms81" : {
+      "name" : "ltrms81",
+      "transactionName" : "lt81",
+      "description" : "PETICIONES AL BATCH",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "entiofi" : {
+          "name" : "entiofi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ENTITY/BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 9,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ltrmt81" : {
+      "name" : "ltrmt81",
+      "transactionName" : "lt81",
+      "description" : "BATCH REQUESTS II",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "informe" : {
+          "name" : "informe",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "REPORT",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "peticio" : {
+          "name" : "peticio",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "REQUEST NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "feoper" : {
+          "name" : "feoper",
+          "index" : 3,
+          "offset" : 35,
+          "literal" : "OPERATION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "fejec" : {
+          "name" : "fejec",
+          "index" : 4,
+          "offset" : 46,
+          "literal" : "EXECUTION DATE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "destino" : {
+          "name" : "destino",
+          "index" : 5,
+          "offset" : 57,
+          "literal" : "DESTINATION",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "filtro" : {
+          "name" : "filtro",
+          "index" : 6,
+          "offset" : 68,
+          "literal" : "INQUIRY ENT/BRANCH",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "datos" : {
+          "name" : "datos",
+          "index" : 7,
+          "offset" : 79,
+          "literal" : "DATA",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ltrm081" : {
+      "name" : "ltrm081",
+      "transactionName" : "lt81",
+      "description" : "CONSULTA DE PETICIONS AL BATCH",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "codpeti" : {
+          "name" : "codpeti",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "INQUIRY CODE",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "userdes" : {
+          "name" : "userdes",
+          "index" : 2,
+          "offset" : 26,
+          "literal" : "DESTINATION USER",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ltrm081",
+    "transactionName" : "lt81",
+    "description" : "CONSULTA DE PETICIONS AL BATCH",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "codpeti" : {
+        "name" : "codpeti",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "INQUIRY CODE",
+        "type" : "Alphanumeric",
+        "length" : 7,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "userdes" : {
+        "name" : "userdes",
+        "index" : 2,
+        "offset" : 26,
+        "literal" : "DESTINATION USER",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

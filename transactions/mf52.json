@@ -1,0 +1,79 @@
+{
+  "name" : "mf52",
+  "application" : "mf",
+  "description" : "CONSULTA DE UN TPV",
+  "inputRecordName" : "mfrm520",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mfrm520" : {
+      "name" : "mfrm520",
+      "transactionName" : "mf52",
+      "description" : "CONSULTA DE UN TPV",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "ntpvdi" : {
+          "name" : "ntpvdi",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUM.SERIE TPV",
+          "type" : "Alphanumeric",
+          "length" : 11,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "mfrm52l" : {
+      "name" : "mfrm52l",
+      "transactionName" : "mf52",
+      "description" : "CONSULTA DE UN TPV",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "linea" : {
+          "name" : "linea",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINEA",
+          "type" : "Alphanumeric",
+          "length" : 75,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mfrm520",
+    "transactionName" : "mf52",
+    "description" : "CONSULTA DE UN TPV",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "ntpvdi" : {
+        "name" : "ntpvdi",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "NUM.SERIE TPV",
+        "type" : "Alphanumeric",
+        "length" : 11,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

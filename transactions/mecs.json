@@ -1,0 +1,205 @@
+{
+  "name" : "mecs",
+  "application" : "mc",
+  "description" : "MAINTENANCE OF TABLE MCDTECS",
+  "inputRecordName" : "mpmecs0",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mpmecs0" : {
+      "name" : "mpmecs0",
+      "transactionName" : "mecs",
+      "description" : "INPUT FORMAT OF MECS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "option" : {
+          "name" : "option",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prdexis" : {
+          "name" : "prdexis",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "PRDEXIST",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prdconn" : {
+          "name" : "prdconn",
+          "index" : 3,
+          "offset" : 24,
+          "literal" : "PRDCONNECT",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "mpmwecs" : {
+      "name" : "mpmwecs",
+      "transactionName" : "mecs",
+      "description" : "OUTPUT FORMAT OF MECS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "prdexis" : {
+          "name" : "prdexis",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "PRDEXIST",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prdconn" : {
+          "name" : "prdconn",
+          "index" : 2,
+          "offset" : 34,
+          "literal" : "PRDCONNECT",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "user" : {
+          "name" : "user",
+          "index" : 3,
+          "offset" : 52,
+          "literal" : "USER",
+          "type" : "Alphanumeric",
+          "length" : 7,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "tstamp" : {
+          "name" : "tstamp",
+          "index" : 4,
+          "offset" : 62,
+          "literal" : "TIMESTAMP",
+          "type" : "Alphanumeric",
+          "length" : 26,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "hdrind" : {
+          "name" : "hdrind",
+          "index" : 5,
+          "offset" : 91,
+          "literal" : "HEADER INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "prdcode" : {
+          "name" : "prdcode",
+          "index" : 6,
+          "offset" : 95,
+          "literal" : "PRDCODES",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mpmecs0",
+    "transactionName" : "mecs",
+    "description" : "INPUT FORMAT OF MECS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "option" : {
+        "name" : "option",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "prdexis" : {
+        "name" : "prdexis",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "PRDEXIST",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "prdconn" : {
+        "name" : "prdconn",
+        "index" : 3,
+        "offset" : 24,
+        "literal" : "PRDCONNECT",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

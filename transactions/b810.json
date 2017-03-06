@@ -1,0 +1,140 @@
+{
+  "name" : "b810",
+  "application" : "bg",
+  "description" : "TRANSACTION TO LAUNCH FTP JCLS",
+  "inputRecordName" : "bgm810",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm810" : {
+      "name" : "bgm810",
+      "transactionName" : "b810",
+      "description" : "STANDING ORDERS FTP",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "prodcod" : {
+          "name" : "prodcod",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "ORG.- PRODUCT CODE",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "action" : {
+          "name" : "action",
+          "index" : 2,
+          "offset" : 24,
+          "literal" : "ACTION (G:GET,P:PUT)",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "serial" : {
+          "name" : "serial",
+          "index" : 3,
+          "offset" : 28,
+          "literal" : "FILE SERIAL",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 4,
+          "offset" : 41,
+          "literal" : "PROCESS DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm810",
+    "transactionName" : "b810",
+    "description" : "STANDING ORDERS FTP",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "prodcod" : {
+        "name" : "prodcod",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "ORG.- PRODUCT CODE",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "action" : {
+        "name" : "action",
+        "index" : 2,
+        "offset" : 24,
+        "literal" : "ACTION (G:GET,P:PUT)",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "serial" : {
+        "name" : "serial",
+        "index" : 3,
+        "offset" : 28,
+        "literal" : "FILE SERIAL",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "date" : {
+        "name" : "date",
+        "index" : 4,
+        "offset" : 41,
+        "literal" : "PROCESS DATE",
+        "type" : "Alphanumeric",
+        "length" : 10,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

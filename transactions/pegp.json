@@ -1,0 +1,191 @@
+{
+  "name" : "pegp",
+  "application" : "pe",
+  "description" : "PRIORITIZING CIF MERGE GROUPS",
+  "inputRecordName" : "pemgp00",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "pemgp01" : {
+      "name" : "pemgp01",
+      "transactionName" : "pegp",
+      "description" : "PRIORITIZING CIF MERGE GROUPS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "grdescr" : {
+          "name" : "grdescr",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "GROUP DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "indproc" : {
+          "name" : "indproc",
+          "index" : 3,
+          "offset" : 50,
+          "literal" : "PROCESS INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "shtitle" : {
+          "name" : "shtitle",
+          "index" : 4,
+          "offset" : 54,
+          "literal" : "SHOWTITLE",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "date" : {
+          "name" : "date",
+          "index" : 5,
+          "offset" : 58,
+          "literal" : "DATE",
+          "type" : "Alphanumeric",
+          "length" : 19,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pemgp00" : {
+      "name" : "pemgp00",
+      "transactionName" : "pegp",
+      "description" : "PRIORITIZING CIF MERGE GROUPS",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "group" : {
+          "name" : "group",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GROUP CODE",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "indproc" : {
+          "name" : "indproc",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "PROCESS INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 3,
+          "offset" : 31,
+          "literal" : "USER OPTION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "pemgp00",
+    "transactionName" : "pegp",
+    "description" : "PRIORITIZING CIF MERGE GROUPS",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "group" : {
+        "name" : "group",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "GROUP CODE",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "indproc" : {
+        "name" : "indproc",
+        "index" : 2,
+        "offset" : 27,
+        "literal" : "PROCESS INDICATOR",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 3,
+        "offset" : 31,
+        "literal" : "USER OPTION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

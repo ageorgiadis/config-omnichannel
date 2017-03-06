@@ -1,0 +1,163 @@
+{
+  "name" : "ucpr",
+  "application" : "ug",
+  "description" : "SELECT IN UGDTPAR",
+  "inputRecordName" : "ucrmpar",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "ucrmpar0" : {
+      "name" : "ucrmpar0",
+      "transactionName" : "ucpr",
+      "description" : "SELECT IN UGDTPAR - P/A",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "hkey2" : {
+          "name" : "hkey2",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "HKEY2",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "nomd" : {
+          "name" : "nomd",
+          "index" : 2,
+          "offset" : 23,
+          "literal" : "NOMOS TEXT",
+          "type" : "Alphanumeric",
+          "length" : 30,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "descr1" : {
+          "name" : "descr1",
+          "index" : 3,
+          "offset" : 56,
+          "literal" : "DESCR1",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "ucrmpar" : {
+      "name" : "ucrmpar",
+      "transactionName" : "ucpr",
+      "description" : "SELECT IN UGDTPAR",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "key1" : {
+          "name" : "key1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "KEY1",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "key2" : {
+          "name" : "key2",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "KEY2",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "dkey" : {
+          "name" : "dkey",
+          "index" : 3,
+          "offset" : 29,
+          "literal" : "DKEY",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "ucrmpar",
+    "transactionName" : "ucpr",
+    "description" : "SELECT IN UGDTPAR",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "key1" : {
+        "name" : "key1",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "KEY1",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "key2" : {
+        "name" : "key2",
+        "index" : 2,
+        "offset" : 21,
+        "literal" : "KEY2",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "dkey" : {
+        "name" : "dkey",
+        "index" : 3,
+        "offset" : 29,
+        "literal" : "DKEY",
+        "type" : "Alphanumeric",
+        "length" : 5,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}

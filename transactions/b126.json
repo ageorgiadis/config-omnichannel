@@ -1,0 +1,177 @@
+{
+  "name" : "b126",
+  "application" : "bg",
+  "description" : "OVERDRAFT CONTRACT FORMALIZATION",
+  "inputRecordName" : "bgm126",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "bgm126" : {
+      "name" : "bgm126",
+      "transactionName" : "b126",
+      "description" : "FORM. & REFIN. OF S.O.",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "applnbr" : {
+          "name" : "applnbr",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "APPLICATION NUMBER",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "option" : {
+          "name" : "option",
+          "index" : 2,
+          "offset" : 33,
+          "literal" : "OPTION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "renmon" : {
+          "name" : "renmon",
+          "index" : 3,
+          "offset" : 37,
+          "literal" : "PERIOD RENEWAL MONTH",
+          "type" : "Numeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "ccc" : {
+          "name" : "ccc",
+          "index" : 4,
+          "offset" : 42,
+          "literal" : "ΑΡΙΘΜΟΣ ΛΟΓΑΡΙΑΣΜΟΥ",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "bgm1261" : {
+      "name" : "bgm1261",
+      "transactionName" : "b126",
+      "description" : "S. O/RAFT FORMALIZ/N & REFIN/G",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "msg1" : {
+          "name" : "msg1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "MESSAGE 1",
+          "type" : "Alphanumeric",
+          "length" : 80,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "msg2" : {
+          "name" : "msg2",
+          "index" : 2,
+          "offset" : 99,
+          "literal" : "MESSAGE 2",
+          "type" : "Alphanumeric",
+          "length" : 80,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "bgm126",
+    "transactionName" : "b126",
+    "description" : "FORM. & REFIN. OF S.O.",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "applnbr" : {
+        "name" : "applnbr",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "APPLICATION NUMBER",
+        "type" : "Alphanumeric",
+        "length" : 14,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "option" : {
+        "name" : "option",
+        "index" : 2,
+        "offset" : 33,
+        "literal" : "OPTION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "renmon" : {
+        "name" : "renmon",
+        "index" : 3,
+        "offset" : 37,
+        "literal" : "PERIOD RENEWAL MONTH",
+        "type" : "Numeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "ccc" : {
+        "name" : "ccc",
+        "index" : 4,
+        "offset" : 42,
+        "literal" : "ΑΡΙΘΜΟΣ ΛΟΓΑΡΙΑΣΜΟΥ",
+        "type" : "Alphanumeric",
+        "length" : 20,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name" : "qgrp",
+  "application" : "qg",
+  "description" : "LAST DOCUMENT REPRINT",
+  "inputRecordName" : "qgrmrpr",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qgrmrpr" : {
+      "name" : "qgrmrpr",
+      "transactionName" : "qgrp",
+      "description" : "LAST DOCUMENT REPRINT",
+      "type" : "Input",
+      "source" : "FDF",
+      "fields" : {
+        "termid" : {
+          "name" : "termid",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TERMINAL",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qgrmrpr",
+    "transactionName" : "qgrp",
+    "description" : "LAST DOCUMENT REPRINT",
+    "type" : "Input",
+    "source" : "FDF",
+    "fields" : {
+      "termid" : {
+        "name" : "termid",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "TERMINAL",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

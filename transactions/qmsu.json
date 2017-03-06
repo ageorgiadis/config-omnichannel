@@ -1,0 +1,168 @@
+{
+  "name" : "qmsu",
+  "application" : "qm",
+  "description" : "MENU DE SEGURIDAD",
+  "inputRecordName" : "qmrmsmn",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "qmrmsmn" : {
+      "name" : "qmrmsmn",
+      "transactionName" : "qmsu",
+      "description" : "MENU DE SEGURIDAD",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "opcion" : {
+          "name" : "opcion",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "OPCION",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Required",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : false
+        },
+        "transa" : {
+          "name" : "transa",
+          "index" : 2,
+          "offset" : 20,
+          "literal" : "TRANSACCION",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "funcio" : {
+          "name" : "funcio",
+          "index" : 3,
+          "offset" : 27,
+          "literal" : "FUNCION",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        },
+        "aplica" : {
+          "name" : "aplica",
+          "index" : 4,
+          "offset" : 36,
+          "literal" : "APLICACION",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "usuari" : {
+          "name" : "usuari",
+          "index" : 5,
+          "offset" : 41,
+          "literal" : "USUARIO",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "qmrmsmn",
+    "transactionName" : "qmsu",
+    "description" : "MENU DE SEGURIDAD",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "opcion" : {
+        "name" : "opcion",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "OPCION",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Required",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : false
+      },
+      "transa" : {
+        "name" : "transa",
+        "index" : 2,
+        "offset" : 20,
+        "literal" : "TRANSACCION",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "funcio" : {
+        "name" : "funcio",
+        "index" : 3,
+        "offset" : 27,
+        "literal" : "FUNCION",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : false
+      },
+      "aplica" : {
+        "name" : "aplica",
+        "index" : 4,
+        "offset" : 36,
+        "literal" : "APLICACION",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      },
+      "usuari" : {
+        "name" : "usuari",
+        "index" : 5,
+        "offset" : 41,
+        "literal" : "USUARIO",
+        "type" : "Alphanumeric",
+        "length" : 8,
+        "scale" : 0,
+        "delimiter" : 5,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : false,
+        "compressed" : true
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "name" : "mf53",
+  "application" : "mf",
+  "description" : "POS SELECTION CRITERIA",
+  "inputRecordName" : "mfrm530",
+  "sgAsPa" : false,
+  "blankPaDiscarded" : false,
+  "records" : {
+    "mfrm530" : {
+      "name" : "mfrm530",
+      "transactionName" : "mf53",
+      "description" : "GESTIO DE TPV'S",
+      "type" : "InputOutput",
+      "source" : "FDF",
+      "fields" : {
+        "fselec" : {
+          "name" : "fselec",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "FSELEC",
+          "type" : "Alphanumeric",
+          "length" : 6,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "mselec" : {
+          "name" : "mselec",
+          "index" : 2,
+          "offset" : 25,
+          "literal" : "MSELEC",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "tselec" : {
+          "name" : "tselec",
+          "index" : 3,
+          "offset" : 32,
+          "literal" : "TSELEC",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "cempre" : {
+          "name" : "cempre",
+          "index" : 4,
+          "offset" : 36,
+          "literal" : "CEMPRE",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "mfrm53l" : {
+      "name" : "mfrm53l",
+      "transactionName" : "mf53",
+      "description" : "GESTIO DE TPV'S",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "linea" : {
+          "name" : "linea",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "LINEA",
+          "type" : "Alphanumeric",
+          "length" : 76,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    }
+  },
+  "inputRecord" : {
+    "name" : "mfrm530",
+    "transactionName" : "mf53",
+    "description" : "GESTIO DE TPV'S",
+    "type" : "InputOutput",
+    "source" : "FDF",
+    "fields" : {
+      "fselec" : {
+        "name" : "fselec",
+        "index" : 1,
+        "offset" : 16,
+        "literal" : "FSELEC",
+        "type" : "Alphanumeric",
+        "length" : 6,
+        "scale" : 0,
+        "delimiter" : 1,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "mselec" : {
+        "name" : "mselec",
+        "index" : 2,
+        "offset" : 25,
+        "literal" : "MSELEC",
+        "type" : "Alphanumeric",
+        "length" : 4,
+        "scale" : 0,
+        "delimiter" : 2,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "tselec" : {
+        "name" : "tselec",
+        "index" : 3,
+        "offset" : 32,
+        "literal" : "TSELEC",
+        "type" : "Alphanumeric",
+        "length" : 1,
+        "scale" : 0,
+        "delimiter" : 3,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      },
+      "cempre" : {
+        "name" : "cempre",
+        "index" : 4,
+        "offset" : 36,
+        "literal" : "CEMPRE",
+        "type" : "Alphanumeric",
+        "length" : 2,
+        "scale" : 0,
+        "delimiter" : 4,
+        "usage" : "Optional",
+        "debug" : false,
+        "alwaysSent" : true,
+        "compressed" : true
+      }
+    }
+  }
+}
