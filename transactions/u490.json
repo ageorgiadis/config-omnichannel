@@ -203,58 +203,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg490",
-    "transactionName" : "u490",
-    "description" : "DEALERS PER PRODUCT/SUBPROD.",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "product" : {
-        "name" : "product",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRODUCT",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "QR8CACN",
-        "lit4700" : "17B",
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "subpro" : {
-        "name" : "subpro",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "SUBPRODUCT",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "soutype" : {
-        "name" : "soutype",
-        "index" : 3,
-        "offset" : 28,
-        "literal" : "SOURCE TYPE (I,E,O)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 4,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

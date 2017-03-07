@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pem044",
-    "transactionName" : "pe44",
-    "description" : "ACCOUNTS CONNECTED WITH CARDS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cardnum" : {
-        "name" : "cardnum",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CARD NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 16,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 2,
-        "offset" : 35,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "numcomp" : {
-        "name" : "numcomp",
-        "index" : 3,
-        "offset" : 39,
-        "literal" : "COMPANY CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

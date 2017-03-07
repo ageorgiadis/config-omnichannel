@@ -684,59 +684,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uarmg11",
-    "transactionName" : "u420",
-    "description" : "LETGUA. STATEMENTS INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPERATION NB",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "fedesde" : {
-        "name" : "fedesde",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "DATE FROM",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "fehasta" : {
-        "name" : "fehasta",
-        "index" : 3,
-        "offset" : 48,
-        "literal" : "DATE TO",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

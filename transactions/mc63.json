@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm630",
-    "transactionName" : "mc63",
-    "description" : "ATM MARGINE LINE ANULLMENT",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "atmid" : {
-        "name" : "atmid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ATMID",
-        "type" : "Alphanumeric",
-        "length" : 16,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "import" : {
-        "name" : "import",
-        "index" : 2,
-        "offset" : 35,
-        "literal" : "IMPORT",
-        "type" : "Edit",
-        "length" : 9,
-        "scale" : 2,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemserv",
-    "transactionName" : "pese",
-    "description" : "ADDITION OF PARTICIPANT CIF",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "entity" : {
-        "name" : "entity",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ENTITY",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "branch" : {
-        "name" : "branch",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "BRANCH",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "account" : {
-        "name" : "account",
-        "index" : 3,
-        "offset" : 30,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

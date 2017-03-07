@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lmml2i",
-    "transactionName" : "lml2",
-    "description" : "TRANSITION OF NEW CUSTOMERS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      },
-      "omcente" : {
-        "name" : "omcente",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "OMCENTE",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      },
-      "omcode" : {
-        "name" : "omcode",
-        "index" : 3,
-        "offset" : 28,
-        "literal" : "OMCODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      }
-    }
   }
 }

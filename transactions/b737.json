@@ -3473,58 +3473,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm737",
-    "transactionName" : "b737",
-    "description" : "ENTRY REPETITION PRINTING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT ACCOUNT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "nummov" : {
-        "name" : "nummov",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "ENTRY NUMBER",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "147",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "libre" : {
-        "name" : "libre",
-        "index" : 3,
-        "offset" : 51,
-        "literal" : "FREE",
-        "type" : "Alphanumeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "008",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

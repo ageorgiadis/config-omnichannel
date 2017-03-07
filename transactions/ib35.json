@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ibm0350",
-    "transactionName" : "ib35",
-    "description" : "PINMALERS PRINT HISTORY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "printdt" : {
-        "name" : "printdt",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRINT DATE(DDMMYYYY)",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

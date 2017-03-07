@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmp220",
-    "transactionName" : "bp22",
-    "description" : "DISPLAY OF ORDER AND TRANSFER",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "catcode" : {
-        "name" : "catcode",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CATEGORY CODE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "orgcode" : {
-        "name" : "orgcode",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "ORGANISATION CODE",
-        "type" : "Alphanumeric",
-        "length" : 5,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "abranch" : {
-        "name" : "abranch",
-        "index" : 3,
-        "offset" : 29,
-        "literal" : "ACCOUNTING BRANCH",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

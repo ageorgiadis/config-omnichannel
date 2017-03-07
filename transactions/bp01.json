@@ -80,28 +80,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmp01",
-    "transactionName" : "bp01",
-    "description" : "FILES TO BE RECEIVED",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "appcode" : {
-        "name" : "appcode",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "APPLICATION CODE",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

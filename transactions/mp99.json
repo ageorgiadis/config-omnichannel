@@ -2348,57 +2348,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mprm990",
-    "transactionName" : "mp99",
-    "description" : "CONTRACT FORMALISATION/PRINTIN",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ncotar" : {
-        "name" : "ncotar",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUM. CONTRACTE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "MR6CSEC0",
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "tcotar" : {
-        "name" : "tcotar",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "CONTRACT TYPE",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ntarje" : {
-        "name" : "ntarje",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "CARD NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 16,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

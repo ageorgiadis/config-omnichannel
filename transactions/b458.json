@@ -290,28 +290,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bam4580",
-    "transactionName" : "b458",
-    "description" : "INQ.INCOMING CHECK BY SEQUENCE",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "basqnum" : {
-        "name" : "basqnum",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SEQUENCE NUMBER",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

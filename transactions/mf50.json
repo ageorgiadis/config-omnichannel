@@ -528,56 +528,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mfrm500",
-    "transactionName" : "mf50",
-    "description" : "CONSULTA F.U.C.",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ncomer" : {
-        "name" : "ncomer",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUM. ESTAB.",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "tdocum" : {
-        "name" : "tdocum",
-        "index" : 2,
-        "offset" : 29,
-        "literal" : "TIPO DOCUM.",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ndocum" : {
-        "name" : "ndocum",
-        "index" : 3,
-        "offset" : 33,
-        "literal" : "NUM. DOCUM.",
-        "type" : "Alphanumeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

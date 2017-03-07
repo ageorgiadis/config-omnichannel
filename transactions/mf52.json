@@ -52,28 +52,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mfrm520",
-    "transactionName" : "mf52",
-    "description" : "CONSULTA DE UN TPV",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ntpvdi" : {
-        "name" : "ntpvdi",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUM.SERIE TPV",
-        "type" : "Alphanumeric",
-        "length" : 11,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

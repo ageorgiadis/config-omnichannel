@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uormg40",
-    "transactionName" : "uo40",
-    "description" : "CONSULTA PLAZOS/PORCENTAJES",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cif" : {
-        "name" : "cif",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "CUSTOMER CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "setlnum" : {
-        "name" : "setlnum",
-        "index" : 3,
-        "offset" : 31,
-        "literal" : "SETTLEMENT NUMBER",
-        "type" : "Numeric",
-        "length" : 13,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

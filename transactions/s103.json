@@ -116,28 +116,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprms103",
-    "transactionName" : "s103",
-    "description" : "INPUT FORMAT OF S103",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "product" : {
-        "name" : "product",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRODUCTO",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mdrm810",
-    "transactionName" : "md81",
-    "description" : "CONSULTA MOVIMENTS CECA",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cntar22" : {
-        "name" : "cntar22",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CNTAR22",
-        "type" : "Alphanumeric",
-        "length" : 22,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cfopsep" : {
-        "name" : "cfopsep",
-        "index" : 2,
-        "offset" : 41,
-        "literal" : "CFOPSEP",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

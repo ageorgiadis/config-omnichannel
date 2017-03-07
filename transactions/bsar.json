@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmsar",
-    "transactionName" : "bsar",
-    "description" : "SAR MAINTENANCE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "code" : {
-        "name" : "code",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SAR BASIC CODE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "codecl" : {
-        "name" : "codecl",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "SAR CODE CLIENT",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "descr" : {
-        "name" : "descr",
-        "index" : 3,
-        "offset" : 26,
-        "literal" : "SAR DESCRIPTION CODE",
-        "type" : "Alphanumeric",
-        "length" : 30,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

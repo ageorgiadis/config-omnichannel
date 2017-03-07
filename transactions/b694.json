@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmb694",
-    "transactionName" : "b694",
-    "description" : "INPUT FORMAT FOR TRANS B694",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "company" : {
-        "name" : "company",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT CODE COMPNY",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "serial" : {
-        "name" : "serial",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "A/A PAYROLL",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

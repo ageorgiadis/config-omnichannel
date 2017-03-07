@@ -117,28 +117,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qim710",
-    "transactionName" : "qi71",
-    "description" : "INPUT FORMAT FOR QI71",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "clave" : {
-        "name" : "clave",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΚΩΔΙΚΟΣ ΛΙΣΤΑΣ",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

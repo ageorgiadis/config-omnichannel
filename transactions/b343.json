@@ -150,28 +150,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm3430",
-    "transactionName" : "b343",
-    "description" : "ACCOUNT STATUS HISTORICAL DATA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -200,28 +200,5 @@
       "source" : "FDF",
       "fields" : { }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrm090",
-    "transactionName" : "qg09",
-    "description" : "JOURNAL ENTRIES LISTING",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "tmstamp" : {
-        "name" : "tmstamp",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TIMESTAMP FROM",
-        "type" : "Alphanumeric",
-        "length" : 26,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

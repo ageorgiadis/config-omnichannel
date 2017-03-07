@@ -240,58 +240,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg001",
-    "transactionName" : "u001",
-    "description" : "στατιστικα εκταμιευσεων",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "datef" : {
-        "name" : "datef",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "DATE FROM",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "datet" : {
-        "name" : "datet",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "DATE TO",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 21,
-        "usage" : "Required",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 22,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

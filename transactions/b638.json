@@ -485,56 +485,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bam6380",
-    "transactionName" : "b638",
-    "description" : "PEND./CLOS DEST/AMB INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "pencl" : {
-        "name" : "pencl",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PENDING/CLOSED",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "date" : {
-        "name" : "date",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "INQUIRY DATE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "branch" : {
-        "name" : "branch",
-        "index" : 3,
-        "offset" : 31,
-        "literal" : "BRANCH",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

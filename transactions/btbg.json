@@ -14,13 +14,5 @@
       "source" : "FDF",
       "fields" : { }
     }
-  },
-  "inputRecord" : {
-    "name" : "qcrmnul",
-    "transactionName" : "btbg",
-    "description" : "COPY SIN CAMPOS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : { }
   }
 }

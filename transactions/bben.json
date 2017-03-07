@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmben0",
-    "transactionName" : "bben",
-    "description" : "INPUT FORMAT FOR BLOP",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION ΣΥΝΑΛΛΑΓΗΣ",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "benefit" : {
-        "name" : "benefit",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "BENEFIT CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "criteri" : {
-        "name" : "criteri",
-        "index" : 3,
-        "offset" : 28,
-        "literal" : "CRITERIA",
-        "type" : "Alphanumeric",
-        "length" : 30,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

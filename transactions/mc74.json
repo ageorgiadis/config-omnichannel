@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcnc7400",
-    "transactionName" : "mc74",
-    "description" : "INPUT FORMAT FOR MC2C7400",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cardnum" : {
-        "name" : "cardnum",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CARDNUM",
-        "type" : "Alphanumeric",
-        "length" : 19,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "contid" : {
-        "name" : "contid",
-        "index" : 2,
-        "offset" : 38,
-        "literal" : "CONTRACT ID",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "custnum" : {
-        "name" : "custnum",
-        "index" : 3,
-        "offset" : 59,
-        "literal" : "CUSTNUM",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -30,29 +30,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmgtd",
-    "transactionName" : "bgtd",
-    "description" : "TELEDISK",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "numero" : {
-        "name" : "numero",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUMERO DE REGISTRO",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -54,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "114",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

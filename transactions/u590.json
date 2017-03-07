@@ -257,56 +257,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrm590",
-    "transactionName" : "u590",
-    "description" : "INPUT FORMAT FOR TRANS U590",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "entiofi" : {
-        "name" : "entiofi",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "G590-ENTIOFI",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cuenta" : {
-        "name" : "cuenta",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "G590-CUENTA",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "datereq" : {
-        "name" : "datereq",
-        "index" : 3,
-        "offset" : 40,
-        "literal" : "G590-DATE-REQ",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

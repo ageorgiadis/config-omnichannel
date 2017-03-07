@@ -336,56 +336,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lmmp1i",
-    "transactionName" : "lmp1",
-    "description" : ": INPUT FORMAT LMP1 - AOP",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "groupid" : {
-        "name" : "groupid",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "GROUP ID",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      },
-      "cif" : {
-        "name" : "cif",
-        "index" : 3,
-        "offset" : 32,
-        "literal" : "CID PELATH",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      }
-    }
   }
 }

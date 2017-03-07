@@ -662,28 +662,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg750",
-    "transactionName" : "u406",
-    "description" : "LOAN GUARANTEES ENQUIRY (U406)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "LOAN PROPOSAL NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

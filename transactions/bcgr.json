@@ -94,42 +94,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bcmgri",
-    "transactionName" : "bcgr",
-    "description" : "GROUP SALES WITH SPY (INPUT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "nmclien" : {
-        "name" : "nmclien",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUMCLIEN",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "grpcode" : {
-        "name" : "grpcode",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "GROUPCODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

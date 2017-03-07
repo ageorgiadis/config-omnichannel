@@ -990,58 +990,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmter",
-    "transactionName" : "qg62",
-    "description" : "CONSULTA TERMINALES OFICINAS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "netname" : {
-        "name" : "netname",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TERMINAL EN RED",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -57,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "010",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "entcto" : {
-        "name" : "entcto",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "ENTIDAD/CENTRO",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -42,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "libre" : {
-        "name" : "libre",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "LIBRE",
-        "type" : "Alphanumeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : -31,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "008",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

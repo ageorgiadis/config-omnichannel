@@ -118,29 +118,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrm409i",
-    "transactionName" : "u409",
-    "description" : "INQUIRY FUTURE PAYMENTS INPUT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "LOAN ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

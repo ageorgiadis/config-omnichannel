@@ -298,42 +298,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprm172",
-    "transactionName" : "s172",
-    "description" : "INPUT FOR SP2CS172",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "product" : {
-        "name" : "product",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRODUCTO",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "subpro" : {
-        "name" : "subpro",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "SUB PRODUCT",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

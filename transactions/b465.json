@@ -397,56 +397,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm465",
-    "transactionName" : "b465",
-    "description" : "ΙΣΤΟΡΙΚΟΤΗΤΑ ΕΠΙΤΑΓΩΝ",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "checknb" : {
-        "name" : "checknb",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "ΑΡ.ΕΠ/ΓΗΣ & CD",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "curkind" : {
-        "name" : "curkind",
-        "index" : 3,
-        "offset" : 51,
-        "literal" : "CURR (LOCAL-FOREIGN)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

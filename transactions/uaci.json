@@ -379,56 +379,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uarmg30",
-    "transactionName" : "uaci",
-    "description" : "LET. OF GUAR PER RISK TYPE ENQ",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "client" : {
-        "name" : "client",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "estadt3" : {
-        "name" : "estadt3",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "RISK TYPE",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "group" : {
-        "name" : "group",
-        "index" : 3,
-        "offset" : 36,
-        "literal" : "GROUP",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

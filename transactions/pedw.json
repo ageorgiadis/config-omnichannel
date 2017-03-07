@@ -66,42 +66,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "penc00dw",
-    "transactionName" : "pedw",
-    "description" : "PURIFICATION WARNINGS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "recmsg" : {
-        "name" : "recmsg",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "RECORDMSG INDICATOR",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

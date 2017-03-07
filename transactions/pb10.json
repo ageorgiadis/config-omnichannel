@@ -44,43 +44,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm010",
-    "transactionName" : "pb10",
-    "description" : "PHONE BANKING MENU",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "pboptio" : {
-        "name" : "pboptio",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GOOD(0)/FAULT(1)",
-        "type" : "Numeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "pbdate" : {
-        "name" : "pbdate",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "CURDATE",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

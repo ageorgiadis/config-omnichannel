@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "tcm0f4",
-    "transactionName" : "tcf4",
-    "description" : "ΚΑΤΑΣΤΑΣΗ ΕΓΚΡΙΣΕΩΝ",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "indbr" : {
-        "name" : "indbr",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΕΝΔΕΙΞΗ ΣΥΣΤΗΜΑΤΟΣ",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "datepr" : {
-        "name" : "datepr",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "ΗΜ/ΝΙΑ ΕΠΕΞΕΡΓΑΣΙΑΣ",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "codebr" : {
-        "name" : "codebr",
-        "index" : 3,
-        "offset" : 33,
-        "literal" : "ΚΩΔΙΚΟΣ ΚΑΤΑΣΤΗΜΑΤΟΣ",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

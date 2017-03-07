@@ -102,28 +102,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprms021",
-    "transactionName" : "s021",
-    "description" : "INPUT FORMAT OF S021",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "code" : {
-        "name" : "code",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

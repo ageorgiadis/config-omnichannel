@@ -762,57 +762,5 @@
       "source" : "FDF",
       "fields" : { }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm406",
-    "transactionName" : "b406",
-    "description" : "INTERNAL PER. TRANSFERS INQ.",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT ACCOUNT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "BR6CNEW0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "papel" : {
-        "name" : "papel",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "PAPER",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : -81,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

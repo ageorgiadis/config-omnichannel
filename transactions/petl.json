@@ -150,42 +150,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemetl",
-    "transactionName" : "petl",
-    "description" : "INPUT FORMAT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "peoptio" : {
-        "name" : "peoptio",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "pecif" : {
-        "name" : "pecif",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -1221,42 +1221,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmgs01",
-    "transactionName" : "usin",
-    "description" : "SUBSIDY ANALYSIS INPUT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "entiofi" : {
-        "name" : "entiofi",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ENTIOFI",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cuenta" : {
-        "name" : "cuenta",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "CUENTA",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -530,59 +530,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmdtr",
-    "transactionName" : "qg63",
-    "description" : "CONSULTA DE TRANSACCIONES",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "tran" : {
-        "name" : "tran",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODIGO DE TRANSAC.",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : -62,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "0E9",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "trand" : {
-        "name" : "trand",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "TRANSACCION DESDE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : -57,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "076",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "libre" : {
-        "name" : "libre",
-        "index" : 3,
-        "offset" : 30,
-        "literal" : "LIBRE",
-        "type" : "Alphanumeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : -31,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "008",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

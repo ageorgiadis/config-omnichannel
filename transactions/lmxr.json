@@ -518,56 +518,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lmmxras",
-    "transactionName" : "lmxr",
-    "description" : "CODE OF CONDUCT CASE MANAGEMEN",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INPUT OPTION",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "recode" : {
-        "name" : "recode",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "RECODE",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "recnum" : {
-        "name" : "recnum",
-        "index" : 3,
-        "offset" : 34,
-        "literal" : "RECONCILIATION NUMB.",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm080",
-    "transactionName" : "pb08",
-    "description" : "HISTORY PINMAILER",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "pbsdate" : {
-        "name" : "pbsdate",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SELECTED DATE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "pbprint" : {
-        "name" : "pbprint",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "GOOD(0)/FAULT(1)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

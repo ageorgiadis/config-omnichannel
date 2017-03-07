@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmp60",
-    "transactionName" : "ugp6",
-    "description" : "INPUT FORMAT FOR THE UGP6 TRAN",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "accnum" : {
-        "name" : "accnum",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "feliq" : {
-        "name" : "feliq",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "LIQUADATION DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ind" : {
-        "name" : "ind",
-        "index" : 3,
-        "offset" : 52,
-        "literal" : "INDICATOR CUST TYPE",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

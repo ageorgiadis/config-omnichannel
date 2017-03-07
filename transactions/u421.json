@@ -151,43 +151,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uarmg14",
-    "transactionName" : "u421",
-    "description" : "ACCOUTN NO <-> CONTRACT NO",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cccnuev" : {
-        "name" : "cccnuev",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "cccviej" : {
-        "name" : "cccviej",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "CONTRACT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

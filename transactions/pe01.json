@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "penc0100",
-    "transactionName" : "pe01",
-    "description" : "PENC0100",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "funcio" : {
-        "name" : "funcio",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "FUNCION SOLICITADA",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "numclie" : {
-        "name" : "numclie",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "NUMERO DE PERSONA",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      },
-      "codclie" : {
-        "name" : "codclie",
-        "index" : 3,
-        "offset" : 32,
-        "literal" : "CODIGO IDENTIF.",
-        "type" : "Alphanumeric",
-        "length" : 13,
-        "scale" : 0,
-        "delimiter" : 4,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

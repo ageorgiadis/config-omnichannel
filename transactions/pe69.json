@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "penc0690",
-    "transactionName" : "pe69",
-    "description" : "MERGE TWO GROUPS INTO ONE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "groupc1" : {
-        "name" : "groupc1",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GROUP CODE 1",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "groupc2" : {
-        "name" : "groupc2",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "GROUP CODE 2",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

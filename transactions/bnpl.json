@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmnpl",
-    "transactionName" : "bnpl",
-    "description" : "FORMAT FOR TEST TRANSACTION",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cid" : {
-        "name" : "cid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CID",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "afm" : {
-        "name" : "afm",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "AFM",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "date" : {
-        "name" : "date",
-        "index" : 3,
-        "offset" : 40,
-        "literal" : "DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

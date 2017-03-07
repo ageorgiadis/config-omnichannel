@@ -206,56 +206,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm924",
-    "transactionName" : "b924",
-    "description" : "PENDING BOX VISITS INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "boxccc" : {
-        "name" : "boxccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BOX ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "arrdate" : {
-        "name" : "arrdate",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "ARRIVAL DATE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 5,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "srno" : {
-        "name" : "srno",
-        "index" : 3,
-        "offset" : 50,
-        "literal" : "VISIT SERIAL NO",
-        "type" : "Numeric",
-        "length" : 15,
-        "scale" : 0,
-        "delimiter" : 6,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

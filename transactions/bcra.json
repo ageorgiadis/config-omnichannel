@@ -420,56 +420,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bcmcra",
-    "transactionName" : "bcra",
-    "description" : "R1",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "level" : {
-        "name" : "level",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "LEVEL",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "date" : {
-        "name" : "date",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "DATE DDMMYYYY",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cond" : {
-        "name" : "cond",
-        "index" : 3,
-        "offset" : 32,
-        "literal" : "CONDITION",
-        "type" : "Alphanumeric",
-        "length" : 5,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

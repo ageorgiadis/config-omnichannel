@@ -430,42 +430,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bam6460",
-    "transactionName" : "b646",
-    "description" : "CLEARING SETTLEMENT REVERSAL",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "baseque" : {
-        "name" : "baseque",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SEQUENCE NUMBER",
-        "type" : "Edit",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 4,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "reconum" : {
-        "name" : "reconum",
-        "index" : 2,
-        "offset" : 28,
-        "literal" : "RECONCILIATION NUMBE",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 5,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

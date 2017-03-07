@@ -215,42 +215,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgncrl0",
-    "transactionName" : "bcrl",
-    "description" : "INPUT FOR BG2CCRL0",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "groupid" : {
-        "name" : "groupid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CRL-GROUP-ID",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "userid" : {
-        "name" : "userid",
-        "index" : 2,
-        "offset" : 28,
-        "literal" : "CRL-USERID",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

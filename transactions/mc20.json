@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm200",
-    "transactionName" : "mc20",
-    "description" : "GLOBAL INQUIRY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ntarje" : {
-        "name" : "ntarje",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUMERO TARGETA",
-        "type" : "Alphanumeric",
-        "length" : 19,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ncotar" : {
-        "name" : "ncotar",
-        "index" : 2,
-        "offset" : 38,
-        "literal" : "NUMERO CONTRACTE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "nopcio" : {
-        "name" : "nopcio",
-        "index" : 3,
-        "offset" : 61,
-        "literal" : "OPCION TRANS.",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

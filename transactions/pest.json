@@ -108,42 +108,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemrmst",
-    "transactionName" : "pest",
-    "description" : "STMT REGISTRATION DATE (INPUT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "seqnum" : {
-        "name" : "seqnum",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "SEQ NUM OF ADDRESS",
-        "type" : "Numeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

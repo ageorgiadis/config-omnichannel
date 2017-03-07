@@ -274,56 +274,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmblg1",
-    "transactionName" : "ublg",
-    "description" : "INPUT VALUES FOR UBLG",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "moddate" : {
-        "name" : "moddate",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "MODIFICATION DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "modtabl" : {
-        "name" : "modtabl",
-        "index" : 2,
-        "offset" : 29,
-        "literal" : "MODIFICATION OF TABL",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 33,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -569,42 +569,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm149",
-    "transactionName" : "b149",
-    "description" : "INTERESTS DATA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CCC",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "contrct" : {
-        "name" : "contrct",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "CONTRACT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 14,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

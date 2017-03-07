@@ -52,28 +52,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uglni01",
-    "transactionName" : "uel1",
-    "description" : "TEST FORMAT FOR UG2ELEN3",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

@@ -454,57 +454,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmvae",
-    "transactionName" : "bgve",
-    "description" : "EXCEPTION ACCOUNT MAINT(INPT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT ACCOUNT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "BR6CNEW0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "idioma" : {
-        "name" : "idioma",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "MESSAGE INDICATOR",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

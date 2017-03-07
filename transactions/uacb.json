@@ -452,56 +452,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uarmrcb",
-    "transactionName" : "uacb",
-    "description" : "LETTER OF GUARANTEE INPUT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cliente" : {
-        "name" : "cliente",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "LOG ACCOUNT HOLDER",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "datefr" : {
-        "name" : "datefr",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "EXPIRE FROM DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "dateto" : {
-        "name" : "dateto",
-        "index" : 3,
-        "offset" : 40,
-        "literal" : "EXPIRE TO DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

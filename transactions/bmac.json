@@ -318,42 +318,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmbmac",
-    "transactionName" : "bmac",
-    "description" : "INPUT FORMAT FOR BMAC",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "compan" : {
-        "name" : "compan",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "COMPANY",
-        "type" : "Alphanumeric",
-        "length" : 5,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "paydt" : {
-        "name" : "paydt",
-        "index" : 2,
-        "offset" : 24,
-        "literal" : "PAY DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

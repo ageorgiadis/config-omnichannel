@@ -510,43 +510,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lrrm004",
-    "transactionName" : "lr04",
-    "description" : "GUARANTEE'S DATA INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPERATION NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM1",
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ugcgapr" : {
-        "name" : "ugcgapr",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "GUARANTEE'S CODE",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -3820,56 +3820,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lsm5400",
-    "transactionName" : "ls54",
-    "description" : "DRAWERS CHECK QUALITY(INQUIRY)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "lnremes" : {
-        "name" : "lnremes",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΑΡΙΘΜΟΣ ΠΙΝΑΚΙΟΥ",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "lnreold" : {
-        "name" : "lnreold",
-        "index" : 2,
-        "offset" : 25,
-        "literal" : "ΑΡΙΘΜΟΣ ΠΑΛ. ΠΙΝΑΚΙΟ",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "loption" : {
-        "name" : "loption",
-        "index" : 3,
-        "offset" : 34,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

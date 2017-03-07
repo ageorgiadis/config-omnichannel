@@ -108,28 +108,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ltrm057",
-    "transactionName" : "lt57",
-    "description" : "CUSTOMER CANCELLATION",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cedent" : {
-        "name" : "cedent",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -344,56 +344,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrm813",
-    "transactionName" : "u813",
-    "description" : "LISTING OF ACTIVE BONUS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "bonus" : {
-        "name" : "bonus",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "BONUS",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "subprod" : {
-        "name" : "subprod",
-        "index" : 3,
-        "offset" : 27,
-        "literal" : "SUBPROD",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

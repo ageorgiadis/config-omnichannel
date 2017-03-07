@@ -150,42 +150,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm4180",
-    "transactionName" : "b418",
-    "description" : "FISCAL INFORMATION CIF LEVEL",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "numclie" : {
-        "name" : "numclie",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "year" : {
-        "name" : "year",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "YEAR TO BE INQUIRED",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

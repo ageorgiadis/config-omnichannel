@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmmod",
-    "transactionName" : "bgmo",
-    "description" : "USER MODIFICATIONS MENU",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "clave" : {
-        "name" : "clave",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GENERIC KEY",
-        "type" : "Alphanumeric",
-        "length" : 40,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "codtabl" : {
-        "name" : "codtabl",
-        "index" : 2,
-        "offset" : 59,
-        "literal" : "TABLE CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "nombrec" : {
-        "name" : "nombrec",
-        "index" : 3,
-        "offset" : 70,
-        "literal" : "C NAME",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

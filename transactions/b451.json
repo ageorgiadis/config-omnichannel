@@ -257,42 +257,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bam4510",
-    "transactionName" : "b451",
-    "description" : "PENDING SETT ACC CHECK INQUIRE",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "banento" : {
-        "name" : "banento",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PAYEE ENTITY",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "banct" : {
-        "name" : "banct",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "ACCOUNT NUMB.",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

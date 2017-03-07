@@ -640,42 +640,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmacdi",
-    "transactionName" : "bga2",
-    "description" : "ACCOUNT DATA INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cac" : {
-        "name" : "cac",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "OPTION FOR FLAGING",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

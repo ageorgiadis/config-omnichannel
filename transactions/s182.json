@@ -708,56 +708,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprm182",
-    "transactionName" : "s182",
-    "description" : "INPUT COPY SP2CS182",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "product" : {
-        "name" : "product",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRODUCT",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "subprod" : {
-        "name" : "subprod",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "SUB PRODUCT",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "type" : {
-        "name" : "type",
-        "index" : 3,
-        "offset" : 28,
-        "literal" : "TYPE",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -66,28 +66,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprms310",
-    "transactionName" : "s310",
-    "description" : "INPUT FORMAT OF S310",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

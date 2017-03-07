@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmbrrh",
-    "transactionName" : "brrh",
-    "description" : "RELATIONSHIP DETERMINATION(IN)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "groupid" : {
-        "name" : "groupid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SEQUENCE NUMBER",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "userid" : {
-        "name" : "userid",
-        "index" : 2,
-        "offset" : 28,
-        "literal" : "REGISTRATION USER",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

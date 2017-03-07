@@ -192,56 +192,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm481",
-    "transactionName" : "b481",
-    "description" : "ΘΕΣΗ ΠΕΛΑΤΗ",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cid" : {
-        "name" : "cid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "year" : {
-        "name" : "year",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "YEAR",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "month" : {
-        "name" : "month",
-        "index" : 3,
-        "offset" : 34,
-        "literal" : "MONTH",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

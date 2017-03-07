@@ -103,28 +103,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm012",
-    "transactionName" : "b012",
-    "description" : "PAYROLL CONTRACT'S CATEGORIES",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΕΠΙΛΟΓΗ",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

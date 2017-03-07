@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmvsm",
-    "transactionName" : "bvsm",
-    "description" : "READ VSAM TABLES TRANSACTION",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "table" : {
-        "name" : "table",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TABLE CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

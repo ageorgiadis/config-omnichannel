@@ -94,42 +94,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmpih",
-    "transactionName" : "bpih",
-    "description" : "EURO-1",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "frdate" : {
-        "name" : "frdate",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "FROM DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "todate" : {
-        "name" : "todate",
-        "index" : 2,
-        "offset" : 29,
-        "literal" : "TO DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

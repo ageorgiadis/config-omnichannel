@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "harm048",
-    "transactionName" : "ha48",
-    "description" : "FX ONLINE REPORT",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "select" : {
-        "name" : "select",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "SELECT",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

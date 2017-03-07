@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "penc6100",
-    "transactionName" : "pe61",
-    "description" : "PENC6100",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "groupco" : {
-        "name" : "groupco",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GROUP CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "master" : {
-        "name" : "master",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "MASTER CIF CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "mastna" : {
-        "name" : "mastna",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "MASTER NAME",
-        "type" : "Alphanumeric",
-        "length" : 80,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

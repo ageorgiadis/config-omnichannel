@@ -58,57 +58,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mprm070",
-    "transactionName" : "mp70",
-    "description" : "DELTA CONSULT",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "bunit" : {
-        "name" : "bunit",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BUSINESS UNIT",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "refno" : {
-        "name" : "refno",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "REFERENCE NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "contr" : {
-        "name" : "contr",
-        "index" : 3,
-        "offset" : 35,
-        "literal" : "CONTRACT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Output",
-        "debug" : true,
-        "debugger" : "MR6CSEC0",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

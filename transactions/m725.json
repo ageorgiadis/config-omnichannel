@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrml24i",
-    "transactionName" : "m725",
-    "description" : "INPUT MISSATGE LINK24",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "menlink" : {
-        "name" : "menlink",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INPUT MISSATGE LINK",
-        "type" : "Alphanumeric",
-        "length" : 120,
-        "scale" : 0,
-        "delimiter" : 65,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

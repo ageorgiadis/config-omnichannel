@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrmfhmi",
-    "transactionName" : "mfhm",
-    "description" : "INPUT FOR MFHM",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "menlink" : {
-        "name" : "menlink",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INPUT MISSATGE LINK",
-        "type" : "Alphanumeric",
-        "length" : 65,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

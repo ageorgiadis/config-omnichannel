@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm000",
-    "transactionName" : "mc00",
-    "description" : "MENU PRINCIPAL",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "opcion" : {
-        "name" : "opcion",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPCION",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

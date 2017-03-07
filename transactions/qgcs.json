@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmcss",
-    "transactionName" : "qgcs",
-    "description" : "SESSION CHANGE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "entidad" : {
-        "name" : "entidad",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ENTIDAD",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      }
-    }
   }
 }

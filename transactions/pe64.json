@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "perm640",
-    "transactionName" : "pe64",
-    "description" : "ADDRESS LISTING FOR CIF MERGE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cdgroup" : {
-        "name" : "cdgroup",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GROUP CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "master" : {
-        "name" : "master",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "MASTER CIF :",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "merged" : {
-        "name" : "merged",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "MERGED CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

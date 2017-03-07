@@ -130,42 +130,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm030",
-    "transactionName" : "mc03",
-    "description" : "OPTION AND CARD CONTRACT",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Numeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "cardcon" : {
-        "name" : "cardcon",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "CARD CONTRACT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

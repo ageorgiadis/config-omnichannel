@@ -117,28 +117,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugm570",
-    "transactionName" : "u412",
-    "description" : "INQUIRY F/X PENDING INSTALLMEN",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "busunit" : {
-        "name" : "busunit",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BUSINESS UNIT",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

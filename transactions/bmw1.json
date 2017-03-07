@@ -206,56 +206,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmmwhh",
-    "transactionName" : "bmw1",
-    "description" : "ACCOUNTING ENTRIES",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "userid" : {
-        "name" : "userid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "USER ID",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 7,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "grnum" : {
-        "name" : "grnum",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "GROUP NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 8,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "mode" : {
-        "name" : "mode",
-        "index" : 3,
-        "offset" : 39,
-        "literal" : "MODE(1,2,3)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 127,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm004",
-    "transactionName" : "pb04",
-    "description" : "SELECT CARD OR STATUS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cardno" : {
-        "name" : "cardno",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CARD NUMBER",
-        "type" : "Numeric",
-        "length" : 16,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 2,
-        "offset" : 35,
-        "literal" : "CRITERIA OF INQUIRY",
-        "type" : "Numeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

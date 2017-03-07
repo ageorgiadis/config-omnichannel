@@ -60,59 +60,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ulrma02",
-    "transactionName" : "ula2",
-    "description" : "O/S LOG'S BY TYPE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "datefro" : {
-        "name" : "datefro",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "DATE FROM",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "dateto" : {
-        "name" : "dateto",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "DATE TO",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "feejec" : {
-        "name" : "feejec",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "DATE EXECUTION",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "QR8CFHA",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pem089",
-    "transactionName" : "pe89",
-    "description" : "Ιστορικότητα σύνδεσης FLAG με",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER CIF",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

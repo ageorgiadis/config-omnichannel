@@ -122,28 +122,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgmcls",
-    "transactionName" : "qgcl",
-    "description" : "ACTIVE-CLOSED BRANCH INPUT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "status" : {
-        "name" : "status",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BRANCH STATUS (O-CL)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

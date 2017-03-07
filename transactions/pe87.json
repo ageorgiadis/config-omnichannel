@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pem087",
-    "transactionName" : "pe87",
-    "description" : "PBR CUSTOMERS PBUNIT (INPUT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "inpdate" : {
-        "name" : "inpdate",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΗΜ/ΝΙΑ ΚΑΤΑΧΩΡΗΣΗΣ",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

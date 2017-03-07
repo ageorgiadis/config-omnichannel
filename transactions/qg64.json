@@ -150,45 +150,5 @@
       "source" : "FDF",
       "fields" : { }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmult",
-    "transactionName" : "qg64",
-    "description" : "DATOS DE ULTIMA OPERACION",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "papel" : {
-        "name" : "papel",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PAPEL",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "debugger" : "QR6CYES",
-        "lit4700" : "01F",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "termin" : {
-        "name" : "termin",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "TERMINAL",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -61,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "010",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

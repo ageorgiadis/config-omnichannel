@@ -2610,46 +2610,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg71",
-    "transactionName" : "u401",
-    "description" : "BILL DATA INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT-ACC CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "lit4700" : "003",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "fevenci" : {
-        "name" : "fevenci",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "MATURITY DATE",
-        "type" : "Numeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "QR8CFHA",
-        "lit4700" : "0D9",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

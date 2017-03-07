@@ -275,28 +275,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm6050",
-    "transactionName" : "b605",
-    "description" : "INPUT FORMAT FOR B605",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "pckgcod" : {
-        "name" : "pckgcod",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRICING PACKET CODE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

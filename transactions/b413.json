@@ -845,57 +845,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm413",
-    "transactionName" : "b413",
-    "description" : "TRASNFER INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODIGO CTA-CLIENTE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "BR6CNEW0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "opcion" : {
-        "name" : "opcion",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "troptio" : {
-        "name" : "troptio",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "TRANSACTION OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

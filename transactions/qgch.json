@@ -238,56 +238,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgnccuh",
-    "transactionName" : "qgch",
-    "description" : "INQUIRY CASH BALANCE HISTORY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "branch" : {
-        "name" : "branch",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BRANCH",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "currenc" : {
-        "name" : "currenc",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "CURRENCY",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "date" : {
-        "name" : "date",
-        "index" : 3,
-        "offset" : 29,
-        "literal" : "DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

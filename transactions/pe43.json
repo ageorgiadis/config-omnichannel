@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "perm043",
-    "transactionName" : "pe43",
-    "description" : "JOURNAL ENTRIES LISTING",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "termid" : {
-        "name" : "termid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TERMINAL CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "cifcode" : {
-        "name" : "cifcode",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "CIF CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg67",
-    "transactionName" : "u670",
-    "description" : "ΑΠΟΣΥΝΔΕΣΗ (INPUT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "estcde" : {
-        "name" : "estcde",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "REAL ESTATE CODE",
-        "type" : "Numeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 4,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "seq" : {
-        "name" : "seq",
-        "index" : 2,
-        "offset" : 25,
-        "literal" : "SEQUENCE NUMBER",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

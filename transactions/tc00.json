@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "tcm000",
-    "transactionName" : "tc00",
-    "description" : "TCM000",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "stfunc" : {
-        "name" : "stfunc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "FUNCTION CODE",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm013",
-    "transactionName" : "pb13",
-    "description" : "PRINT PINS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "frompnm" : {
-        "name" : "frompnm",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "FROM PIN MAILER",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "topnm" : {
-        "name" : "topnm",
-        "index" : 2,
-        "offset" : 28,
-        "literal" : "TO PIN MAILER",
-        "type" : "Numeric",
-        "length" : 9,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

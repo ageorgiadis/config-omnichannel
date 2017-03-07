@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmrnc",
-    "transactionName" : "bgrn",
-    "description" : "RECONCILIATION DATA QUEUE",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "codigo" : {
-        "name" : "codigo",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODIGO COLA TS",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

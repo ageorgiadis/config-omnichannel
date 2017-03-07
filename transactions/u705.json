@@ -262,56 +262,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrm705",
-    "transactionName" : "u705",
-    "description" : "LOAN DURATION CHANGE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "account" : {
-        "name" : "account",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "ΑΡ.ΛΟΓΑΡΙΑΣΜΟΥ",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "duratio" : {
-        "name" : "duratio",
-        "index" : 3,
-        "offset" : 41,
-        "literal" : "ΤΡΟΠΟΠ. ΔΙΑΡΚΕΙΑΣ",
-        "type" : "Numeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

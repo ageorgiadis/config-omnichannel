@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "tcm045",
-    "transactionName" : "tc45",
-    "description" : "CORP.TABL.ADDITIONAL MENU",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "moption" : {
-        "name" : "moption",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "MENU OPTION",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "taxcode" : {
-        "name" : "taxcode",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "TAX CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

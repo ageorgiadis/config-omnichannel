@@ -257,42 +257,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm193",
-    "transactionName" : "b193",
-    "description" : "INPUT RENEWALS HISTORY LISTING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "applic" : {
-        "name" : "applic",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "OVERDRAFT CONTRACT #",
-        "type" : "Alphanumeric",
-        "length" : 14,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

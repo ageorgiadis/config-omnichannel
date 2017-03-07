@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "umrmmbm",
-    "transactionName" : "ummb",
-    "description" : "MANT. CODIGOS GARANTIAS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "codigar" : {
-        "name" : "codigar",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODIGO",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "textola" : {
-        "name" : "textola",
-        "index" : 2,
-        "offset" : 22,
-        "literal" : "DESCRIPCION",
-        "type" : "Alphanumeric",
-        "length" : 50,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "textore" : {
-        "name" : "textore",
-        "index" : 3,
-        "offset" : 75,
-        "literal" : "DESCRIPCION ABREVIAD",
-        "type" : "Alphanumeric",
-        "length" : 15,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

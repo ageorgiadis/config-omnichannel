@@ -108,56 +108,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ucrmpar",
-    "transactionName" : "ucpr",
-    "description" : "SELECT IN UGDTPAR",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "key1" : {
-        "name" : "key1",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "KEY1",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "key2" : {
-        "name" : "key2",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "KEY2",
-        "type" : "Alphanumeric",
-        "length" : 5,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "dkey" : {
-        "name" : "dkey",
-        "index" : 3,
-        "offset" : 29,
-        "literal" : "DKEY",
-        "type" : "Alphanumeric",
-        "length" : 5,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

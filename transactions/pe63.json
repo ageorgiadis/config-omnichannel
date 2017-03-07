@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "perm630",
-    "transactionName" : "pe63",
-    "description" : "ADDRESS LISTING",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cifcode" : {
-        "name" : "cifcode",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CIF CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

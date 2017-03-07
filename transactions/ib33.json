@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ibm0330",
-    "transactionName" : "ib33",
-    "description" : "EBANKING UPDATE STOCK",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "currstk" : {
-        "name" : "currstk",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CURRENT STOCK",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "pinsnum" : {
-        "name" : "pinsnum",
-        "index" : 2,
-        "offset" : 25,
-        "literal" : "NUMBER OF PINMAILERS",
-        "type" : "Numeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

@@ -499,56 +499,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmexm0",
-    "transactionName" : "bexm",
-    "description" : "INPUT FORMAT FOR TRANS BEXO",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "inloan" : {
-        "name" : "inloan",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "LOAN NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "inkey" : {
-        "name" : "inkey",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "KEY",
-        "type" : "Alphanumeric",
-        "length" : 30,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

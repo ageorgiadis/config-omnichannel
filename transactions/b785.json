@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgn7850",
-    "transactionName" : "b785",
-    "description" : "MENU ΔΙΑΧ.ΕΙΔ.ΣΗΜ.ΤΕΛΩΝ ΚΥΚΛΟΦ",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "branch" : {
-        "name" : "branch",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BRANCH ( 9999=ΟΛΑ )",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

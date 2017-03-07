@@ -190,59 +190,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm301",
-    "transactionName" : "b301",
-    "description" : "ACCOUNT BRANCHES LISTING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cta" : {
-        "name" : "cta",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT NUMBER",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "lit4700" : "002",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "papel" : {
-        "name" : "papel",
-        "index" : 2,
-        "offset" : 29,
-        "literal" : "PAPER ?",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : -81,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "01F",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "libre" : {
-        "name" : "libre",
-        "index" : 3,
-        "offset" : 33,
-        "literal" : "FREE FIELD",
-        "type" : "Alphanumeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "008",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

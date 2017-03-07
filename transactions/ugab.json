@@ -145,28 +145,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugmcab",
-    "transactionName" : "ugab",
-    "description" : "INPUT FORMAT OF UCAB",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

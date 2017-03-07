@@ -192,28 +192,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "tcm064",
-    "transactionName" : "tc64",
-    "description" : "ΛΙΣΤΑ ΚΑΤΑΣΤΗΜΑΤΩΝ",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

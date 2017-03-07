@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm003",
-    "transactionName" : "pb03",
-    "description" : "PHONE BANKING MENU",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "copcio" : {
-        "name" : "copcio",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION CODE",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

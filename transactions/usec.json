@@ -132,29 +132,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmgsec",
-    "transactionName" : "usec",
-    "description" : "INQUIRY OF EKXORISI FLAG",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cccaso" : {
-        "name" : "cccaso",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -94,28 +94,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmr03",
-    "transactionName" : "br03",
-    "description" : "TRANSACTIONS FIELDS (INP)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "transid" : {
-        "name" : "transid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TRANSACTION ID",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

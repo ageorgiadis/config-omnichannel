@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "cxm001",
-    "transactionName" : "cx01",
-    "description" : "CUSTORME INFORMATION REFRESH",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "numclie" : {
-        "name" : "numclie",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTNUMBER",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "OPTION (I/U)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

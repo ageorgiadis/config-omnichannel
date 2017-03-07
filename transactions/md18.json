@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mdrm180",
-    "transactionName" : "md18",
-    "description" : "UNLOCK THE ATMS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "centid" : {
-        "name" : "centid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ENTITY CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "nofcen" : {
-        "name" : "nofcen",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "CENTER CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ncjero" : {
-        "name" : "ncjero",
-        "index" : 3,
-        "offset" : 30,
-        "literal" : "ATM NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

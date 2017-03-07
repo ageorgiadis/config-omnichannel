@@ -828,56 +828,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "barm758",
-    "transactionName" : "b758",
-    "description" : "FORMAT CASH LETTERS BORDERO",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "btyperm" : {
-        "name" : "btyperm",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TYPE OF REMITTANCE",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "bbnkcod" : {
-        "name" : "bbnkcod",
-        "index" : 2,
-        "offset" : 22,
-        "literal" : "BANK NAME",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "bnumbrd" : {
-        "name" : "bnumbrd",
-        "index" : 3,
-        "offset" : 29,
-        "literal" : "BORDERO NUMBER",
-        "type" : "Numeric",
-        "length" : 12,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ibm100",
-    "transactionName" : "ib10",
-    "description" : "CERT. PASSWD VALIDATION",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "numclie" : {
-        "name" : "numclie",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "NUMCLIEN",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "passwd" : {
-        "name" : "passwd",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "CERT. PASSWD",
-        "type" : "Alphanumeric",
-        "length" : 32,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "newpwd" : {
-        "name" : "newpwd",
-        "index" : 3,
-        "offset" : 62,
-        "literal" : "CERT. NEW PASSWD",
-        "type" : "Alphanumeric",
-        "length" : 32,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

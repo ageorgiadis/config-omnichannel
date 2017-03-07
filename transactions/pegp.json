@@ -136,56 +136,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemgp00",
-    "transactionName" : "pegp",
-    "description" : "PRIORITIZING CIF MERGE GROUPS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "group" : {
-        "name" : "group",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GROUP CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "indproc" : {
-        "name" : "indproc",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "PROCESS INDICATOR",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 31,
-        "literal" : "USER OPTION",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

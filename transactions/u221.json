@@ -52,28 +52,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmgo3",
-    "transactionName" : "u221",
-    "description" : "NEW AND OLD ACCOUNT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUENTA NUEVA",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mdrm960",
-    "transactionName" : "md96",
-    "description" : "CONSULTA PARAMETRES DIFERITS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ccopera" : {
-        "name" : "ccopera",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "MCCOPERA",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -108,42 +108,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm480",
-    "transactionName" : "b480",
-    "description" : "BATCH REQUESTS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "product" : {
-        "name" : "product",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "PRODUCT CODE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 11,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "subprod" : {
-        "name" : "subprod",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "SUBPRODUCT CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 12,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

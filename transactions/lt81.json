@@ -173,42 +173,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ltrm081",
-    "transactionName" : "lt81",
-    "description" : "CONSULTA DE PETICIONS AL BATCH",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "codpeti" : {
-        "name" : "codpeti",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INQUIRY CODE",
-        "type" : "Alphanumeric",
-        "length" : 7,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "userdes" : {
-        "name" : "userdes",
-        "index" : 2,
-        "offset" : 26,
-        "literal" : "DESTINATION USER",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -271,28 +271,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg830",
-    "transactionName" : "u830",
-    "description" : "ΕΜΦΑΝΙΣΗ ΜΕΤΡΗΤΩΝ ΕΥΕΛ. ΔΑΝ.",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

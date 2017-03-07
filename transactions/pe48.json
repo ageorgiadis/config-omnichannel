@@ -696,42 +696,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "penc0470",
-    "transactionName" : "pe48",
-    "description" : "PENC0470",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "groupcd" : {
-        "name" : "groupcd",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "GROUP CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "groupds" : {
-        "name" : "groupds",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "GROUP DESC",
-        "type" : "Alphanumeric",
-        "length" : 50,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

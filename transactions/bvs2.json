@@ -66,42 +66,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmvs2",
-    "transactionName" : "bvs2",
-    "description" : "READ VSAM TABLES TRANSACTION",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "table" : {
-        "name" : "table",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TABLE CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "key" : {
-        "name" : "key",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "CORPORATE TABLE KEY",
-        "type" : "Alphanumeric",
-        "length" : 19,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

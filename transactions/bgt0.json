@@ -108,28 +108,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmtax0",
-    "transactionName" : "bgt0",
-    "description" : "SEARCH & DISPLAY ID DATA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "taxid" : {
-        "name" : "taxid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TAX ID",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

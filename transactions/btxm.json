@@ -44,43 +44,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmtxm",
-    "transactionName" : "btxm",
-    "description" : "INTEREST & TAXES INQUIRY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT ACCOUNT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "BR6CNEW0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "year" : {
-        "name" : "year",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "YEAR",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

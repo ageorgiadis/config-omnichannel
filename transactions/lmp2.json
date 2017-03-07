@@ -103,42 +103,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lmmp2i",
-    "transactionName" : "lmp2",
-    "description" : ": INPUT FORMAT LMP2 - AOP",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      },
-      "omgroup" : {
-        "name" : "omgroup",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "OMGROUP",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : false
-      }
-    }
   }
 }

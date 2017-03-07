@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pbm087",
-    "transactionName" : "pb87",
-    "description" : "FINANCIAL DATA INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "idioma" : {
-        "name" : "idioma",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "IDIOMA",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -96,44 +96,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrm520",
-    "transactionName" : "u031",
-    "description" : "CREDIT SCORING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "C.A.C.",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "numclie" : {
-        "name" : "numclie",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "CUSTOMER CODE",
-        "type" : "Numeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "QR8CACN",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

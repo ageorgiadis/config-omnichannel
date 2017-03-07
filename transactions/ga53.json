@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "gam530",
-    "transactionName" : "ga53",
-    "description" : "ΛΟΓΙΣΤΙΚΟΠΟΙΗΣΗ & ARXEIO WACKE",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ordtype" : {
-        "name" : "ordtype",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "5=ΑΝΕΦΟΔ - 6=ΑΠΟΣΥΜΦ",
-        "type" : "Numeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

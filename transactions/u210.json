@@ -518,56 +518,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg89",
-    "transactionName" : "u210",
-    "description" : "PARTICIPANTS INQUIRY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT-ACC CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "clainte" : {
-        "name" : "clainte",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "INTERVENTION TYPE",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "secinte" : {
-        "name" : "secinte",
-        "index" : 3,
-        "offset" : 43,
-        "literal" : "INTERVENTION SEQUENC",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

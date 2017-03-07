@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmblt3",
-    "transactionName" : "blt3",
-    "description" : "INPUT FORMAT OF BLT3",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΛΟΓΑΡΙΑΣΜΟΣ",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cid" : {
-        "name" : "cid",
-        "index" : 2,
-        "offset" : 37,
-        "literal" : "ΚΩΔΙΚΟΣ ΠΕΛΑΤΗ",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "lucknum" : {
-        "name" : "lucknum",
-        "index" : 3,
-        "offset" : 48,
-        "literal" : "LUCKY NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 7,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

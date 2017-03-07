@@ -298,56 +298,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmbmdc",
-    "transactionName" : "bmdc",
-    "description" : "INPUT FORMAT FOR BMDC",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "year" : {
-        "name" : "year",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "YEAR",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "month" : {
-        "name" : "month",
-        "index" : 3,
-        "offset" : 46,
-        "literal" : "MONTH",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

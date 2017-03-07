@@ -1040,42 +1040,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "uamrcc0",
-    "transactionName" : "uacc",
-    "description" : "UA2CRCC0 INPUT FORMAT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "word" : {
-        "name" : "word",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "WORD",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

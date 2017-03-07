@@ -122,42 +122,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ltrm000",
-    "transactionName" : "lt00",
-    "description" : "OPERATION NUMBER ASSIGNMENT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "tipoper" : {
-        "name" : "tipoper",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPERATION TYPE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "entitat" : {
-        "name" : "entitat",
-        "index" : 2,
-        "offset" : 21,
-        "literal" : "ΤΡΑΠΕΖΑ",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

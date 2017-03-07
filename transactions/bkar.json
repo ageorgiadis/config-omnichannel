@@ -52,28 +52,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bamkar0",
-    "transactionName" : "bkar",
-    "description" : "INPUT FORMAT FOR BKAR",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "branch" : {
-        "name" : "branch",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BRANCH",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

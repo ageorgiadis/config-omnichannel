@@ -60,59 +60,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmeis",
-    "transactionName" : "qgei",
-    "description" : "ESCRITURA IMPRESORA DE SEGUIM.",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "destino" : {
-        "name" : "destino",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "IMPRESORA DESTINO",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -62,
-        "usage" : "Required",
-        "debug" : false,
-        "lit4700" : "02E",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "mensaje" : {
-        "name" : "mensaje",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "MENSAJE",
-        "type" : "Alphanumeric",
-        "length" : 120,
-        "scale" : 0,
-        "delimiter" : -43,
-        "usage" : "Required",
-        "debug" : false,
-        "lit4700" : "040",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "origen" : {
-        "name" : "origen",
-        "index" : 3,
-        "offset" : 150,
-        "literal" : "ORIGEN DEL MENSAJE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : -60,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "02D",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

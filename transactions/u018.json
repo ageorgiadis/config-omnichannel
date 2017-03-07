@@ -44,43 +44,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugm180",
-    "transactionName" : "u018",
-    "description" : "PAGO GREEN LOAN EN CARENCIA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "account" : {
-        "name" : "account",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "LOAN ACCOUNT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "amount" : {
-        "name" : "amount",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "AMOUNT OF PAYMENT",
-        "type" : "Edit",
-        "length" : 15,
-        "scale" : 2,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -257,42 +257,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "tcm089",
-    "transactionName" : "tc89",
-    "description" : "CURRENCY EXCHANGE RATE INQUIRY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "fhcambi" : {
-        "name" : "fhcambi",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CHANGE DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "inddivb" : {
-        "name" : "inddivb",
-        "index" : 2,
-        "offset" : 29,
-        "literal" : "BANK CURRENCY INDICA",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 4,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

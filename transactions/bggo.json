@@ -270,56 +270,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmgo10",
-    "transactionName" : "bggo",
-    "description" : "PAYROLL MANAGEMENT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION CHARACTER",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "status" : {
-        "name" : "status",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "STATUS OF GROUP",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "group" : {
-        "name" : "group",
-        "index" : 3,
-        "offset" : 24,
-        "literal" : "GROUP",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

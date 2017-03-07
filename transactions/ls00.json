@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lsrm000",
-    "transactionName" : "ls00",
-    "description" : "ΓΕΝΙΚΟ ΜΕΝΟΥ ΣΥΝΑΛΛΑΓΜΑΤΙΚΩΝ",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "lyopmen" : {
-        "name" : "lyopmen",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΕΠΙΛΟΓΗ",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

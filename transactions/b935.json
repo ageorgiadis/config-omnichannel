@@ -89,29 +89,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm935",
-    "transactionName" : "b935",
-    "description" : "BOX CLIENT DATA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "contrac" : {
-        "name" : "contrac",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CONTRACT CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "debugger" : "BR6CNEW0",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

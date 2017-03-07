@@ -80,42 +80,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprms030",
-    "transactionName" : "s030",
-    "description" : "SELECT IN SPDTPAR",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "code" : {
-        "name" : "code",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODE",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "categor" : {
-        "name" : "categor",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "CATEGORY",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

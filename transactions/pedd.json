@@ -52,28 +52,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemedd0",
-    "transactionName" : "pedd",
-    "description" : "DISPLAY DATA OF PEDTEDD",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

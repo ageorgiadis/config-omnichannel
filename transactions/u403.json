@@ -245,30 +245,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmg86",
-    "transactionName" : "u403",
-    "description" : "CONTENTIOUS EXCEPTION PRINTING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CLIENT-ACC CODE",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "lit4700" : "003",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

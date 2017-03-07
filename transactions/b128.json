@@ -150,42 +150,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm128",
-    "transactionName" : "b128",
-    "description" : "MAIL ADDRESS OF DEPOSIT ACCNT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "apnbrbr" : {
-        "name" : "apnbrbr",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "APPL. NMBR BRANCH",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "applnbr" : {
-        "name" : "applnbr",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "APPL. NUNBER",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

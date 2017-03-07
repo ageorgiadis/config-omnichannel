@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "merm220",
-    "transactionName" : "me22",
-    "description" : "CORP. BANKING DEP. ONLY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cifcomp" : {
-        "name" : "cifcomp",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "COMPANY CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cifempl" : {
-        "name" : "cifempl",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "EMPLOYEE CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "account" : {
-        "name" : "account",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

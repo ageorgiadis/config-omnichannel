@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bam1000",
-    "transactionName" : "b100",
-    "description" : "CONTROL-M CONDITIONS",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "baoptio" : {
-        "name" : "baoptio",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Numeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 9,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

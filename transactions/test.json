@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgtest",
-    "transactionName" : "test",
-    "description" : "BGTEST",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "test01" : {
-        "name" : "test01",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TEST01",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "test02" : {
-        "name" : "test02",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "TEST02",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "test03" : {
-        "name" : "test03",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "TEST03",
-        "type" : "Numeric",
-        "length" : 12,
-        "scale" : 5,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

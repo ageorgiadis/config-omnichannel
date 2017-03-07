@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugrmgg1",
-    "transactionName" : "uge1",
-    "description" : "ΥΠΟΛΟΙΠΟ ΔΑΝΕΙΟΥ(INPUT)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "entiofi" : {
-        "name" : "entiofi",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ENTIOFI",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "cuenta" : {
-        "name" : "cuenta",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "CUENTA",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "option" : {
-        "name" : "option",
-        "index" : 3,
-        "offset" : 40,
-        "literal" : "OPTION(1/2/3)",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

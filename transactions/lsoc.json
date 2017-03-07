@@ -248,28 +248,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "lsmocr",
-    "transactionName" : "lsoc",
-    "description" : "BANK CHECK ISSUANCE",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "flag" : {
-        "name" : "flag",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OCR FLAG",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

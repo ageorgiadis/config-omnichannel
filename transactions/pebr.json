@@ -66,42 +66,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "pemibr",
-    "transactionName" : "pebr",
-    "description" : "INPUT FORMAT FOR LIVE BANKING",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cif" : {
-        "name" : "cif",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CIF",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "type" : {
-        "name" : "type",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "TYPE",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

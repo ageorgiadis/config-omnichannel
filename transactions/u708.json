@@ -44,43 +44,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ugm480",
-    "transactionName" : "u708",
-    "description" : "UPDATING OF LINES (GREEN LOAN)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "ccc" : {
-        "name" : "ccc",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER ACCOUNT",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : true,
-        "debugger" : "UR7CAUM0",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "importe" : {
-        "name" : "importe",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "AMOUNT",
-        "type" : "Numeric",
-        "length" : 15,
-        "scale" : 2,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

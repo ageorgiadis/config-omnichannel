@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "gam000",
-    "transactionName" : "ga00",
-    "description" : "COMPRA BILLETES M.E.",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "gyopmen" : {
-        "name" : "gyopmen",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INDIC OPCION MENU",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Output",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "rim074i",
-    "transactionName" : "ri74",
-    "description" : "BLOCK CRITERIA MAINTENANCE",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "bunit" : {
-        "name" : "bunit",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BUSINESS UNIT",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "maxbuck" : {
-        "name" : "maxbuck",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "MAX CIF BUCKET",
-        "type" : "Alphanumeric",
-        "length" : 2,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "maxtims" : {
-        "name" : "maxtims",
-        "index" : 3,
-        "offset" : 28,
-        "literal" : "MAX CIF TIMES",
-        "type" : "Alphanumeric",
-        "length" : 3,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

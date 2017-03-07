@@ -133,44 +133,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmfer",
-    "transactionName" : "qg60",
-    "description" : "CONSULTA DE CODIGOS DE ERROR",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "coderr" : {
-        "name" : "coderr",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CODIGO DE ERROR",
-        "type" : "Alphanumeric",
-        "length" : 7,
-        "scale" : 0,
-        "delimiter" : -62,
-        "usage" : "Required",
-        "debug" : false,
-        "lit4700" : "139",
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "coderde" : {
-        "name" : "coderde",
-        "index" : 2,
-        "offset" : 26,
-        "literal" : "COD. DE ERROR DESDE",
-        "type" : "Alphanumeric",
-        "length" : 7,
-        "scale" : 0,
-        "delimiter" : -61,
-        "usage" : "Optional",
-        "debug" : false,
-        "lit4700" : "076",
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

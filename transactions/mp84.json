@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mprm840",
-    "transactionName" : "mp84",
-    "description" : "ISSUE CODE SEARCH TRANSACTION",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cnbinta" : {
-        "name" : "cnbinta",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BIN NUMBER",
-        "type" : "Numeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "cnumeta" : {
-        "name" : "cnumeta",
-        "index" : 2,
-        "offset" : 25,
-        "literal" : "CARD NUMBER",
-        "type" : "Numeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ccissue" : {
-        "name" : "ccissue",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "ISSUE CODE NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

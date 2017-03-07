@@ -191,42 +191,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "ham170",
-    "transactionName" : "hac1",
-    "description" : "HA2CC170 INPUT FORMAT",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "option" : {
-        "name" : "option",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "center" : {
-        "name" : "center",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "ACCOUNTING CENTER",
-        "type" : "Numeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

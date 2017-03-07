@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm020",
-    "transactionName" : "mc02",
-    "description" : "REPORTING HISTORY",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "ioption" : {
-        "name" : "ioption",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "OPTION",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "contnum" : {
-        "name" : "contnum",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "CARD CONTRACT NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

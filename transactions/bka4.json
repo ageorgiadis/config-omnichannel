@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgrmka4",
-    "transactionName" : "bka4",
-    "description" : "BKA4 - INPUT SCREEN",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "contrac" : {
-        "name" : "contrac",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "ΛΟΓΑΡΙΑΣΜΟΣ ΟΦΕΙΛΕΤΗ",
-        "type" : "Alphanumeric",
-        "length" : 20,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "ktsxdte" : {
-        "name" : "ktsxdte",
-        "index" : 2,
-        "offset" : 39,
-        "literal" : "ΗΜΕΡ. ΕΠΙΔΟΣΗΣ",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

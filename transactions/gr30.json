@@ -131,42 +131,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "grm030",
-    "transactionName" : "gr30",
-    "description" : "GRM030",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "cid" : {
-        "name" : "cid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CID OF CUSTOMER",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "cdgrupo" : {
-        "name" : "cdgrupo",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "CODE OF GROUP",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

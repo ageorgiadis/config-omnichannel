@@ -57,56 +57,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "permcrh",
-    "transactionName" : "pe5h",
-    "description" : "CREDIT RATE HISRORICAL DATA",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "custid" : {
-        "name" : "custid",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CUSTOMER ID",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "apodate" : {
-        "name" : "apodate",
-        "index" : 2,
-        "offset" : 27,
-        "literal" : "DATE FROM",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      },
-      "evsdate" : {
-        "name" : "evsdate",
-        "index" : 3,
-        "offset" : 38,
-        "literal" : "DATE TO",
-        "type" : "Alphanumeric",
-        "length" : 8,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : false
-      }
-    }
   }
 }

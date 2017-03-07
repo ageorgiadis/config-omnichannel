@@ -88,28 +88,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "sprms011",
-    "transactionName" : "s011",
-    "description" : "INPUT FORMAT OF S011",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "input" : {
-        "name" : "input",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "INPUT",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

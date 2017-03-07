@@ -626,42 +626,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "mcrm280",
-    "transactionName" : "mc28",
-    "description" : "PRINT CONTRACT",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "nbinta" : {
-        "name" : "nbinta",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BIN NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 6,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "numeta" : {
-        "name" : "numeta",
-        "index" : 2,
-        "offset" : 25,
-        "literal" : "CARD NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 13,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }

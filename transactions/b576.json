@@ -29,28 +29,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgm576",
-    "transactionName" : "b576",
-    "description" : "CENTER'S CLOSING STEPS",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "center" : {
-        "name" : "center",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CENTER CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

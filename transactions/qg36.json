@@ -80,28 +80,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "qgrmafe",
-    "transactionName" : "qg36",
-    "description" : "ACT.FIHERO PARAM.LOCAL(ENTRAD)",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "tran" : {
-        "name" : "tran",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "TRANSACCION",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : -62,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

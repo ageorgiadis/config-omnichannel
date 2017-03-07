@@ -43,42 +43,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "bgmp200",
-    "transactionName" : "bp20",
-    "description" : "STANDING ORDERS TOTAL DAILY",
-    "type" : "Input",
-    "source" : "FDF",
-    "fields" : {
-      "branch" : {
-        "name" : "branch",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "BRANCH",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      },
-      "date" : {
-        "name" : "date",
-        "index" : 2,
-        "offset" : 23,
-        "literal" : "DATE",
-        "type" : "Alphanumeric",
-        "length" : 10,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : false,
-        "compressed" : true
-      }
-    }
   }
 }

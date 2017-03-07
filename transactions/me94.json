@@ -224,56 +224,5 @@
         }
       }
     }
-  },
-  "inputRecord" : {
-    "name" : "merm940",
-    "transactionName" : "me94",
-    "description" : "PIN MAILER BRANCH CANCELATION",
-    "type" : "InputOutput",
-    "source" : "FDF",
-    "fields" : {
-      "cantyp" : {
-        "name" : "cantyp",
-        "index" : 1,
-        "offset" : 16,
-        "literal" : "CANCELATION TYPE",
-        "type" : "Alphanumeric",
-        "length" : 1,
-        "scale" : 0,
-        "delimiter" : 1,
-        "usage" : "Required",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "nofico" : {
-        "name" : "nofico",
-        "index" : 2,
-        "offset" : 20,
-        "literal" : "BRANCH CODE",
-        "type" : "Alphanumeric",
-        "length" : 4,
-        "scale" : 0,
-        "delimiter" : 2,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      },
-      "sernum" : {
-        "name" : "sernum",
-        "index" : 3,
-        "offset" : 27,
-        "literal" : "SERIAL NUMBER",
-        "type" : "Alphanumeric",
-        "length" : 18,
-        "scale" : 0,
-        "delimiter" : 3,
-        "usage" : "Optional",
-        "debug" : false,
-        "alwaysSent" : true,
-        "compressed" : true
-      }
-    }
   }
 }
