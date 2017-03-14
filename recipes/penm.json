@@ -1,0 +1,16 @@
+{
+  "name" : "penm",
+  "records": {
+    "pem0nm1": {
+      "fields": {
+        "date": {
+          "type": "Date",
+          "format": "dd/MM/yyyy"
+        },
+        "nsname": {
+          "usage": "Optional"
+        }
+      }
+    }
+  }
+}

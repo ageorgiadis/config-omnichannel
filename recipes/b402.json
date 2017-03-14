@@ -2,64 +2,19 @@
   "name" : "b402",
   "records": {
     "bgm4025": {
-      "name": "bgm4025",
-      "description": "BGM4025 preformat",
       "fields": {
-        "prefmt": {
-          "index": 1,
-          "literal": "Preformat name",
-          "type": "Alphanumeric",
-          "length": 20,
-          "fixedValue": "BGM4025"
-        },
-        "fechaca": {
-          "index": 2,
-          "literal": "Header date",
-          "type": "Alphanumeric",
-          "length": 45
-        },
-        "litcta": {
-          "index": 3,
-          "literal": "Account literal",
-          "type": "Alphanumeric",
-          "length": 34
-        },
-        "cuenta": {
-          "index": 4,
-          "literal": "Account",
-          "type": "Alphanumeric",
-          "length": 29
-        },
-        "ncuenta": {
-          "index": 5,
-          "literal": "Account number",
-          "type": "Alphanumeric",
-          "length": 29
-        },
         "saldodi": {
-          "index": 6,
-          "literal": "Available balance",
-          "type": "Numeric",
-          "offset": 245,
-          "length": 24
+          "type": "Numeric"
         },
         "saldoto": {
-          "index": 7,
-          "literal": "Total balance",
-          "type": "Numeric",
-          "length": 24
+          "type": "Numeric"
         },
         "saldore": {
-          "index": 8,
-          "literal": "Withheld balance",
-          "type": "Numeric",
-          "length": 24
+          "type": "Numeric"
         },
-        "desdivi": {
-          "index": 9,
-          "literal": "Currency description",
-          "type": "Alphanumeric",
-          "length": 23
+        "fechafi": {
+          "type": "Date",
+          "format": "dd.MM.yy"
         }
       }
     }
