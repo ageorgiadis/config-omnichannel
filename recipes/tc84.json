@@ -1,0 +1,91 @@
+{
+  "name" : "tc84",
+  "records": {
+    "tcm084": {
+      "indexDigits": 1,
+      "fields": {
+        "cambf01": {
+          "type": "Numeric"
+        },
+        "cambf02": {
+          "type": "Numeric"
+        },
+        "cambf03": {
+          "type": "Numeric"
+        },
+        "cambf04": {
+          "type": "Numeric"
+        },
+        "cambf05": {
+          "type": "Numeric"
+        },
+        "cambf06": {
+          "type": "Numeric"
+        },
+        "cambf07": {
+          "type": "Numeric"
+        },
+        "cambf08": {
+          "type": "Numeric"
+        },
+        "cambf09": {
+          "type": "Numeric"
+        },
+        "cambb01": {
+          "type": "Numeric"
+        },
+        "cambb02": {
+          "type": "Numeric"
+        },
+        "cambb03": {
+          "type": "Numeric"
+        },
+        "cambb04": {
+          "type": "Numeric"
+        },
+        "cambb05": {
+          "type": "Numeric"
+        },
+        "cambb06": {
+          "type": "Numeric"
+        },
+        "cambb07": {
+          "type": "Numeric"
+        },
+        "cambb08": {
+          "type": "Numeric"
+        },
+        "cambb09": {
+          "type": "Numeric"
+        },
+        "camba01": {
+          "type": "Numeric"
+        },
+        "camba02": {
+          "type": "Numeric"
+        },
+        "camba03": {
+          "type": "Numeric"
+        },
+        "camba04": {
+          "type": "Numeric"
+        },
+        "camba05": {
+          "type": "Numeric"
+        },
+        "camba06": {
+          "type": "Numeric"
+        },
+        "camba07": {
+          "type": "Numeric"
+        },
+        "camba08": {
+          "type": "Numeric"
+        },
+        "camba09": {
+          "type": "Numeric"
+        }
+      }
+    }
+  }
+}
