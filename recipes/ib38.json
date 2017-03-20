@@ -1,5 +1,70 @@
 {
   "name" : "ib38",
   "sgAsPa" : true,
-  "blankPaDiscarded" : true
+  "blankPaDiscarded" : true,
+  "records": {
+    "ib38acc": {
+      "fields": {
+        "accnum": {
+          "index": 0,
+          "length": 26,
+          "type": "Alphanumeric",
+          "regex": "(\\d{4}) (\\d{4}) (\\d{2}) ((?!03|13|90|96)\\d{2})(\\d{8})",
+          "concatenatingRegexGroups": true
+        },
+        "accbal": {
+          "index": 1,
+          "length": 21,
+          "type": "Numeric"
+        }
+      }  	
+    },
+    "ib38crd": {
+      "fields": {
+        "crdnum": {
+          "index": 0,
+          "length": 26,
+          "type": "Alphanumeric",
+          "regex": "(\\d{6}) (\\d{10})",
+          "concatenatingRegexGroups": true
+        },
+        "crdbal": {
+          "index": 1,
+          "length": 21,
+          "type": "Numeric"
+        }
+      }  	
+    },
+    "ib38loa": {
+      "fields": {
+        "loanum": {
+          "index": 0,
+          "length": 26,
+          "type": "Alphanumeric",
+          "regex": "(\\d{4}) (\\d{4}) (\\d{2}) (03|13|90|96)(\\d{8})",
+          "concatenatingRegexGroups": true
+        },
+        "loabal": {
+          "index": 1,
+          "length": 21,
+          "type": "Numeric"
+        }
+      }  	
+    },
+    "ib38por": {
+      "fields": {
+        "porfix": {
+          "index": 0,
+          "length": 11,
+          "type": "Alphanumeric",
+          "fixedValue": "POREQUITIES"
+        },
+        "pornum": {
+          "index": 1,
+          "length": 13,
+          "type": "Alphanumeric"
+        }
+      }
+    }
+  }
 }
