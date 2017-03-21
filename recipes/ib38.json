@@ -1,70 +1,224 @@
 {
-  "name" : "ib38",
-  "sgAsPa" : true,
-  "blankPaDiscarded" : true,
-  "records": {
-    "ib38acc": {
-      "fields": {
-        "accnum": {
-          "index": 0,
-          "length": 26,
-          "type": "Alphanumeric",
-          "regex": "(\\d{4}) (\\d{4}) (\\d{2}) ((?!03|13|90|96)\\d{2})(\\d{8})",
-          "concatenatingRegexGroups": true
-        },
-        "accbal": {
-          "index": 1,
-          "length": 21,
-          "type": "Numeric"
-        }
-      }  	
-    },
-    "ib38crd": {
-      "fields": {
-        "crdnum": {
-          "index": 0,
-          "length": 26,
-          "type": "Alphanumeric",
-          "regex": "(\\d{6}) (\\d{10})",
-          "concatenatingRegexGroups": true
-        },
-        "crdbal": {
-          "index": 1,
-          "length": 21,
-          "type": "Numeric"
-        }
-      }  	
-    },
-    "ib38loa": {
-      "fields": {
-        "loanum": {
-          "index": 0,
-          "length": 26,
-          "type": "Alphanumeric",
-          "regex": "(\\d{4}) (\\d{4}) (\\d{2}) (03|13|90|96)(\\d{8})",
-          "concatenatingRegexGroups": true
-        },
-        "loabal": {
-          "index": 1,
-          "length": 21,
-          "type": "Numeric"
-        }
-      }  	
-    },
-    "ib38por": {
-      "fields": {
-        "porfix": {
-          "index": 0,
-          "length": 11,
-          "type": "Alphanumeric",
-          "fixedValue": "POREQUITIES"
-        },
-        "pornum": {
-          "index": 1,
-          "length": 13,
-          "type": "Alphanumeric"
-        }
-      }
-    }
-  }
+	"name": "ib38",
+	"sgAsPa": true,
+	"blankPaDiscarded": true,
+	"records": {
+		"ib38acc": {
+			"fields": {
+				"accnum": {
+					"index": 0,
+					"length": 26,
+					"type": "Alphanumeric",
+					"regex": "(\\d{4}) (\\d{4}) (\\d{2}) ((?!03|13|90|96)\\d{2})(\\d{8})",
+					"concatenatingRegexGroups": true
+				},
+				"accbalavail": {
+					"index": 1,
+					"length": 21,
+					"type": "Numeric"
+				},
+				"acccur": {
+					"index": 2,
+					"length": 6,
+					"type": "Alphanumeric"
+				},
+				"accdescr": {
+					"index": 3,
+					"length": 29,
+					"type": "Alphanumeric"
+				},
+				"accstatus": {
+					"index": 4,
+					"length": 9,
+					"type": "Alphanumeric"
+				},
+				"accsubprod": {
+					"index": 5,
+					"length": 5,
+					"type": "Alphanumeric"
+				},
+				"accbal": {
+					"index": 6,
+					"length": 23,
+					"type": "Numeric"
+				},
+				"accdescrlong": {
+					"index": 7,
+					"length": 55,
+					"type": "Alphanumeric"
+				},
+				"parttype": {
+					"index": 8,
+					"length": 2,
+					"type": "Alphanumeric"
+				},
+				"partseq": {
+					"index": 9,
+					"length": 3,
+					"type": "Alphanumeric"
+				}
+			}
+		},
+		"ib38crd": {
+			"fields": {
+				"crdnum": {
+					"index": 0,
+					"length": 24,
+					"type": "Alphanumeric",
+					"regex": "(\\d{6}) (\\d{10})",
+					"concatenatingRegexGroups": true
+				},
+				"crdbal": {
+					"index": 1,
+					"length": 24,
+					"type": "Numeric"
+				},
+				"crdtype": {
+					"index": 2,
+					"length": 5,
+					"type": "Alphanumeric"
+				},
+				"crddescr": {
+					"index": 3,
+					"length": 30,
+					"type": "Alphanumeric"
+				},
+				"crdstatus": {
+					"index": 4,
+					"length": 9,
+					"type": "Alphanumeric"
+				},
+				"crdlimit": {
+					"index": 5,
+					"offset" : 148,
+					"length": 13,
+					"type": "Alphanumeric"
+				}
+			}
+		},
+		"ib38loa": {
+			"fields": {
+				"loanum": {
+					"index": 0,
+					"length": 26,
+					"type": "Alphanumeric",
+					"regex": "(\\d{4}) (\\d{4}) (\\d{2}) (03|13|90|96)(\\d{8})",
+					"concatenatingRegexGroups": true
+				},
+				"accbalavail": {
+					"index": 1,
+					"length": 21,
+					"type": "Numeric"
+				},
+				"acccur": {
+					"index": 2,
+					"length": 6,
+					"type": "Alphanumeric"
+				},
+				"accdescr": {
+					"index": 3,
+					"length": 29,
+					"type": "Alphanumeric"
+				},
+				"accstatus": {
+					"index": 4,
+					"length": 9,
+					"type": "Alphanumeric"
+				},
+				"accsubprod": {
+					"index": 5,
+					"length": 5,
+					"type": "Alphanumeric"
+				},
+				"accbal": {
+					"index": 6,
+					"length": 23,
+					"type": "Numeric"
+				},
+				"accdescrlong": {
+					"index": 7,
+					"length": 55,
+					"type": "Alphanumeric"
+				},
+				"parttype": {
+					"index": 8,
+					"length": 2,
+					"type": "Alphanumeric"
+				},
+				"partseq": {
+					"index": 9,
+					"length": 3,
+					"type": "Alphanumeric"
+				},
+				"accloantype": {
+					"index": 10,
+					"offset": 177,
+					"length": 2,
+					"type": "Alphanumeric"
+				},
+				"loanbu": {
+					"index": 11,
+					"offset": 179,
+					"length": 1,
+					"type": "Alphanumeric"
+				}
+			}
+		},
+		"ib38por": {
+			"fields": {
+				"porfix": {
+					"index": 0,
+					"length": 11,
+					"type": "Alphanumeric",
+					"fixedValue": "POREQUITIES"
+				},
+				"pornum": {
+					"index": 1,
+					"length": 13,
+					"type": "Alphanumeric"
+				}
+			}
+		},
+		"ib38pack": {
+			"fields": {
+				"accnum": {
+					"index": 0,
+					"length": 26,
+					"type": "Alphanumeric",
+					"regex": "(\\d{4}) (\\d{4}) (\\d{2}) (90)(\\d{8})",
+					"concatenatingRegexGroups": true
+				},
+				"acccur": {
+					"index": 1,
+					"offset": 61,
+					"length": 3,
+					"type": "Alphanumeric"
+				},
+				"accdescr": {
+					"index": 2,
+					"offset": 68,
+					"length": 25,
+					"type": "Alphanumeric"
+				},
+				"accbal": {
+					"index": 3,
+					"offset": 108,
+					"length": 22,
+					"type": "Numeric"
+				},
+				"accstatus": {
+					"index": 4,
+					"offset": 95,
+					"length": 7,
+					"type": "Alphanumeric"
+				},
+				"accsubprod": {
+					"index": 5,
+					"offset": 103,
+					"length": 4,
+					"type": "Alphanumeric"
+				}
+			}
+		}
+	}
 }
