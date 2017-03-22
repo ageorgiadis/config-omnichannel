@@ -56,6 +56,12 @@
 					"index": 9,
 					"length": 3,
 					"type": "Alphanumeric"
+				},
+				"accdescralias": {
+					"index": 10,
+					"offset":134,
+					"length": 40,
+					"type": "Alphanumeric"
 				}
 			}
 		},
