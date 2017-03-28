@@ -1,22 +1,64 @@
 {
-  "name" : "b402",
-  "records": {
-    "bgm4025": {
-      "fields": {
-        "saldodi": {
-          "type": "Numeric"
-        },
-        "saldoto": {
-          "type": "Numeric"
-        },
-        "saldore": {
-          "type": "Numeric"
-        },
-        "fechafi": {
-          "type": "Date",
-          "format": "dd.MM.yy"
-        }
-      }
-    }
-  }
+	"name": "b402",
+	"records": {
+		"bgm4025": {
+			"fields": {
+				"saldodi": {
+					"type": "Numeric"
+				},
+				"saldoto": {
+					"type": "Numeric"
+				},
+				"saldore": {
+					"type": "Numeric"
+				},
+				"fechafi": {
+					"type": "Date",
+					"format": "dd.MM.yy"
+				}
+			}
+		},
+		"bgmcac0": {
+			"fields": {
+				"cond1": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				},
+				"cond2": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				}
+			}
+		},
+		"bgm4028": {
+			"fields": {
+				"cond8": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				}
+			}
+		},
+		"bgm4022": {
+			"fields": {
+				"con04": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				},
+				"con05": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				},
+				"con06": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				}
+			}
+		}
+	}
 }
