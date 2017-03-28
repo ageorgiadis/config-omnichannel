@@ -1,0 +1,31 @@
+{
+	"name": "pedi",
+	"sgAsPa": true,
+	"blankPaDiscarded": true,
+	"records": {
+		"pedirec1": {
+			"fields": {
+				"cif": {
+					"index": 0,
+					"type": "Alphanumeric",
+					"length": 9
+				},
+				"fullName": {
+					"index": 1,
+					"type": "Alphanumeric",
+					"length": 71
+				},
+				"idtype": {
+					"index": 2,
+					"type": "Alphanumeric",
+					"length": 4
+				},
+				"idvalue": {
+					"index": 3,
+					"type": "Alphanumeric",
+					"length": 7
+				}
+			}
+		}
+	}
+}
