@@ -59,6 +59,15 @@
 					"usage": "Optional"
 				}
 			}
+		},
+		"bgm4027": {
+			"fields": {
+				"con14": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				}
+			}
 		}
 	}
 }
