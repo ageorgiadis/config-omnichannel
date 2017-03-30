@@ -22,13 +22,11 @@
 			"fields": {
 				"cond1": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"cond2": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				}
 			}
 		},
@@ -36,8 +34,7 @@
 			"fields": {
 				"cond8": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				}
 			}
 		},
@@ -45,18 +42,15 @@
 			"fields": {
 				"con04": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"con05": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"con06": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				}
 			}
 		},
@@ -64,8 +58,7 @@
 			"fields": {
 				"con14": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				}
 			}
 		}
