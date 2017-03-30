@@ -1,0 +1,27 @@
+{
+	"name": "tc59",
+	"sgAsPa": true,
+	"blankPaDiscarded": true,
+	"records": {
+		"tc59br": {
+			"fields": {
+				"entity": {
+					"index": 0,
+					"length": 6,
+					"type": "Alphanumeric",
+					"regex": "(0026)"
+				},
+				"branchCode": {
+					"index": 1,
+					"length": 9,
+					"type": "Alphanumeric"
+				},
+				"branchDescription": {
+					"index": 2,
+					"length": 62,
+					"type": "Alphanumeric"
+				}
+			}
+		}
+	}
+}
