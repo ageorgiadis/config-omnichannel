@@ -1,0 +1,12 @@
+{
+	"name": "bccb",
+	"records": {
+		"bcmcb01": {
+			"fields": {
+				"buckavl": {
+					"type": "Numeric"
+				}
+			}
+		}
+	}
+}

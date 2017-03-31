@@ -29,12 +29,22 @@
 					"type": "Boolean",
 					"format": " ",
 					"usage": "Optional"
+				},
+				"open": {
+					"type": "Date",
+					"format": "yyyy-MM-dd",
+					"usage": "Optional"
 				}
 			}
 		},
 		"bgm4028": {
 			"fields": {
 				"cond8": {
+					"type": "Boolean",
+					"format": " ",
+					"usage": "Optional"
+				},
+				"cond18": {
 					"type": "Boolean",
 					"format": " ",
 					"usage": "Optional"
@@ -59,6 +69,15 @@
 					"usage": "Optional"
 				}
 			}
-		}
+		},
+		"bgm4021": {
+			"fields": {
+				"fechas": {
+					"type": "Date",
+					"format": "dd-MM-yyyy",
+					"usage": "Optional"
+				}
+			}
+		}	
 	}
 }
