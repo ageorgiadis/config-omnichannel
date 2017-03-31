@@ -22,13 +22,11 @@
 			"fields": {
 				"cond1": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"cond2": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"open": {
 					"type": "Date",
@@ -41,8 +39,7 @@
 			"fields": {
 				"cond8": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"cond18": {
 					"type": "Boolean",
@@ -55,18 +52,15 @@
 			"fields": {
 				"con04": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"con05": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				},
 				"con06": {
 					"type": "Boolean",
-					"format": " ",
-					"usage": "Optional"
+					"format": " "
 				}
 			}
 		},
@@ -79,5 +73,14 @@
 				}
 			}
 		}	
+		},
+		"bgm4027": {
+			"fields": {
+				"con14": {
+					"type": "Boolean",
+					"format": " "
+				}
+			}
+		}
 	}
 }
