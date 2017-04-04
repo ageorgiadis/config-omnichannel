@@ -76,6 +76,29 @@
         }
       }
     },
+    "bgm4004" : {
+      "name" : "bgm4004",
+      "transactionName" : "b400",
+      "description" : "MOVEMENT INQUIRY",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "ypoxreo" : {
+          "name" : "ypoxreo",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "YPOXREOS B551",
+          "type" : "Alphanumeric",
+          "length" : 70,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
     "bgm4005" : {
       "name" : "bgm4005",
       "transactionName" : "b400",
