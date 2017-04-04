@@ -8538,6 +8538,20 @@
           "debug" : false,
           "alwaysSent" : true,
           "compressed" : false
+        },
+        "feforma" : {
+          "name" : "feforma",
+          "index" : 5,
+          "offset" : 82,
+          "literal" : "FEFORMA",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
         }
       }
     },

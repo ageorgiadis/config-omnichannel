@@ -267,7 +267,7 @@
           "offset" : 230,
           "literal" : "CODE",
           "type" : "Alphanumeric",
-          "length" : 15,
+          "length" : 20,
           "scale" : 0,
           "delimiter" : 16,
           "usage" : "Output",
@@ -278,7 +278,7 @@
         "inpdela" : {
           "name" : "inpdela",
           "index" : 17,
-          "offset" : 248,
+          "offset" : 253,
           "literal" : "INP DEL AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -292,7 +292,7 @@
         "inpcola" : {
           "name" : "inpcola",
           "index" : 18,
-          "offset" : 271,
+          "offset" : 276,
           "literal" : "INP COL AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -306,7 +306,7 @@
         "intamnt" : {
           "name" : "intamnt",
           "index" : 19,
-          "offset" : 294,
+          "offset" : 299,
           "literal" : "INT AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -320,7 +320,7 @@
         "capamnt" : {
           "name" : "capamnt",
           "index" : 20,
-          "offset" : 317,
+          "offset" : 322,
           "literal" : "CAP AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -334,7 +334,7 @@
         "alkamnt" : {
           "name" : "alkamnt",
           "index" : 21,
-          "offset" : 340,
+          "offset" : 345,
           "literal" : "ALK AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -348,7 +348,7 @@
         "expamnt" : {
           "name" : "expamnt",
           "index" : 22,
-          "offset" : 363,
+          "offset" : 368,
           "literal" : "EXP AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -362,7 +362,7 @@
         "firamnt" : {
           "name" : "firamnt",
           "index" : 23,
-          "offset" : 386,
+          "offset" : 391,
           "literal" : "FIR AMOUNT",
           "type" : "Alphanumeric",
           "length" : 20,
@@ -376,7 +376,7 @@
         "ind1" : {
           "name" : "ind1",
           "index" : 24,
-          "offset" : 409,
+          "offset" : 414,
           "literal" : "IND1",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -390,7 +390,7 @@
         "ind2" : {
           "name" : "ind2",
           "index" : 25,
-          "offset" : 413,
+          "offset" : 418,
           "literal" : "IND2",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -404,7 +404,7 @@
         "ind3" : {
           "name" : "ind3",
           "index" : 26,
-          "offset" : 417,
+          "offset" : 422,
           "literal" : "IND3",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -418,7 +418,7 @@
         "ind4" : {
           "name" : "ind4",
           "index" : 27,
-          "offset" : 421,
+          "offset" : 426,
           "literal" : "IND4",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -432,7 +432,7 @@
         "ind5" : {
           "name" : "ind5",
           "index" : 28,
-          "offset" : 425,
+          "offset" : 430,
           "literal" : "IND5",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -446,7 +446,7 @@
         "ind6" : {
           "name" : "ind6",
           "index" : 29,
-          "offset" : 429,
+          "offset" : 434,
           "literal" : "IND6",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -460,7 +460,7 @@
         "ind7" : {
           "name" : "ind7",
           "index" : 30,
-          "offset" : 433,
+          "offset" : 438,
           "literal" : "IND7",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -474,7 +474,7 @@
         "ind8" : {
           "name" : "ind8",
           "index" : 31,
-          "offset" : 437,
+          "offset" : 442,
           "literal" : "IND8",
           "type" : "Alphanumeric",
           "length" : 1,
@@ -488,7 +488,7 @@
         "ind9" : {
           "name" : "ind9",
           "index" : 32,
-          "offset" : 441,
+          "offset" : 446,
           "literal" : "IND9",
           "type" : "Alphanumeric",
           "length" : 1,

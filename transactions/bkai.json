@@ -40,6 +40,20 @@
           "debug" : false,
           "alwaysSent" : true,
           "compressed" : true
+        },
+        "boorsta" : {
+          "name" : "boorsta",
+          "index" : 3,
+          "offset" : 42,
+          "literal" : "STATUS ΟΦΕΙΛΕΤΗ ΚΑΤ.",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
         }
       }
     }

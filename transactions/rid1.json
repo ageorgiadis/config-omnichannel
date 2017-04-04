@@ -110,6 +110,20 @@
           "debug" : false,
           "alwaysSent" : false,
           "compressed" : true
+        },
+        "rnbunit" : {
+          "name" : "rnbunit",
+          "index" : 8,
+          "offset" : 76,
+          "literal" : "BUSINESS UNIT",
+          "type" : "Alphanumeric",
+          "length" : 4,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Optional",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
         }
       }
     }

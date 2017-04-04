@@ -511,34 +511,6 @@
           "debug" : false,
           "alwaysSent" : false,
           "compressed" : true
-        },
-        "digtnum" : {
-          "name" : "digtnum",
-          "index" : 13,
-          "offset" : 211,
-          "literal" : "COUNTER OF DIGIT.DOC",
-          "type" : "Numeric",
-          "length" : 4,
-          "scale" : 0,
-          "delimiter" : 13,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : false,
-          "compressed" : true
-        },
-        "ndignum" : {
-          "name" : "ndignum",
-          "index" : 14,
-          "offset" : 218,
-          "literal" : "COUNTER OF PHYS.DOC",
-          "type" : "Numeric",
-          "length" : 4,
-          "scale" : 0,
-          "delimiter" : 14,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : false,
-          "compressed" : true
         }
       }
     },

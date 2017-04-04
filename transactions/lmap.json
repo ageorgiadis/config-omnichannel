@@ -9,7 +9,7 @@
     "lmmap00" : {
       "name" : "lmmap00",
       "transactionName" : "lmap",
-      "description" : "INPUT FORMAT FOR UOVC",
+      "description" : "INPUT FORMAT FOR LMAP",
       "type" : "Input",
       "source" : "FDF",
       "fields" : {

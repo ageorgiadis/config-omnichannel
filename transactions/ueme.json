@@ -874,62 +874,6 @@
           "debug" : false,
           "alwaysSent" : true,
           "compressed" : true
-        },
-        "mattype" : {
-          "name" : "mattype",
-          "index" : 62,
-          "offset" : 565,
-          "literal" : "TYPE INSTALL MATUR",
-          "type" : "Alphanumeric",
-          "length" : 1,
-          "scale" : 0,
-          "delimiter" : -107,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : true,
-          "compressed" : true
-        },
-        "repflag" : {
-          "name" : "repflag",
-          "index" : 63,
-          "offset" : 569,
-          "literal" : "TYPE PARTIAL REPAYM",
-          "type" : "Alphanumeric",
-          "length" : 1,
-          "scale" : 0,
-          "delimiter" : -97,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : true,
-          "compressed" : true
-        },
-        "ugcdina" : {
-          "name" : "ugcdina",
-          "index" : 64,
-          "offset" : 573,
-          "literal" : "INTER DATE OF BIRTH",
-          "type" : "Numeric",
-          "length" : 3,
-          "scale" : 0,
-          "delimiter" : -108,
-          "usage" : "Optional",
-          "debug" : false,
-          "alwaysSent" : true,
-          "compressed" : true
-        },
-        "origcod" : {
-          "name" : "origcod",
-          "index" : 65,
-          "offset" : 579,
-          "literal" : "ORIGINATION CODE",
-          "type" : "Alphanumeric",
-          "length" : 5,
-          "scale" : 0,
-          "delimiter" : -95,
-          "usage" : "Optional",
-          "debug" : false,
-          "alwaysSent" : true,
-          "compressed" : true
         }
       }
     }

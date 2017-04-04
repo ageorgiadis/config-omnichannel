@@ -788,6 +788,29 @@
         }
       }
     },
+    "penc9195" : {
+      "name" : "penc9195",
+      "transactionName" : "pe41",
+      "description" : "CUST. DATA- OTHER HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "sequenc" : {
+          "name" : "sequenc",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "SEQUENC",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : false
+        }
+      }
+    },
     "penc9194" : {
       "name" : "penc9194",
       "transactionName" : "pe41",
@@ -2887,6 +2910,29 @@
         }
       }
     },
+    "penc4108" : {
+      "name" : "penc4108",
+      "transactionName" : "pe41",
+      "description" : "OUTPUT FORMAT PE2CRP01 DOCS",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "docdes1" : {
+          "name" : "docdes1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DOC DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
     "penc8100" : {
       "name" : "penc8100",
       "transactionName" : "pe41",
@@ -4623,6 +4669,14 @@
         }
       }
     },
+    "pencp655" : {
+      "name" : "pencp655",
+      "transactionName" : "pe41",
+      "description" : "CUST. DATA- OTHER HEADER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : { }
+    },
     "penc9182" : {
       "name" : "penc9182",
       "transactionName" : "pe41",
@@ -4828,6 +4882,29 @@
         }
       }
     },
+    "penc4124" : {
+      "name" : "penc4124",
+      "transactionName" : "pe41",
+      "description" : "DAFERMOS-DEXOMAI FOOTER",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "gosctr1" : {
+          "name" : "gosctr1",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "GOSCTR1",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
     "penc4123" : {
       "name" : "penc4123",
       "transactionName" : "pe41",
@@ -4937,6 +5014,350 @@
           "length" : 1,
           "scale" : 0,
           "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "pencp651" : {
+      "name" : "pencp651",
+      "transactionName" : "pe41",
+      "description" : "MERGE REQU HEADER 1",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "headlit" : {
+          "name" : "headlit",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "TITLE LN1 INDICATOR",
+          "type" : "Alphanumeric",
+          "length" : 91,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "applcod" : {
+          "name" : "applcod",
+          "index" : 2,
+          "offset" : 110,
+          "literal" : "REQUEST NUM",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
+    },
+    "pencp652" : {
+      "name" : "pencp652",
+      "transactionName" : "pe41",
+      "description" : "MERGE REQ - MASTER CIF DATA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "priape" : {
+          "name" : "priape",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "PRIAPE",
+          "type" : "Alphanumeric",
+          "length" : 40,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nombre" : {
+          "name" : "nombre",
+          "index" : 3,
+          "offset" : 70,
+          "literal" : "NOMBRE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "segape" : {
+          "name" : "segape",
+          "index" : 4,
+          "offset" : 93,
+          "literal" : "SEGAPE",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "idcode" : {
+          "name" : "idcode",
+          "index" : 5,
+          "offset" : 116,
+          "literal" : "IDCODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "claiden" : {
+          "name" : "claiden",
+          "index" : 6,
+          "offset" : 122,
+          "literal" : "CLAIDENT",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "petaxid" : {
+          "name" : "petaxid",
+          "index" : 7,
+          "offset" : 135,
+          "literal" : "PETAXID",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 7,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "fenaci" : {
+          "name" : "fenaci",
+          "index" : 8,
+          "offset" : 148,
+          "literal" : "BIRTH DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 8,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "address" : {
+          "name" : "address",
+          "index" : 9,
+          "offset" : 161,
+          "literal" : "HOME ADDRESS",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 11,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "postcoh" : {
+          "name" : "postcoh",
+          "index" : 10,
+          "offset" : 214,
+          "literal" : "HOME POSTCOD",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 9,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "addresw" : {
+          "name" : "addresw",
+          "index" : 11,
+          "offset" : 222,
+          "literal" : "WORK ADDRESS",
+          "type" : "Alphanumeric",
+          "length" : 50,
+          "scale" : 0,
+          "delimiter" : 12,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "postcow" : {
+          "name" : "postcow",
+          "index" : 12,
+          "offset" : 275,
+          "literal" : "WORK POSTCOD",
+          "type" : "Alphanumeric",
+          "length" : 5,
+          "scale" : 0,
+          "delimiter" : 10,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "pencp653" : {
+      "name" : "pencp653",
+      "transactionName" : "pe41",
+      "description" : "DETAIL FOR PE2CRPD3 ROUTINE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "blank" : {
+          "name" : "blank",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "BLANK",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        }
+      }
+    },
+    "pencp654" : {
+      "name" : "pencp654",
+      "transactionName" : "pe41",
+      "description" : "DETAIL FOR PE2CRPD3 ROUTINE",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "numclie" : {
+          "name" : "numclie",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "NUMCLIEN",
+          "type" : "Alphanumeric",
+          "length" : 8,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "nombre" : {
+          "name" : "nombre",
+          "index" : 2,
+          "offset" : 27,
+          "literal" : "NOMBRE",
+          "type" : "Alphanumeric",
+          "length" : 15,
+          "scale" : 0,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "priape" : {
+          "name" : "priape",
+          "index" : 3,
+          "offset" : 45,
+          "literal" : "PRIAPE",
+          "type" : "Alphanumeric",
+          "length" : 25,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "segape" : {
+          "name" : "segape",
+          "index" : 4,
+          "offset" : 73,
+          "literal" : "SEGAPE",
+          "type" : "Alphanumeric",
+          "length" : 12,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "petaxid" : {
+          "name" : "petaxid",
+          "index" : 5,
+          "offset" : 88,
+          "literal" : "AFM",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 5,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "fenaci" : {
+          "name" : "fenaci",
+          "index" : 6,
+          "offset" : 101,
+          "literal" : "BIRTH DATE",
+          "type" : "Alphanumeric",
+          "length" : 10,
+          "scale" : 0,
+          "delimiter" : 6,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : true,
+          "compressed" : true
+        },
+        "identit" : {
+          "name" : "identit",
+          "index" : 7,
+          "offset" : 114,
+          "literal" : "IDENTITY",
+          "type" : "Alphanumeric",
+          "length" : 14,
+          "scale" : 0,
+          "delimiter" : 7,
           "usage" : "Output",
           "debug" : false,
           "alwaysSent" : true,

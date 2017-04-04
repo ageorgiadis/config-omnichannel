@@ -6,29 +6,6 @@
   "sgAsPa" : false,
   "blankPaDiscarded" : false,
   "records" : {
-    "penc4124" : {
-      "name" : "penc4124",
-      "transactionName" : "pefn",
-      "description" : "DAFERMOS-DEXOMAI FOOTER",
-      "type" : "Output",
-      "source" : "FDF",
-      "fields" : {
-        "gosctr1" : {
-          "name" : "gosctr1",
-          "index" : 1,
-          "offset" : 16,
-          "literal" : "GOSCTR1",
-          "type" : "Alphanumeric",
-          "length" : 1,
-          "scale" : 0,
-          "delimiter" : 1,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : true,
-          "compressed" : true
-        }
-      }
-    },
     "pemefn0" : {
       "name" : "pemefn0",
       "transactionName" : "pefn",

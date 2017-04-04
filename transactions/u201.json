@@ -4323,6 +4323,20 @@
           "debug" : false,
           "alwaysSent" : false,
           "compressed" : true
+        },
+        "negbrin" : {
+          "name" : "negbrin",
+          "index" : 68,
+          "offset" : 784,
+          "literal" : "NEGAT. BASE RATE IND",
+          "type" : "Alphanumeric",
+          "length" : 1,
+          "scale" : 0,
+          "delimiter" : -28,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
         }
       }
     },

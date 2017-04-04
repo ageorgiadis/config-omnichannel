@@ -122,29 +122,6 @@
         }
       }
     },
-    "penc4108" : {
-      "name" : "penc4108",
-      "transactionName" : "pefy",
-      "description" : "OUTPUT FORMAT PE2CRP01 DOCS",
-      "type" : "Output",
-      "source" : "FDF",
-      "fields" : {
-        "docdes1" : {
-          "name" : "docdes1",
-          "index" : 1,
-          "offset" : 16,
-          "literal" : "DOC DESCRIPTION",
-          "type" : "Alphanumeric",
-          "length" : 50,
-          "scale" : 0,
-          "delimiter" : 1,
-          "usage" : "Output",
-          "debug" : false,
-          "alwaysSent" : false,
-          "compressed" : true
-        }
-      }
-    },
     "penc4107" : {
       "name" : "penc4107",
       "transactionName" : "pefy",
