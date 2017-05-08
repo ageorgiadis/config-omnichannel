@@ -490,6 +490,71 @@
           "compressed" : true
         }
       }
+    },
+    "bgmcri" : {
+      "name" : "bgmcri",
+      "transactionName" : "b525",
+      "description" : "ELECTRONIC DIARY CRITERIA",
+      "type" : "Output",
+      "source" : "FDF",
+      "fields" : {
+        "dh" : {
+          "name" : "dh",
+          "index" : 1,
+          "offset" : 16,
+          "literal" : "DEBIT/CREDIT INDICAT",
+          "type" : "Alphanumeric",
+          "length" : 2,
+          "scale" : 0,
+          "delimiter" : 1,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "importe" : {
+          "name" : "importe",
+          "index" : 2,
+          "offset" : 21,
+          "literal" : "AMOUNT",
+          "type" : "EditSign",
+          "length" : 16,
+          "scale" : 2,
+          "delimiter" : 2,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "cddivis" : {
+          "name" : "cddivis",
+          "index" : 3,
+          "offset" : 40,
+          "literal" : "CURRENCY CODE",
+          "type" : "Alphanumeric",
+          "length" : 3,
+          "scale" : 0,
+          "delimiter" : 3,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        },
+        "desdiv" : {
+          "name" : "desdiv",
+          "index" : 4,
+          "offset" : 46,
+          "literal" : "CURRENCY DESCRIPTION",
+          "type" : "Alphanumeric",
+          "length" : 20,
+          "scale" : 0,
+          "delimiter" : 4,
+          "usage" : "Output",
+          "debug" : false,
+          "alwaysSent" : false,
+          "compressed" : true
+        }
+      }
     }
   }
 }

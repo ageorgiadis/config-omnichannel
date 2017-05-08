@@ -1,0 +1,12 @@
+{
+	"name": "b525",
+	"records": {
+		"bgmcri": {
+			"fields": {
+				"importe": {
+					"type": "NumericSigned"
+				}
+			}
+		}
+	}
+}
